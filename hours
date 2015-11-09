@@ -293,7 +293,7 @@
                     val.hour_string = val.open_time + " - " + val.close_time
                 } 
                 if (type == "holiday_hours"){
-                    hol = new Date (val.holiday_date + "T08:00:00Z");
+                    hol = new Date (val.holiday_date + "T07:00:00Z");
                     val.hol = (get_month(hol.getMonth()))+" "+(hol.getDate());   
                 }
                 

@@ -269,7 +269,7 @@
                    val.description =  val.description.substring(0,300)+'...';
                 } 
                  today = new Date();
-                 webDate = new Date(val.show_on_web_date)
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z")
                  if (today >= webDate) {
                     c = $.inArray("news", val.tags)
                     if (c == 0){

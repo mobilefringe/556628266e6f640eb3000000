@@ -324,7 +324,7 @@
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
                 
-                start = new Date (val.start_date + "T058:00:00Z");
+                start = new Date (val.start_date + "T08:00:00Z");
                 end = new Date (val.end_date + "T08:00:00Z");
                 c = $.inArray("news", val.tags)
                 on_now = $.inArray("on_now", val.tags)

@@ -382,7 +382,7 @@
             news_event_without_coming_soon = []
              $.each( events , function( key, val ){
                  today = new Date();
-                 webDate = new Date(val.show_on_web_date);
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
                  if (today >= webDate) {
                      c = $.inArray("news", val.tags)
                      s = $.inArray("coming_soon", val.tags)

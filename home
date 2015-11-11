@@ -412,7 +412,7 @@
             regular_promo_array = []
              $.each( promos , function( key, val ){
                  today = new Date();
-                 webDate = new Date(val.show_on_web_date);
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
                  if (today >= webDate) {
                      if(val.is_featured == true){
                         featured_promo_array.push(val)   

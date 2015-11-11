@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
+<title>{{meta_title}}</title>
+<meta property="og:title" content="{{meta_title}}" />
+<meta property="og:description" content="{{meta_description}}" />
+<meta property="og:image" content="{{meta_img}}" />
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="{{meta_description}}" />
+<meta name="keywords" content="{{meta_keywords}}" />
+<meta name="author" content="" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider.css" rel="stylesheet">
+<link rel="stylesheet" href="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" type="text/css" media="screen">
+<link href="/application.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
+<!-- favicon -->
+<link rel="shortcut icon" href="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/75a0b30e4d74dafec26d8331f731a127/bay_fav.jpg" type="image/x-icon" />
+
+<!-- jQuery Version 1.11.0 -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+<!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+<!--jReject is used to warn users certain browsers aren't compatible with this site-->
+<script src="//cdn.jsdelivr.net/jquery.jreject/1.0.2/js/jquery.reject.js"></script>
+<link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
+<!--MallMaverick v=0.3-->
+<script src="http://mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
+<script src="http://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+
+<script src="http://cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
+
+<script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+     ga('create', 'UA-50587834-41', 'auto');
+     ga('send', 'pageview');
+  </script>
+<script src="//cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script>
+<script src="//s3.amazonaws.com/kodekloud/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css">
+
+<script>
+    $(document).ready(function() {
+        $.reject({  
+            reject: { all: false, msie: 9 },  
+            header: 'Thanks for visiting The Bay Centre', // Header Text  
+            paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
+            paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
+            closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
+            closeCookie: true,
+            browserInfo: { // Settings for which browsers to display  
+                chrome: {  
+                    // Text below the icon  
+                    text: 'Google Chrome',  
+                    // URL For icon/text link  
+                    url: 'http://www.google.com/chrome/',  
+                    // (Optional) Use "allow" to customized when to show this option  
+                    // Example: to show chrome only for IE users  
+                    // allow: { all: false, msie: true }  
+                },  
+                firefox: {  
+                    text: 'Mozilla Firefox',  
+                    url: 'http://www.mozilla.com/firefox/'  
+                },  
+                safari: {  
+                    text: 'Safari',  
+                    url: 'http://www.apple.com/safari/download/'  
+                },  
+                opera: {  
+                    text: 'Opera',  
+                    url: 'http://www.opera.com/download/'  
+                },  
+                msie: {  
+                    text: 'Internet Explorer',  
+                    url: 'http://www.microsoft.com/windows/Internet-explorer/'  
+                }  
+            },// Message below close window link  
+            imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
+        });  
+        
+       
+    });
+  
+    setEndPoint('http://baycentre.mallmaverick.com/api/v2/baycentre/all.json');
+    sessionStorage.setItem('primary_locale', 'en-CA');
+    sessionStorage.setItem('secondary_locale', 'fr-CA');
+    
+
+</script>
+</head>
+<body>
+    
+    <header>
+    
+    
+    <div class="menu_container">
+        
+        <div class="search_social_div"> 
+            <a class="header_link" href="/contact_us">contact us</a>
+            <div class="search_div">
+                <input  type="text" id="search_input" class="search_input" placeholder="Search">
+                <i class="fa fa-search search_icon"></i>
+                <div class="search-results" id="search_results" style="display:none">
+                        <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
+                        <script id="search_results_template" type="x-tmpl-mustache/text">{% raw %}
+                        <small><h4 class="list-group-item search-results-count" id="store_results_header" style="display:none;#4d4d4f:gray;margin-top:2px;font-size:14px" data-i18n="nav.stores" onclick="javascript:show_results('store')"></h4></small>
+                        <div class="results_div" id="store_results">
+                        {{#stores}}
+                            <a href="/stores/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                    <div class="phone">{{phone}}</div>
+                                </div>
+                            </a>
+                        {{/stores}}
+                        </div>
+                        <h4 class="list-group-item search-results-count" id="promotions_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('promo')"></h4>
+                        <div class="results_div" id="promo_results">
+                        {{#promotions}}
+                            <a href="/promotions/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                </div>
+                            </a>
+                        {{/promotions}}
+                        </div>
+                        <h4 class="list-group-item search-results-count" id="events_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.events" onclick="javascript:show_results('event')"></h4>
+                        <div class="results_div" id="event_results">
+                        {{#events}}
+                            <a href="/events/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                </div>
+                            </a>
+                        {{/events}}
+                        </div>
+                        </script>{% endraw %}
+                    
+                        <ul class="list-group" >
+                            
+                            <li>
+                            <a  class="close-search list-group-item" style="color:#4d4d4f;font-weight:bold">
+                                <small>
+                                    <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
+                                </small>
+                            </a>
+                            </li>
+                            <li>
+                            <div id="search_results_items" class="search-results-items" style="">
+                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="header_social_icons">
+                <a href="https://instagram.com/thebaycentre/" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram"></a>
+                        <a href="https://www.facebook.com/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png" class="header_icon" alt="facebook" id="header_facebook"></a>
+                        <a href="https://twitter.com/baycentrevic" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png" class="header_icon" alt="twitter" id="header_twitter"></a>
+                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube"></a>
+                        <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
+            </div>
+        </div>
+        <div id="logo_container">
+            <a href="/home"><img class="site_logo" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/BAY_logo.png"></a>
+        </div>
+        <div class="mobile_menu_btn" onclick="javascript:toggle_mobile_menu()">
+            <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/menu.png"/>
+        </div>
+        <div class="menu_items_container">
+            <ul class="main_menu">
+                <li onclick="javascript:show_dd(1)" id="m1">
+                    find a store
+                    <div class="triangle_down" id="triangle_1">&nbsp;</div>
+                </li>
+                <li onclick="javascript:show_dd(2)" id="m2">
+                    plan your visit
+                    <div class="triangle_down" id="triangle_2">&nbsp;</div>
+                </li>
+                <li onclick="javascript:show_dd(3)" id="m3">
+                    Deals
+                    <div class="triangle_down" id="triangle_3">&nbsp;</div>
+                    
+                </li>
+                <li onclick="javascript:show_dd(4)" id="m4">
+                    events & contests
+                    <div class="triangle_down" id="triangle_4">&nbsp;</div>
+                    
+                </li>
+                <li onclick="javascript:show_dd(5)" id="m5">
+                    Our style
+                    <div class="triangle_down" id="triangle_5">&nbsp;</div>
+                    
+                </li>
+                <li onclick="javascript:show_dd(6)" id="m6">
+                    about us
+                    <div class="triangle_down" id="triangle_6">&nbsp;</div>
+                    
+                </li>
+            </ul>
+            
+        </div>
+    </div>    
+        
+        
+    </header>
+    <div class="submenu_container">
+    <div class="submenu_bar">
+                <div class="dd_submenu" id="s_sub_1">
+                    <ul>
+                        <li><a href="/stores">Store Directory</a></li>
+                        <!--<li><a href="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
+                        <li><a href="/map">Interactive Map</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dd_submenu" id="s_sub_2">
+                    <ul>
+                        <li><a href="/hours">hours</a></li>
+                        <li><a href="/pages/baycentre-getting-here">getting here</a></li>
+                        <li><a href="/pages/baycentre-parking">parking</a></li>
+                        <li><a href="/guest_services">guest services</a></li>
+                        <li><a href="/visitor_information">visitor information</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dd_submenu" id="s_sub_3">
+                    <ul>
+                        <li><a href="/promotions">Weekly Promotions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dd_submenu" id="s_sub_4">
+                    <ul>
+                        <li><a href="/events">current events & contests </a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="dd_submenu" id="s_sub_5">
+                    <ul>
+                        <li><a href="/videos">Video Style </a></li>
+                        <li><a href="/newsletter">Enewsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dd_submenu" id="s_sub_6">
+                    <ul>
+                        <li><a href="/pages/baycentre-gift-cards">Gift Cards</a> </li>
+                        <li><a href="/careers">Jobs</a>  </li>
+                        <li><a href="/pages/baycentre-leasing-opportunities">Leasing</a> </li>
+                        <li><a href="/pages/baycentre-sustainability">Sustainability</a> </li>
+                        <li><a href="/community_partners">Community</a> </li>
+                        <li><a href="/pages/baycentre-security">Security</a> </li>
+                        <li><a href="/pages/baycentre-news">news</a> </li>
+                        <li><a href="/contact_us">Contact Us</a> </li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+    </div>
+    <div class="mobile_menu">
+        <ul style="background:white">
+            <li class="mobile_menu_li" onclick="javascript:toggle_mobile_submenu('mobile_sub_1')">
+                <p>find a store &nbsp;&nbsp;<i id='mobile_sub_1_arrow' class='fa fa-chevron-down'></i></p>
+                <div class="mobile_submenu" id="mobile_sub_1">
+                    <ul>
+                        <li class="mobile_submenu_li"><a href="/stores">Store Directory</a></li>
+                        <!--<li class="mobile_submenu_li"><a href="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
+                        <li class="mobile_submenu_li"><a href="/map">Interactive Map</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile_menu_li" onclick="javascript:toggle_mobile_submenu('mobile_sub_2')">
+                <p>plan your visit &nbsp;&nbsp;<i id='mobile_sub_2_arrow' class='fa fa-chevron-down'></i></p>
+                <div class="mobile_submenu" id="mobile_sub_2">
+                    <ul>
+                        <li class="mobile_submenu_li"><a href="/hours">hours</a></li>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-getting-here">getting here</a></li>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-parking">parking</a></li>
+                        <li class="mobile_submenu_li"><a href="/guest_services">guest services</a></li>
+                        <li class="mobile_submenu_li"><a href="/visitor_information">visitor information</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile_menu_li" onclick="javascript:toggle_mobile_submenu('mobile_sub_3')">
+                <p>Deals &nbsp;&nbsp;<i id='mobile_sub_3_arrow' class='fa fa-chevron-down'></i></p>
+                <div class="mobile_submenu" id="mobile_sub_3">
+                    <ul>
+                        <li class="mobile_submenu_li"><a href="/promotions">Weekly Promotions</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile_menu_li" onclick="javascript:toggle_mobile_submenu('mobile_sub_4')">
+                <p>events & contests &nbsp;&nbsp;<i id='mobile_sub_4_arrow' class='fa fa-chevron-down'></i></p>
+                <div class="mobile_submenu" id="mobile_sub_4">
+                    <ul>
+                        <li class="mobile_submenu_li"><a href="/events">current events & contests </a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile_menu_li" onclick="javascript:toggle_mobile_submenu('mobile_sub_5')">
+                <p>Our style &nbsp;&nbsp;<i id='mobile_sub_5_arrow' class='fa fa-chevron-down'></i></p>
+                <div class="mobile_submenu" id="mobile_sub_5">
+                    <ul>
+                        <li class="mobile_submenu_li"><a href="/videos">Video Style</a></li>
+                        <li class="mobile_submenu_li"><a href="/newsletter">Enewsletter</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mobile_menu_li" onclick="javascript:toggle_mobile_submenu('mobile_sub_6')">
+                <p>about us &nbsp;&nbsp;<i id='mobile_sub_6_arrow' class='fa fa-chevron-down'></i></p>
+                <div class="mobile_submenu" id="mobile_sub_6">
+                    <ul>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-gift-cards">Gift Cards</a> </li>
+                        <li class="mobile_submenu_li"><a href="/careers">Jobs</a>  </li>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-leasing-opportunities">Leasing</a> </li>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-sustainability">Sustainability</a> </li>
+                        <li class="mobile_submenu_li"><a href="/community_partners">Community</a> </li>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-security">Security</a> </li>
+                        <li class="mobile_submenu_li"><a href="/pages/baycentre-news">news</a> </li>
+                        <li class="mobile_submenu_li"><a href="/contact_us">Contact Us</a> </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="loading_overlay">
+            <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+    </div>
+    <div class="popup_overlay">
+        <div class="popup_div">
+            <img class="popup_close_x" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/icon_close.png" alt="close popup" onclick="javascript:dismiss_popup()"/>
+            <p class="popup_title">fear of missing out?</p>
+            <p class="popup_subtitle">Sales. Events. Fashion news</p>
+            <p class="popup_text">Don’t miss out on exclusive content and giveaways sent straight to your inbox.</p>
+            <form id="popup_form">
+                <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />
+                <input id="hidden_agree_text" name="cm-f-jhtykh" type="hidden" />
+                <div class="popup_row">
+                    <input id="popup_email" type="text" name="cm-iixuu-iixuu" required />
+                    <button class="popup_subscribe" type="submit">sign up</button>   
+                </div>
+                
+                <input id="popup_agree_terms" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages; and i acknowledge i have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>"/> 
+                <label for="popup_agree_terms" class="checkbox_label"> Yes, I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>.</label>
+            </form>
+            
+            <p class="popup_cancel" onclick="javascript:dismiss_popup()">No Thanks</p>
+        </div>
+    </div>
+    <div id="main_container">
+        
+        <img id="left_image" />
+        <img id="right_image" />
+        <div id="page_content">{{yield}}</div>
+        
+        <div class="socialize_div">
+    <p class="socialize_text">socialize with us</p>
+    <div class="socialize_social_icons">
+                <a href="https://instagram.com/thebaycentre/" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png" class="social_icon" alt="instagram" id="social_instagram"></a>
+                        <a href="https://www.facebook.com/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="social_icon" alt="facebook" id="social_facebook"></a>
+                        <a href="https://twitter.com/baycentrevic" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="social_icon" alt="twitter" id="social_twitter"></a>
+                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="social_icon" alt="youtube" id="social_youtube"></a>
+                        <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" class="social_icon" alt="blog" id="social_blog"></a>-->
+            </div>
+</div>
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+
+
+
+<!--INSTAGRAM FEED -->
+<div id="instafeed"></div>
+
+<!--<iframe class="mobile_insta_feed" src="http://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
+
+
+    </div>
+    <footer>
+        <div class="footer_logo_div">
+            <img class="footer_logos" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/logos.jpg" alt="footer_logos"/>
+            <img class="mobile_footer_logos" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/storelogos_mobile.jpg" alt="footer logos"/>
+        </div>
+        <div class="find_us_div">
+            <div class="find_left_div" id="find_left_div">
+                <script id="find_left_template" type="x-tmpl-mustache/text">
+                    {% raw %}
+                        <p class="footer_h1">Find us</p>
+                        <p class="footer_h2">{{name}}</p>
+                        <p class="top_footer_text">Administration Office<br>{{address1}}<br>{{city}}, {{province_state}}<br>{{postal_code}}<br>{{phone_string}}</p>
+                        <a href="/home"><img class="footer_site_logo" src="{{site_logo}}"></a>
+                    {% endraw %}
+                </script>  
+            </div>
+            <div class="find_right_div" id="canvas1">
+                <iframe id="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.634026863271!2d-123.3664981!3d48.42517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f749ab70dd595%3A0x775000abe4570019!2sThe+Bay+Centre!5e0!3m2!1sen!2sca!4v1432928127424" width="830" height="400" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+        <div class="footer_bottom_div">
+            
+    <script>
+        $(document).ready(function(e){
+            $('#syria_link').click(function(e){
+                var url = $(this).attr("href");
+                ga('send', 'event', 'Outbound Links', e.currentTarget.host, url);
+            });
+        });
+    </script>
+            <div class="footer_bottom_container">
+                <div id="today_hour_container" class="today_hour_container">
+                    
+                     <script id="today_hour_template" type="x-tmpl-mustache/text">
+                     <p class="footer_title" style="margin-bottom:14px"> today's hours </p>
+                        {% raw %}
+                            <p class="footer_text">{{day}}</p>
+                            <p class="footer_text">{{h}}</p>
+                            <br>
+                            <br>
+                        {% endraw %}
+                      <a href="/hours"><p class="footer_text">See all Hours ></p></a>  
+                    </script>
+                    
+                    <br>
+                    
+                </div>
+                <div class="newsletter_container">
+                    <form id="footer_newsletter">
+                      
+                        <p class="footer_title">get on the list! sales. events. fashion news.</p>
+                        <span><input id="fieldEmail" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="news_submit">Subscribe</button></span><br>
+                        <!--<input id="agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"/>-->
+                        <!--<label for="agree_terms" id="agree_terms_lbl">I agree to receive newsletters from The Bay Centre</label>-->
+                        <!-- <input type="hidden" name="cm-f-jhtykd" id ="fieldjhtykd" />-->
+                        <!-- <input type="hidden" name="cm-f-jhtykh" id="fieldjhtykh"/>-->
+                        
+                    </form> 
+                </div>
+                <div class="bottom_social_container">
+                    <p class="footer_title"> Social pages</p>
+                    <div class="footer_icon_container">
+                        <a href="https://instagram.com/thebaycentre/" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png" class="footer_icon" alt="instagram" id="footer_instagram"></a>
+                        <a href="https://www.facebook.com/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png" class="footer_icon" alt="facebook" id="footer_facebook"></a>
+                        <a href="https://twitter.com/baycentrevic" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png" class="footer_icon" alt="twitter" id="footer_twitter"></a>
+                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png" class="footer_icon" alt="youtube" id="footer_youtube"></a>
+                        <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png" class="footer_icon" alt="blog" id="footer_blog"></a>-->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer_last_container">
+                ©Copyright 2015 The Bay Centre • 20 Vic Management Inc.&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;  <a href="/privacy_policy">Privacy Policy</a> &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;<a href="terms-of-use">Terms of Use</a>
+            </div>
+    </footer>
+</body>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/bootstrap.min.js" type="text/javascript"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54612c496e6f6474ba020000/18e2e634c26a051a8eedcc896c229e80/jquery.flexslider-min.js"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/jquery.isotope.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/easing.js"></script>
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/wow.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+<script type="text/javascript" src="http://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/collapser.js"></script>
+
+<script>
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+    function toggle_mobile_menu(){
+        if ($(".mobile_menu").is(":visible")){
+            
+            $(".mobile_menu").slideUp();
+            // $("body").css("overflow-y","visible");
+            $("#main_container").show();
+            
+        } else {
+            
+            $(".mobile_menu").slideDown(function(){$("#main_container").hide();});
+            
+            // $("body").css("overflow-y","hidden");
+            
+        }
+    }
+
+    function toggle_mobile_submenu(id){
+        if ($("#"+id).is(":visible")){
+            $("#"+id).slideUp();
+            $("#"+id+"_arrow").removeClass("fa-chevron-up");
+            $("#"+id+"_arrow").addClass("fa-chevron-down")
+        } else {
+            $("#"+id).slideDown();
+            $("#"+id+"_arrow").removeClass("fa-chevron-down");
+            $("#"+id+"_arrow").addClass("fa-chevron-up")
+        }
+    }
+
+
+    var p = window.location.pathname;
+    if (window.matchMedia('(max-width: 768px)').matches)
+    {
+         
+    }else {
+        if (getCookie("visited") != "yes"){
+            $(".popup_overlay").show();
+            var a = new Date();
+            a = new Date(a.getTime() +1000*60*60*24);
+            document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;
+        } 
+    }
+                
+        
+    
+    
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+    
+    $("#popup_form").submit(function(e){
+        e.preventDefault();
+        $("#hidden_agree_text").val($("#popup_agree_terms").attr("value"));
+        $("#hidden_source").val(window.location.href)
+         $.getJSON(
+            "http://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
+          $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    e.preventDefault();
+                    alert("Please try again later.");
+                } else {
+                    alert("Thank you for signing up!")
+                    dismiss_popup();
+                }
+        });  
+    })
+   
+    
+    function dismiss_popup(){
+        $(".popup_overlay").hide()
+    }
+    
+    $("#banner_newsletter").submit(function(e){
+        e.preventDefault();
+        $("#banner_terms").val($("#agree_terms").attr("value"));
+        $("#banner_source").val(window.location.href)
+        if ($("#banner_agree_terms").prop("checked") == true){
+            $.getJSON(
+                "http://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
+              $(this).serialize(),
+                function (data) {
+                    if (data.Status === 400) {
+                        e.preventDefault();
+                        alert("Please try again later.");
+                    } else {
+                        alert("Thank you for signing up.")
+                        $("#banner_email").val("")
+                        $("#banner_agree_terms").prop('checked', false);
+                        toggle_news_form();
+                    }
+            });  
+        } else {
+            alert("Please agree to the terms and conditions before submitting.")
+        }
+         
+    })
+    
+    function toggle_news_form(){
+        window.location.href = '/newsletter'
+        // if ($(".hidden_newsletter_form").is(":visible")){
+        //     $(".hidden_newsletter_form").slideUp("slow");
+        //     $("#fear_caret").removeClass("fa-caret-up");
+        //     $("#fear_caret").addClass("fa-caret-down")
+        // } else {
+        //     $(".hidden_newsletter_form").slideDown("slow");
+        //     $("#fear_caret").removeClass("fa-caret-down");
+        //     $("#fear_caret").addClass("fa-caret-up")
+        // }
+    }
+    
+    
+    $( ".social_icon" ).hover(
+      function() {
+        $( this ).attr("src",get_social_hover(this.id, "enter"));
+      }, function() {
+        $( this ).attr( "src",get_social_hover(this.id, "exit") )
+      }
+    );
+        
+    
+    function get_social_hover (id, event){
+        switch (event){
+            case "enter":
+                if (id == "social_instagram"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"    
+                }
+                if (id == "social_facebook"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"    
+                }
+                if (id == "social_twitter"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"    
+                    
+                }
+                if (id == "social_youtube"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
+                    
+                }
+                if (id == "social_blog"){
+                   return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" 
+                    
+                }
+                break;
+            case "exit":
+                
+                    if (id == "social_instagram"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"
+                    }
+                    if (id == "social_facebook"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"   
+                    }
+                    if (id == "social_twitter"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"
+                        
+                    }
+                    if (id == "social_youtube"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                        
+                    }
+                    if (id == "social_blog"){
+                       return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png"
+                        
+                    }
+            
+                break;    
+        }
+            
+    }
+    
+        function show_results(id){
+        
+            if ( $("#"+id+"_results").is(":visible")){
+                $("#"+id+"_results").slideUp();
+                $("#"+id+"_arrow").removeClass("fa-chevron-down", 1000);
+                $("#"+id+"_arrow").addClass("fa-chevron-right", 1000);
+            } else {
+                $(".results_div").slideUp();
+                $(".search_arrow").removeClass("fa-chevron-down", 1000);
+                $(".search_arrow").addClass("fa-chevron-right", 1000);
+                $("#"+id+"_results").slideDown();   
+                $("#"+id+"_arrow").removeClass("fa-chevron-right", 1000);
+                $("#"+id+"_arrow").addClass("fa-chevron-down", 1000);
+            }
+            
+        }
+    
+    
+            //real time search
+        $('#search_input').keyup(function(e){
+            showSearchResults();
+        });
+
+        $('#search_input').on('input', function() {
+            showSearchResults();
+        });
+            
+            
+        function showSearchResults(){
+            $('#search_results').show();
+            if($('#search_input').val().length == 0){
+                $('#search_results').hide();
+            }else{
+                var search_results = getSearchResults($('#search_input').val(),10,100);
+                $('.search-results-count').html("Total Results : "+search_results.summary.count);
+                renderSearchResultsTemplate('#search_results_template','#search_results_items',search_results);
+                if (search_results["stores"]){
+                    if (search_results["stores"].length > 0){
+                        $("#store_results_header").html(search_results["stores"].length+" Stores <i id='store_arrow' class='fa fa-chevron-right pull-right search_arrow'></i>") ;
+                        $("#store_results_header").show();
+                    }
+                    
+                } else {
+                    $("#store_results_header").hide();
+                }
+                if (search_results["promotions"]){
+                    if (search_results["promotions"].length > 0){
+                        $("#promotions_results_header").html(search_results["promotions"].length+" Promotions <i id='promo_arrow' class='fa fa-chevron-right search_arrow pull-right'></i>")    ;
+                        $("#promotions_results_header").show();
+                    }
+                    
+                } else {
+                    $("#promotions_results_header").hide();
+                }
+                if (search_results["events"]){
+                    if (search_results["events"].length > 0) {
+                        $("#events_results_header").html(search_results["events"].length+" Events <i id='event_arrow' class='fa fa-chevron-right pull-right search_arrow'></i>")    
+                        $("#events_results_header").show();
+                    }
+                    
+                } else {
+                    $("#events_results_header").hide();
+                }
+                // $(document).i18n();
+            }
+        }
+        
+        
+        $('.close-search').click(function(){
+            $('#search_results').hide();
+        });
+    
+    
+    
+    
+    $( ".footer_icon" ).hover(
+      function() {
+        $( this ).attr("src",get_footer_hover(this.id, "enter"));
+      }, function() {
+        $( this ).attr( "src",get_footer_hover(this.id, "exit") )
+      }
+    );
+    
+     $( ".header_icon" ).hover(
+      function() {
+        $( this ).attr("src",get_header_hover(this.id, "enter"));
+      }, function() {
+        $( this ).attr( "src",get_header_hover(this.id, "exit") )
+      }
+    );
+    
+    function get_footer_hover (id, event){
+        switch (event){
+            case "enter":
+                if (id == "footer_instagram"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
+                }
+                if (id == "footer_facebook"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
+                }
+                if (id == "footer_twitter"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
+                    
+                }
+                if (id == "footer_youtube"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                    
+                }
+                if (id == "footer_blog"){
+                   return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
+                    
+                }
+                break;
+            case "exit":
+                
+                    if (id == "footer_instagram"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png"
+                    }
+                    if (id == "footer_facebook"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png"   
+                    }
+                    if (id == "footer_twitter"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png"
+                        
+                    }
+                    if (id == "footer_youtube"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png"
+                        
+                    }
+                    if (id == "footer_blog"){
+                       return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png"
+                        
+                    }
+            
+                break;    
+        }
+            
+    }
+    
+    
+    function get_header_hover (id, event){
+        switch (event){
+            case "enter":
+                if (id == "header_instagram"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
+                }
+                if (id == "header_facebook"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
+                }
+                if (id == "header_twitter"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
+                    
+                }
+                if (id == "header_youtube"){
+                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                    
+                }
+                if (id == "header_blog"){
+                   return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
+                    
+                }
+                break;
+            case "exit":
+                
+                    if (id == "header_instagram"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"
+                    }
+                    if (id == "header_facebook"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"   
+                    }
+                    if (id == "header_twitter"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"
+                        
+                    }
+                    if (id == "header_youtube"){
+                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
+                        
+                    }
+                    if (id == "header_blog"){
+                       return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png"
+                        
+                    }
+            
+                break;    
+        }
+            
+    }
+
+
+
+    $("#footer_newsletter").submit(function(e){
+        e.preventDefault();
+        email = $("#fieldEmail").val();
+        window.location.href="/newsletter?email="+email
+        // $("#fieldjhtykh").val($("#agree_terms").attr("value"));
+        // $("#fieldjhtykd").val(window.location.href)
+        
+        //  $.getJSON(
+        //     "http://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
+        //   $(this).serialize(),
+        //     function (data) {
+        //         if (data.Status === 400) {
+        //             e.preventDefault();
+        //             alert("Please try again later.");
+        //         } else {
+        //             alert("Thank you for signing up.")
+        //             $("#fieldEmail").val("")
+        //             $("#agree_terms").prop('checked', false);
+        //         }
+        // });  
+    })
+
+    function show_dd(id){
+        // console.log(this)
+        if ($("#s_sub_"+id).is(":visible")){
+            
+            $("#triangle_"+id).hide();
+            $(".submenu_bar").slideUp()
+            $("#s_sub_"+id).hide();
+            $("#m"+id).css({"background":"white", "color":"#4d4d4f"});
+        } else {
+            if ($(".submenu_bar").is(":visible")){
+                $(".main_menu li").css({"background":"white", "color":"#4d4d4f"});
+                $(".triangle_down").hide();
+                $("#triangle_"+id).show();
+                $(".dd_submenu").hide();
+                $("#s_sub_"+id).show();
+                $("#m"+id).css({"background":"#7b929d", "color":"white"});
+            } else {
+                $("#triangle_"+id).show();
+                $("#s_sub_"+id).show();
+                $(".submenu_bar").slideDown()
+                $("#m"+id).css({"background":"#7b929d", "color":"white"});
+                
+            }
+            
+        }
+    }
+    
+    function get_day(id){
+        switch(id) {
+            case 0:
+                return ("Sunday")
+                break;
+            case 1:
+                return ("Monday")
+                break;
+            case 2:
+                return ("Tuesday")
+                break;
+            case 3:
+                return ("Wednesday")
+                break;
+            case 4:
+                return ("Thursday")
+                break;
+            case 5:
+                return ("Friday")
+                break;
+            case 6:
+                return ("Saturday")
+                break;
+        }
+    }
+    
+    function convert_hour(d){
+            var h = addZero(d.getUTCHours());
+            var m = addZero(d.getUTCMinutes());
+            var s = addZero(d.getUTCSeconds());
+            if (h >= 12) {
+                if ( h != 12) {
+                    h = h - 12;    
+                }
+                
+                i = "PM"
+            } else {
+                if (h == 0) {
+                    h = 12
+                }
+                i = "AM"
+            }
+            
+            return h+":"+m+" "+i;
+        }
+        
+        
+        
+    function addZero(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    
+    
+    function check_email (){
+        var email = $("#fieldEmail").val();
+        if( !validateEmail(email)) {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    function validateEmail($email) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      if( !emailReg.test( $email ) ) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+        
+
+     $(document).ready(function() {
+
+        function renderAll(){
+            var propertyDetails = getPropertyDetails();
+            // renderPageData("#logo_container","#logo_template", propertyDetails, "logo")
+            var today_hours = getTodaysHours()
+            renderPageData("#find_left_div", "#find_left_template", propertyDetails, "footer_logo")
+            renderPageData("#today_hour_container", "#today_hour_template", today_hours, "hours")
+        }
+        
+        
+        $('#footer_map').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#canvas1').on('click', function () {
+            $('#footer_map').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#footer_map").mouseleave(function () {
+            $('#footer_map').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+        
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+ 
+            item_list.push(collection);    
+            
+            
+            $.each( item_list , function( key, val ) {
+                if (type == "footer_logo" || type == "logo"){
+                    if (val.contact_phone != ""){
+                        val.phone_string = "P " + val.contact_phone
+                    }    
+                }
+                
+                if (type == "hours"){
+                    val.day = get_day(val.day_of_week)
+                    
+                    if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
+                        var open_time = new Date (val.open_time)
+                        var close_time = new Date (val.close_time)
+                        val.open_time = convert_hour(open_time);
+                        val.close_time = convert_hour(close_time);    
+                        val.h = val.open_time+ " - " + val.close_time;
+                    } else {
+                        val.h = "Closed"
+                    }
+                    
+                }
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+
+        }
+        
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-grey',
+            radioClass: 'iradio_square',
+            increaseArea: '20%' // optional
+          });
+        
+        loadMallDataCached(renderAll);  
+     });
+</script>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher:'12345',});</script>
+<script type="text/javascript" src="/application.js"></script>

@@ -1,0 +1,463 @@
+<style>
+.store_detail_content{
+        margin-bottom:0;
+        border-bottom:none;
+        padding-bottom:0;
+    }
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    #job_header, #promo_header{
+        margin-top:40px;
+        margin-bottom:20px;
+    }
+    
+    .store_promo_ul{
+        margin-top:0;
+    }
+    
+    #left_image{
+        display:block;
+    }
+    #right_image{
+        display:block;
+    }
+    
+    
+    @media (max-width: 767px) {
+        .hours_day, .hours_time {
+            font-size:12pt;
+        }    
+    }
+    
+</style>
+
+
+<div class="banner_container">
+    <img src="" id="main_image" class="main_image" alt="">
+    <div class="missing_out_div">
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+
+
+<div class="store_detail_content">
+    
+    
+    
+    <div class="detail_left_div">
+    <button class="gray_pill back_to_list" onclick="window.location.href='/stores'">View All Stores</button>
+        <div id="pop-over">
+            
+        </div>
+        <p class="store_detail_title">store location</p>
+        
+        <div class="map_div" id="mapsvg"></div>
+       
+        <div id="store_detail_left_content_container">
+            <script id="store_detail_left_content_template" type="x-tmpl-mustache/text">
+                <p class="store_detail_description">{{description}}</p>
+            </script>
+        </div>
+    </div>
+    <div class="detail_right_div">
+        <div id="store_detail_right_content_container">
+            <script id="store_detail_right_content_template" type="x-tmpl-mustache/text">
+                <img src="{{alt_store_front_url}}" class="store_front"/>
+                <div class="contact_div">
+                    
+                    <div class="contact_object" id="contact_phone" onclick="window.location.href='tel:{{phone}}'"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_icon_phone.png" class="detail_icon" alt="phone"><p> {{phone}}</p></div>
+                    <div class="contact_object" id="contact_website" onclick="window.open('http://{{website}}','_blank')"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_icon_web.png" class="detail_icon" alt="website"><p> visit website</p></div>
+                </div>
+            </script>
+        </div>
+        <div class="hours_div">  
+            <p class="hours_title">Hours</p>
+            <div id="store_detail_hours_container">
+                <script id="store_detail_hours_template" type="x-tmpl-mustache/text">
+                    <div class="hours_object">
+                        <p class="hours_day">{{day}}</p>
+                        <p class="hours_time">{{hour_string}}</p>
+                    </div>
+                </script>    
+            </div>
+            <p class="hours_day" style="font-style:italic">Hours subject to change</p>
+        </div>
+    </div>
+</div>
+
+<div class="store_promo_content">
+    <p class="store_detail_title" id="promo_header">Current Promotions</p>
+    <ul class="store_promo_ul" id="store_promo_container">
+        <script id="store_promo_template" type="x-tmpl-mustache/text">
+            <li>
+                <div class="promo_left_div">
+                    <p class="store_detail_title">{{name}}</p>
+                    <p class="store_detail_description">{{description}}</p>
+                    
+                    <div class="store_promo_buttons">
+                        <span><a href="/promotions/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span></span>
+                    </div>
+                </div>
+                <div class="promo_right_div">
+                    <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+                        <img class="store_promo_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                    </a>
+                </div>
+            </li>
+        </script>
+        
+    </ul>
+    
+</div>
+
+<div class="store_promo_content">
+    <p class="store_detail_title" id="job_header">Current Job Opportunities</p>
+    <ul class="store_promo_ul" id="store_job_container">
+        <script id="store_job_template" type="x-tmpl-mustache/text">
+            <li>
+                <div class="promo_left_div">
+                    <p class="store_detail_title">{{name}}</p>
+                    <p class="store_detail_description">{{description}}</p>
+                    
+                    <div class="store_promo_buttons">
+                        <span><a href="/jobs/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{website_div}}}</span>
+                    </div>
+                </div>
+            </li>
+        </script>
+        
+    </ul>
+    
+</div>
+
+
+<!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+<script type="text/javascript" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/7469bf84e2447b84bcb46c251012c463/mallmaverick_svgmap.js"></script>
+
+<script>
+   
+        $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/generic.jpg");
+        $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c2357458ea7559447edb72ff0cd5548d/storeleft.png");
+        $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/46aca5797e3b84bd6d66160428052711/findstore_banner2.jpg");
+    
+    
+    function drop_pin(id){
+
+            var coords = map.get_coords(id);
+            var height = parseInt(coords["height"])
+            var width = parseInt(coords["width"])
+            var x_offset = (parseInt(width) / 2);
+            var y_offset = (parseInt(height) /2);
+            
+            map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
+                      attrs: {
+                                src:  'http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+                              }
+                    }
+                    ])
+        }
+    $(document).ready(function() {
+        
+        // var pathArray = window.location.pathname.split( '/' );
+        // var slug = pathArray[pathArray.length-1];
+        // var store_details = getStoreDetailsBySlug(slug)
+        
+        function load_map(reg, store_details){
+            // stores_x5F_3_x5F_6_2_
+            this_region = {}
+            this_region = store_details.svgmap_region
+            map = $('#mapsvg').mapSvg({
+                source: getSVGMapURL(),    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: '#38949d', hover: "#38949d"},
+                disableAll: true,
+                height:479,
+                width:738,
+                regions: reg,
+                tooltipsMode:'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'left' },
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
+            });
+            
+            map.setViewBox(store_details.svgmap_region)
+            map.selectRegion(store_details.svgmap_region)
+            drop_pin(store_details.svgmap_region)
+        }
+        
+        
+        function renderPageData(){
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);  
+            if (store_details.assets){
+                if (store_details.assets.length > 0 ){
+                
+                $.each( store_details.assets , function( key, val ) {
+                    if (isMobile.matches == true){
+                        // console.log(val)
+                        if (val.name == 'mobile_banner'){
+                            $("#main_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                        }
+                    } else {
+                        if (val.name == 'banner'){
+                            $("#main_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                        }
+                        if (val.name == 'left'){
+                            $("#left_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                        }
+                        if (val.name == 'right'){
+                            $("#right_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                        }
+                        
+                    }
+                })
+            }
+            
+            }
+            
+            if (store_details.store_hours != ""){
+                var hours = (getHoursForIds(store_details.store_hours))
+            } else {
+                var hours = getPropertyHours();
+                prop_hours = []
+                $.each( hours , function( key, val ) {
+                    if (val.store_id == null && val.is_holiday == false){
+                        prop_hours.push(val)
+                    }
+                })
+                hours = prop_hours
+            }
+
+            
+            var store_promos = getPromotionsForIds(store_details.promotions);
+            promo_array = []
+             $.each( store_promos , function( key, val ){
+                if (val.description.length > 110) {
+                   val.description =  val.description.substring(0,300)+'...';
+                } 
+                 today = new Date();
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
+                 if (today >= webDate) {
+                     promo_array.push(val)
+                 } 
+             });
+            store_promos = promo_array;
+            var jobs = getJobsForIds(store_details.jobs);
+            jobs = jobs.reverse();
+            jobs_array = []
+             $.each( jobs , function( key, val ){
+                 today = new Date();
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
+                 if (today >= webDate) {
+                     jobs_array.push(val)
+                 } 
+             });
+            jobs = jobs_array;
+            
+            
+            
+            renderDetailData("#store_detail_left_content_container", "#store_detail_left_content_template", store_details, "store_desc")
+            renderDetailData("#store_detail_right_content_container", "#store_detail_right_content_template", store_details, "store_desc")
+            renderDetailData("#store_detail_hours_container","#store_detail_hours_template", hours, "store_hours")
+            renderDetailData("#store_promo_container","#store_promo_template", store_promos, "store_promos")
+            renderDetailData("#store_job_container","#store_job_template", jobs, "store_jobs")
+            
+            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            var stores = getStoresList();
+            regions = {}
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            load_map(regions, store_details)
+        }
+        
+        
+        
+        function renderDetailData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "store_desc"){
+                item_list.push(collection);    
+                collection = item_list;    
+            }
+            
+            
+            $.each( collection , function( key, val ) {
+                if(type == "store_jobs"){
+                    if (val.contact_website != ""){
+                        val.website_div = '<a href="'+val.contact_website+'" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_web.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>visit website</p></a>'
+                    }
+                }
+                
+                
+                if (type == "store_promos"){
+                    if ((val.promo_image_url).indexOf('missing.png') > -1){
+                        var pathArray = window.location.pathname.split( '/' );
+                        var slug = pathArray[pathArray.length-1];
+                        var store_details = getStoreDetailsBySlug(slug);
+                        val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_default.jpg";
+                    } else {
+                        val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                    }
+                    $("#promo_header").show();   
+                    
+                }
+                
+                if (type == "store_desc"){
+                    if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+                        val.alt_store_front_url = "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_default.jpg"    
+                    } else {
+                        val.alt_store_front_url = getImageURL(val.store_front_url);    
+                    }
+                    if (val.phone){
+                        $("#contact_phone").show();
+                    }else {
+                        $("#contact_phone").hide();
+                    }
+                    if (val.website){
+                        $("#contact_website").show();
+                    } else {
+                         $("#contact_website").hide();
+                    }    
+                }
+                
+                if (type == "store_hours"){
+                    switch(val.day_of_week) {
+                        case 0:
+                            val.day = "Sunday"
+                            break;
+                        case 1:
+                            val.day = "Monday"
+                            break;
+                        case 2:
+                            val.day = "Tuesday"
+                            break;
+                        case 3:
+                            val.day = "Wednesday"
+                            break;
+                        case 4:
+                            val.day = "Thursday"
+                            break;
+                        case 5:
+                            val.day = "Friday"
+                            break;
+                        case 6:
+                            val.day = "Saturday"
+                            break;
+                        
+                    }
+                    var open_time = new Date (val.open_time)
+                    var close_time = new Date (val.close_time)
+                    val.open_time = convert_hour(open_time);
+                    val.close_time = convert_hour(close_time);
+                    if (val.is_closed == true){
+                        val.hour_string = "Closed"
+                    } else {
+                        val.hour_string = val.open_time + " - " + val.close_time
+                    }
+                    
+                }
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+            if (type == "store_desc"){
+                if (collection.website != ""){
+                    
+                } else {
+                    $("#contact_website").hide();
+                }
+            }
+            
+            
+            
+            if (promo_array.length == 0 ){
+                $("#store_promo_container").hide();
+                $("#promo_header").hide();
+            }
+            
+            if (jobs_array.length == 0 ){
+                $("#store_job_container").hide();
+                $("#job_header").hide();
+                
+            }
+        }
+        
+        
+        function convert_hour(d){
+            var h = addZero(d.getUTCHours());
+            var m = addZero(d.getUTCMinutes());
+            var s = addZero(d.getUTCSeconds());
+            if (h >= 12) {
+                if ( h != 12) {
+                    h = h - 12;    
+                }
+                
+                i = "PM"
+            } else {
+                i = "AM"
+            }
+            return h+":"+m+" "+i;
+        }
+        
+        
+        
+        function addZero(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+        
+        
+        loadMallDataCached(renderPageData);
+        
+    });
+</script>

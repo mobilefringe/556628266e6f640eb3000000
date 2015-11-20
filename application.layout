@@ -370,27 +370,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <div class="loading_overlay">
             <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
     </div>
-    <div class="popup_overlay">
-        <div class="popup_div">
-            <img class="popup_close_x" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/icon_close.png" alt="close popup" onclick="javascript:dismiss_popup()"/>
-            <p class="popup_title">fear of missing out?</p>
-            <p class="popup_subtitle">Sales. Events. Fashion news</p>
-            <p class="popup_text">Don’t miss out on exclusive content and giveaways sent straight to your inbox.</p>
-            <form id="popup_form">
-                <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />
-                <input id="hidden_agree_text" name="cm-f-jhtykh" type="hidden" />
-                <div class="popup_row">
-                    <input id="popup_email" type="text" name="cm-iixuu-iixuu" required />
-                    <button class="popup_subscribe" type="submit">sign up</button>   
-                </div>
-                
-                <input id="popup_agree_terms" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages; and i acknowledge i have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>"/> 
-                <label for="popup_agree_terms" class="checkbox_label"> Yes, I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>.</label>
-            </form>
-            
-            <p class="popup_cancel" onclick="javascript:dismiss_popup()">No Thanks</p>
-        </div>
-    </div>
+    
     <div id="main_container">
         
         <img id="left_image" />

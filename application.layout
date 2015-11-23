@@ -195,10 +195,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 
             </div>
             <div class="header_social_icons">
-                <a href="https://instagram.com/thebaycentre/" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram"></a>
-                        <a href="https://www.facebook.com/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png" class="header_icon" alt="facebook" id="header_facebook"></a>
-                        <a href="https://twitter.com/baycentrevic" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png" class="header_icon" alt="twitter" id="header_twitter"></a>
-                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube"></a>
+                <a href="https://instagram.com/thebaycentre/" target="_blank"><img src="http://assets.kodekloud.io/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram"></a>
+                        <a href="https://www.facebook.com/thebaycentre" target="_blank"><img src="http://assets.kodekloud.io/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="header_icon" alt="facebook" id="header_facebook"></a>
+                        <a href="https://twitter.com/baycentrevic" target="_blank"><img src="http://assets.kodekloud.io/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="header_icon" alt="twitter" id="header_twitter"></a>
+                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank"><img src="http://assets.kodekloud.io/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube"></a>
                         <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
             </div>
         </div>

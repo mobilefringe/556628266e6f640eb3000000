@@ -440,6 +440,9 @@ a:hover {
     opacity:0.3;
     height:25px;
     vertical-align:middle;
+    &:hover{
+        opacity:1;
+    }
 }
 .site_logo{
     vertical-align:bottom;

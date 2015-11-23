@@ -692,13 +692,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
       }
     );
     
-     $( ".header_icon" ).hover(
-      function() {
-        $( this ).attr("src",get_header_hover(this.id, "enter"));
-      }, function() {
-        $( this ).attr( "src",get_header_hover(this.id, "exit") )
-      }
-    );
+     
     
     function get_footer_hover (id, event){
         switch (event){
@@ -749,53 +743,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     }
     
     
-    function get_header_hover (id, event){
-        switch (event){
-            case "enter":
-                if (id == "header_instagram"){
-                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
-                }
-                if (id == "header_facebook"){
-                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
-                }
-                if (id == "header_twitter"){
-                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
-                    
-                }
-                if (id == "header_youtube"){
-                    return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
-                    
-                }
-                if (id == "header_blog"){
-                   return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
-                    
-                }
-                break;
-            case "exit":
-                
-                    if (id == "header_instagram"){
-                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"
-                    }
-                    if (id == "header_facebook"){
-                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"   
-                    }
-                    if (id == "header_twitter"){
-                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"
-                        
-                    }
-                    if (id == "header_youtube"){
-                        return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
-                        
-                    }
-                    if (id == "header_blog"){
-                       return "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png"
-                        
-                    }
-            
-                break;    
-        }
-            
-    }
+    
 
 
 

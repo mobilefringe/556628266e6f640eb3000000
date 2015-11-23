@@ -118,7 +118,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
        
     });
   
-    setEndPoint('http://assets.codecloudapp.com/sites/56534aad6e6f640b74020000/application/x-gzip/1448305586000/all.json.gz');
+    setEndPoint('http://baycentre.mallmaverick.com/api/v2/baycentre/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
     

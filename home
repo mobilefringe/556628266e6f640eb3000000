@@ -597,7 +597,6 @@
             }
             
             $.each( collection , function( key, val ) {
-                console.log(type)
                if(type == "banners"){
                    console.log(val)
                }

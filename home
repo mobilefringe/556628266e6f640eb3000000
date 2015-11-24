@@ -20,7 +20,6 @@
     .flexslider4 ul.flex-direction-nav{
         position: relative;
         top: 243px;
-        display:none;
     }
     
     .flex-direction-nav a {
@@ -167,7 +166,7 @@
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
                     <a href="{{url}}">
-                        <img class="banner_slide_img" src="http://cdn.mallmaverick.com{{image_url}}" alt="banner"/>
+                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
                     </a>
                 </li>
             </script>

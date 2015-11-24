@@ -1,53 +1,6 @@
 /*Created 2015-05-27 by Andy*/
 
-@font-face {
-	font-family: montserrat-regular;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/Montserrat-Regular.ttf');
-}
 
-
-@font-face {
-	font-family: montserrat-light;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db3a3c3791d5212718f47f013d4b5bb5/MuseoSans_light.ttf');
-}
-
-
-@font-face {
-	font-family: lora-regular;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/Lora-Regular.ttf');
-}
-
-@font-face {
-	font-family: lora-regular;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dfaccc9080e9e5ce53d0fa251a6e1c4d/Lora-Bold.ttf');
-	font-weight:bold;
-}
-@font-face {
-	font-family: railway-regular;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/Raleway-Regular.ttf');
-}
-@font-face {
-	font-family: lora-italic;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/Lora-Italic.ttf');
-}
-@font-face {
-	font-family: railway-medium;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/Raleway-Medium.ttf');
-}
-@font-face {
-	font-family: railway-light;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/Raleway-Light.ttf');
-}
-
-@font-face {
-	font-family: proxima;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/32e503b9aeb44b00e55b235c7376cc69/ProximaNova-Regular.ttf');
-}
-
-@font-face {
-	font-family: neuton;
-	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/32e503b9aeb44b00e55b235c7376cc69/Neuton-Regular.ttf');
-}
 
 
 

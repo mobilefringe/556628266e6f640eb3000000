@@ -368,7 +368,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         </ul>
     </div>
     <div class="loading_overlay">
-            <img alt="loading" src="http://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+            <img alt="loading" src="http://assets.codecloudapp.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
     </div>
     
     <div id="main_container">

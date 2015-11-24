@@ -597,7 +597,9 @@
             }
             
             $.each( collection , function( key, val ) {
-               
+               if(type == "banners" || type == "feature_items"){
+                   val.image_url = "http://cdn.mallmaverick.com" + val.image_url
+               }
                 
                 if (type == "feature_promos" || type == "mixed"){
                     if (val.description.length > 100) {

@@ -49,7 +49,9 @@
 	src: url('http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/32e503b9aeb44b00e55b235c7376cc69/Neuton-Regular.ttf');
 }
 
-
+.flex-direction-nav{
+    display:none;
+}
 
 .visible-phone{
     display:none;   

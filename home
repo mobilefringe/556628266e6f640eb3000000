@@ -597,7 +597,7 @@
             }
             
             $.each( collection , function( key, val ) {
-               if(type == "banners"){
+               if(type == "banners" && type == "feature_items"){
                    val.image_url = "http://cdn.mallmaverick.com" + val.image_url
                }
                 

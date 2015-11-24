@@ -56,8 +56,9 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <script src="//cdn.jsdelivr.net/jquery.jreject/1.0.2/js/jquery.reject.js"></script>
 <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
 <!--MallMaverick v=0.3-->
-<script src="http://mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
-<script src="http://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+
+<script src="http://assets.codecloudapp.com/sites/54205f856a616d39c5c70000/application/x-javascript/1448382587000/mallmaverick_v_0_3.min.js"></script>
+<script src="http://assets.codecloudapp.com/sites/54205f856a616d39c5c70000/application/x-javascript/1448382633000/mustache_malmaverick_v_0_3.min.js"></script>
 
 <script src="http://cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
 

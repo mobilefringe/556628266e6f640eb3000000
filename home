@@ -20,6 +20,7 @@
     .flexslider4 ul.flex-direction-nav{
         position: relative;
         top: 243px;
+        display:none;
     }
     
     .flex-direction-nav a {

@@ -71,7 +71,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
      ga('send', 'pageview');
   </script>
 <script src="//cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script>
-<script src="//s3.amazonaws.com/kodekloud/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
+<script src="//assets.codecloudapp.com//sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css">

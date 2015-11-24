@@ -165,7 +165,7 @@
         <ul class="banner_slider_ul slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
-                    <a href="{{url}}">
+                    <a href="http://cdn.mallmaverick.com{{url}}">
                         <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
                     </a>
                 </li>

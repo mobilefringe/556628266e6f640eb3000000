@@ -119,7 +119,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
        
     });
   
-    setEndPoint('http://baycentre.mallmaverickstaging.com/api/v2/baycentre/all.json');
+    setEndPoint('http://baycentre.mallmaverick.com/api/v2/baycentre/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
     

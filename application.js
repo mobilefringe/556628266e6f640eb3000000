@@ -17,9 +17,9 @@ $('document').ready(function() {
 
 function mailchimp_subscribe(email){
     $.ajax({
-        type: $("#mc-embedded-subscribe-form").attr('method'),
-        url: $("#mc-embedded-subscribe-form").attr('action'),
-        data: $("#mc-embedded-subscribe-form").serialize(),
+        type: "post",
+        url: "//thebaycentre.us8.list-manage.com/subscribe/post-json?u=35241b945028701ab874f8579&id=850e684995&c=?",
+        data: "mce-EMAIL="+email,
         cache       : false,
         dataType    : 'json',
         contentType: "application/json; charset=utf-8",

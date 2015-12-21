@@ -26,8 +26,6 @@ function mailchimp_subscribe(email){
         contentType: "application/json; charset=utf-8",
         error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
         success     : function(data) {
-       
-            console.log(data)
         }
     })
 }

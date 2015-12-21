@@ -254,7 +254,7 @@
                             <div class="feature_promo_date_div">
                                 <div class="feature_promo_date_triangle">&nbsp;</div>
                      
-                                    <div class="date_block">
+                                    <div class="date_block on_now_date_block">
                                         {{{date_block_html}}}
                                     </div>
                             </div>

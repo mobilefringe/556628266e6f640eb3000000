@@ -625,6 +625,7 @@
                     
                     c = $.inArray("coming_soon", val.tags)
                     d = $.inArray("on_now", val.tags)
+                    d = $.inArray("on_now", val.tags)
                     
                     if (c == 0 || c == 1){
                         val.on = "COMING"

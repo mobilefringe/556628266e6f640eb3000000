@@ -549,7 +549,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                     e.preventDefault();
                     alert("Please try again later.");
                 } else {
-                    mailchimp_subscribe($('#popup_email').val());
+                    mailchimp_subscribe();
                     alert("Thank you for signing up!")
                     dismiss_popup();
                 }

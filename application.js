@@ -14,6 +14,11 @@ $('document').ready(function() {
     }
 });
 
+
+function mailchimp_subscribe(email){
+    
+}
+
 function renderHomeHours(container, template, collection){
     var item_list = [];
     var item_rendered = [];

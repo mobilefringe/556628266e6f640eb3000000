@@ -16,7 +16,24 @@ $('document').ready(function() {
 
 
 function mailchimp_subscribe(email){
-    
+    $.ajax({
+        type: $("#mc-embedded-subscribe-form").attr('method'),
+        url: $("#mc-embedded-subscribe-form").attr('action'),
+        data: $("#mc-embedded-subscribe-form").serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
+        success     : function(data) {
+       
+            if (data.result != "success") {
+                window.location.href="/thank_you"
+            } else {
+                
+                window.location.href="/thank_you"
+            }
+        }
+    })
 }
 
 function renderHomeHours(container, template, collection){

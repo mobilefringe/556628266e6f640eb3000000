@@ -62,9 +62,6 @@
     .promo_description_div{
         width:780px;
     }
-    .flex-direction-nav{
-        top:-80px !important;
-    }
     .tabs li {
          margin-right:-5px;
     }

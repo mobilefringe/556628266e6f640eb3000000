@@ -18,9 +18,9 @@ $('document').ready(function() {
 function mailchimp_subscribe(email){
     $("#mce-EMAIL").val($('#popup_email').val())
     $.ajax({
-        type: $("#mc-embedded-subscribe-form").attr('method'),
-        url: $("#mc-embedded-subscribe-form").attr('action'),
-        data: $("#mc-embedded-subscribe-form").serialize(),
+        type: $("#mc-embedded-subscribe-form-pop").attr('method'),
+        url: $("#mc-embedded-subscribe-form-pop").attr('action'),
+        data: $("#mc-embedded-subscribe-form-pop").serialize(),
         cache       : false,
         dataType    : 'json',
         contentType: "application/json; charset=utf-8",

@@ -27,7 +27,7 @@ function mailchimp_subscribe(email){
         error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
         success     : function(data) {
        
-            
+            console.log(data)
         }
     })
 }

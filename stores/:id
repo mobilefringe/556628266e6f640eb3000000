@@ -337,7 +337,7 @@
                         var pathArray = window.location.pathname.split( '/' );
                         var slug = pathArray[pathArray.length-1];
                         var store_details = getStoreDetailsBySlug(slug);
-                        val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_default.jpg";
+                        val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg";
                     } else {
                         val.alt_promo_image_url = getImageURL(val.promo_image_url);
                     }
@@ -347,7 +347,7 @@
                 
                 if (type == "store_desc"){
                     if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                        val.alt_store_front_url = "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_default.jpg"    
+                        val.alt_store_front_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
                     } else {
                         val.alt_store_front_url = getImageURL(val.store_front_url);    
                     }

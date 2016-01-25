@@ -247,7 +247,7 @@
                     }
                     
                 if(!val.image_url ||  val.image_url .indexOf('missing.png') > -1 || val.image_url .length === 0){
-                    val.image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
+                    val.image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                 }  
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);

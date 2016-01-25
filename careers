@@ -216,12 +216,12 @@
                     if (val.jobable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.jobable_id)
                         if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
-                            val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_default.jpg"    
+                            val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
                         } else {
                             val.alt_promo_image_url = getImageURL(store_details.store_front_url);    
                         }    
                     } else {
-                       val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_default.jpg" 
+                       val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg" 
                     }
                     
                     

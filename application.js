@@ -1,4 +1,4 @@
-$('document').ready(function() {
+$(window).load(function() {
     if ($('#instafeed').length > 0) {
         var feed = new Instafeed({
             get: 'user',

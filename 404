@@ -1,0 +1,32 @@
+<style>
+    @media (max-width: 767px) {
+        .hours_day, .hours_time {
+            font-size:12pt;
+        }    
+    }
+</style>
+
+<div class="banner_container">
+    <img src="" id="main_image" class="main_image" alt="">
+    <div class="missing_out_div">
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
+    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
+    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
+$(".loading_overlay").hide();
+            $("#page_content").show();
+    
+</script>

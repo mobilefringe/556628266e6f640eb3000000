@@ -21,6 +21,7 @@
     
     .modal{
         display:none;
+        z-index:1041;
     }
     
     .modal-backdrop{

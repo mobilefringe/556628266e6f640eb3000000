@@ -53,21 +53,6 @@
             }
         });
         console.log(item_list)
-        item_list.sort(sortById);
-        $.each( item_list , function( key, val ) {
-            
-            var repo_rendered = Mustache.render(spotted_template_html,val);
-            sorted_list.push(repo_rendered);
-        });
         
-        var a = sorted_list.join('') ;
-        if(repo.length > 0){
-            $(not_empty_section_id).show();
-            $(empty_section_id).hide();
-            $(not_empty_section_id).html(a);
-        }else{
-            $(not_empty_section_id).hide();
-            $(empty_section_id).show();
-        }
     }
 </script>

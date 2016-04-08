@@ -113,11 +113,7 @@
         $lightbox.find('.spotted').css(css);
         
         
-        $lightbox.on('shown.bs.modal', function (e) {
-            var $img = $lightbox.find('.spotted');
-            $('#modal-dialog').css({'width': $('.spotted').width()});
-            $lightbox.find('.close').removeClass('hidden');
-        });
+        
        
         
        

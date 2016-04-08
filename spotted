@@ -32,6 +32,11 @@
         -webkit-overflow-scrolling: touch;
         outline: 0;
     }
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 10px;
+    }
     
     .modal-backdrop{
         position: fixed;

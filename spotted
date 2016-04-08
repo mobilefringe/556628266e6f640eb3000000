@@ -39,7 +39,7 @@
         $(".loading_overlay").hide();
         $("#page_content").show();
     }
-    function renderSpotted(container, template,repo){
+    function renderSpotted(container, template, repo){
         var item_list = [];
         var item_rendered = [];
         var template_html = $(template).html();

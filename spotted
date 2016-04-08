@@ -13,6 +13,20 @@
         </script>
     </div>
 </div>
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" id="modal-dialog">
+        <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="spotted" src="" alt="..." title=""/>
+            </div>
+            <div class="modal-footer">
+                <span class="spotted-title"></span>
+                 <span class="spotted-description"></span>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     $(document).ready(function() {

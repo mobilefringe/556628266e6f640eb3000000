@@ -1,5 +1,16 @@
 
 <style>
+    .close{
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        font-size: 30px;
+        width: 45px;
+        padding-bottom: 8px;
+        border-radius: 35px;
+        background: white;
+        border: 2px solid #ccc;
+    }
     .row{
     }
     .col-md-3{

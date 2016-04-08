@@ -1,0 +1,9 @@
+<script>
+    $(document).ready(function() {
+        
+    })
+    function renderAll(){
+        $(".loading_overlay").hide();
+        $("#page_content").show();
+    }
+</script>

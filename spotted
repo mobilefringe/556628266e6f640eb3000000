@@ -93,8 +93,8 @@
                 <img class="spotted" src="http://cdn.mallmaverick.com/system/site_images/photos/000/017/795/original/IMG_0561.jpg?1460131067" alt="..." title=""/>
             </div>
             <div class="modal-footer">
-                <span class="spotted-title"></span>
-                 <span class="spotted-description"></span>
+                <h3 class="spotted-title"></h3>
+                <p class="spotted-description"></p>
             </div>
         </div>
     </div>

@@ -9,7 +9,7 @@
         float:left;
         width:25%;
     }
-    .width_1oo{
+    .width_100{
         width:100%;
     }
 </style>

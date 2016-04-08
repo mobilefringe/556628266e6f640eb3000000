@@ -18,6 +18,10 @@
     .clearfix{
         clear:both;
     }
+    
+    .modal{
+        display:none;
+    }
 </style>
 
 <h3 class="contact_title">Spotted</h3>

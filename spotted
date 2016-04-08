@@ -102,7 +102,6 @@
     }
     
     function spottedLightbox(obj){
-        $('<div class="modal-backdrop"></div>').appendTo(document.body);
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.width <= 600) {
             var maxWidth = 330;
             var maxHeight = 330;

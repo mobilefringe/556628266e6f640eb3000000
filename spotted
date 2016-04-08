@@ -33,6 +33,9 @@
         loadMallDataCached(renderAll); 
     })
     function renderAll(){
+        var repoList = getRepoList();
+        renderSpotted('#spotted_template','#spotted_id', '#empty_spotted_id',repoList);
+        
         $(".loading_overlay").hide();
         $("#page_content").show();
     }

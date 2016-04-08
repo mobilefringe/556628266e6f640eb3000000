@@ -2,6 +2,11 @@
 <p class="contact_number">
     Great personal style stands out from the crowd. Our roving fashion-watchers make sure of it.
 </p>
+<div id="spotted_container">
+    <div class="row">
+    
+    </div>
+</div>
 
 <script>
     $(document).ready(function() {

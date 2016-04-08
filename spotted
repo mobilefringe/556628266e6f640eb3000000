@@ -41,9 +41,9 @@
     }
     function renderSpotted(container, template,repo){
         var item_list = [];
-        var sorted_list = [];
-        var spotted_template_html = $(template).html();
-        Mustache.parse(spotted_template_html);   // optional, speeds up future uses
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html);
     
         $.each( repo , function( key, val ) {
             if( val.name == "spotted"){

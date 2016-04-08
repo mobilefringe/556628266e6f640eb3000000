@@ -22,6 +22,10 @@
     .modal{
         display:none;
     }
+    
+    .modal-backdrop{
+        
+    }
 </style>
 
 <h3 class="contact_title">Spotted</h3>

@@ -41,7 +41,7 @@
         <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
         <div class="modal-content">
             <div class="modal-body">
-                <img class="spotted" src="" alt="..." title=""/>
+                <img class="spotted" src="http://cdn.mallmaverick.com/system/site_images/photos/000/017/795/original/IMG_0561.jpg?1460131067" alt="..." title=""/>
             </div>
             <div class="modal-footer">
                 <span class="spotted-title"></span>

@@ -33,10 +33,15 @@
         outline: 0;
     }
     .modal-dialog {
-        position: relative;
-        width: auto;
-        margin: 10px;
+        position: absolute;
+        margin: auto;
         max-width: 600px;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        top: 50%;
+        left: 50%;
     }
     
     .modal-backdrop{

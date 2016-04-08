@@ -4,11 +4,13 @@
 </p>
 <div class="row">
     <div id="spotted_container">
-        <div class="col-md-3">
-            a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" onclick="spottedLightbox(this)"> 
-                <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}"  >
-            </a>
-        </div>
+        <script id="spotted_template" type="x-tmpl-mustache">
+            <div class="col-md-3">
+                <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" onclick="spottedLightbox(this)"> 
+                    <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}"  >
+                </a>
+            </div>
+        </script>
     </div>
 </div>
 

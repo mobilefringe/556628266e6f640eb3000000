@@ -9,6 +9,9 @@
         float:left;
         width:25%;
     }
+    .width_1oo{
+        width:100%;
+    }
 </style>
 
 <h3 class="contact_title">Spotted</h3>

@@ -1,3 +1,16 @@
+<style>
+    .row{
+        margin-left:-10px;
+        margin-right:-10px;
+    }
+    .col-md-3{
+        padding-right:10px;
+        padding-left:10px;
+        float:left;
+        width:25%;
+    }
+</style>
+
 <h3 class="contact_title">Spotted</h3>
 <p class="contact_number">
     Great personal style stands out from the crowd. Our roving fashion-watchers make sure of it.

@@ -4,6 +4,7 @@
     .col-md-3{
         float:left;
         width:calc(25% - 20px);
+        margin:10px;
     }
     .width_100{
         width:100%;

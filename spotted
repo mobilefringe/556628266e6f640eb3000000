@@ -52,6 +52,11 @@
                 });
             }
         });
+        item_list.sort(sortById);
+        $.each( item_list , function( key, val ) {
+            var repo_rendered = Mustache.render(spotted_template_html,val);
+            sorted_list.push(repo_rendered);
+        });
         
         
     }

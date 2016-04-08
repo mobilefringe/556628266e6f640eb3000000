@@ -3,7 +3,7 @@
     }
     .col-md-3{
         float:left;
-        width:25%;
+        width:calc(25% - 20px);
     }
     .width_100{
         width:100%;

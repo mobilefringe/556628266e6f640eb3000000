@@ -6,6 +6,11 @@
         width:calc(25% - 20px);
         margin:10px;
     }
+    .thumbnail{
+        display: block;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
     .width_100{
         width:100%;
     }

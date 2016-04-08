@@ -13,6 +13,9 @@
         width:100%;
         margin-bottom:20px;
     }
+    .clearfix{
+        clear:both;
+    }
 </style>
 
 <h3 class="contact_title">Spotted</h3>

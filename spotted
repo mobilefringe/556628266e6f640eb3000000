@@ -1,8 +1,4 @@
-<div class="clearfix"></div>
-<h3 class="contact_title">Spotted</h3>
-<p class="contact_number">
-    Great personal style stands out from the crowd. Our roving fashion-watchers make sure of it.
-</p>
+
 
 <script>
     $(document).ready(function() {

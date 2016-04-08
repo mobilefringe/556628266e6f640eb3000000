@@ -52,7 +52,7 @@
                 });
             }
         });
-        console.log(item_list)
+        
         
     }
 </script>

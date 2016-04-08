@@ -1,6 +1,6 @@
 <script>
     $(document).ready(function() {
-        
+        loadMallDataCached(renderAll); 
     })
     function renderAll(){
         $(".loading_overlay").hide();

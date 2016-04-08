@@ -10,6 +10,7 @@
         border-radius: 35px;
         background: white;
         border: 2px solid #ccc;
+        cursor:pointer;
     }
     .row{
     }

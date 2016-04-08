@@ -161,11 +161,12 @@
         $lightbox.find('.spotted-description').text(description);
         $lightbox.find('.spotted-title').text(title)
         $lightbox.find('.spotted').css(css);
-        
-        
-        
-       
-        
-       
+    }
+    
+    function sortById(a, b){
+        var aId = a.id;
+        var bId = b.id;
+    
+        return ((aId > bId) ? -1 : ((aId < bId) ? 1 : 0));  
     }
 </script>

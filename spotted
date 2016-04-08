@@ -39,7 +39,7 @@
         $(".loading_overlay").hide();
         $("#page_content").show();
     }
-    function renderSpotted(spotted_template, not_empty_section_id,repo){
+    function renderSpotted(container, template,repo){
         var item_list = [];
         var sorted_list = [];
         var spotted_template_html = $(spotted_template).html();

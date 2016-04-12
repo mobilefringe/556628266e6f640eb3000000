@@ -128,7 +128,7 @@
         });
         item_list.sort(sortById);
         $.each( item_list , function( key, val ) {
-            if( (key+1) % 4 ){
+            if( (key+1) % 4 == 0 && key > 0){
                 val.clear = "clear:both"
             }
             var rendered = Mustache.render(template_html,val);

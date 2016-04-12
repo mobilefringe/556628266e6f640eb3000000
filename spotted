@@ -68,6 +68,11 @@
         background-color: #000;
         opacity:0.5;
     }
+    @media(max-width:768px){
+        .col-md-3{
+            width:100%;
+        }
+    }
 </style>
 
 <h3 class="contact_title">Caught Looking Confident</h3>

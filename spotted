@@ -127,6 +127,8 @@
         });
         item_list.sort(sortById);
         $.each( item_list , function( key, val ) {
+            val.clear = key % 4;
+            console.log(val)
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
         });

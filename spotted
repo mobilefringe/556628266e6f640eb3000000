@@ -82,6 +82,7 @@
                     <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}" class="width_100" >
                 </a>
             </div>
+            <div style="{{clear}}"></div>
         </script>
     </div>
     <div class="clearfix"></div>

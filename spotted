@@ -75,6 +75,14 @@
             float: none;
             margin-bottom: 30px;
         }
+        
+        .thumbnail {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 </style>
 

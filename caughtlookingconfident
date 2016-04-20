@@ -85,19 +85,36 @@
         }
     }
 </style>
-<div class="flexslider4" id="">
-    <ul class="banner_slider_ul slides" id="banner_slider_ul">
-        <li class="item">
-            <img class="banner_slide_img" src="http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg" alt="banner"/>
-        </li>
-        <li class="item">
-            <img class="banner_slide_img" src="http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574684000/Caught_Looking_ConfidentCENTRE.jpg" alt="banner"/>
-        </li>
-        <li class="item">
-            <img class="banner_slide_img" src="http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg" alt="banner"/>
-        </li>
-    </ul>
+
+<div class="banner_container">
+    <div class="flexslider4" id="">
+        <ul class="banner_slider_ul slides" id="banner_slider_ul">
+            <script id="banner_slider_template" type="x-tmpl-mustache/text">
+                <li class="item">
+                    
+                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
+                 
+                </li>
+            </script>
+        </ul>
+    </div>
+    <div class="missing_out_div">
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
 </div>
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
 <h3 class="contact_title"></h3>
 <p class="contact_number">
     Getting “Caught Looking Confident” at The Bay Centre pays off. Check out our confident guests with NICHE Magazine who received a $50 Bay Centre gift card just for stopping by!

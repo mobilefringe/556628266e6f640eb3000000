@@ -168,7 +168,7 @@
         })
         
         renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
-        
+        load_slider("flexslider4")
         
         $(".loading_overlay").hide();
         $("#page_content").show();

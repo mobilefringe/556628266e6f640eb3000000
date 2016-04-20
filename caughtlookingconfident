@@ -85,7 +85,19 @@
         }
     }
 </style>
-
+<div class="flexslider4" id="">
+    <ul class="banner_slider_ul slides" id="banner_slider_ul">
+        <li class="item">
+            <img class="banner_slide_img" src="http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg" alt="banner"/>
+        </li>
+        <li class="item">
+            <img class="banner_slide_img" src="http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574684000/Caught_Looking_ConfidentCENTRE.jpg" alt="banner"/>
+        </li>
+        <li class="item">
+            <img class="banner_slide_img" src="http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg" alt="banner"/>
+        </li>
+    </ul>
+</div>
 <h3 class="contact_title"></h3>
 <p class="contact_number">
     Getting “Caught Looking Confident” at The Bay Centre pays off. Check out our confident guests with NICHE Magazine who received a $50 Bay Centre gift card just for stopping by!

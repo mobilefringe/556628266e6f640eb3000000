@@ -167,7 +167,30 @@
         
         
     }
-    
+    function load_slider(slider){
+            
+        $('.'+slider).flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: true,    
+                animationLoop: true,
+                slideshow: true,
+                minItems: 3,
+                maxItems: 3,
+                prevText: "",
+                nextText: "",
+                after:function(){
+                    var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                    //do something
+                    var first = $("#banner_slider_ul").children(":first")
+                    // console.log($("#banner_slider_ul").children().length)
+                    if ($("#banner_slider_ul").children().length < 6){
+                        $("#banner_slider_ul").append(first.clone())
+                    }
+                    // $("#banner_slider_ul").append(first.clone())
+                }
+            });
+        }
     function spottedLightbox(obj){
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.width <= 600) {
             var maxWidth = 330;

@@ -137,7 +137,7 @@
     function renderAll(){
         var repoList = getRepoList();
         renderSpotted('#spotted_container', '#spotted_template', repoList);
-        
+        load_slider("flexslider4");
         $(".loading_overlay").hide();
         $("#page_content").show();
     }

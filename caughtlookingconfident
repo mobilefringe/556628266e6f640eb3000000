@@ -157,9 +157,10 @@
         
         banners = []
         
-        banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574684000/Caught_Looking_ConfidentCENTRE.jpg")
         banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg");
         banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574706000/Caught_Looking_ConfidentLEFT.jpg");
+        
+        banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574684000/Caught_Looking_ConfidentCENTRE.jpg")
         banner_array = []
         $.each( banners , function( key, val ) {
             var obj = {};

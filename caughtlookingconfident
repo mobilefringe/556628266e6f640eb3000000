@@ -154,7 +154,22 @@
     function renderAll(){
         var repoList = getRepoList();
         renderSpotted('#spotted_container', '#spotted_template', repoList);
-        load_slider("flexslider4");
+        
+        banners = []
+        
+        banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Parking.png")
+        banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/ParkingRIGHT.jpg");
+        banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/ParkingLEFT.jpg");
+        banner_array = []
+        $.each( banners , function( key, val ) {
+            var obj = {};
+            obj["image_url"] = val;
+            banner_array.push(obj)
+        })
+        
+        renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
+        
+        
         $(".loading_overlay").hide();
         $("#page_content").show();
     }

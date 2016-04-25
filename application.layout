@@ -455,7 +455,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                             <br>
                             <br>
                         {% endraw %}
-                      <a href="/hours"><p class="footer_text">See all Hours ></p></a>  
+                      <a href="/hours"  onclick="send_ga_event(''The Bay Centre – Footer – See all Hours')"><p class="footer_text">See all Hours ></p></a>  
                     </script>
                     
                     <br>

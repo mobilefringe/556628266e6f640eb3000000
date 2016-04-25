@@ -426,7 +426,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                         <p class="footer_h1">Find us</p>
                         <p class="footer_h2">{{name}}</p>
                         <p class="top_footer_text">Administration Office<br>{{address1}}<br>{{city}}, {{province_state}}<br>{{postal_code}}<br>{{phone_string}}</p>
-                        <a href="/home"><img class="footer_site_logo" src="{{site_logo}}"></a>
+                        <a href="/home"><img class="footer_site_logo" src="{{site_logo}}" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Logo')"></a>
                     {% endraw %}
                 </script>  
             </div>

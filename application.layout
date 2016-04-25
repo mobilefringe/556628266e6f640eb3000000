@@ -877,9 +877,9 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         // });  
     })
 
-    function show_dd(id){
+    function show_dd(id, name){
         // console.log(this)
-        
+        send_ga_event(name)
         if ($("#s_sub_"+id).is(":visible")){
             
             $("#triangle_"+id).hide();

@@ -133,7 +133,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <div class="menu_container">
         
         <div class="search_social_div"> 
-            <a class="header_link" href="/contact_us">contact us</a>
+            <a class="header_link" href="/contact_us" onclick="send_ga_event('The Bay Centre – Header – Contact Us)">contact us</a>
             <div class="search_div">
                 <input  type="text" id="search_input" class="search_input" placeholder="Search">
                 <i class="fa fa-search search_icon"></i>

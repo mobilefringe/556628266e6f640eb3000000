@@ -496,7 +496,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             
         </div>
         <div class="footer_last_container">
-                ©Copyright 2015 The Bay Centre • 20 Vic Management Inc.&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;  <a href="/privacy_policy">Privacy Policy</a> &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;<a href="terms-of-use">Terms of Use</a>
+                ©Copyright 2015 The Bay Centre • 20 Vic Management Inc.&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;  <a onclick="send_ga_event(''The Bay Centre – Footer – Privacy Policy')" href="/privacy_policy">Privacy Policy</a> &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;<a href="terms-of-use">Terms of Use</a>
             </div>
     </footer>
 </body>

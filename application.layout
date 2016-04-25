@@ -195,7 +195,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 
             </div>
             <div class="header_social_icons">
-                <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event('')">
+                <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Instagram')">
                     <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram">
                 </a>
                 <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('')">

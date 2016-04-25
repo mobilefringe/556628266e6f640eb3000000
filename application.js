@@ -14,6 +14,10 @@ $('document').ready(function() {
     }
 });
 
+function send_ga_event(name){
+    ga('send', 'event', 'button', 'click', 'The Bay Centre – Header – Contact Us', 1);
+}
+
 
 function mailchimp_subscribe(email){
     $("#mce-EMAIL").val($('#popup_email').val())

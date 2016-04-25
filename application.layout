@@ -477,16 +477,16 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="bottom_social_container">
                     <p class="footer_title"> Social pages</p>
                     <div class="footer_icon_container">
-                        <a href="https://instagram.com/thebaycentre/" target="_blank">
+                        <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event(''The Bay Centre – Footer – Instagram')">
                             <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png" class="footer_icon" alt="instagram" id="footer_instagram">
                         </a>
-                        <a href="https://www.facebook.com/thebaycentre" target="_blank">
+                        <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event(''The Bay Centre – Footer – Instagram')">
                             <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png" class="footer_icon" alt="facebook" id="footer_facebook">
                         </a>
-                        <a href="https://twitter.com/baycentrevic" target="_blank">
+                        <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event(''The Bay Centre – Footer – Instagram')">
                             <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png" class="footer_icon" alt="twitter" id="footer_twitter">
                         </a>
-                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank">
+                        <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event(''The Bay Centre – Footer – Instagram')">
                             <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png" class="footer_icon" alt="youtube" id="footer_youtube">
                         </a>
                         <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png" class="footer_icon" alt="blog" id="footer_blog"></a>-->

@@ -15,7 +15,7 @@ $('document').ready(function() {
 });
 
 function send_ga_event(name){
-    ga('send', 'event', 'button', 'click', 'The Bay Centre – Header – Contact Us', 1);
+    ga('send', 'event', 'button', 'click', name, 1);
 }
 
 

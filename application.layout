@@ -236,7 +236,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                     <div class="triangle_down" id="triangle_4">&nbsp;</div>
                     
                 </li>
-                <li onclick="javascript:show_dd(5, 'The Bay Centre – Header – 'Our Style')" id="m5">
+                <li onclick="javascript:show_dd(5, 'The Bay Centre – Header – Our Style')" id="m5">
                     Our style
                     <div class="triangle_down" id="triangle_5">&nbsp;</div>
                     

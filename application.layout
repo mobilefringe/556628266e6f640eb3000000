@@ -466,7 +466,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                       
                         <p class="footer_title">get on the list! sales. events. fashion news.</p>
                         <span><input id="fieldEmail" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
-                        <button type="submit" id="news_submit" onclick="send_ga_event(''The Bay Centre – Footer – Subscribe')">Subscribe</button></span><br>
+                        <button type="submit" id="news_submit" onclick="send_ga_event('The Bay Centre – Footer – Subscribe')">Subscribe</button></span><br>
                         <!--<input id="agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"/>-->
                         <!--<label for="agree_terms" id="agree_terms_lbl">I agree to receive newsletters from The Bay Centre</label>-->
                         <!-- <input type="hidden" name="cm-f-jhtykd" id ="fieldjhtykd" />-->

@@ -211,7 +211,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             </div>
         </div>
         <div id="logo_container">
-            <a href="/home"><img class="site_logo" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/BAY_logo.png"></a>
+            <a href="/home" onclick="send_ga_event('The Bay Centre – Header – Logo')"><img class="site_logo" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/BAY_logo.png"></a>
         </div>
         <div class="mobile_menu_btn" onclick="javascript:toggle_mobile_menu()">
             <img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/menu.png"/>

@@ -218,30 +218,30 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         </div>
         <div class="menu_items_container">
             <ul class="main_menu">
-                <li onclick="javascript:show_dd(1)" id="m1">
+                <li onclick="javascript:show_dd(1, 'The Bay Centre – Header – Find A Store')" id="m1">
                     find a store
                     <div class="triangle_down" id="triangle_1">&nbsp;</div>
                 </li>
-                <li onclick="javascript:show_dd(2)" id="m2">
+                <li onclick="javascript:show_dd(2, 'The Bay Centre – Header – Plan Your Visit')" id="m2">
                     plan your visit
                     <div class="triangle_down" id="triangle_2">&nbsp;</div>
                 </li>
-                <li onclick="javascript:show_dd(3)" id="m3">
+                <li onclick="javascript:show_dd(3, 'The Bay Centre – Header – Deals')" id="m3">
                     Deals
                     <div class="triangle_down" id="triangle_3">&nbsp;</div>
                     
                 </li>
-                <li onclick="javascript:show_dd(4)" id="m4">
+                <li onclick="javascript:show_dd(4, 'The Bay Centre – Header – Events & Contests')" id="m4">
                     events & contests
                     <div class="triangle_down" id="triangle_4">&nbsp;</div>
                     
                 </li>
-                <li onclick="javascript:show_dd(5)" id="m5">
+                <li onclick="javascript:show_dd(5, 'The Bay Centre – Header – 'Our Style')" id="m5">
                     Our style
                     <div class="triangle_down" id="triangle_5">&nbsp;</div>
                     
                 </li>
-                <li onclick="javascript:show_dd(6)" id="m6">
+                <li onclick="javascript:show_dd(6, 'The Bay Centre – Header – About Us')" id="m6">
                     about us
                     <div class="triangle_down" id="triangle_6">&nbsp;</div>
                     
@@ -879,6 +879,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
     function show_dd(id){
         // console.log(this)
+        
         if ($("#s_sub_"+id).is(":visible")){
             
             $("#triangle_"+id).hide();

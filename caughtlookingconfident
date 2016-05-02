@@ -145,7 +145,7 @@
             </div>
             <div class="modal-footer">
                 <h3 class="spotted-title"></h3>
-                <p class="spotted-description"></p>
+                <p class="contact_number"></p>
             </div>
         </div>
     </div>

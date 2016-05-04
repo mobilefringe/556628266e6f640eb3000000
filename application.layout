@@ -1000,7 +1000,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
      $(document).ready(function() {
         $(".st_sharethis").mouseenter(function () {
             $(this).data('timeout', setTimeout(function () {
-                alert('testing');
+                
             }, 3000));
         }).mouseleave(function () {
             clearTimeout($(this).data('timeout'));

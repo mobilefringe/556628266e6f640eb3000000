@@ -998,7 +998,14 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         
 
      $(document).ready(function() {
-
+        $(".inner_pic").mouseenter(function () {
+            $(this).data('timeout', setTimeout(function () {
+                alert('testing');
+            }, 3000));
+        }).mouseleave(function () {
+            clearTimeout($(this).data('timeout'));
+            alert('finish');
+        });
         function renderAll(){
             var propertyDetails = getPropertyDetails();
             // renderPageData("#logo_container","#logo_template", propertyDetails, "logo")

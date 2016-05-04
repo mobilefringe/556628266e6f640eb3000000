@@ -1001,7 +1001,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         $(".st_sharethis").mouseenter(function () {
             $(this).data('timeout', setTimeout(function () {
                 send_ga_event('The Bay Centre – Hyper Local 2016 - Share')
-            }, 1000));
+            }, 500));
         }).mouseleave(function () {
             clearTimeout($(this).data('timeout'));
         });

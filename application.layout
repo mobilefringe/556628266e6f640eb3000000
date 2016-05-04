@@ -998,7 +998,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         
 
      $(document).ready(function() {
-        $(".inner_pic").mouseenter(function () {
+        $(".st_sharethis").mouseenter(function () {
             $(this).data('timeout', setTimeout(function () {
                 alert('testing');
             }, 3000));

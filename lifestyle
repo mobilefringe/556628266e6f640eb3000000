@@ -5,7 +5,7 @@
         font-family:lora-regular;
         /*font-family: neuton \9;*/
         font-size:14pt;
-        line-height:0px;
+       
         height:0px;
         text-decoration: underline;
     }
@@ -119,7 +119,7 @@
     <div class="cat_stores_container" id="cat_stores_container">
         <script id="cat_stores_template" type="x-tmpl-mustache/text">
             <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
-                {{name}}
+                {{title}}
                 <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>
             </div>
             <div class="stores_div" id="cat_{{slug}}_stores">
@@ -250,10 +250,10 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                val.name = val.title
+                
                 var title = val.title.split(" - ");
                 val.title = title[1]
-                        
+                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
     

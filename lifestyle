@@ -5,7 +5,7 @@
         font-family:lora-regular;
         /*font-family: neuton \9;*/
         font-size:14pt;
-        line-height:auto;
+        line-height:0px;
         height:0px;
         text-decoration: underline;
     }

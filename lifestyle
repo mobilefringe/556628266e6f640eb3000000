@@ -6,7 +6,7 @@
         /*font-family: neuton \9;*/
         font-size:14pt;
         line-height:auto;
-        height:auto;
+        height:0px;
         text-decoration: underline;
     }
     

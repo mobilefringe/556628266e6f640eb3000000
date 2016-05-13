@@ -250,7 +250,7 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                val.name = var title
+                val.name = val.title
                 var title = val.title.split(" - ");
                 val.title = title[1]
                 

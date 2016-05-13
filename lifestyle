@@ -66,6 +66,7 @@
         .stores_div a {
         margin-right: 0px;
         height:auto;
+        line-height:20px;
         }
         
         .cat_div{

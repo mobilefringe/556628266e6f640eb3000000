@@ -119,7 +119,7 @@
     <div class="cat_stores_container" id="cat_stores_container">
         <script id="cat_stores_template" type="x-tmpl-mustache/text">
             <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
-                {{{title}}}
+                {{title}}
                 <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>
             </div>
             <div class="stores_div" id="cat_{{slug}}_stores">

@@ -5,9 +5,10 @@
         font-family:lora-regular;
         /*font-family: neuton \9;*/
         font-size:14pt;
-        line-height:26pt;
+        line-height:0pt !important;
         text-decoration: underline;
     }
+    
     
     .title {
   font-family: railway-regular;

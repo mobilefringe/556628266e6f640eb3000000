@@ -763,11 +763,11 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 if (search_results["jobs"]){
                     if (search_results["jobs"].length > 0) {
                         $("#jobs_results_header").html(search_results["jobs"].length+" Jobs <i id='job_arrow' class='fa fa-chevron-right pull-right search_arrow'></i>")    
-                        $("#events_results_header").show();
+                        $("#jobs_results_header").show();
                     }
                     
                 } else {
-                    $("#events_results_header").hide();
+                    $("#jobs_results_header").hide();
                 }
                 // $(document).i18n();
             }

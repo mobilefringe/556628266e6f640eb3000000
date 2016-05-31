@@ -181,9 +181,9 @@
         function renderAll(){
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesLEFT.jpg");
+            banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/undefined/Life&StyleCENTRE.jpg")
+            banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/undefined/Life&StyleRIGHT.jpg");
+            banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/undefined/Life&StyleLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

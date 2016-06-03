@@ -1,5 +1,7 @@
 <style>
-
+    ul{
+        padding-left:80px;
+    }
     .stores_div a{
         color:#3aa2d2 !important;
         font-family:lora-regular;

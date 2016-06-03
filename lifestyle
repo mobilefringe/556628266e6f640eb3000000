@@ -78,6 +78,10 @@
         .list_icon{
             font-size:15px !important;
         }
+        
+        ul{
+            padding-left:40;
+        }
     }
     
     

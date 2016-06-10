@@ -427,7 +427,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
 
 <!--INSTAGRAM FEED -->
-<div id="insta_container">
+<div id="insta_container" class="socialize_div">
     <script id="insta_template" type="x-tmpl-mustache/text">
     {% raw %}
         <a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>

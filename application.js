@@ -31,9 +31,10 @@ function renderInstaFeed(container, template){
             }
             feed_obj.image = v.images.low_resolution.url
             feed_obj.link = v.link
-            
-            var ig_rendered = Mustache.render(template_html,feed_obj);
-            item_rendered.push(ig_rendered.trim());
+            if (i<5){
+                var ig_rendered = Mustache.render(template_html,feed_obj);
+                item_rendered.push(ig_rendered.trim());
+            }
         })
         $(container).show();
         $(container).html(item_rendered.join(''));

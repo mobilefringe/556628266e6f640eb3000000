@@ -467,6 +467,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 var url = $(this).attr("href");
                 ga('send', 'event', 'Outbound Links', e.currentTarget.host, url);
             });
+            renderInstaFeed('#insta_container', '#insta_template');
         });
     </script>
             <div class="footer_bottom_container">

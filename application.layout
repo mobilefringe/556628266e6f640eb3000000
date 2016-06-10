@@ -427,7 +427,13 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
 
 <!--INSTAGRAM FEED -->
-<div id="instafeed"></div>
+<div id="insta_container">
+    <script id="insta_template" type="x-tmpl-mustache/text">
+    {% raw %}
+        <a class="ig_image" target="_blank" href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>
+    {% endraw %}
+    </script>
+</div>
 
 <!--<iframe class="mobile_insta_feed" src="http://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
 

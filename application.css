@@ -91,6 +91,10 @@ footer{
 h1 {
     
 }
+
+#insta_container{
+    margin-top:110px;
+}
 .ig-image{
     display: block;
     width: 20%;

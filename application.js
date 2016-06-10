@@ -14,6 +14,32 @@ $('document').ready(function() {
     }
 });
 
+function renderInstaFeed(container, template){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    var feed_obj = {}
+    Mustache.parse(template_html); 
+    $.getJSON("http://twinpines.mallmaverick.com/api/v2/twinpines/social.json").done(function(data) {
+        var insta_feed = data.social.instagram
+        $.each(insta_feed, function(i,v){
+            if(v.caption != null){
+                feed_obj.caption = v.caption.text
+            }
+            else{
+                feed_obj.caption = ""
+            }
+            feed_obj.image = v.images.low_resolution.url
+            feed_obj.link = v.link
+            
+            var ig_rendered = Mustache.render(template_html,feed_obj);
+            item_rendered.push(ig_rendered.trim());
+        })
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    });
+}
+
 function send_ga_event(name){
     ga('send', 'event', 'button', 'click', name, 1);
 }

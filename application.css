@@ -91,7 +91,11 @@ footer{
 h1 {
     
 }
-
+.ig-image{
+    display: block;
+    width: 20%;
+    float: left
+}
 .ig-image img{
     width:50px;
 }

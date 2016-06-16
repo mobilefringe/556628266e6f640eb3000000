@@ -80,7 +80,7 @@
     
 
     <p class="store_detail_title">extended summer hours hours</p>
-    <p class="hour_line_text">>The Bay Centre’s extended summer hours are now in effect and will continue through to September 18, 2016. Regular shopping hours will resume on September 19, 2016.</p>
+    <p class="hour_line_text">The Bay Centre’s extended summer hours are now in effect and will continue through to September 18, 2016. Regular shopping hours will resume on September 19, 2016.</p>
     <div class="hidden_div" id="cat_regular_hours_stores">
         <script id="regular_hours_template" type="x-tmpl-mustache/text">
             <div class="hour_line">

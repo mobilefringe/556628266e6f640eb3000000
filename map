@@ -130,7 +130,7 @@ function drop_pin(value){
         function load_map(reg){
             map = $('#mapsvg').mapSvg({
                 source: getSVGMapURL(),    // Path to SVG map
-                colors: {stroke: '#aaaaaa', selected: -20, hover: "#38949d"},
+                colors: {stroke: '#aaaaaa', selected: -20, hover: "#D8836C"},
                 // viewBox: [3000,0,6000,6000],
                 disableAll: true,
                 height:800,

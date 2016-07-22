@@ -1807,7 +1807,7 @@ textarea:focus, input:focus{
         font-size:7pt;
         height:100px;
         width:100px;
-        right:-15px;
+        right:0px;
     }
     .today_p{
         margin-top:30px !important;

@@ -1681,7 +1681,9 @@ textarea:focus, input:focus{
 
 /*mobile css*/
 @media (max-width: 767px) {
-    
+    .ig-image{{
+        width:17%;
+    }
     .visible-phone{
     display:inline-block;   
 }

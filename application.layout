@@ -572,7 +572,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
          
     }else {
         if (getCookie("visited") != "yes"){
-            $(".popup_overlay").show();
+            // $(".popup_overlay").show();
             var a = new Date();
             a = new Date(a.getTime() +1000*60*60*24);
             document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;

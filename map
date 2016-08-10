@@ -46,7 +46,7 @@
         </script>
     </select>
     
-    <button class="gray_pill download_map" onclick="window.open('http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/application/pdf/1457563587000/TBC-StoreMapwebcopyUpdateDecember2015WO (1).pdf')">Printable PDF Map</button>
+    <button class="gray_pill download_map" onclick="window.open('http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/application/pdf/undefined/TBC-StoreMapprintcopyUpdateJuly2016WEB.pdf')">Printable PDF Map</button>
 </div>
 
 

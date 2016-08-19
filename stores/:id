@@ -441,7 +441,11 @@
                 }
                 
                 i = "PM"
-            } else {
+            }
+            else {
+                if(h==0){
+                    h=12;
+                }
                 i = "AM"
             }
             return h+":"+m+" "+i;

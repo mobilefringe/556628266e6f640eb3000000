@@ -101,9 +101,6 @@
 <script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 
 <script>
-    var pathArray = window.location.pathname.split( '/' );
-    var slug = pathArray[pathArray.length-1];
-    contest_details = getContestBySlug(slug);
 
     // $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg");
     // $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
@@ -135,7 +132,9 @@
         }
     $(document).ready(function() {
         function renderPageData(){
-            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            contest_details = getContestBySlug(slug);
             banners = []
             
             banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg")

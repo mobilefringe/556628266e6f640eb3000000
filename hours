@@ -79,7 +79,7 @@
     </div>
     
 
-    <p class="store_detail_title">reglar hours</p>
+    <p class="store_detail_title">regular hours</p>
   
     <div class="hidden_div" id="cat_regular_hours_stores">
         <script id="regular_hours_template" type="x-tmpl-mustache/text">

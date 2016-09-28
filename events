@@ -109,7 +109,7 @@
             padding-left:5px;
             padding-right:5px;
             padding-bottom:40px;
-            width:85% !important;
+            width: calc(100% - 10px) !important;
         }
     }
     

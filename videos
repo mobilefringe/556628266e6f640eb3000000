@@ -97,7 +97,7 @@
                     <p class="store_detail_description">{{body}}</p>
                     
                     <div class="store_promo_buttons">
-                        <span><a href="/videos/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' st_url='http://thebaycentre.kodekloud.io/videos/{{slug}}' id="promo_share_this"></span> </span>
+                        <span><a href="/videos/{{slug}}"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' st_url='https://thebaycentre.kodekloud.io/videos/{{slug}}' id="promo_share_this"></span> </span>
                     </div>
                 </div>
                 <div class="promo_right_div">
@@ -113,7 +113,7 @@
     <div class='button_container' id='button_container'>
 
     
-            <button class="gray_pill" onclick="window.open('http://youtube.com/thebaycentre')">Watch More Videos like these</button>
+            <button class="gray_pill" onclick="window.open('https://youtube.com/thebaycentre')">Watch More Videos like these</button>
 
     </div>
     
@@ -126,9 +126,9 @@
 
 
 <script>
-    // $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner3.jpg");
-    // $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner2.jpg");
-    // $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner1.jpg");
+    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner3.jpg");
+    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner2.jpg");
+    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner1.jpg");
     
     function load_slider(slider){
             
@@ -160,9 +160,9 @@
         function renderPageData(){
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db5409709e10b77fab9f9a7deac555ba/Video_Style.jpg")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db5409709e10b77fab9f9a7deac555ba/Video_StyleRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db5409709e10b77fab9f9a7deac555ba/Video_StyleLEFT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db5409709e10b77fab9f9a7deac555ba/Video_Style.jpg")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db5409709e10b77fab9f9a7deac555ba/Video_StyleRIGHT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/db5409709e10b77fab9f9a7deac555ba/Video_StyleLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};
@@ -197,8 +197,8 @@
                 renderDetailData("#store_promo_container","#store_promo_template",videos,"videos")
             }
             
-            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_slider("flexslider4");
@@ -247,7 +247,7 @@
                     }
                     
                 if(!val.image_url ||  val.image_url .indexOf('missing.png') > -1 || val.image_url .length === 0){
-                    val.image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                    val.image_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                 }  
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);

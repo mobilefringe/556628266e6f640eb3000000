@@ -93,14 +93,14 @@
 
 
 
-<!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
+<!--For more information please see https://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+<script src="https://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 
 <script>
-    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner1.jpg");
-    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
-    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner1.jpg");
+    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
     
     
     $(document).ready(function() {
@@ -115,8 +115,8 @@
             hours = prop_hours
             renderpageHTML();
             renderData("#store_detail_hours_container","#store_detail_hours_template", hours, "store_hours")
-            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
         }
@@ -133,9 +133,9 @@
                 
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
-                    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
-                    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
-                    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
+                    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
+                    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
+                    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
                 }
             }); 
         }
@@ -196,7 +196,7 @@
                     } 
                     
                     if(val.image_url.indexOf('missing.png') > -1 || val.image_url.length === 0){
-                        val.page_image = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                        val.page_image = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                     } else {
                         val.page_image = (val.image_url);    
                     }    

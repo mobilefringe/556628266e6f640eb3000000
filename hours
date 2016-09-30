@@ -145,9 +145,9 @@
 
 </div>
 <script>
-    // $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Hours.png");
-    // $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
-    // $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Hours.png");
+    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
     
     function show_stores(id){
        if ($("#cat_"+id+"_stores").is(":visible")){
@@ -196,9 +196,9 @@
             
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Hours.png")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/HoursRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/HoursLEFT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Hours.png")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/HoursRIGHT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/HoursLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

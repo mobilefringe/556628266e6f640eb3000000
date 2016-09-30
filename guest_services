@@ -112,7 +112,7 @@
         Come visit The Bay Centre, downtown Victoria's premier shopping destination. Covering one full city block in the centre of Victoria's shopping district, The Bay Centre has a mix of over 90 street front and interior shops where you'll find unique, quality brands, diverse dining options, and exceptional service in an urban shopping environment.
 <br>
 <br>
-Featuring <a href="http://www.thebaycentre.com/stores/baycentre-aerosoles--2" target="_blank">Aerosoles</a>, <a href="http://www.thebaycentre.com/stores/baycentre-bcbgmaxazria--2" target="_blank">BCBGMAXAZRIA</a>, <a href="http://www.thebaycentre.com/stores/baycentre-club-monaco--4" target="_blank">Club Monaco</a>, <a href="http://www.thebaycentre.com/stores/baycentre-earls-kitchen-bar--2" target="_blank">Earls Restaurant</a>, <a href="http://www.thebaycentre.com/stores/baycentre-eco-chic-aveda-salon-spa--2" target="_blank">Eco Chic Aveda Salon &amp; Spa</a>, <a href="http://www.thebaycentre.com/stores/baycentre-goodlife-fitness--2" target="_blank">GoodLife Fitness</a>, <a href="http://www.thebaycentre.com/stores/baycentre-guess--3" target="_blank">Guess?</a>, <a href="http://www.thebaycentre.com/stores/baycentre-laura-laura-petites--2" target="_blank">Laura</a>, <a href="http://www.thebaycentre.com/stores/baycentre-l-occitane-en-provence--2" target="_blank">L&#39;Occitane</a>, <a href="http://www.thebaycentre.com/stores/baycentre-melanie-lyne--2" target="_blank">Melanie Lyne</a>, <a href="http://www.thebaycentre.com/stores/baycentre-my-foot-reflexology--2" target="_blank">My Foot Reflexology</a>, <a href="http://www.thebaycentre.com/stores/baycentre-sport-chek--2" target="_blank">Sport Chek</a>, <a href="http://www.thebaycentre.com/stores/baycentre-hudson-s-bay-the--2" target="_blank">Hudson&rsquo;s Bay</a>, <a href="http://www.thebaycentre.com/stores/baycentre-teavana--2" target="_blank">Teavana</a>, <a href="http://www.thebaycentre.com/stores/baycentre-the-tuscan-kitchen--2" target="_blank">The Tuscan Kitchen</a>, <a href="http://www.thebaycentre.com/stores/baycentre-urban-planet--3" target="_blank">Urban Planet</a>, <a href="http://www.thebaycentre.com/stores/baycentre-quiksilver--4" target="_blank">Quiksilver</a>&nbsp;and so much more.
+Featuring <a href="https://www.thebaycentre.com/stores/baycentre-aerosoles--2" target="_blank">Aerosoles</a>, <a href="https://www.thebaycentre.com/stores/baycentre-bcbgmaxazria--2" target="_blank">BCBGMAXAZRIA</a>, <a href="https://www.thebaycentre.com/stores/baycentre-club-monaco--4" target="_blank">Club Monaco</a>, <a href="https://www.thebaycentre.com/stores/baycentre-earls-kitchen-bar--2" target="_blank">Earls Restaurant</a>, <a href="https://www.thebaycentre.com/stores/baycentre-eco-chic-aveda-salon-spa--2" target="_blank">Eco Chic Aveda Salon &amp; Spa</a>, <a href="https://www.thebaycentre.com/stores/baycentre-goodlife-fitness--2" target="_blank">GoodLife Fitness</a>, <a href="https://www.thebaycentre.com/stores/baycentre-guess--3" target="_blank">Guess?</a>, <a href="https://www.thebaycentre.com/stores/baycentre-laura-laura-petites--2" target="_blank">Laura</a>, <a href="https://www.thebaycentre.com/stores/baycentre-l-occitane-en-provence--2" target="_blank">L&#39;Occitane</a>, <a href="https://www.thebaycentre.com/stores/baycentre-melanie-lyne--2" target="_blank">Melanie Lyne</a>, <a href="https://www.thebaycentre.com/stores/baycentre-my-foot-reflexology--2" target="_blank">My Foot Reflexology</a>, <a href="https://www.thebaycentre.com/stores/baycentre-sport-chek--2" target="_blank">Sport Chek</a>, <a href="https://www.thebaycentre.com/stores/baycentre-hudson-s-bay-the--2" target="_blank">Hudson&rsquo;s Bay</a>, <a href="https://www.thebaycentre.com/stores/baycentre-teavana--2" target="_blank">Teavana</a>, <a href="https://www.thebaycentre.com/stores/baycentre-the-tuscan-kitchen--2" target="_blank">The Tuscan Kitchen</a>, <a href="https://www.thebaycentre.com/stores/baycentre-urban-planet--3" target="_blank">Urban Planet</a>, <a href="https://www.thebaycentre.com/stores/baycentre-quiksilver--4" target="_blank">Quiksilver</a>&nbsp;and so much more.
 
 <br><br>
 We hope to see you soon at The Bay Centre.
@@ -141,9 +141,9 @@ We welcome you to come by and visit us, near the escalators on the lower level. 
 </div>
 
 <script>
-    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
-    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
-    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png");
+    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png");
     
     function show_stores(id){
        if ($("#cat_"+id+"_stores").is(":visible")){
@@ -190,9 +190,9 @@ We welcome you to come by and visit us, near the escalators on the lower level. 
         function renderAll(){
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesLEFT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesRIGHT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

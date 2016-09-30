@@ -20,7 +20,7 @@ function renderInstaFeed(container, template){
     var template_html = $(template).html();
     var feed_obj = {}
     Mustache.parse(template_html); 
-    $.getJSON("http://baycentre.mallmaverick.com/api/v2/baycentre/social.json").done(function(data) {
+    $.getJSON("https://baycentre.mallmaverick.com/api/v2/baycentre/social.json").done(function(data) {
         var insta_feed = data.social.instagram
         $.each(insta_feed, function(i,v){
             if(v.caption != null){

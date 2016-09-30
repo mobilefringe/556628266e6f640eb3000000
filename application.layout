@@ -218,7 +218,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – YouTube')">
                     <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube">
                 </a>
-                        <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
+                        <!--<a href="" target="_blank"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
             </div>
         </div>
         <div id="logo_container">
@@ -269,7 +269,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="dd_submenu" id="s_sub_1">
                     <ul>
                         <li><a href="/stores">Store Directory</a></li>
-                        <!--<li><a href="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
+                        <!--<li><a href="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
                         <li><a href="/map">Interactive Map</a></li>
                     </ul>
                 </div>
@@ -331,7 +331,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="mobile_submenu" id="mobile_sub_1">
                     <ul>
                         <li class="mobile_submenu_li"><a href="/stores">Store Directory</a></li>
-                        <!--<li class="mobile_submenu_li"><a href="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
+                        <!--<li class="mobile_submenu_li"><a href="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
                         <li class="mobile_submenu_li"><a href="/map">Interactive Map</a></li>
                     </ul>
                 </div>
@@ -419,7 +419,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                     <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - YouTube')">
                         <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="social_icon" alt="youtube" id="social_youtube">
                     </a>
-                        <!--<a href="" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" class="social_icon" alt="blog" id="social_blog"></a>-->
+                        <!--<a href="" target="_blank"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" class="social_icon" alt="blog" id="social_blog"></a>-->
             </div>
 </div>
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
@@ -435,7 +435,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     </script>
 </div>
 
-<!--<iframe class="mobile_insta_feed" src="http://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
+<!--<iframe class="mobile_insta_feed" src="https://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
 
 
     </div>

@@ -86,7 +86,7 @@
         <div id="store_detail_right_content_container">
             <script id="store_detail_right_content_template" type="x-tmpl-mustache/text">
                 <a href="{{alt_store_front_url}}" rel="lightbox-gallery" title="{{name}}">
-                    <img class="store_front" alt="photo_{{name}}" src="http://mallmaverick.com/{{photo_url}}"/>
+                    <img class="store_front" alt="photo_{{name}}" src="https://mallmaverick.com/{{photo_url}}"/>
                 </a>
                 
             </script>
@@ -96,15 +96,15 @@
 
 
 
-<!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
+<!--For more information please see https://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+<script src="https://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 
 <script>
 
-    // $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg");
-    // $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
-    // $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
+    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg");
+    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
+    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
 
     function load_slider(slider){
             
@@ -137,9 +137,9 @@
             contest_details = getContestBySlug(slug);
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
             
             banner_array = []
             $.each( banners , function( key, val ) {
@@ -151,8 +151,8 @@
             renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
             renderDetailData("#promo_title_container", "#promo_title_template", contest_details, "contest")
             renderDetailData("#store_detail_right_content_container", "#store_detail_right_content_template", contest_details, "contest")
-            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_slider("flexslider4");
@@ -188,7 +188,7 @@
             $.each( collection , function( key, val ) {
                 
                 if ((val.photo_url).indexOf('missing.png') > -1){
-                    val.photo_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
+                    val.photo_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
                 }
 
                 

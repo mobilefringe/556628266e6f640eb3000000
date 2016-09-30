@@ -174,7 +174,7 @@
                                 <p class="store_detail_description">{{description}}</p>
                                 
                                 <div class="store_promo_buttons">
-                                    <span><a href="/events/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
+                                    <span><a href="/events/{{slug}}"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
                                 </div>
                             </div>
                             <div class="promo_right_div">
@@ -212,7 +212,7 @@
                                 <p class="store_detail_description">{{{description}}}</p>
                                 
                                 <div class="store_promo_buttons">
-                                    <span><a href="/events/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
+                                    <span><a href="/events/{{slug}}"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
                                 </div>
                             </div>
                             <div class="promo_right_div">
@@ -259,7 +259,7 @@
                                 <p class="store_detail_description">{{description}}</p>
                                 
                                 <div class="store_promo_buttons">
-                                    <span><a href="/contests/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> </span>
+                                    <span><a href="/contests/{{slug}}"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> </span>
                                 </div>
                             </div>
                             <div class="promo_right_div">
@@ -285,9 +285,9 @@
 
 
 <script>
-    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
-    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Events&ContestsLeft.png");
-    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg");
+    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
+    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Events&ContestsLeft.png");
+    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg");
     
     function load_slider(slider){
             
@@ -318,9 +318,9 @@
             
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsLEFT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsRIGHT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};
@@ -444,8 +444,8 @@
             //     $("#no_event_container").show();
             // }
             
-            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_slider("flexslider4");
@@ -497,12 +497,12 @@
                         if (val.eventable_type == "Store"){
                             var store_details = getStoreDetailsByID(val.eventable_id)
                             if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
-                                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                                val.alt_promo_image_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                             } else {
                                 val.alt_promo_image_url = getImageURL(store_details.store_front_url);    
                             }    
                         } else {
-                           val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
+                           val.alt_promo_image_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
                         }
                         
                         
@@ -513,10 +513,10 @@
                     
                     if (val.eventable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.eventable_id)
-                        val.store_info = '<a href="/stores/'+store_details.slug+'"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>store info</p></a>'
+                        val.store_info = '<a href="/stores/'+store_details.slug+'"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>store info</p></a>'
                     }    
                 } else {
-                    val.alt_promo_image_url = "http://mallmaverick.com"+val.photo_url
+                    val.alt_promo_image_url = "https://mallmaverick.com"+val.photo_url
                 }
                 
                 

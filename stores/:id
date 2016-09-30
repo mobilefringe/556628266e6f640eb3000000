@@ -87,8 +87,8 @@
                 <img src="{{alt_store_front_url}}" class="store_front"/>
                 <div class="contact_div">
                     
-                    <div class="contact_object" id="contact_phone" onclick="window.location.href='tel:{{phone}}'"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_icon_phone.png" class="detail_icon" alt="phone"><p> {{phone}}</p></div>
-                    <div class="contact_object" id="contact_website" onclick="window.open('http://{{website}}','_blank')"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_icon_web.png" class="detail_icon" alt="website"><p> visit website</p></div>
+                    <div class="contact_object" id="contact_phone" onclick="window.location.href='tel:{{phone}}'"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_icon_phone.png" class="detail_icon" alt="phone"><p> {{phone}}</p></div>
+                    <div class="contact_object" id="contact_website" onclick="window.open('https://{{website}}','_blank')"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d52d75490b904799149bedd8a0f02ffe/storedetail_icon_web.png" class="detail_icon" alt="website"><p> visit website</p></div>
                 </div>
             </script>
         </div>
@@ -117,7 +117,7 @@
                     <p class="store_detail_description">{{description}}</p>
                     
                     <div class="store_promo_buttons">
-                        <span><a href="/promotions/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span></span>
+                        <span><a href="/promotions/{{slug}}"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span></span>
                     </div>
                 </div>
                 <div class="promo_right_div">
@@ -142,7 +142,7 @@
                     <p class="store_detail_description">{{description}}</p>
                     
                     <div class="store_promo_buttons">
-                        <span><a href="/jobs/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{website_div}}}</span>
+                        <span><a href="/jobs/{{slug}}"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{website_div}}}</span>
                     </div>
                 </div>
             </li>
@@ -153,18 +153,18 @@
 </div>
 
 
-<!--For more information please see http://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
+<!--For more information please see https://learnjs.io/blog/2013/11/30/snapsvg-resources/-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-<script src="http://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
+<script src="https://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
-<script type="text/javascript" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/7469bf84e2447b84bcb46c251012c463/mallmaverick_svgmap.js"></script>
+<script type="text/javascript" src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/7469bf84e2447b84bcb46c251012c463/mallmaverick_svgmap.js"></script>
 
 <script>
    
-        $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/generic.jpg");
-        $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c2357458ea7559447edb72ff0cd5548d/storeleft.png");
-        $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/46aca5797e3b84bd6d66160428052711/findstore_banner2.jpg");
+        $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/generic.jpg");
+        $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c2357458ea7559447edb72ff0cd5548d/storeleft.png");
+        $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/46aca5797e3b84bd6d66160428052711/findstore_banner2.jpg");
     
     
     function drop_pin(id){
@@ -177,7 +177,7 @@
             
             map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
                       attrs: {
-                                src:  'http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+                                src:  'https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
                               }
                     }
                     ])
@@ -227,17 +227,17 @@
                     if (isMobile.matches == true){
                         // console.log(val)
                         if (val.name == 'mobile_banner'){
-                            $("#main_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                            $("#main_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
                         }
                     } else {
                         if (val.name == 'banner'){
-                            $("#main_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                            $("#main_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
                         }
                         if (val.name == 'left'){
-                            $("#left_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                            $("#left_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
                         }
                         if (val.name == 'right'){
-                            $("#right_image").attr("src", "http://cdn.mallmaverick.com/"+val.url);
+                            $("#right_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
                         }
                         
                     }
@@ -293,8 +293,8 @@
             renderDetailData("#store_promo_container","#store_promo_template", store_promos, "store_promos")
             renderDetailData("#store_job_container","#store_job_template", jobs, "store_jobs")
             
-            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
             var stores = getStoresList();
@@ -327,7 +327,7 @@
             $.each( collection , function( key, val ) {
                 if(type == "store_jobs"){
                     if (val.contact_website != ""){
-                        val.website_div = '<a href="'+val.contact_website+'" target="_blank"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_web.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>visit website</p></a>'
+                        val.website_div = '<a href="'+val.contact_website+'" target="_blank"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_web.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>visit website</p></a>'
                     }
                 }
                 
@@ -337,7 +337,7 @@
                         var pathArray = window.location.pathname.split( '/' );
                         var slug = pathArray[pathArray.length-1];
                         var store_details = getStoreDetailsBySlug(slug);
-                        val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg";
+                        val.alt_promo_image_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg";
                     } else {
                         val.alt_promo_image_url = getImageURL(val.promo_image_url);
                     }
@@ -347,7 +347,7 @@
                 
                 if (type == "store_desc"){
                     if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                        val.alt_store_front_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                        val.alt_store_front_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                     } else {
                         val.alt_store_front_url = getImageURL(val.store_front_url);    
                     }

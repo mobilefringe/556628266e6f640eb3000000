@@ -237,9 +237,9 @@ h2 {
     </ul>
 </div>
 <script>
-    // $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png");
-    // $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsLeft.png");
-    // $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsRight.png");
+    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png");
+    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsLeft.png");
+    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsRight.png");
     
     function load_slider(slider){
             
@@ -285,9 +285,9 @@ h2 {
             
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsLEFT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsRIGHT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};
@@ -310,8 +310,8 @@ h2 {
             
             renderData("#store_detail_hours_container1","#store_detail_hours_template1", hours, "store_hours")
             renderData("#store_detail_hours_container2","#store_detail_hours_template2", hours, "store_hours")
-            $.getScript("http://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="http://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
             
@@ -352,9 +352,9 @@ h2 {
                 
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
-                    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
-                    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
-                    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
+                    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
+                    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
+                    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
                 }
             }); 
         }
@@ -417,7 +417,7 @@ h2 {
                     } 
                     
                     if(val.image_url.indexOf('missing.png') > -1 || val.image_url.length === 0){
-                        val.page_image = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
+                        val.page_image = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
                     } else {
                         val.page_image = (val.image_url);    
                     }    

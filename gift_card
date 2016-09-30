@@ -80,7 +80,7 @@
 
 <div class="main_content_div">
     <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
-        <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px"><strong><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Screen Shot 2015-07-17 at 12.34.57 PM.png" align="right" style="PADDING-LEFT: 10px">Streamline your gift giving; simplify life with a Bay Centre gift card</strong>&nbsp;- available in any denomination from $10 to $500, are attractively packaged and have no initial administration fees (maintenance fees may apply). Just visit our Guest Services Centre, load up your Bay Centre gift card and start shopping! Why restrict a gift idea to a single store when The Bay Centre gift card can offer so much more?</p>
+        <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px"><strong><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Screen Shot 2015-07-17 at 12.34.57 PM.png" align="right" style="PADDING-LEFT: 10px">Streamline your gift giving; simplify life with a Bay Centre gift card</strong>&nbsp;- available in any denomination from $10 to $500, are attractively packaged and have no initial administration fees (maintenance fees may apply). Just visit our Guest Services Centre, load up your Bay Centre gift card and start shopping! Why restrict a gift idea to a single store when The Bay Centre gift card can offer so much more?</p>
 
 <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">The Bay Centre gift card is redeemable at over 90 stores. To purchase your Bay Centre gift card, or for more information visit Guest Services, located on the lower level near the escalators.</p>
 
@@ -96,7 +96,7 @@
 	<li>Sizzling Wok</li>
 </ul>
 
-<p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">Already have a Bay Centre gift card? Check your balance online at&nbsp;<a href="http://www.getmybalance.com" target="_blank">www.getmybalance.com</a>.</p>
+<p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">Already have a Bay Centre gift card? Check your balance online at&nbsp;<a href="https://www.getmybalance.com" target="_blank">www.getmybalance.com</a>.</p>
 
 
     
@@ -115,9 +115,9 @@
 </div>
 
 <script>
-    $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/GiftCardLeft.png");
-    $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/GiftCardRight.png");
-    $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Gift_Cards.png");
+    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/GiftCardLeft.png");
+    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/GiftCardRight.png");
+    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Gift_Cards.png");
     
     function show_stores(id){
        if ($("#cat_"+id+"_stores").is(":visible")){
@@ -163,9 +163,9 @@
         function renderAll(){
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Gift_Cards.png")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Gift_CardsRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Gift_CardsLEFT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Gift_Cards.png")
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Gift_CardsRIGHT.jpg");
+            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Gift_CardsLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

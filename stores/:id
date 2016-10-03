@@ -227,17 +227,17 @@
                     if (isMobile.matches == true){
                         // console.log(val)
                         if (val.name == 'mobile_banner'){
-                            $("#main_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
+                            $("#main_image").attr("src", "//mallmaverick.cdn.speedyrails.net/"+val.url);
                         }
                     } else {
                         if (val.name == 'banner'){
-                            $("#main_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
+                            $("#main_image").attr("src", "//mallmaverick.cdn.speedyrails.net/"+val.url);
                         }
                         if (val.name == 'left'){
-                            $("#left_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
+                            $("#left_image").attr("src", "//mallmaverick.cdn.speedyrails.net/"+val.url);
                         }
                         if (val.name == 'right'){
-                            $("#right_image").attr("src", "https://cdn.mallmaverick.com/"+val.url);
+                            $("#right_image").attr("src", "//mallmaverick.cdn.speedyrails.net/"+val.url);
                         }
                         
                     }

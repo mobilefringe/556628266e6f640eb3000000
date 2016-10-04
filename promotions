@@ -90,7 +90,7 @@
                     <p class="store_detail_description">{{description}}</p>
                     
                     <div class="store_promo_buttons">
-                        <span><a href="/promotions/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
+                        <span><a href="/promotions/{{slug}}"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
                     </div>
                 </div>
                 <div class="promo_right_div">
@@ -111,7 +111,7 @@
                     <p class="store_detail_description">{{description}}</p>
                     
                     <div class="store_promo_buttons">
-                        <span><a href="/promotions/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
+                        <span><a href="/promotions/{{slug}}"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
                     </div>
                 </div>
                 <div class="promo_right_div">
@@ -133,9 +133,9 @@
 
 
 <script>
-    // $("#left_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner3.jpg");
-    // $("#right_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner2.jpg");
-    // $("#main_image").attr("src", "http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner1.jpg");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner3.jpg");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner2.jpg");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner1.jpg");
     
     function load_slider(slider){
             
@@ -167,9 +167,9 @@
         function renderPageData(){
             banners = []
             
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner1.jpg")
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/DealsRIGHT.jpg");
-            banners.push("http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/DealsLEFT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/3c5606ef73e9ef9b0a7d0ffe19ae9b7c/promo_banner1.jpg")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/DealsRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/DealsLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};
@@ -250,12 +250,12 @@
                     if (val.promotionable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.promotionable_id)
                         if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
-                            val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                            val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                         } else {
                             val.alt_promo_image_url = getImageURL(store_details.store_front_url);    
                         }    
                     } else {
-                       val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
+                       val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
                     }
                     
                     
@@ -263,7 +263,7 @@
                 
                 if (val.promotionable_type == "Store"){
                     var store_details = getStoreDetailsByID(val.promotionable_id)
-                    val.store_info = '<a href="/stores/'+store_details.slug+'"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>store info</p></a>'
+                    val.store_info = '<a href="/stores/'+store_details.slug+'"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>store info</p></a>'
                 }
                 $("#promo_header").show();   
                 var rendered = Mustache.render(template_html,val);

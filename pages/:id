@@ -98,9 +98,9 @@
 <script src="https://kodekloud.s3.amazonaws.com/sites/5422419e4a616d74d9030000/e1fb5e17ab727d248230fbcb51da868f/jquery.panzoom.min.js"></script>
 
 <script>
-    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner1.jpg");
-    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
-    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner1.jpg");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
     
     
     $(document).ready(function() {
@@ -133,9 +133,9 @@
                 
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
-                    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
-                    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
-                    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
+                    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
+                    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
+                    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
                 }
             }); 
         }
@@ -196,7 +196,7 @@
                     } 
                     
                     if(val.image_url.indexOf('missing.png') > -1 || val.image_url.length === 0){
-                        val.page_image = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                        val.page_image = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                     } else {
                         val.page_image = (val.image_url);    
                     }    

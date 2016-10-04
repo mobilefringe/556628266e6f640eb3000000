@@ -136,9 +136,9 @@
 </div>
 
 <script>
-    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GettingHereLeft.png");
-    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GettingHereRight.png");
-    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Getting_Here.png");
+    // $("#left_image").attr("src", "//mallmaverick.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GettingHereLeft.png");
+    // $("#right_image").attr("src", "//mallmaverick.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GettingHereRight.png");
+    // $("#main_image").attr("src", "//mallmaverick.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Getting_Here.png");
     
     function show_stores(id){
        if ($("#cat_"+id+"_stores").is(":visible")){
@@ -185,9 +185,9 @@
             
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Getting_Here.png")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Getting_HereRIGHT.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Getting_HereLEFT.jpg");
+            banners.push("//mallmaverick.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Getting_Here.png")
+            banners.push("//mallmaverick.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Getting_HereRIGHT.jpg");
+            banners.push("//mallmaverick.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Getting_HereLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

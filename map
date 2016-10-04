@@ -46,7 +46,7 @@
         </script>
     </select>
     
-    <button class="gray_pill download_map" onclick="window.open('//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/application/pdf/undefined/TBC-StoreMapprintcopyUpdateJuly2016WEB.pdf')">Printable PDF Map</button>
+    <button class="gray_pill download_map" onclick="window.open('//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/application/pdf/undefined/TBC-StoreMapprintcopyUpdateJuly2016WEB.pdf')">Printable PDF Map</button>
 </div>
 
 
@@ -54,13 +54,13 @@
 
 <div class="map_container" id="mapsvg"></div>
 
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.nets://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/mallmaverick_svgmap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/mallmaverick_svgmap.js"></script>
 <script>
-    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapLeft.png");
-    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapRight.png");
-    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74141f4e7fc21d1457d2be79b85990c1/store_banner1.jpg");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapLeft.png");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapRight.png");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/74141f4e7fc21d1457d2be79b85990c1/store_banner1.jpg");
 </script>
 
 
@@ -79,7 +79,7 @@ function drop_pin(value){
                       attrs: {
                                 class: 'test_pin',
                                 href: '/stores/'+value[1],
-                                src:  '//codecloud.cdn.speedyrails.net://assets.codecloudapp.com/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+                                src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
                               }
                     }
                     ])

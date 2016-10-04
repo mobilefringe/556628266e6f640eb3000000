@@ -102,9 +102,9 @@
 
 <script>
 
-    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg");
-    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
-    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
 
     function load_slider(slider){
             
@@ -137,9 +137,9 @@
             contest_details = getContestBySlug(slug);
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner1.jpg")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner2.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
             
             banner_array = []
             $.each( banners , function( key, val ) {
@@ -188,7 +188,7 @@
             $.each( collection , function( key, val ) {
                 
                 if ((val.photo_url).indexOf('missing.png') > -1){
-                    val.photo_url = "https://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
+                    val.photo_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
                 }
 
                 

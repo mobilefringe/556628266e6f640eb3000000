@@ -162,9 +162,9 @@
 </div>
 
 <script>
-    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/SustainabilityLeft.png");
-    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardRight.png");
-    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Sustainability.png");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/SustainabilityLeft.png");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardRight.png");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Sustainability.png");
     
     function load_slider(slider){
             
@@ -215,9 +215,9 @@
             
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Sustainability.png")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SustainabilityRIGHT.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SustainabilityLEFT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Sustainability.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SustainabilityRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SustainabilityLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

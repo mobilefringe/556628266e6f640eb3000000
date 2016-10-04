@@ -116,7 +116,7 @@ CCTV cameras are in use at this property.<br>
 <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">
 For more information, click on the link&nbsp;below to download our&nbsp;brochure, or pick one up&nbsp;at our Guest Services desk, located on the lower level of The Bay Centre.&nbsp;<br><br>
 
-<a href="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/Security%20Rules%20&%20RegsFINAL.pdf" target="_blank">*The Bay Centre Shopping Safety and Security Policies</a></p>
+<a href="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/Security%20Rules%20&%20RegsFINAL.pdf" target="_blank">*The Bay Centre Shopping Safety and Security Policies</a></p>
 
 
 
@@ -141,9 +141,9 @@ For more information, click on the link&nbsp;below to download our&nbsp;brochure
 </div>
 
 <script>
-    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardLeft.png");
-    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardRight.png");
-    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Security.png");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardLeft.png");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardRight.png");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Security.png");
     
     
      function load_slider(slider){
@@ -192,9 +192,9 @@ For more information, click on the link&nbsp;below to download our&nbsp;brochure
         function renderAll(){
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Security.png")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SecurityRIGHT.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SecurityLEFT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Security.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SecurityRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SecurityLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

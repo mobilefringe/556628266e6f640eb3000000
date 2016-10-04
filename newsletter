@@ -226,9 +226,9 @@
          function renderPageData(){
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Enewsletter.png")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/EnewsletterRIGHT.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/EnewsletterLEFT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Enewsletter.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/EnewsletterRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/EnewsletterLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};
@@ -251,9 +251,9 @@
 
     email = getRequestParam("email");
     $("#news_email").val(email);
-    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Enewsletter.png");
-    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/EnewsletterLeft.png");
-    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/EnewsletterRight.png");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Enewsletter.png");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/EnewsletterLeft.png");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/EnewsletterRight.png");
     
     
     function renderBanners(container, template, collection){

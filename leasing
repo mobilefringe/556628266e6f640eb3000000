@@ -129,9 +129,9 @@
 </div>
 
 <script>
-    // $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/LeasingOpportunitiesLeft.png");
-    // $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/LeasingOpportunitiesRight.png");
-    // $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Leasing_Opportunities.png");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/LeasingOpportunitiesLeft.png");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/LeasingOpportunitiesRight.png");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Leasing_Opportunities.png");
     
     
     function load_slider(slider){
@@ -180,9 +180,9 @@
         function renderAll(){
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Leasing_Opportunities.png")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Leasing_OpportunitiesRIGHT.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Leasing_OpportunitiesLEFT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/Leasing_Opportunities.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Leasing_OpportunitiesRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Leasing_OpportunitiesLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

@@ -193,9 +193,9 @@
 </div>
 
 <script>
-    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.netps://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
-    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.netps://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
-    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.netps://assets.codecloudapp.com/sites/556628266e6f640eb3000000/4de316ff961800b345cf753c193ce919/TermsofUse.jpg");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/4de316ff961800b345cf753c193ce919/TermsofUse.jpg");
     
     function show_stores(id){
        if ($("#cat_"+id+"_stores").is(":visible")){

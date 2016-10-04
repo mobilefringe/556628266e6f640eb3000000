@@ -45,7 +45,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 
 <script type="text/javascript" src="https://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
 <!-- favicon -->
-<link rel="shortcut icon" href="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/75a0b30e4d74dafec26d8331f731a127/bay_fav.jpg" type="image/x-icon" />
+<link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/75a0b30e4d74dafec26d8331f731a127/bay_fav.jpg" type="image/x-icon" />
 
 <!-- jQuery Version 1.11.0 -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -207,25 +207,25 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             </div>
             <div class="header_social_icons">
                 <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Instagram')">
-                    <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram">
                 </a>
                 <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Facebook')">
-                    <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png" class="header_icon" alt="facebook" id="header_facebook">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png" class="header_icon" alt="facebook" id="header_facebook">
                 </a>
                 <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Twitter')">
-                    <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png" class="header_icon" alt="twitter" id="header_twitter">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png" class="header_icon" alt="twitter" id="header_twitter">
                 </a>
                 <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – YouTube')">
-                    <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube">
                 </a>
-                        <!--<a href="" target="_blank"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
+                        <!--<a href="" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
             </div>
         </div>
         <div id="logo_container">
-            <a href="/home" onclick="send_ga_event('The Bay Centre – Header – Logo')"><img class="site_logo" src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/BAY_logo.png"></a>
+            <a href="/home" onclick="send_ga_event('The Bay Centre – Header – Logo')"><img class="site_logo" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/BAY_logo.png"></a>
         </div>
         <div class="mobile_menu_btn" onclick="javascript:toggle_mobile_menu()">
-            <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/menu.png"/>
+            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/menu.png"/>
         </div>
         <div class="menu_items_container">
             <ul class="main_menu">
@@ -269,7 +269,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="dd_submenu" id="s_sub_1">
                     <ul>
                         <li><a href="/stores">Store Directory</a></li>
-                        <!--<li><a href="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
+                        <!--<li><a href="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
                         <li><a href="/map">Interactive Map</a></li>
                     </ul>
                 </div>
@@ -331,7 +331,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="mobile_submenu" id="mobile_sub_1">
                     <ul>
                         <li class="mobile_submenu_li"><a href="/stores">Store Directory</a></li>
-                        <!--<li class="mobile_submenu_li"><a href="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
+                        <!--<li class="mobile_submenu_li"><a href="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
                         <li class="mobile_submenu_li"><a href="/map">Interactive Map</a></li>
                     </ul>
                 </div>
@@ -408,18 +408,18 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             <p class="socialize_text">socialize with us</p>
                 <div class="socialize_social_icons">
                     <a href="https://instagram.com/thebaycentre/" target="_blank"  onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Instagram')">
-                        <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png" class="social_icon" alt="instagram" id="social_instagram">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png" class="social_icon" alt="instagram" id="social_instagram">
                     </a>
                     <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Facebook')">
-                        <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="social_icon" alt="facebook" id="social_facebook">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="social_icon" alt="facebook" id="social_facebook">
                     </a>
                     <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Twitter')">
-                        <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="social_icon" alt="twitter" id="social_twitter">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="social_icon" alt="twitter" id="social_twitter">
                     </a>
                     <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - YouTube')">
-                        <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="social_icon" alt="youtube" id="social_youtube">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="social_icon" alt="youtube" id="social_youtube">
                     </a>
-                        <!--<a href="" target="_blank"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" class="social_icon" alt="blog" id="social_blog"></a>-->
+                        <!--<a href="" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" class="social_icon" alt="blog" id="social_blog"></a>-->
             </div>
 </div>
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
@@ -441,8 +441,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     </div>
     <footer>
         <div class="footer_logo_div">
-            <img class="footer_logos" src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/logos.jpg" alt="footer_logos"/>
-            <img class="mobile_footer_logos" src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/storelogos_mobile.jpg" alt="footer logos"/>
+            <img class="footer_logos" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/logos.jpg" alt="footer_logos"/>
+            <img class="mobile_footer_logos" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/storelogos_mobile.jpg" alt="footer logos"/>
         </div>
         <div class="find_us_div">
             <div class="find_left_div" id="find_left_div">
@@ -504,18 +504,18 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                     <p class="footer_title"> Social pages</p>
                     <div class="footer_icon_container">
                         <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event('The Bay Centre – Footer – Instagram')">
-                            <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png" class="footer_icon" alt="instagram" id="footer_instagram">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png" class="footer_icon" alt="instagram" id="footer_instagram">
                         </a>
                         <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Footer – Facebook')">
-                            <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png" class="footer_icon" alt="facebook" id="footer_facebook">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png" class="footer_icon" alt="facebook" id="footer_facebook">
                         </a>
                         <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Footer – Twitter')">
-                            <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png" class="footer_icon" alt="twitter" id="footer_twitter">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png" class="footer_icon" alt="twitter" id="footer_twitter">
                         </a>
                         <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Footer – YouTube')">
-                            <img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png" class="footer_icon" alt="youtube" id="footer_youtube">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png" class="footer_icon" alt="youtube" id="footer_youtube">
                         </a>
-                        <!--<a href="" target="_blank"><img src="https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png" class="footer_icon" alt="blog" id="footer_blog"></a>-->
+                        <!--<a href="" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png" class="footer_icon" alt="blog" id="footer_blog"></a>-->
                     </div>
                 </div>
             </div>
@@ -664,42 +664,42 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         switch (event){
             case "enter":
                 if (id == "social_instagram"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"    
                 }
                 if (id == "social_facebook"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"    
                 }
                 if (id == "social_twitter"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"    
                     
                 }
                 if (id == "social_youtube"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
                     
                 }
                 if (id == "social_blog"){
-                   return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" 
+                   return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" 
                     
                 }
                 break;
             case "exit":
                 
                     if (id == "social_instagram"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"
                     }
                     if (id == "social_facebook"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"   
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"   
                     }
                     if (id == "social_twitter"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"
                         
                     }
                     if (id == "social_youtube"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
                         
                     }
                     if (id == "social_blog"){
-                       return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png"
+                       return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png"
                         
                     }
             
@@ -812,42 +812,42 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         switch (event){
             case "enter":
                 if (id == "footer_instagram"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
                 }
                 if (id == "footer_facebook"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
                 }
                 if (id == "footer_twitter"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
                     
                 }
                 if (id == "footer_youtube"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
                     
                 }
                 if (id == "footer_blog"){
-                   return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
+                   return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
                     
                 }
                 break;
             case "exit":
                 
                     if (id == "footer_instagram"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a1e0929f84d3cd67435b92ca923cabf4/social_instagram.png"
                     }
                     if (id == "footer_facebook"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png"   
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_fb.png"   
                     }
                     if (id == "footer_twitter"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_twit.png"
                         
                     }
                     if (id == "footer_youtube"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_youtube.png"
                         
                     }
                     if (id == "footer_blog"){
-                       return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png"
+                       return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/social_blog.png"
                         
                     }
             
@@ -861,42 +861,42 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         switch (event){
             case "enter":
                 if (id == "header_instagram"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"    
                 }
                 if (id == "header_facebook"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"    
                 }
                 if (id == "header_twitter"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"    
                     
                 }
                 if (id == "header_youtube"){
-                    return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
                     
                 }
                 if (id == "header_blog"){
-                   return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
+                   return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" 
                     
                 }
                 break;
             case "exit":
                 
                     if (id == "header_instagram"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"
                     }
                     if (id == "header_facebook"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"   
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"   
                     }
                     if (id == "header_twitter"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"
                         
                     }
                     if (id == "header_youtube"){
-                        return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
+                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
                         
                     }
                     if (id == "header_blog"){
-                       return "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png"
+                       return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png"
                         
                     }
             

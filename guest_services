@@ -141,9 +141,9 @@ We welcome you to come by and visit us, near the escalators on the lower level. 
 </div>
 
 <script>
-    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
-    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
-    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png");
     
     function show_stores(id){
        if ($("#cat_"+id+"_stores").is(":visible")){
@@ -190,9 +190,9 @@ We welcome you to come by and visit us, near the escalators on the lower level. 
         function renderAll(){
             banners = []
             
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png")
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesRIGHT.jpg");
-            banners.push("https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesLEFT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Guest_Services.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Guest_ServicesLEFT.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

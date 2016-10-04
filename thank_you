@@ -23,9 +23,9 @@
 </div>
 
 <script>
-    $("#main_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/newsletter_banner1.jpg");
-    $("#left_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/contact_banner3.jpg");
-    $("#right_image").attr("src", "https://assets.codecloudapp.com/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/contact_banner2.jpg");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/newsletter_banner1.jpg");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/contact_banner3.jpg");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/contact_banner2.jpg");
     $(".loading_overlay").hide();
     $("#page_content").show();
 </script>

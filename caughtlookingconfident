@@ -167,9 +167,9 @@ line-height:26pt;
         renderSpotted('#spotted_container', '#spotted_template', repoList);
         
         banners = []
-        banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574684000/Caught_Looking_ConfidentCENTRE.jpg")
-        banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg");
-        banners.push("http://assets.codecloudapp.com/sites/5639075d6e6f647b9f020000/image/jpeg/1460574706000/Caught_Looking_ConfidentLEFT.jpg");
+        banners.push("//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1460574684000/Caught_Looking_ConfidentCENTRE.jpg")
+        banners.push("//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1460574718000/Caught_Looking_ConfidentRIGHT.jpg");
+        banners.push("//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1460574706000/Caught_Looking_ConfidentLEFT.jpg");
         banner_array = []
         $.each( banners , function( key, val ) {
             var obj = {};

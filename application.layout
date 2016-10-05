@@ -467,6 +467,12 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 var url = $(this).attr("href");
                 ga('send', 'event', 'Outbound Links', e.currentTarget.host, url);
             });
+            
+            $('.share_link').click(function(e){
+                e.preventDefault();
+                var popup= window.open($(this).attr('href'),'popUpWindow','height=500,width=500, left=50,top=50, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+            });
+            
             renderInstaFeed('#insta_container', '#insta_template');
         });
     </script>

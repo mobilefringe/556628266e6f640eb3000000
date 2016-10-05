@@ -86,7 +86,7 @@
                 </div>
                 
                 <div class="promo_left_div">
-                    <p class="store_detail_title">{{name}}</p>
+                    <a href="/promotions/{{slug}}" class="store_detail_title">{{name}}</a>
                     <p class="store_detail_description">{{description}}</p>
                     
                     <div class="store_promo_buttons">

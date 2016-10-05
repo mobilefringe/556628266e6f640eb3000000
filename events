@@ -209,7 +209,9 @@
                                 </div>
                                 
                                 <p class="store_detail_description">{{{description}}}</p>
-                                
+                                <div class="store_promo_buttons">
+                                    <span><a href="/events/{{slug}}"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
+</div>
                                 
                             </div>
                             <div class="promo_right_div">

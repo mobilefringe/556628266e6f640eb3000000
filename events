@@ -248,7 +248,7 @@
                                        
                                 </div>
                                 <div class="name_block">
-                                    <p class="store_detail_title">{{name}}</p>
+                                    <a href="/contests/{{slug}}" class="store_detail_title">{{name}}</a>
                                 </div>
                                 
                                 <p class="store_detail_description">{{description}}</p>

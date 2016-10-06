@@ -470,6 +470,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             
             $('.share_links').click(function(e){
                 e.preventDefault();
+                alert("here")
                 var popup= window.open($(this).attr('href'),'popUpWindow','height=500,width=500, left=50,top=50, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
             });
             

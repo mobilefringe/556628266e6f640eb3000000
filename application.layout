@@ -442,7 +442,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <footer>
         <div class="footer_logo_div">
             <img class="footer_logos" src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/png/1475766702000/logos2.png" alt="footer_logos"/>
-            <img class="mobile_footer_logos" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6ef31a854e6cd7fcff0781ceedeb374c/storelogos_mobile.jpg" alt="footer logos"/>
+            <img class="mobile_footer_logos" src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/png/1475767615000/storelogos_mobile.png" alt="footer logos"/>
         </div>
         <div class="find_us_div">
             <div class="find_left_div" id="find_left_div">

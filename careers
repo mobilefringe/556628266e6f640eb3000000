@@ -115,27 +115,6 @@
         </script>
     </div>
     
-    <ul class="store_promo_ul" id="store_promo_container">
-        <script id="store_promo_template" type="x-tmpl-mustache/text">
-            <li>
-                <div class="promo_left_div">
-                    <a href="/careers/{{slug}}" class="store_detail_title">{{name}}</a>
-                    <p class="store_detail_description">{{description}}</p>
-                    <div class="store_promo_buttons">
-                        <span><a href="/careers/{{slug}}"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span>{{{store_info}}}</span>
-                   </div>
-                    
-                </div>
-                <div class="promo_right_div">
-                    <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
-                        <img class="store_promo_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
-                    </a>
-                </div>
-            </li>
-        </script>
-        
-    </ul>
-    
     <div id="no_event_container" style="display:none">
         No Current job postings this week. please check back later. 
     </div>

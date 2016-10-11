@@ -79,6 +79,7 @@
         <script id="featured_boxes_template" type="x-tmpl-mustache/text">
             <div class="featured_box">
                 <h3 class="featured_header"><i></i> FEATURED DEAL</h3>
+                <i class="fa fa-chevron-down"></i>
                 <a href="#" class="store_detail_title">{{name}}</a>
             </div>
         </script>

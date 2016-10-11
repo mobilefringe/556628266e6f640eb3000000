@@ -173,7 +173,7 @@
                                     {{{rich_description}}}
                                 </div>
                                 <div class="text-center">
-                                    <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                                    <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_store_front_url}}"/>
                                 </div>
                                 <span>
                                     <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/events/{{slug}}" class="share_links">

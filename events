@@ -183,7 +183,7 @@
                                         <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">
                                     </a>
                                 </span>
-                                {{store_icon}}
+                                {{store_info}}
                             </div>
                         </div>
                     </script>

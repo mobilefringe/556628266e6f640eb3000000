@@ -85,7 +85,7 @@
 
 
 <div class="store_promo_content">
-    <div class="featured_boxes" id="featured_boxes_container2">
+    <div class="featured_boxes" id="featured_boxes_container">
         <script id="featured_boxes_template2" type="x-tmpl-mustache/text">
             <div class="featured_box">
                 <h4 class="featured_box_header">{{store_name}}</h4>

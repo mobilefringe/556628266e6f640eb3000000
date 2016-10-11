@@ -249,7 +249,7 @@
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_slider("flexslider4");
-            $('#chevron_accordion').click(function(){
+            $('.chevron_accordion').click(function(){
                 $(this).toggleClass("open_accordion");
                 $(this).next( ".accordion_body" ).slideToggle();
             })

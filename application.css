@@ -73,6 +73,11 @@
     position: relative;
 }
 
+.chevron_accordion{
+    position: absolute;
+    right: 10px;
+}
+
 .featured_box_header{
     font-family: railway-medium;
     color: #6d6e71;

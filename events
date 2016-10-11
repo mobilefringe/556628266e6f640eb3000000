@@ -527,23 +527,11 @@
                 }
                 
                 if (type == "promos"){
-                    if ((val.logo_url).indexOf('missing.png') > -1){
-                        if (val.eventable_type == "Store"){
-                            var store_details = getStoreDetailsByID(val.eventable_id)
-                            if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
-                                val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
-                            } else {
-                                val.alt_promo_image_url = getImageURL(store_details.store_front_url);    
-                            }    
-                        } else {
-                           val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
-                        }
-                        
-                        
-                        
-                    } else {
-                        val.alt_promo_image_url = (val.logo_url);
-                    }
+                    if ((val.event_image_url).indexOf('missing.png') > -1){
+                         val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
+                     } else {
+                         val.alt_store_front_url = getImageURL(promo_details.event_image_url);
+                     }
                     
                     if (val.eventable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.eventable_id)

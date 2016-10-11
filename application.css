@@ -67,6 +67,10 @@
     margin-top:30px;
 }
 
+.open_accordion:before{
+    content: "\f077" !important;
+}
+
 .featured_box{
     padding: 20px 10px;
     border: 2px solid #ccc;

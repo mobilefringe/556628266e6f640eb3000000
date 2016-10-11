@@ -80,10 +80,14 @@
             <div class="featured_box">
                 <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED DEAL</h3>
                 <i class="fa fa-chevron-down"></i>
-                <a href="#" class="store_detail_title">{{name}}</a>
+                <h5 class="store_detail_title">{{name}}</h5>
             </div>
         </script>
     </div>
+    
+    
+    
+    
     <ul class="store_promo_ul feature_promo_ul" id="feature_store_promo_container">
         
         <script id="feature_store_promo_template" type="x-tmpl-mustache/text">

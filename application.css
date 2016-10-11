@@ -85,6 +85,11 @@
     cursor:pointer;
 }
 
+.accordion_body{
+    display:none;
+    
+}
+
 .featured_box_header{
     font-family: railway-medium;
     color: #6d6e71;

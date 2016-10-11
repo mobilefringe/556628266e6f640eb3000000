@@ -210,7 +210,9 @@
             all_promos = promo_array;
             if (all_promos.length > 0  || feature_promo_array.length > 0) {
                 renderDetailData("#store_promo_container","#store_promo_template", all_promos, "promos");    
-                renderDetailData("#feature_store_promo_container","#feature_store_promo_template", feature_promo_array, "promos");    
+                renderDetailData("#feature_store_promo_container","#feature_store_promo_template", feature_promo_array, "promos"); 
+                renderDetailData("#feature_store_promo_container","#feature_store_promo_template", feature_promo_array, "promos"); 
+                
             } else {
                 if (all_promos.length == 0){
                     $("#store_promo_container").hide();

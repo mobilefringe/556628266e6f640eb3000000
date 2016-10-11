@@ -73,6 +73,15 @@
     position: relative;
 }
 
+.featured_box_header{
+    font-family: railway-medium;
+    color: #6d6e71;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
 .featured_header{
     font-family: railway-medium;
     color: #6d6e71;

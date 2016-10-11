@@ -69,6 +69,16 @@
     position: relative;
 }
 
+.featured_header{
+    font-family: railway-regular;
+    color: #6d6e71;
+    position: absolute;
+    margin: 0;
+    top: -12px;
+    background: #fff;
+    padding: 0 5px;
+}
+
 
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    white;

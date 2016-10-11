@@ -82,6 +82,8 @@
                 <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED DEAL</h3>
                 <h4 class="featured_box_header">{{store_name}}</h4>
                 <p class="store_detail_title featured_name">{{name}}</p>
+                <div class="accordion_body">
+                </div>
             </div>
         </script>
     </div>

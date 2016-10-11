@@ -41,9 +41,7 @@
        
     }
     
-    .tab_content li {
-        width:auto;
-    }
+ 
     .feature_promo_date_div{
         width:auto;
         margin-left:0;

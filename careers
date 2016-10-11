@@ -88,7 +88,6 @@
     <div class="featured_boxes" id="featured_boxes_container">
         <script id="featured_boxes_template" type="x-tmpl-mustache/text">
             <div class="featured_box">
-                <h4 class="featured_box_header">{{store_name}}</h4>
                 <p class="store_detail_title featured_name">{{name}}</p>
                 <i class="fa fa-chevron-down chevron_accordion"></i>
                 <div class="accordion_body">

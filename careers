@@ -99,7 +99,7 @@
                         {{{rich_description}}}
                     </div>
                     <div class="text-center">
-                        <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_store_front_url}}"/>
+                        <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
                     </div>
                     <span>
                         <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/jobs/{{slug}}" class="share_links">

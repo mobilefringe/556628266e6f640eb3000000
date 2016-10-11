@@ -93,6 +93,10 @@
     margin-top: 10px;
 }
 
+.featured_store_img{
+    max-width: 100%;
+}
+
 .featured_box_header{
     font-family: railway-medium;
     color: #6d6e71;

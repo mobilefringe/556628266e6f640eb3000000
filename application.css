@@ -73,8 +73,9 @@
     position: relative;
 }
 
-.no_margin{
+.featured_name{
     margin:0 !important;
+    font-size:18px;
 }
 
 .chevron_accordion{

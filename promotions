@@ -77,8 +77,8 @@
 <div class="store_promo_content">
     <div class="" id="featured_boxes">
         <script id="featured_boxes_template" type="x-tmpl-mustache/text">
-            <div>
-                
+            <div class="featured_box">
+                <h3 class="featured_header"><i></i> FEATURED DEAL</h3>
             </div>
         </script>
     </div>

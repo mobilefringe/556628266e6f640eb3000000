@@ -229,7 +229,23 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
+            start = new Date (val.start_date + "T08:00:00Z");
+                    end = new Date (val.end_date + "T08:00:00Z");
             
+                    if (start.toDateString() == end.toDateString()) {
+                        val.start_month = get_month(start.getMonth())
+                        val.start_day = start.getDate()
+                        
+                        val.date_string = val.start_month + " " + val.start_day
+                        
+                        
+                    } else {
+                        val.start_month =get_month(start.getMonth())
+                        val.start_day = start.getDate() 
+                        val.end_month = get_month(end.getMonth())
+                        val.end_day = end.getDate()
+                        val.date_string = val.start_month + " " + val.start_day + " - " + val.end_month + " " +  val.end_day
+                    }
                     if (val.jobable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.jobable_id)
                         if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){

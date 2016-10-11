@@ -106,6 +106,7 @@
     <div class="featured_boxes" id="featured_boxes_container2">
         <script id="featured_boxes_template2" type="x-tmpl-mustache/text">
             <div class="featured_box">
+                <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED DEAL</h3>
                 <h4 class="featured_box_header">{{store_name}}</h4>
                 <p class="store_detail_title featured_name">{{name}}</p>
                 <i class="fa fa-chevron-down chevron_accordion"></i>
@@ -129,6 +130,26 @@
             </div>
         </script>
     </div>
+
+    <ul class="store_promo_ul" id="store_promo_container">
+        <script id="store_promo_template" type="x-tmpl-mustache/text">
+            <li>
+                <div class="promo_left_div">
+                    <a href="/promotions/{{slug}}" class="store_detail_title">{{name}}</a>
+                    <p class="store_detail_description">{{description}}</p>
+                    <div class="store_promo_buttons">
+                        <span><a href="/promotions/{{slug}}"><img src="http://assets.codecloudapp.com/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' id="promo_share_this"></span> {{{store_info}}}</span>
+</div>
+                </div>
+                <div class="promo_right_div">
+                    
+                        <img class="store_promo_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                  
+                </div>
+            </li>
+        </script>
+        
+    </ul>
     
     <div id="no_event_container" style="display:none">
         No Current promotions this week. please check back later. 
@@ -208,8 +229,9 @@
             });
             all_promos = promo_array;
             if (all_promos.length > 0  || feature_promo_array.length > 0) {
-                renderDetailData("#featured_boxes_container2","#featured_boxes_template2", all_promos, "promos");
+                renderDetailData("#store_promo_container","#store_promo_template", all_promos, "promos");
                 renderDetailData("#featured_boxes_container","#featured_boxes_template", feature_promo_array, "promos"); 
+                renderDetailData("#featured_boxes_container2","#featured_boxes_template2", all_promos, "promos"); 
                 
             } else {
                 if (all_promos.length == 0){

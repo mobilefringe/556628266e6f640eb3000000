@@ -1757,6 +1757,10 @@ textarea:focus, input:focus{
 
 /*mobile css*/
 @media (max-width: 767px) {
+    .featured_boxes{{
+        padding: 0 10px;
+    }
+    }
     .ig-image{
         width:17%;
     }

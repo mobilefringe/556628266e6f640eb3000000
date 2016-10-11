@@ -87,7 +87,7 @@
                         {{{rich_description}}}
                     </div>
                     <div class="text-center">
-                        <img class="store_promo_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                        <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
                     </div>
                 </div>
             </div>

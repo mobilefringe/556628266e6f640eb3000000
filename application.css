@@ -99,6 +99,15 @@
     max-width: 100%;
 }
 
+ .contact_object span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #6d6e71;
+    font-size: 14pt;
+}
+
 .featured_box_header{
     font-family: railway-medium;
     color: #6d6e71;

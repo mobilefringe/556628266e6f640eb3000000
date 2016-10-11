@@ -76,7 +76,6 @@
 .featured_name{
     margin:0 !important;
     font-size:18px !important;
-    margin-bottom: 10px !important;
 }
 
 .chevron_accordion{
@@ -91,6 +90,7 @@
     color: #6d6e71;
     font-family: lora-regular;
     font-size: 14pt;
+    margin-top: 10px;
 }
 
 .featured_box_header{

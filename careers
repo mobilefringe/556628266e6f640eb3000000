@@ -11,6 +11,9 @@
     .feature_promo_ul li{
         border:none;
     }
+    .promo_dates{
+        margin-top:10px;
+    }
     .store_promo_ul li {
         padding-left:30px;
         padding-right:30px;

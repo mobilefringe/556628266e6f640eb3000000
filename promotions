@@ -102,6 +102,34 @@
             </div>
         </script>
     </div>
+    
+    <div class="featured_boxes" id="featured_boxes_container2">
+        <script id="featured_boxes_template2" type="x-tmpl-mustache/text">
+            <div class="featured_box">
+                <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED DEAL</h3>
+                <h4 class="featured_box_header">{{store_name}}</h4>
+                <p class="store_detail_title featured_name">{{name}}</p>
+                <i class="fa fa-chevron-down chevron_accordion"></i>
+                <div class="accordion_body">
+                    <div>
+                        {{{rich_description}}}
+                    </div>
+                    <div class="text-center">
+                        <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                    </div>
+                    <span>
+                        <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="" alt="share fb">
+                        </a>
+                        <a href="https://twitter.com/share?text={{name}}&url=http://www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">
+                        </a>
+                    </span>
+                    <a style="margin-left:10px" class="contact_object" href='/stores/{{slug}}'><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>
+                </div>
+            </div>
+        </script>
+    </div>
 
     <ul class="store_promo_ul" id="store_promo_container">
         <script id="store_promo_template" type="x-tmpl-mustache/text">

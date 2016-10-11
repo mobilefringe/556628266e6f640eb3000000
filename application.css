@@ -86,6 +86,7 @@
 .chevron_accordion{
     position: absolute;
     right: 10px;
+    top:20px;
     color: #6d6e71;
     cursor:pointer;
 }

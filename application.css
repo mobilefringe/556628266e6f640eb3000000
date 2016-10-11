@@ -77,6 +77,7 @@
     position: absolute;
     right: 10px;
     color: #6d6e71;
+    cursor:pointer;
 }
 
 .featured_box_header{

@@ -251,7 +251,7 @@
             load_slider("flexslider4");
             $('.chevron_accordion').click(function(){
                 $(this).toggleClass("open_accordion");
-                $(this).next().slideToggle();
+                $(this).next('.accordion_body').slideToggle();
             });
             $('.share_links').click(function(e){
                 e.preventDefault();

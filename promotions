@@ -83,7 +83,7 @@
                 <h4 class="featured_box_header">{{store_name}}</h4>
                 <p class="store_detail_title featured_name">{{name}}</p>
                 <div class="accordion_body">
-                    {{{description}}}
+                    {{{rich_description}}}
                 </div>
             </div>
         </script>

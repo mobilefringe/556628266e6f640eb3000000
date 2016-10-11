@@ -252,7 +252,7 @@
             $('.chevron_accordion').click(function(){
                 console.log("here")
                 $(this).toggleClass("open_accordion");
-                $(this).next( ".accordion_body" ).slideToggle();
+                $(this).next().slideToggle();
             })
         }
         

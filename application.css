@@ -88,7 +88,9 @@
 
 .accordion_body{
     display:none;
-    
+    color: #6d6e71;
+    font-family: lora-regular;
+    font-size: 14pt;
 }
 
 .featured_box_header{

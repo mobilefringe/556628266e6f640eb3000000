@@ -11,6 +11,9 @@
     .feature_promo_ul li{
         border:none;
     }
+    .job_h2{
+        margin-bottom:5px;
+    }
     .promo_dates{
         margin-top:10px;
     }

@@ -80,6 +80,7 @@
             <div class="featured_box">
                 <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED DEAL</h3>
                 <i class="fa fa-chevron-down"></i>
+                <h4 class="fature_box_header"></h4>
                 <p class="store_detail_title">{{name}}</p>
             </div>
         </script>

@@ -177,7 +177,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                         <h4 class="list-group-item search-results-count" id="jobs_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('job')"></h4>
                         <div class="results_div" id="job_results">
                         {{#jobs}}
-                            <a href="/careers/{{slug}}" class="list-group-item">
+                            <a href="/jobs/{{slug}}" class="list-group-item">
                                 <div class="result_container">
                                     <div class="name">{{name}}</div>
                                     <div class="description">{{description_trim}}</div>
@@ -311,7 +311,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="dd_submenu" id="s_sub_6">
                     <ul>
                         <li><a href="/pages/baycentre-gift-cards">Gift Cards</a> </li>
-                        <li><a href="/careers">Jobs</a>  </li>
+                        <li><a href="/jobs">Jobs</a>  </li>
                         <li><a href="/pages/baycentre-leasing-opportunities">Leasing</a> </li>
                         <li><a href="/pages/baycentre-sustainability">Sustainability</a> </li>
                         <li><a href="/community_partners">Community</a> </li>
@@ -382,7 +382,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <div class="mobile_submenu" id="mobile_sub_6">
                     <ul>
                         <li class="mobile_submenu_li"><a href="/pages/baycentre-gift-cards">Gift Cards</a> </li>
-                        <li class="mobile_submenu_li"><a href="/careers">Jobs</a>  </li>
+                        <li class="mobile_submenu_li"><a href="/jobs">Jobs</a>  </li>
                         <li class="mobile_submenu_li"><a href="/pages/baycentre-leasing-opportunities">Leasing</a> </li>
                         <li class="mobile_submenu_li"><a href="/pages/baycentre-sustainability">Sustainability</a> </li>
                         <li class="mobile_submenu_li"><a href="/community_partners">Community</a> </li>

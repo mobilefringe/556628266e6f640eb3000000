@@ -73,8 +73,8 @@ function renderHomeHours(container, template, collection){
         val.month = get_month(d.getMonth());
         val.weekday = addZero(d.getDate());
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-            var open_time = moment(val.open_time);
-            var close_time = moment(val.close_time);
+            var open_time = moment(val.open_time).format("h:ma");
+            var close_time = moment(val.close_time).format("h:ma");
             val.open_time = convert_hour(open_time);
             val.close_time = convert_hour(close_time);    
             val.h = val.open_time+ " - " + val.close_time;

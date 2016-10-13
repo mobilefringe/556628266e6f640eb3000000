@@ -501,7 +501,7 @@
                 //     val.end_day = end.getDate()
                 //     val.end_day = val.end_day
                 //     val.date_string = val.start_month + " " + val.start_day + " - " + val.end_month + " " +  val.end_day
-                
+            });
                 
                 if (type == "promos"){
                     if ((val.event_image_url).indexOf('missing.png') > -1){

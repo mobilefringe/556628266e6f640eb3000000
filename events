@@ -484,7 +484,7 @@
                     val.date_string = start.format("MMM D");
                 }
                 else{
-                    val.date_string = start.format("MMM D") + " - " + end.format("MMM D")
+                    val.date_string = start_date.format("MMM D") + " - " + end_date.format("MMM D")
                 }
                 
                 // if (start.toDateString() == end.toDateString()) {

@@ -77,7 +77,7 @@ function renderHomeHours(container, template, collection){
             var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
             // val.open_time = convert_hour(open_time);
             // val.close_time = convert_hour(close_time);    
-            val.h = val.open_time+ " - " + val.close_time;
+            val.h = open_time + " - " + close_time;
         } else {
             val.h = "Closed";
         }

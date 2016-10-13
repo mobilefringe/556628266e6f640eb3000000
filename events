@@ -501,7 +501,6 @@
                 //     val.end_day = end.getDate()
                 //     val.end_day = val.end_day
                 //     val.date_string = val.start_month + " " + val.start_day + " - " + val.end_month + " " +  val.end_day
-            });
         
                 
                 if (type == "promos"){
@@ -527,7 +526,7 @@
             
             $(container).show();
             $(container).html(item_rendered.join(''));
-        };
+        }
         
         $(".tabs li").click(function(e){
             var clicked = this.id

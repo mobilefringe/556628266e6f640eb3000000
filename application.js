@@ -114,30 +114,30 @@ function get_day(id){
 }
 
 
-function convert_hour(d){
-    var h = (d.getUTCHours());
-    var m = addZero(d.getUTCMinutes());
-    var s = addZero(d.getUTCSeconds());
-    if (h >= 12) {
-        if ( h != 12) {
-            h = h - 12;    
-        }
+// function convert_hour(d){
+//     var h = (d.getUTCHours());
+//     var m = addZero(d.getUTCMinutes());
+//     var s = addZero(d.getUTCSeconds());
+//     if (h >= 12) {
+//         if ( h != 12) {
+//             h = h - 12;    
+//         }
         
-        i = "pm"
-    } else {
-        i = "am"
-    }
-    return h+":"+m+i;
-}
+//         i = "pm"
+//     } else {
+//         i = "am"
+//     }
+//     return h+":"+m+i;
+// }
 
 
 
-function addZero(i) {
-    if (i < 10) {
-        i = "0" + i;
-    }
-    return i;
-}
+// function addZero(i) {
+//     if (i < 10) {
+//         i = "0" + i;
+//     }
+//     return i;
+// }
 function get_month (id){
     var month = "";
     switch(id) {

@@ -294,7 +294,7 @@
                 } 
                 if (type == "holiday_hours"){
                     hol = moment(val.holiday_date).tz(getPropertyTimeZone());
-                    val.hol = hol.format("MMMM D");
+                    val.hol = hol.format("MMM D");
                 }
                 
                 var rendered = Mustache.render(template_html,val);

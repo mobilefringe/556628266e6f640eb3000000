@@ -352,7 +352,7 @@
                    val.description =  val.description.substring(0,150)+'...';
                 } 
                  today = moment();
-                 webDate = momnet(val.show_on_web_date).tz(getPropertyTimeZone());
+                 webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
                  if (today >= webDate && val.is_featured == false) {
                      
                      c = $.inArray("news", val.tags)

@@ -1,7 +1,4 @@
 <style>
-    .tabs{
-        margin-top:-60px;
-    }
     .store_promo_content{
        margin:0;
     }
@@ -41,6 +38,7 @@
     }
     .tab_content{
         height:auto;
+        margin-top:-80px;
        
     }
     

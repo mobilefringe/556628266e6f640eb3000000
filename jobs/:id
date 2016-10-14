@@ -374,7 +374,7 @@
                     if (val.is_closed == true){
                         val.hour_string = "Closed"
                     } else {
-                        val.hour_string = val.open_time.fomat("h:mma") + " - " + val.close_time.fomat("h:mma");
+                        val.hour_string = open_time.format("h:mma") + " - " + close_time.format("h:mma");
                     }
                     
                 }

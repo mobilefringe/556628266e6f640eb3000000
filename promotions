@@ -243,6 +243,9 @@
                     e.preventDefault();
                     var popup= window.open(uri,'popUpWindow','height=500,width=500, left=50,top=50, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
                 }
+                else{
+                    $(this).attr('href', uri)
+                }
             });
             $('.featured_box_header, .featured_name').click(function(e){
                 $(this).parent().find(".chevron_accordion").toggleClass("open_accordion");

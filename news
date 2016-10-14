@@ -333,18 +333,16 @@
                 now_open = $.inArray("now_open", val.tags)
                 // console.log(on_now)
                 // console.log(coming_soon)
-                if (start.toDateString() == end.toDateString() || c == 0) {
+                // if (start.toDateString() == end.toDateString() || c == 0) {
                     
+                if (start.format("DMY") == end.format("DMY") || c == 0) {   
                     if (coming_soon == 1){
-                        
-                         val.one = "Coming"
-                         val.two = "soon"
+                        val.one = "Coming"
+                        val.two = "soon"
                     }
                     if (news_tag == 1){
-                        
-                         val.one = "News"
-                         val.two = ""
-                         
+                        val.one = "News"
+                        val.two = ""
                     }
                     if (on_now == 1){
                         val.one = "On"
@@ -357,17 +355,22 @@
                    
                     // val.start_month = get_month(start.getMonth())
                     // val.start_day = start.getDate()
-                    
                     // val.date_string = val.start_month + " " + val.start_day
+                        
+                // } else {
+                //     val.start_month =get_month(start.getMonth())
+                //     val.start_day = start.getDate() 
+                //     val.end_month = get_month(end.getMonth())
+                //     val.end_day = end.getDate()
+                //     val.end_day = "  - " + val.end_day
+                // }
+                
+                val.date_string = start.format("MMM D");
                     
-                    
-                } else {
-                    val.start_month =get_month(start.getMonth())
-                    val.start_day = start.getDate() 
-                    val.end_month = get_month(end.getMonth())
-                    val.end_day = end.getDate()
-                    val.end_day = "  - " + val.end_day
+                }else {
+                    val.date_string = start.format("MMM D") + " - " + end.format("MMM D");
                 }
+                
                 
                 if (type == "promos"){
                     if ((val.logo_url).indexOf('missing.png') > -1){

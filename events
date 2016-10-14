@@ -1,6 +1,6 @@
 <style>
     .tab_container{
-        margin-top:;
+        margin-top:0;
     }
     .store_promo_content{
        margin:0;

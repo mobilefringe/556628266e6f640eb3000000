@@ -297,7 +297,7 @@
                     
                     
              
-                val.encoded_name = encodeURI(val.name);
+                val.encoded_name = encodeURI(val.store_name + " - " + val.name);
                 val.encoded_body = "http://thebaycentre.com/promotions/"+encodeURI(val.slug);
                 if (val.promotionable_type == "Store"){
                     var store_details = getStoreDetailsByID(val.promotionable_id)

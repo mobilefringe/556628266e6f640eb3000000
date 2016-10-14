@@ -2,6 +2,9 @@
     .store_promo_content, .store_detail_description{
        margin:0;
     }
+    .socialize_div{
+        margin-top:50px;
+    }
     
     .feature_promo_ul{
         margin-top:65px;

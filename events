@@ -470,7 +470,7 @@
                     
                     if (val.eventable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.eventable_id)
-                        val.store_info = '<a href="/stores/' + store_details.slug + ' " style="margin-left:10px" class="contact_object"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>'
+                        val.store_info = '<a href="/stores/' + store_details.slug + ' " style="margin-left:5px" class="contact_object"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>'
                     }    
                 } else {
                     val.alt_promo_image_url = "https://mallmaverick.com"+val.photo_url

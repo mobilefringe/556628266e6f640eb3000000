@@ -29,6 +29,10 @@
         margin-top:-10px;
     }
     
+    #featured_boxes_container{
+        margin-top:30px;
+    }
+    
      
     @media (max-width: 767px) {
         .store_promo_buttons p{

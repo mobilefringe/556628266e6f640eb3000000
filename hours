@@ -289,7 +289,7 @@
                 if (val.is_closed == true){
                     val.hour_string = "Closed"
                 } else {
-                    val.hour_string = open_time.format("h:mm a") + " - " + close_time.format("h:mm a");
+                    val.hour_string = open_time.format("h:mma") + " - " + close_time.format("h:mma");
                 } 
                 if (type == "holiday_hours"){
                     hol = moment(val.holiday_date).tz(getPropertyTimeZone());

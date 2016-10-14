@@ -94,7 +94,7 @@ function renderHomeHours(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);    
     $.each( item_list , function( key, val ) {
-        val.day = get_day(val.day_of_week);
+        // val.day = get_day(val.day_of_week);
         var d = moment();
         // val.month = get_month(d.getMonth());
         // val.weekday = addZero(d.getDate());

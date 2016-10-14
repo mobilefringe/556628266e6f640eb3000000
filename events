@@ -166,9 +166,9 @@
                             <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED EVENT</h3>
                             <h4 class="featured_box_header">{{store_name}}</h4>
                             <p class="store_detail_title featured_name">{{name}}</p>
+                            <p class="promo_dates" style='margin-top:5px'>{{date_string}}</p>
                             <i class="fa fa-chevron-down chevron_accordion"></i>
                             <div class="accordion_body">
-                                <p class="promo_dates">{{date_string}}</p>
                                 <div>
                                     {{{rich_description}}}
                                 </div>

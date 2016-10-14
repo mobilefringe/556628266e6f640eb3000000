@@ -324,12 +324,6 @@
                        val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
                     }
                         
-                        
-                        
-                  
-                
-                    
-                    
                     if (val.phone){
                         $("#contact_phone").show();
                     }else {

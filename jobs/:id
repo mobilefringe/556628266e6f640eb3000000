@@ -1,10 +1,5 @@
 <style>
-    .share_links{
-        margin-right:20px;
-    }
-    .share_links img{
-        margin: 0 4px;
-    }
+    
     .store_detail_description{
         margin-top:0px;
         margin-bottom:59px;

@@ -88,6 +88,9 @@
         text-align:center;
     }
     @media (max-width: 767px) {
+        .tab_content{
+            margin-top:0;
+        }
         .tab_item{
             height:25px;
             color:black !important;

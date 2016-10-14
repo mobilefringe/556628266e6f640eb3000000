@@ -95,7 +95,7 @@ function renderHomeHours(container, template, collection){
     item_list.push(collection);    
     $.each( item_list , function( key, val ) {
         // val.day = get_day(val.day_of_week);
-        var d = moment().format("ddd, hA");
+        var d = moment().format("h:mm:ss a");
         // val.month = get_month(d.getMonth());
         // val.weekday = addZero(d.getDate());
         var open_time = moment(val.open_time).tz(getPropertyTimeZone());

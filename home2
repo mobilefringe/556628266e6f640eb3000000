@@ -589,21 +589,31 @@
                     
                     var start = moment(val.start_date).tz(getPropertyTimeZone());
                     var end = moment(val.end_date).tz(getPropertyTimeZone());
-            
-                    if (start.toDateString() == end.toDateString()) {
-                        val.start_month = get_month(start.getMonth())
-                        val.start_day = start.getDate()
-                        
-                        val.date_string = val.start_month + " " + val.start_day
-                        
-                        
-                    } else {
-                        val.start_month =get_month(start.getMonth())
-                        val.start_day = start.getDate() 
-                        val.end_month = get_month(end.getMonth())
-                        val.end_day = end.getDate()
-                        val.end_day = "  - " + val.end_day
+                    
+                    var start = moment(val.start_date).tz(getPropertyTimeZone());
+                    var end = moment(val.end_date).tz(getPropertyTimeZone());
+                    
+                    if (start.format("DMY") == end.format("DMY")){
+                    	val.date_string = start.format("MMM D")
                     }
+                    else{
+                    	val.date_string = start.format("MMM D") + " - " + end.format("MMM D")
+                    }
+
+                    // if (start.toDateString() == end.toDateString()) {
+                    //     val.start_month = get_month(start.getMonth())
+                    //     val.start_day = start.getDate()
+                        
+                    //     val.date_string = val.start_month + " " + val.start_day
+                        
+                        
+                    // } else {
+                    //     val.start_month =get_month(start.getMonth())
+                    //     val.start_day = start.getDate() 
+                    //     val.end_month = get_month(end.getMonth())
+                    //     val.end_day = end.getDate()
+                    //     val.end_day = "  - " + val.end_day
+                    // }
                     
                     
                     c = $.inArray("coming_soon", val.tags)

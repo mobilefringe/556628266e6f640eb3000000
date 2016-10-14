@@ -286,11 +286,10 @@
                 }
                 var open_time = moment(val.open_time)
                 var close_time = moment(val.close_time)
-                
                 if (val.is_closed == true){
                     val.hour_string = "Closed"
                 } else {
-                    val.hour_string = open_time.format("h:m a") + " - " + close_time.format("h:m a");
+                    val.hour_string = open_time.format("h:mm a") + " - " + close_time.format("h:mm a");
                 } 
                 if (type == "holiday_hours"){
                     hol = moment(val.holiday_date).tz(getPropertyTimeZone());

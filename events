@@ -481,7 +481,8 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                
+                val.encoded_name = encodeURI(val.name);
+                val.encoded_body = encodeURI(val.description);
                 start = new Date (val.start_date + "T08:00:00Z");
                 end = new Date (val.end_date + "T08:00:00Z");
                 c = $.inArray("news", val.tags)

@@ -36,7 +36,7 @@
      
     @media (max-width: 767px) {
         .store_detail_description{
-            margin:0 !important;
+            margin-top:0 !important;
         }
         .store_promo_buttons p{
             width:60%;

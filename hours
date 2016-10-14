@@ -284,8 +284,8 @@
                         break;
                     
                 }
-                var open_time = moment(val.open_time)
-                var close_time = moment(val.close_time)
+                var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                var close_time = moment(val.close_time).tz(getPropertyTimeZone());
                 if (val.is_closed == true){
                     val.hour_string = "Closed"
                 } else {

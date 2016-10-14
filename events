@@ -167,7 +167,6 @@
                     <script id="featured_boxes_template" type="x-tmpl-mustache/text">
                         <div class="featured_box" onclick='window.location="/events/{{slug}}"'>
                             <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED EVENT</h3>
-                            <h4 class="featured_box_header">{{store_name}}</h4>
                             <p class="store_detail_title featured_name">{{name}}</p>
                             <p class="promo_dates" style='margin-top:5px'>{{date_string}}</p>
                             <i class="fa fa-chevron-right chevron_accordion"></i>
@@ -177,7 +176,6 @@
                 <div class="featured_boxes" id="featured_boxes_container2">
                     <script id="featured_boxes_template2" type="x-tmpl-mustache/text">
                         <div class="featured_box" onclick='window.location="/events/{{slug}}"'>
-                            <h4 class="featured_box_header">{{store_name}}</h4>
                             <p class="store_detail_title featured_name">{{name}}</p>
                             <p class="promo_dates" style='margin-top:5px'>{{date_string}}</p>
                             <i class="fa fa-chevron-right chevron_accordion"></i>

@@ -290,7 +290,7 @@
                     
                     
              
-                
+                val.encoded_name = encodeURI(name);
                 if (val.promotionable_type == "Store"){
                     var store_details = getStoreDetailsByID(val.promotionable_id)
                     val.store_info = '<a href="/stores/'+store_details.slug+'"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>store info</p></a>'

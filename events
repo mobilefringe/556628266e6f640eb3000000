@@ -41,6 +41,7 @@
     }
     .tab_content{
         height:auto;
+        margin-top:-80px;
        
     }
     

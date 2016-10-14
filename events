@@ -473,6 +473,7 @@
                     }    
                 } else {
                     val.alt_promo_image_url = "https://mallmaverick.com"+val.photo_url
+                    val.store_name = "The Bay Centre"
                 }
                 
                 val.encoded_name = encodeURI(val.store_name + " - " + val.name);

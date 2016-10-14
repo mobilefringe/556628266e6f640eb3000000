@@ -96,7 +96,7 @@
                         <a href="https://twitter.com/share?text={{name}}&url=http://www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
                             <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">
                         </a>
-                        <a href="mailto:" title="Share by Email">
+                        <a href="mailto:" title="Share by Email" class="share_links">
                             <img src="http://assets.codecloudapp.com/sites/57fd1fd66e6f6413677d0000/image/png/1476472845000/hover_social_email.png" class="" alt="email share">
                         </a>
                     </span>

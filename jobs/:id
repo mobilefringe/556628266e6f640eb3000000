@@ -369,8 +369,8 @@
                     }
                     var open_time = moment(val.open_time);
                     var close_time = moment(val.close_time);
-                    // val.open_time = convert_hour(open_time);
-                    // val.close_time = convert_hour(close_time);
+                    val.open_time = convert_hour(open_time);
+                    val.close_time = convert_hour(close_time);
                     if (val.is_closed == true){
                         val.hour_string = "Closed"
                     } else {

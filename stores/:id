@@ -267,7 +267,7 @@
                    val.description =  val.description.substring(0,300)+'...';
                 } 
                 today = moment();
-                webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone();
+                webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
                 if (today >= webDate) {
                     promo_array.push(val)
                 } 
@@ -281,7 +281,7 @@
                 // webDate = new Date(val.show_on_web_date + "T08:00:00Z");
                 
                 today = moment();
-                webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone();
+                webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
                 if (today >= webDate) {
                     jobs_array.push(val)
                 } 

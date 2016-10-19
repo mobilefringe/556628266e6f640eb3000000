@@ -262,27 +262,27 @@
             
             var store_promos = getPromotionsForIds(store_details.promotions);
             promo_array = []
-             $.each( store_promos , function( key, val ){
+            $.each( store_promos , function( key, val ){
                 if (val.description.length > 110) {
                    val.description =  val.description.substring(0,300)+'...';
                 } 
-                 today = moment();
-                 webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
-                 if (today >= webDate) {
-                     promo_array.push(val)
-                 } 
-             });
+                today = moment();
+                webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
+                if (today >= webDate) {
+                    promo_array.push(val)
+                } 
+            });
             store_promos = promo_array;
             var jobs = getJobsForIds(store_details.jobs);
             jobs = jobs.reverse();
             jobs_array = []
-             $.each( jobs , function( key, val ){
-                 today = new Date();
-                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
-                 if (today >= webDate) {
-                     jobs_array.push(val)
-                 } 
-             });
+            $.each( jobs , function( key, val ){
+                today = new Date();
+                webDate = new Date(val.show_on_web_date + "T08:00:00Z");
+                if (today >= webDate) {
+                    jobs_array.push(val)
+                } 
+            });
             jobs = jobs_array;
             
             

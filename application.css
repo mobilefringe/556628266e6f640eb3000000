@@ -2116,9 +2116,7 @@ textarea:focus, input:focus{
     .search_social_div{
         float:none;
         text-align:center;
-    }
-    .search_social_div a:link {
-        text-decoration: none;
+        text-ecoration: none;
     }
     .search_div{
         margin-bottom:5px

@@ -15,9 +15,9 @@
         text-decoration:underline;
     }
     
-    a:link {
-    text-decoration: underline;
-    }
+    /*a:link {*/
+    /*text-decoration: underline;*/
+    /*}*/
     
     .stores_div li {
   display: list-item;

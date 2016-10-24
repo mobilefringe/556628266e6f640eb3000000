@@ -282,9 +282,9 @@
 
 
 <script>
-    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
-    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Events&ContestsLeft.png");
-    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg");
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1477335864000/Events&ContestsREV.jpg");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1477335842000/Events_ContestsLEFTREV.jpg");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1477335828000/Events_ContestsRIGHTREV.jpg");
     
     function load_slider(slider){
             

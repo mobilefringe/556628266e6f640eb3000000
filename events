@@ -312,12 +312,12 @@
         }
     $(document).ready(function() {
         function renderPageData(){
-            
+        
             banners = []
-            
-            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg")
-            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsRIGHT.jpg");
-            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsLEFT.jpg");
+    
+            banners.push("//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1477335864000/Events&ContestsREV.jpg")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1477335828000/Events_ContestsRIGHTREV.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1477335842000/Events_ContestsLEFTREV.jpg");
             banner_array = []
             $.each( banners , function( key, val ) {
                 var obj = {};

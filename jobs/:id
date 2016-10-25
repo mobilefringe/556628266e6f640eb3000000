@@ -81,7 +81,7 @@
                 <p class="job_store_name"> {{store_name}} </p>
                 
                 <p class="job_h2">type of employment</p>
-                <p class="job_text">{{job_type}}</p>
+                
                 </br>
             </script>
         </div>

@@ -559,12 +559,12 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     function toggle_mobile_submenu(id){
         if ($("#"+id).is(":visible")){
             $("#"+id).slideUp();
-            $("#"+id+"_arrow").removeClass("fa-angle-up");
-            $("#"+id+"_arrow").addClass("fa-angle-down")
+            $("#"+id+"_arrow").removeClass("fa-chevron-up");
+            $("#"+id+"_arrow").addClass("fa-chevron-down")
         } else {
             $("#"+id).slideDown();
-            $("#"+id+"_arrow").removeClass("fa-angle-down");
-            $("#"+id+"_arrow").addClass("fa-angle-up")
+            $("#"+id+"_arrow").removeClass("fa-chevron-down");
+            $("#"+id+"_arrow").addClass("fa-chevron-up")
         }
     }
 

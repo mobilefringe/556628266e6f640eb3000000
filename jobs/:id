@@ -90,7 +90,7 @@
                 <p class="job_text">
                     {{date_string}}
                     <span class="pull-right" style="margin-top: -7px;">
-                        <a href="https://facebook.com/sharer.php?u=//www.thebaycentre.ca/jobs/{{slug}}" class="share_links">
+                        <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/jobs/{{slug}}" class="share_links">
                             <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="" alt="share fb">
                         </a>
                         <a href="https://twitter.com/share?text={{name}}&url=http://www.thebaycentre.ca/jobs/{{slug}}" class="share_links">

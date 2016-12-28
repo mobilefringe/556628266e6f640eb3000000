@@ -46,7 +46,13 @@
         </script>
     </select>
     
-    <button class="gray_pill download_map" onclick="window.open('//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/application/pdf/undefined/TBC-StoreMapprintcopyUpdateJuly2016WEB.pdf')">Printable PDF Map</button>
+    <div id="download_button_container">
+        <script id="download_button_template" type="x-tmpl-mustache/text">
+            <button class="gray_pill download_map" onclick="window.open('{{photo_url_abs}}')">Printable PDF Map</button>    
+        </script>
+    </div>
+    
+    <!--<button class="gray_pill download_map" onclick="window.open('//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/application/pdf/1482507780000/TBC-StoreMapprintcopyUpdateJan32017web.pdf')">Printable PDF Map</button>-->
 </div>
 
 
@@ -99,6 +105,8 @@ function drop_pin(value){
             });
             renderPageData("#store_select_container","#store_select_template",stores, "stores")
             
+            var repo = getRepoDetailsByName("Printable Map PDF").images;
+            console.log(repo);
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_map(regions)

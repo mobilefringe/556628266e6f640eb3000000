@@ -118,7 +118,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
        
     });
   
-    setEndPoint('https://baycentre.mallmaverick.com/api/v2/baycentre/all.json');
+    setEndPoint('https://twinpines.mallmaverickstaging.com/api/v3/twinpines/all.json');
     sessionStorage.setItem('primary_locale', 'en-CA');
     sessionStorage.setItem('secondary_locale', 'fr-CA');
     

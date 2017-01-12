@@ -107,7 +107,7 @@ function drop_pin(value){
             
             var repo = getRepoDetailsByName("Printable Map PDF").images;
             console.log(repo);
-            // renderMapPDF("#download_button_container", "#download_button_template", repo)
+            renderMapPDF("#download_button_container", "#download_button_template", repo)
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_map(regions)

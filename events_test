@@ -240,33 +240,6 @@
 
 
 <script>
-    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
-    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Events&ContestsLeft.png");
-    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg");
-    
-    function load_slider(slider){
-        $('.'+slider).flexslider({
-                animation: "slide",
-                controlNav: false,
-                directionNav: true,    
-                animationLoop: true,
-                slideshow: true,
-                minItems: 1,
-                maxItems: 1,
-                prevText: "",
-                nextText: "",
-                // after:function(){
-                //     var active_rel = $(this).find('.flex-active-slide').attr('rel');
-                //     //do something
-                //     var first = $("#banner_slider_ul").children(":first")
-                //     // console.log($("#banner_slider_ul").children().length)
-                //     if ($("#banner_slider_ul").children().length < 6){
-                //         $("#banner_slider_ul").append(first.clone())
-                //     }
-                //     // $("#banner_slider_ul").append(first.clone())
-                // }
-            });
-        }
     $(document).ready(function() {
         function renderPageData(){
              var page_banner = getRepoDetailsByName('Events & Contests').images;
@@ -275,20 +248,6 @@
             
             renderBanners("#page_banner_container","#page_banner_template", page_banner)
             
-            // banners = []
-            
-            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg")
-            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsRIGHT.jpg");
-            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsLEFT.jpg");
-            // banner_array = []
-            // $.each( banners , function( key, val ) {
-            //     var obj = {};
-            //     obj["image_url"] = val;
-            //     banner_array.push(obj)
-            // })
-            
-            // renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
-            
             all_promos = getEventsList();
             all_promos = all_promos.reverse();
             all_contests = getContestList();
@@ -296,27 +255,23 @@
             
             if (all_contests.length > 0) {
                 $.each( all_contests , function( key, val ){
-                if (val.description.length > 110) {
-                   val.description =  val.description.substring(0,150)+'...';
-                } 
+                    if (val.description.length > 110) {
+                       val.description =  val.description.substring(0,150)+'...';
+                    } 
                 });
                 renderDetailData("#store_contest_container","#store_contest_template", all_contests, "contests");    
             } else {
-                
                 $("#tab_2_content").css("width","100%")
                 $("#store_contest_container").hide()
                 $("#no_contest_container").show();
-                
             }
             promo_array = []
             promo_array = []
             feature_promo_array = []
-             $.each( all_promos , function( key, val ){
+            $.each( all_promos , function( key, val ){
                 if (val.description.length > 110) {
                    val.description =  val.description.substring(0,150)+'...';
                 } 
-                // today = new Date();
-                // webDate = new Date(val.show_on_web_date + "T08:00:00Z")
                 today = moment();
                 webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
                 if (today >= webDate && val.is_featured == false) {

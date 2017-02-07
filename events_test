@@ -1,5 +1,6 @@
 <style>
     .banner_wrapper {
+        margin: 0 auto;
         width: 1193;
         height: 545px;
         position: relative;

@@ -120,8 +120,8 @@
 </style>
 
 <div class="banner_container">
-    <div id="banner_container">
-        <script id="banner_template" type="x-tmpl-mustache/text">
+    <div id="page_banner_container">
+        <script id="page_banner_template" type="x-tmpl-mustache/text">
             <img class="" src="{{photo_url_abs}}" alt="banner"/>
         </script>
     </div>
@@ -272,7 +272,7 @@
              var page_banner_url = page_banner.photo_url_abs;
              console.log(page_banner);
             
-            renderBanners("#banner_container","#banner_template", page_banner)
+            renderBanners("#page_banner_container","#page_banner_template", page_banner)
             
             // banners = []
             

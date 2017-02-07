@@ -119,7 +119,7 @@
     
 </style>
 
-<div class="banner_container">
+<!--<div class="banner_container">-->
     <!--<img src="" id="main_image" class="main_image" alt="">-->
     <!--<div class="flexslider4" id="">-->
     <!--    <ul class="banner_slider_ul slides" id="banner_slider_ul">-->
@@ -142,7 +142,7 @@
     <!--        </script>-->
     <!--    </ul>-->
     <!--</div>-->
-    
+<div class="banner_container">
     <div id="banner_container">
         <script id="banner_template" type="x-tmpl-mustache/text">
             <img class="" src="{{photo_url_abs}}" alt="banner"/>

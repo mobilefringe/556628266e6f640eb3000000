@@ -119,7 +119,7 @@
     }
 </style>
 
-<div class="banner_container">
+<div class="page_banner">
     <!--<div id="page_banner_container">-->
     <!--    <script id="page_banner_template" type="x-tmpl-mustache/text">-->
     <!--        <img class="" src="{{photo_url_abs}}" alt="banner"/>-->

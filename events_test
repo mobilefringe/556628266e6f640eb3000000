@@ -246,9 +246,9 @@
             console.log(page_banner);
             $.each(page_banner, function(key, val){
                 var banner_url = val.photo_url_abs;
-                console.log(banner_url);
+                
             });
-            
+            console.log(banner_url);
             
             renderBanners("#page_banner_container","#page_banner_template", page_banner)
             

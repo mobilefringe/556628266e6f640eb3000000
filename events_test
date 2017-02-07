@@ -1,7 +1,4 @@
 <style>
-    .banner_container {
-        background: url(//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1486483644000/placeholder.png);
-    }
     .store_promo_content{
        margin:0;
     }
@@ -123,11 +120,11 @@
 </style>
 
 <div class="banner_container">
-    <!--<div id="banner_container">-->
-    <!--    <script id="banner_template" type="x-tmpl-mustache/text">-->
-    <!--        <img class="" src="{{photo_url_abs}}" alt="banner"/>-->
-    <!--    </script>-->
-    <!--</div>-->
+    <div id="banner_container">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <img class="" src="{{photo_url_abs}}" alt="banner"/>
+        </script>
+    </div>
   
     <div class="missing_out_div">
         <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
@@ -146,7 +143,7 @@
     <span class='st_sharethis'></span>   
 </div>
 
-<div id="main_content">
+<div id="page_content">
     <div class="tab_container">
         <ul class="tabs">
             <li id="tab_1" style="background:white">

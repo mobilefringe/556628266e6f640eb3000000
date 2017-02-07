@@ -119,29 +119,6 @@
     
 </style>
 
-<!--<div class="banner_container">-->
-    <!--<img src="" id="main_image" class="main_image" alt="">-->
-    <!--<div class="flexslider4" id="">-->
-    <!--    <ul class="banner_slider_ul slides" id="banner_slider_ul">-->
-    <!--        <script id="banner_slider_template" type="x-tmpl-mustache/text">-->
-    <!--            <li class="item">-->
-              
-    <!--                    <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>-->
-             
-    <!--            </li>-->
-    <!--        </script>-->
-    <!--    </ul>-->
-    <!--</div>-->
-    
-    <!--<div class="flexslider4" id="">-->
-    <!--    <ul class="banner_slider_ul slides" id="banner_container">-->
-    <!--        <script id="banner_template" type="x-tmpl-mustache/text">-->
-    <!--            <li>-->
-    <!--                <img class="banner_slide_img" src="{{photo_url_abs}}" alt="banner"/>-->
-    <!--            </li>-->
-    <!--        </script>-->
-    <!--    </ul>-->
-    <!--</div>-->
 <div class="banner_container">
     <div id="banner_container">
         <script id="banner_template" type="x-tmpl-mustache/text">

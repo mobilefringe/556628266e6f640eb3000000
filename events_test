@@ -125,7 +125,7 @@
             <img class="" src="{{photo_url_abs}}" alt="banner"/>
         </script>
     </div>
-    <div class="">
+    <div class="missing_out_container">
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">

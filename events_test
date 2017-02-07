@@ -1,4 +1,8 @@
 <style>
+    .page_banner {
+        background-position: center center;
+        background-repaet: none;
+    }
     .banner_wrapper {
         margin: 0 auto;
         width: 1193;

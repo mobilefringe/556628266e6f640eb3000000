@@ -243,6 +243,7 @@
     $(document).ready(function() {
         function renderPageData(){
             var page_banner = getRepoDetailsByName('Events & Contests').images;
+            console.log(page_banner);
             $.each(page_banner, function(key, val){
                 var banner_url = val.photo_url_abs
             });

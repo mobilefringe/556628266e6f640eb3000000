@@ -400,10 +400,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             <img alt="loading" src="https://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
     </div>
     
+    <div>{{yield}}</div>
     
-        
-        <di
-        <div id="page_content">{{yield}}</div>
     <div id="main_container">
         <div class="socialize_div">
             <p class="socialize_text">socialize with us</p>

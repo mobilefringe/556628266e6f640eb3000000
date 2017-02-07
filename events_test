@@ -242,9 +242,9 @@
 <script>
     $(document).ready(function() {
         function renderPageData(){
-             var page_banner = getRepoDetailsByName('Events & Contests').images;
-             var page_banner_url = page_banner.photo_url_abs;
-             console.log(page_banner);
+            var page_banner = getRepoDetailsByName('Events & Contests').images;
+            var page_banner_url = page_banner.photo_url_abs;
+            console.log(page_banner_url);
             
             renderBanners("#page_banner_container","#page_banner_template", page_banner)
             

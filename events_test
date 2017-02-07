@@ -1,0 +1,550 @@
+<style>
+    .store_promo_content{
+       margin:0;
+    }
+    
+    .promo_right_div{
+        margin-bottom:30px;
+    }
+    
+    .feature_promo_ul, .store_promo_ul{
+        margin-top:0;
+        border-top:none;
+    }
+    
+    .feature_promo_ul li{
+        border:none;
+    }
+    .store_promo_ul li {
+        padding-left:30px;
+        padding-right:30px;
+        padding-bottom:40px;
+    }
+    .promo_left_div{
+        width:729px;
+    }
+    
+    .tabs{
+        width:100%;
+        background:transparent;
+    }
+    .tabs li{
+        width:50%;
+        position:relative;
+        bottom:-1px;
+    }
+    .tab_item{
+        border:none;
+    }
+    .tab_content{
+        height:auto;
+        margin-top:-80px;
+       
+    }
+    
+ 
+    .feature_promo_date_div{
+        width:auto;
+        margin-left:0;
+        margin-right:37px;
+        padding-left:15px;
+        padding-right:15px;
+        vertical-align:top;
+        min-width:144px;
+        text-align:center;
+    }
+    .date_block{
+        display:inline-block;
+    }
+    .store_detail_title{
+        display:inline-block;
+        margin-bottom:0;
+    }
+    .name_block{
+        display:inline-block;
+        width:65%;
+        height:144px;
+        vertical-align:top;
+        margin-top:30px;
+    }
+    .store_detail_description{
+        margin-top:43px;
+    }
+    .socialize_text{
+        margin-top:0;
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    #no_contest_container, #no_event_container {
+        padding-left:30px;
+        margin-bottom:50px;
+        color:#6d6e71 !important;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+        text-align:center;
+    }
+    @media (max-width: 767px) {
+        .tab_content{
+            margin-top:-40px;
+        }
+        .tab_item{
+            height:25px;
+            color:black !important;
+        }
+        .store_promo_buttons p{
+            width:60%;
+        }
+        .store_promo_buttons{
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        .name_block{
+            width:100%;
+            height:auto;
+            word-break:break-word;
+        }
+        
+        .store_promo_ul li {
+            padding-left:5px;
+            padding-right:5px;
+            padding-bottom:40px;
+            width: calc(100% - 10px) !important;
+        }
+    }
+    
+    
+</style>
+
+<div class="banner_container">
+    <!--<img src="" id="main_image" class="main_image" alt="">-->
+    <!--<div class="flexslider4" id="">-->
+    <!--    <ul class="banner_slider_ul slides" id="banner_slider_ul">-->
+    <!--        <script id="banner_slider_template" type="x-tmpl-mustache/text">-->
+    <!--            <li class="item">-->
+              
+    <!--                    <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>-->
+             
+    <!--            </li>-->
+    <!--        </script>-->
+    <!--    </ul>-->
+    <!--</div>-->
+    
+    <!--<div class="flexslider4" id="">-->
+    <!--    <ul class="banner_slider_ul slides" id="banner_container">-->
+    <!--        <script id="banner_template" type="x-tmpl-mustache/text">-->
+    <!--            <li>-->
+    <!--                <img class="banner_slide_img" src="{{photo_url_abs}}" alt="banner"/>-->
+    <!--            </li>-->
+    <!--        </script>-->
+    <!--    </ul>-->
+    <!--</div>-->
+    
+    <div id="banner_container">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <img class="" src="{{photo_url_abs}}" alt="banner"/>
+        </script>
+    </div>
+  
+    <div class="missing_out_div">
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+
+<div class="tab_container">
+    <ul class="tabs">
+        <li id="tab_1" style="background:white">
+        <div class="tab_item" style="color:#4d4d4f"><div class="tab_overlay" style="display:none">&nbsp;</div>Events &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></div>
+             
+        </li>
+        <li id="tab_2">
+            <div class="tab_item"><div class="tab_overlay">&nbsp;</div>contests &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></div>
+        </li>
+    </ul>
+    <ul class="tab_content">
+        <li id="tab_1_content">
+            <div class="store_promo_content">
+                <div class="featured_boxes" id="featured_boxes_container">
+                    <script id="featured_boxes_template" type="x-tmpl-mustache/text">
+                        <div class="featured_box" onclick='window.location="/events/{{slug}}"'>
+                            <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED EVENT</h3>
+                            <p class="store_detail_title featured_name">{{name}}</p>
+                            <p class="promo_dates" style='margin-top:5px'>{{date_string}}</p>
+                            <i class="fa fa-angle-right chevron_accordion"></i>
+                        </div>
+                    </script>
+                </div>
+                <div class="featured_boxes" id="featured_boxes_container2">
+                    <script id="featured_boxes_template2" type="x-tmpl-mustache/text">
+                        <div class="featured_box" onclick='window.location="/events/{{slug}}"'>
+                            <p class="store_detail_title featured_name">{{name}}</p>
+                            <p class="promo_dates" style='margin-top:5px'>{{date_string}}</p>
+                            <i class="fa fa-angle-right chevron_accordion"></i>
+                            
+                        </div>
+                    </script>
+                </div>
+            
+                
+                
+                <div id="no_event_container" style="display:none">
+                    No Current events this week. please check back later. 
+                </div>
+                
+            </div>
+            
+        </li>
+        <li id="tab_2_content" style="display:none">
+            <div class="store_promo_content">
+                <ul class="store_promo_ul" id="store_contest_container">
+                    <script id="store_contest_template" type="x-tmpl-mustache/text">
+                        <li>
+                            <div class="promo_left_div">
+                                <div class="feature_promo_date_div">
+                                    <div class="feature_promo_date_triangle">&nbsp;</div>
+                         
+                                        <div class="date_block">
+                                            <p class="month_string">{{start_month}}</p>
+                                            <p class="day_string">{{start_day}}</p>
+                                        </div>
+                                        
+                                        <div class="date_block">
+                                            <p class="month_string">{{end_month}}</p>
+                                            <p class="day_string">{{end_day}}</p>
+                                        </div>
+                                       
+                                </div>
+                                <div class="name_block">
+                                    <a href="/contests/{{slug}}" class="store_detail_title">{{name}}</a>
+                                </div>
+                                
+                                <p class="store_detail_description">{{description}}</p>
+                                
+                                
+                            </div>
+                            <div class="promo_right_div">
+                                <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
+                                    <img class="store_promo_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                                </a>
+                            </div>
+                        </li>
+                    </script>
+                    
+                </ul>
+                
+                <div id="no_contest_container" style="display:none">
+                    <p>Sorry, there are currently no contests on at the moment. Please check back soon for new contests or sign up for our <a href="/newsletter">enewsletter</a> to be notified of upcoming contests and promotions. </p>
+                </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+<script>
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/8dbac6c93fba1a1cc183512cb3213260/events_banner3.jpg");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Events&ContestsLeft.png");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg");
+    
+    function load_slider(slider){
+        $('.'+slider).flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: true,    
+                animationLoop: true,
+                slideshow: true,
+                minItems: 1,
+                maxItems: 1,
+                prevText: "",
+                nextText: "",
+                // after:function(){
+                //     var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                //     //do something
+                //     var first = $("#banner_slider_ul").children(":first")
+                //     // console.log($("#banner_slider_ul").children().length)
+                //     if ($("#banner_slider_ul").children().length < 6){
+                //         $("#banner_slider_ul").append(first.clone())
+                //     }
+                //     // $("#banner_slider_ul").append(first.clone())
+                // }
+            });
+        }
+    $(document).ready(function() {
+        function renderPageData(){
+             var page_banner = getRepoDetailsByName('Events & Contests').images;
+             console.log(page_banner);
+            
+            renderBanners("#banner_container","#banner_template", page_banner)
+            
+            // banners = []
+            
+            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/6fa94434a164d995fb70fb4457cefdac/Events&ContestsCENTRE.jpg")
+            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsRIGHT.jpg");
+            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Events_ContestsLEFT.jpg");
+            // banner_array = []
+            // $.each( banners , function( key, val ) {
+            //     var obj = {};
+            //     obj["image_url"] = val;
+            //     banner_array.push(obj)
+            // })
+            
+            // renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
+            
+            all_promos = getEventsList();
+            all_promos = all_promos.reverse();
+            all_contests = getContestList();
+            all_contests = all_contests.reverse();
+            
+            if (all_contests.length > 0) {
+                $.each( all_contests , function( key, val ){
+                if (val.description.length > 110) {
+                   val.description =  val.description.substring(0,150)+'...';
+                } 
+                });
+                renderDetailData("#store_contest_container","#store_contest_template", all_contests, "contests");    
+            } else {
+                
+                $("#tab_2_content").css("width","100%")
+                $("#store_contest_container").hide()
+                $("#no_contest_container").show();
+                
+            }
+            promo_array = []
+            promo_array = []
+            feature_promo_array = []
+             $.each( all_promos , function( key, val ){
+                if (val.description.length > 110) {
+                   val.description =  val.description.substring(0,150)+'...';
+                } 
+                // today = new Date();
+                // webDate = new Date(val.show_on_web_date + "T08:00:00Z")
+                today = moment();
+                webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
+                if (today >= webDate && val.is_featured == false) {
+                    c = $.inArray("news", val.tags)
+                    if (c == 0){
+                    } else {
+                        promo_array.push(val) 
+                    }
+                } 
+                if (val.is_featured == true){
+                    c = $.inArray("news", val.tags)
+                    if (c == 0){
+                    } else {
+                        feature_promo_array.push(val)
+                    }
+                }
+            });
+            feature_promo_array = feature_promo_array.sort(function(a,b){
+                if(a.feature_item_index > b.feature_item_index){ return 1}
+                    if(a.feature_item_index < b.feature_item_index){ return -1}
+                    return 0;
+            });
+            all_promos = promo_array;
+            
+            
+            all_promos = all_promos.sort(function(a,b){
+                if(a.start_date > b.start_date){ return 1}
+                    if(a.start_date < b.start_date){ return -1}
+                    return 0;
+            });
+            
+            if (all_promos.length > 0  || feature_promo_array.length > 0) {
+                renderDetailData("#featured_boxes_container2","#featured_boxes_template2", all_promos, "promos");     
+                renderDetailData("#featured_boxes_container","#featured_boxes_template", feature_promo_array, "promos"); 
+            } else {
+                if (all_promos.length == 0){
+                    $("#store_promo_container").hide();
+                }
+                if (feature_promo_array.length == 0 ){
+                    $("#feature_store_promo_container").hide()
+                }
+                $("#no_event_container").show();
+            }
+            //  $.each( all_promos , function( key, val ){
+            //     if (val.description.length > 110) {
+            //       val.description =  val.description.substring(0,300)+'...';
+            //     } 
+            //      today = new Date();
+            //      webDate = new Date(val.show_on_web_date)
+            //      if (today >= webDate) {
+            //         c = $.inArray("news", val.tags)
+            //         if (c == -1){
+            //             promo_array.push(val)    
+            //         }
+                    
+            //      } 
+                
+            //  });
+            // all_promos = promo_array;
+            // if (all_promos.length > 0 ) {
+            //     renderDetailData("#store_promo_container","#store_promo_template", all_promos, "promos");    
+            // } else {
+            //     $("#tab_1_content").css("width","100%")
+            //     $("#store_promo_container").hide()
+            //     $("#no_event_container").show();
+            // }
+            
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            load_slider("flexslider4");
+            $('.chevron_accordion').click(function(){
+                $(this).toggleClass("open_accordion");
+                $(this).next('.accordion_body').slideToggle();
+            });
+            
+            $('.featured_box_header, .featured_name').click(function(e){
+                $(this).parent().find(".chevron_accordion").toggleClass("open_accordion");
+                $(this).parent().find(".accordion_body").slideToggle();
+                e.preventDefault();
+            })
+        }
+        
+        function renderBanners(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        }
+        
+        function renderDetailData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                // start = new Date (val.start_date + "T08:00:00Z");
+                // end = new Date (val.end_date + "T08:00:00Z");
+                var start = moment(val.start_date).tz(getPropertyTimeZone());
+                var end = moment(val.end_date).tz(getPropertyTimeZone());
+                c = $.inArray("news", val.tags)
+                // if (start.toDateString() == end.toDateString()) {
+                //     val.start_month = get_month(start.getMonth())
+                //     val.start_day = start.getDate()
+                //     val.date_string = val.start_month + " " + val.start_day
+                // } else {
+                //     val.start_month =get_month(start.getMonth())
+                //     val.start_day = start.getDate() 
+                //     val.end_month = get_month(end.getMonth())
+                //     val.end_day = end.getDate()
+                //     val.end_day = val.end_day
+                //     val.date_string = val.start_month + " " + val.start_day + " - " + val.end_month + " " +  val.end_day
+                // }
+                
+                if (start.format("DMY") == end.format("DMY")){
+                	val.date_string = start.format("MMM D");
+                }
+                else {
+                	val.date_string = start.format("MMM D") + " - " + end.format("MMM D");
+                }
+                
+                if (type == "promos"){
+                    if ((val.event_image_url).indexOf('missing.png') > -1){
+                        val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
+                    } else {
+                        val.alt_store_front_url = getImageURL(val.event_image_url);
+                    }
+                    if (val.eventable_type == "Store"){
+                        var store_details = getStoreDetailsByID(val.eventable_id)
+                        val.store_name = store_details.name
+                        val.store_info = '<a href="/stores/' + store_details.slug + ' " style="margin-left:5px" class="contact_object"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>'
+                    }    
+                } else {
+                    val.alt_promo_image_url = "https://mallmaverick.com"+val.photo_url
+                    val.store_name = "The Bay Centre"
+                }
+                val.encoded_name = encodeURI(val.store_name + " - " + val.name);
+                val.encoded_body = "Check this out @ The Bay Centre: //thebaycentre.com/promotions/"+encodeURI(val.slug);
+                $("#promo_header").show();   
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        }
+        
+        $(".tabs li").click(function(e){
+            var clicked = this.id
+            $(".tabs li").css({"background":"transparent","color":"white"});
+            $(".tabs li").find(".tab_overlay").css("display","block");
+            $(".tabs li").find("div").css("color","white");
+            $(this).css("background","white");
+            $(this).find("div").css("color","#4d4d4f");
+            $(this).find(".tab_overlay").css("display","none");
+            $(".tab_content li").hide();
+            $("#"+clicked + "_content").show()
+            $("#"+clicked + "_content li").show()
+        });
+        
+        function get_month (id){
+            switch(id) {
+                case 0:
+                    month = "Jan"
+                    break;
+                case 1:
+                    month = "Feb"
+                    break;
+                case 2:
+                    month = "Mar"
+                    break;
+                case 3:
+                    month = "Apr"
+                    break;
+                case 4:
+                    month = "May"
+                    break;
+                case 5:
+                    month = "Jun"
+                    break;
+                case 6:
+                    month = "Jul"
+                    break;
+                case 7:
+                    month = "Aug"
+                    break;
+                case 8:
+                    month = "Sep"
+                    break;
+                case 9:
+                    month = "Oct"
+                    break;
+                case 10:
+                    month = "Nov"
+                    break;
+                case 11:
+                    month = "Dec"
+                    break;
+            }
+            return month;
+        }
+        loadMallData(renderPageData);
+    });
+</script>

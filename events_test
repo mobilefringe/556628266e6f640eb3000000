@@ -272,7 +272,7 @@
         function renderPageData(){
              var page_banner = getRepoDetailsByName('Events & Contests').images;
              var page_banner_url = page_banner.photo_url_abs;
-             console.log(page_banner_url);
+             console.log(page_banner);
             
             renderBanners("#banner_container","#banner_template", page_banner)
             

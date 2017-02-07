@@ -404,8 +404,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         
         <img id="left_image" />
         <img id="right_image" />
-        <!--<div id="page_content">{{yield}}</div>-->
-        <div>{{yield}}</div>
+        <div id="page_content">{{yield}}</div>
         
         <div class="socialize_div">
             <p class="socialize_text">socialize with us</p>

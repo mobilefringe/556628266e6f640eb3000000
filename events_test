@@ -1,9 +1,8 @@
 <style>
-    .missing_out_container {
-        /*margin: 0 auto;*/
-        /*width: 1193px;*/
-        /*height: 545px;*/
-        /*position: relative;*/
+    .banner_wrapper {
+        width: 1193;
+        height: 545px;
+        position: relative;
     }
     .store_promo_content{
        margin:0;

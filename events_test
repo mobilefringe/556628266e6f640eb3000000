@@ -1,4 +1,9 @@
 <style>
+    .missing_out_container {
+        margin: 0 auto;
+        width: 1193px;
+        position: relative;
+    }
     .store_promo_content{
        margin:0;
     }
@@ -41,8 +46,6 @@
         margin-top:-80px;
        
     }
-    
- 
     .feature_promo_date_div{
         width:auto;
         margin-left:0;
@@ -76,7 +79,6 @@
     .socialize_social_icons{
         margin-top:0;
     }
-    
     #no_contest_container, #no_event_container {
         padding-left:30px;
         margin-bottom:50px;
@@ -107,7 +109,6 @@
             height:auto;
             word-break:break-word;
         }
-        
         .store_promo_ul li {
             padding-left:5px;
             padding-right:5px;
@@ -115,8 +116,6 @@
             width: calc(100% - 10px) !important;
         }
     }
-    
-    
 </style>
 
 <div class="banner_container">

@@ -142,7 +142,7 @@
 <div class="share_this_icon_div">
     <span class='st_sharethis'></span>   
 </div>
-<div id="main_container"
+<div id="main_container">
     <div id="page_content">
         <div class="tab_container">
             <ul class="tabs">

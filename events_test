@@ -1,7 +1,7 @@
 <style>
     .page_banner {
         background-position: center center;
-        background-repaet: none;
+        background-repeat: no-repeat;
     }
     .banner_wrapper {
         margin: 0 auto;

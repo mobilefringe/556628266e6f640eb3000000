@@ -37,6 +37,7 @@
     .tabs{
         width:100%;
         background:transparent;
+        bottom: 86px;
     }
     .tabs li{
         width:50%;

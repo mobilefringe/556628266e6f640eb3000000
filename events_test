@@ -14,9 +14,12 @@
     }
     .banner_wrapper h1 {
         padding-top: 10%;
-        font-family: railway-regular;
+        font-family: railway-light;
         font-size: 50px;
         text-transform: uppercase;
+    }
+    .banner_wrapper h1 span {
+        font-family: railway-medium;    
     }
     .store_promo_content{
        margin:0;

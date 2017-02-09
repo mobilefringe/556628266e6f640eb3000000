@@ -154,23 +154,6 @@
 </div>
 
 <script>
- 
-    // function show_stores(id){
-    //   if ($("#cat_"+id+"_stores").is(":visible")){
-    //       $("#cat_"+id+"_stores").slideUp();
-    //       $("#icon_"+id).removeClass("fa-minus")
-    //       $("#icon_"+id).addClass("fa-plus")
-    //   } else {
-    //       $("#cat_"+id+"_stores").slideDown();
-    //       $("#icon_"+id).removeClass("fa-plus")
-    //       $("#icon_"+id).addClass("fa-minus")
-    //   }
-    // }
-    
-    
-    
-    
-    
     $(document).ready(function() {
         function renderAll(){
             var page_banner = getRepoDetailsByName('Sustainability').images;
@@ -223,6 +206,19 @@
             $(container).html(item_rendered.join(''));
         };
         
+         
+    // function show_stores(id){
+    //   if ($("#cat_"+id+"_stores").is(":visible")){
+    //       $("#cat_"+id+"_stores").slideUp();
+    //       $("#icon_"+id).removeClass("fa-minus")
+    //       $("#icon_"+id).addClass("fa-plus")
+    //   } else {
+    //       $("#cat_"+id+"_stores").slideDown();
+    //       $("#icon_"+id).removeClass("fa-plus")
+    //       $("#icon_"+id).addClass("fa-minus")
+    //   }
+    // }
+    
         loadMallDataCached(renderAll); 
     })
 </script>

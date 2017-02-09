@@ -41,9 +41,7 @@
         line-height:26pt;
         text-align:center;
     }
-    
-    
-    
+
      @media (max-width: 767px) {
         .store_promo_buttons p{
             width:60%;
@@ -58,6 +56,7 @@
         }
     }
 </style>
+
 <div id="page_banner">
     <div class="banner_wrapper">
         <h1 class="page_headline"><span>Job</span> Opportunities</h1>

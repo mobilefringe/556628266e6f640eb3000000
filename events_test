@@ -132,7 +132,7 @@
             font-size: 44px;
         }
         .banner_wrapper p {
-            font-size: 12px;
+            font-size: 18px;
             padding-bottom: 10%;
         }
         .tab_content{

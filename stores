@@ -175,99 +175,15 @@
 
 
 <script>
-
-    
-
-    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/StoreDirectoryLeft.png");
-    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/StoreDirectoryRight.png");
-    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/46aca5797e3b84bd6d66160428052711/findstore_banner1.jpg");
-
-    function show_stores(id){
-       if ($("#cat_"+id+"_stores").is(":visible")){
-           $("#cat_"+id+"_stores").slideUp();
-           $("#icon_"+id).removeClass("fa-minus")
-           $("#icon_"+id).addClass("fa-plus")
-       } else {
-           $("#cat_"+id+"_stores").slideDown();
-           $("#icon_"+id).removeClass("fa-plus")
-           $("#icon_"+id).addClass("fa-minus")
-       }
-    }
-
-    function see_all_stores(){
-    
-        $("#search_stores").val('')
-        $('#search_stores').trigger(
-            jQuery.Event( 'keypress', { keyCode: 13, which: 13 } )
-        );
-     
-    }
-        
-
     $(document).ready(function() {
-        
-        
-        $("#search_stores").on("blur", function(evt) {
-            if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-                $('#search_stores').trigger(
-                    jQuery.Event( 'keypress', { keyCode: 13, which: 13 } )
-                );
-            }
-         
-        })
-        
-        
-        $("#search_stores").keypress(function(event) {
-            
-            if (event.keyCode == 13) {
-                search();
-            }
-         
-        });
-          
-          
-        function search(){
-            var store_search_results = getSearchResults($('#search_stores').val(),10,100);
-            if ($('#search_stores').val() == ""){
-                var alpha_stores = getStoresList();
-                var full_cat_array = getStoreCategories();
-            } else {
-                var alpha_stores = (store_search_results.stores)  
-                var cat_array = new Array;
-                  if (store_search_results.stores.length > 0 ){
-                    $.each( store_search_results.stores , function( key, val ) {
-                      $.each( val.categories , function( key2, val2 ) {
-                        cat_array.push(getCategoryDetails(val2))
-                      }) 
-                    })
-                    full_cat_array = jQuery.unique( cat_array );
-                    
-                    $.each( full_cat_array , function( key, val ) {
-                        newStoreIds = []
-                         $.each( store_search_results.stores , function( key2, val2 ) {
-                             
-                             if (jQuery.inArray(val.id, val2.categories)== -1){
-                                 newStoreIds.push(val2.id)
-                             }
-                         })
-                        val.store_ids = newStoreIds
-                    })
-                    
-                  }
-            }
-            
-          var alpha_array = generateAlphaStoreList(alpha_stores);
-          $("#alpha_stores_container").html($("#backup_alpha_stores_container").html())
-          renderPageData("#alpha_stores_container","#alpha_stores_template", alpha_array, "cats");
-          $("#cat_stores_container").html($("#backup_cat_stores_container").html())
-          renderPageData("#cat_stores_container","#cat_stores_template", full_cat_array, "cats");
-        }
-          
-          
-          
-    
-        
         function renderAll(){
+            var page_banner = getRepoDetailsByName('Stores').images;
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.photo_url_abs;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
             var categories = getStoreCategories();
             var alpha_stores = getStoresList();  
             renderPageData("#cat_stores_container","#cat_stores_template", categories, "cats");
@@ -279,54 +195,90 @@
             $(".website_td a").attr("target","_blank");
         }
         
+        $("#search_stores").on("blur", function(evt) {
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+                $('#search_stores').trigger(
+                    jQuery.Event( 'keypress', { keyCode: 13, which: 13 } )
+                );
+            }
+        });
         
+        
+        $("#search_stores").keypress(function(event) {
+            if (event.keyCode == 13) {
+                search();
+            }
+        });
+          
+          
+        function search(){
+            var store_search_results = getSearchResults($('#search_stores').val(),10,100);
+            if ($('#search_stores').val() == ""){
+                var alpha_stores = getStoresList();
+                var full_cat_array = getStoreCategories();
+            } else {
+                var alpha_stores = (store_search_results.stores)  
+                var cat_array = new Array;
+                if (store_search_results.stores.length > 0 ){
+                    $.each( store_search_results.stores , function( key, val ) {
+                        $.each( val.categories , function( key2, val2 ) {
+                            cat_array.push(getCategoryDetails(val2))
+                        }); 
+                    });
+                    full_cat_array = jQuery.unique( cat_array );
+                    $.each( full_cat_array , function( key, val ) {
+                        newStoreIds = []
+                        $.each( store_search_results.stores , function( key2, val2 ) {
+                            if (jQuery.inArray(val.id, val2.categories)== -1){
+                                newStoreIds.push(val2.id)
+                            }
+                        });
+                        val.store_ids = newStoreIds
+                    });
+                }
+            }
+            var alpha_array = generateAlphaStoreList(alpha_stores);
+            $("#alpha_stores_container").html($("#backup_alpha_stores_container").html())
+            renderPageData("#alpha_stores_container","#alpha_stores_template", alpha_array, "cats");
+            $("#cat_stores_container").html($("#backup_cat_stores_container").html())
+            renderPageData("#cat_stores_container","#cat_stores_template", full_cat_array, "cats");
+        }
+
         function generateAlphaStoreList (collection){
             alpha_list = new Array;
             alpha_array = new Array;
-             $.each( collection , function( key, val ) {
-                 first_letter = (val.name).charAt(0)
-                 if (jQuery.inArray(first_letter, alpha_list)== -1){
-                     obj = {};
-                     obj.name = first_letter
-                     obj.id = first_letter
-                     alpha_array.push(obj);
-                     alpha_list.push(first_letter)
-                 } else {
+            $.each( collection , function( key, val ) {
+                first_letter = (val.name).charAt(0)
+                if (jQuery.inArray(first_letter, alpha_list)== -1){
+                    obj = {};
+                    obj.name = first_letter
+                    obj.id = first_letter
+                    alpha_array.push(obj);
+                    alpha_list.push(first_letter)
+                } else {
                      
-                 }
-             })
-             
-           
-            
+                }
+            });
             $.each( alpha_array , function( key, val ) {
                 var store_ids = []
-                  $.each( collection , function( key2, val2 ) {
-                      if (val.name == (val2.name).charAt(0)){
-                          store_ids.push(val2.id)
-                      }
-                  })
+                $.each( collection , function( key2, val2 ) {
+                    if (val.name == (val2.name).charAt(0)){
+                        store_ids.push(val2.id)
+                    }
+                });
                 val.store_ids = store_ids
-             })
-            
+             });
             return(alpha_array)
-        
         }
         
         function renderPageData(container, template, collection, type){
-            
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
- 
-            // item_list.push(collection);    
-            
-            
             $.each( collection , function( key, val ) {
-                
                 if (type == "cats"){
                     val.count = val.store_ids.length  
-                    
                 }
                 
                 var rendered = Mustache.render(template_html,val);
@@ -353,8 +305,26 @@
         }
         
         loadMallDataCached(renderAll);  
-        
-    })
+    });
+    
+    function show_stores(id){
+        if ($("#cat_"+id+"_stores").is(":visible")){
+            $("#cat_"+id+"_stores").slideUp();
+            $("#icon_"+id).removeClass("fa-minus")
+            $("#icon_"+id).addClass("fa-plus")
+        } else {
+            $("#cat_"+id+"_stores").slideDown();
+            $("#icon_"+id).removeClass("fa-plus")
+            $("#icon_"+id).addClass("fa-minus")
+        }
+    }
+
+    function see_all_stores(){
+        $("#search_stores").val('')
+        $('#search_stores').trigger(
+            jQuery.Event( 'keypress', { keyCode: 13, which: 13 } )
+        );
+    }
 
     $(".tabs li").click(function(e){
         var clicked = this.id
@@ -368,8 +338,4 @@
         $("#"+clicked + "_content").show()
         $("#"+clicked + "_content li").show()
     });
-    
-   
 </script>
-
-

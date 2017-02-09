@@ -86,16 +86,20 @@
 <div id="main_container">
     <div id="page_content">
         <div class="store_promo_content">
-        
             <ul class="store_promo_ul" id="store_promo_container">
                 <script id="store_promo_template" type="x-tmpl-mustache/text">
                     <li>
                         <div class="promo_left_div">
                             <p class="store_detail_title">{{title}}</p>
                             <p class="store_detail_description">{{body}}</p>
-                            
                             <div class="store_promo_buttons">
-                                <span><a href="/videos/{{slug}}"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>read more</p></a> <span class='st_sharethis' st_url='https://thebaycentre.kodekloud.io/videos/{{slug}}' id="promo_share_this"></span> </span>
+                                <span>
+                                    <a href="/videos/{{slug}}">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon">
+                                        <p>read more</p>
+                                    </a> 
+                                    <span class='st_sharethis' st_url='https://thebaycentre.kodekloud.io/videos/{{slug}}' id="promo_share_this"></span> 
+                                </span>
                             </div>
                         </div>
                         <div class="promo_right_div">
@@ -105,25 +109,16 @@
                         </div>
                     </li>
                 </script>
-                
             </ul>
-            
             <div class='button_container' id='button_container'>
-        
-            
-                    <button class="gray_pill" onclick="window.open('https://youtube.com/thebaycentre')">Watch More Videos like these</button>
-        
+                <button class="gray_pill" onclick="window.open('https://youtube.com/thebaycentre')">Watch More Videos like these</button>
             </div>
-            
             <div id="no_event_container" style="display:none">
                 No Current Videos. please check back later. 
             </div>
-            
         </div>
     </div>
 </div>
-
-
 
 <script>
     $(document).ready(function() {

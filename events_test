@@ -15,7 +15,8 @@
     .banner_wrapper h1 {
         padding-top: 10%;
         font-family: railway-light;
-        font-size: 50px;
+        font-size: 74px;
+        letter-spacing: 4;
         text-transform: uppercase;
     }
     .banner_wrapper h1 span {

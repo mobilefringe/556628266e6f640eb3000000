@@ -120,37 +120,41 @@ line-height:26pt;
         </div>
     </div>
 </div>
+
 <div class="share_this_icon_div">
     <span class='st_sharethis'></span>   
 </div>
-<br /><br />
-<h3 class="contact_title"></h3>
-<p class="gs_text" style="margin-left:35px;margin-right:15px">
-    Getting “Caught Looking Confident” at The Bay Centre pays off. Check out our confident guests with <a href="//www.nichemagazine.ca/" target="_blank">NICHE Magazine</a> who received a $50 Bay Centre gift card just for stopping by!
-</p>
-<div class="row">
-    <div id="spotted_container">
-        <script id="spotted_template" type="x-tmpl-mustache">
-            <div class="col-md-3">
-                <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" onclick="spottedLightbox(this)"> 
-                    <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}" class="width_100" >
-                </a>
+
+<div id="main_container">
+    <div id="page_content">
+        <br/><br/>
+        <h3 class="contact_title"></h3>
+        <p class="gs_text" style="margin-left:35px;margin-right:15px">Getting “Caught Looking Confident” at The Bay Centre pays off. Check out our confident guests with <a href="//www.nichemagazine.ca/" target="_blank">NICHE Magazine</a> who received a $50 Bay Centre gift card just for stopping by!</p>
+        <div class="row">
+            <div id="spotted_container">
+                <script id="spotted_template" type="x-tmpl-mustache">
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" onclick="spottedLightbox(this)"> 
+                            <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}" class="width_100" >
+                        </a>
+                    </div>
+                    <div style="{{clear}}"></div>
+                </script>
             </div>
-            <div style="{{clear}}"></div>
-        </script>
-    </div>
-    <div class="clearfix"></div>
-</div>
-<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog" id="modal-dialog">
-        <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
-        <div class="modal-content">
-            <div class="modal-body">
-                <img class="spotted" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/017/795/original/IMG_0561.jpg?1460131067" alt="..." title=""/>
-            </div>
-            <div class="modal-footer">
-                <h3 class="spotted-title" style="font-family: lora-regular;"></h3>
-                <p class="spotted-description contact_number"></p>
+            <div class="clearfix"></div>
+        </div>
+        <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog" id="modal-dialog">
+                <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img class="spotted" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/017/795/original/IMG_0561.jpg?1460131067" alt="..." title=""/>
+                    </div>
+                    <div class="modal-footer">
+                        <h3 class="spotted-title" style="font-family: lora-regular;"></h3>
+                        <p class="spotted-description contact_number"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

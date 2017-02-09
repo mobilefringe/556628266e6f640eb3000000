@@ -175,51 +175,20 @@
             })
         }
         
-        
-        function renderBanners(container, template, collection){
-            var item_list = [];
-            var item_rendered = [];
-            var template_html = $(template).html();
-            Mustache.parse(template_html);   // optional, speeds up future uses
-            
-            $.each( collection , function( key, val ) {
-                var rendered = Mustache.render(template_html,val);
-                item_rendered.push(rendered);
-            });
-            
-            $(container).show();
-            $(container).html(item_rendered.join(''));
-            
-        }
         function renderDetailData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                // start = new Date (val.start_date + "T08:00:00Z");
-                // end = new Date (val.end_date + "T08:00:00Z");
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
-                    // if (start.toDateString() == end.toDateString()) {
-                    //     val.start_month = get_month(start.getMonth())
-                    //     val.start_day = start.getDate()
-                    //     val.date_string = val.start_month + " " + val.start_day
-                    // } else {
-                    //     val.start_month =get_month(start.getMonth())
-                    //     val.start_day = start.getDate() 
-                    //     val.end_month = get_month(end.getMonth())
-                    //     val.end_day = end.getDate()
-                    //     val.date_string = val.start_month + " " + val.start_day + " - " + val.end_month + " " +  val.end_day
-                    // }
-                    
                     if (start.format("DMY") == end.format("DMY")){
                     	val.date_string = start.format("MMM D");
                     }
                     else {
                     	val.date_string = start.format("MMM D") + " - " + end.format("MMM D");
                     }
-                    
                     if (val.jobable_type == "Store"){
                         var store_details = getStoreDetailsByID(val.jobable_id)
                         val.store_name = store_details.name
@@ -230,13 +199,11 @@
                         }    
                     } else {
                         val.store_name = "The Bay Centre"
-                       val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
+                        val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
                     }
-                    
-                    val.encoded_name = encodeURI(val.store_name + " - " + val.name);
+                val.encoded_name = encodeURI(val.store_name + " - " + val.name);
                 val.encoded_body = "Check this out @ The Bay Centre: //thebaycentre.ca/jobs/"+encodeURI(val.slug);
                
-                
                 if (val.jobable_type == "Store"){
                     var store_details = getStoreDetailsByID(val.jobable_id)
                     val.store_info = '<a href="/stores/' + store_details.slug + ' " style="margin-left:5px" class="contact_object"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>'
@@ -245,11 +212,9 @@
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         }
-        
         loadMallDataCached(renderPageData);
     });
 </script>

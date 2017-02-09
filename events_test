@@ -8,6 +8,14 @@
         width: 1193;
         height: 545px;
         position: relative;
+        color: #fff;
+        font-family: ;
+        text-align: center;
+    }
+    .banner_wrapper h1 {
+        padding-top: 10%;
+        font-size: 50px;
+        text-transform: uppercase;
     }
     .store_promo_content{
        margin:0;

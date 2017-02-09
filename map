@@ -96,7 +96,7 @@ function drop_pin(value){
 }
     $(document).ready(function() {
         function renderAll (){
-            var page_banner = getRepoDetailsByName('Lifestyle').images;
+            var page_banner = getRepoDetailsByName('Map').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.photo_url_abs;

@@ -137,7 +137,7 @@
 
     $(document).ready(function() {
         function renderAll(){
-            var page_banner = getRepoDetailsByName('Jobs').images;
+            var page_banner = getRepoDetailsByName('Leasing').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.photo_url_abs;

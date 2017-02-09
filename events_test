@@ -22,6 +22,9 @@
     .banner_wrapper h1 span {
         font-family: railway-medium;    
     }
+    .banner_wrapper p {
+        font-family: lora-regular;
+    }
     .store_promo_content{
        margin:0;
     }

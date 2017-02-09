@@ -25,6 +25,8 @@
     }
     .banner_wrapper p {
         font-family: lora-regular;
+        font-size: 21px;
+        letter-spacing: 1;
     }
     .store_promo_content{
        margin:0;

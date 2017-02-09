@@ -195,46 +195,22 @@
             
             $(".loading_overlay").hide();
             $("#page_content").show();
-            load_slider("flexslider4");
          }
-        
         loadMallDataCached(renderPageData);
-        
-    })
-    
-    
+    });
 
     email = getRequestParam("email");
     $("#news_email").val(email);
-    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Enewsletter.png");
-    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/EnewsletterLeft.png");
-    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/EnewsletterRight.png");
     
-    
-    function renderBanners(container, template, collection){
-            var item_list = [];
-            var item_rendered = [];
-            var template_html = $(template).html();
-            Mustache.parse(template_html);   // optional, speeds up future uses
-            
-            $.each( collection , function( key, val ) {
-                var rendered = Mustache.render(template_html,val);
-                item_rendered.push(rendered);
-            });
-            
-            $(container).show();
-            $(container).html(item_rendered.join(''));
-            
-        }
     $("#newsletter_form").submit(function(e){
         e.preventDefault();
         $("#hidden_agree_text").val($("#newsletter_agree_terms").attr("value"));
         $("#hidden_source").val(window.location.href)
         var full_name = $("#first_name").val() + " " + $("#last_name").val();
         $("#full_name").val(full_name);
-         $.getJSON(
+        $.getJSON(
             "https://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
-          $(this).serialize(),
+            $(this).serialize(),
             function (data) {
                 if (data.Status === 400) {
                     e.preventDefault();
@@ -244,46 +220,35 @@
                     submitToMailChimp();
                 }
         }); 
-        
-        
     })
-    
-    
-    
-    
+
     function submitToMailChimp(){
-            
-            
-                $("#mce-FNAME").val($('#first_name').val())
-                $("#mce-LNAME").val($('#last_name').val())
-                $("#mce-EMAIL").val($('#news_email').val())
-                $("#mce-SEX").val($('#news_gender option:selected' ).text()) 
-                $("#mce-AGE").val($('#news_age').val()) 
-                $("#mce-POSTALCODE").val($('#news_postal').val());
-                $("#mce-group[12657]-12657-0").prop( "checked", true );
-                
-                $.ajax({
-                    type: $("#mc-embedded-subscribe-form").attr('method'),
-                    url: $("#mc-embedded-subscribe-form").attr('action'),
-                    data: $("#mc-embedded-subscribe-form").serialize(),
-                    cache       : false,
-                    dataType    : 'json',
-                    contentType: "application/json; charset=utf-8",
-                    error       : function(err) { alert("Could not connect to the registration server. Please try again later.") },
-                    success     : function(data) {
-                   
-                        if (data.result != "success") {
-                            window.location.href="/thank_you"
-                        } else {
-                            
-                            window.location.href="/thank_you"
-                        }
-                    }
-                })
-        }
+        $("#mce-FNAME").val($('#first_name').val())
+        $("#mce-LNAME").val($('#last_name').val())
+        $("#mce-EMAIL").val($('#news_email').val())
+        $("#mce-SEX").val($('#news_gender option:selected' ).text()) 
+        $("#mce-AGE").val($('#news_age').val()) 
+        $("#mce-POSTALCODE").val($('#news_postal').val());
+        $("#mce-group[12657]-12657-0").prop( "checked", true );
+        
+        $.ajax({
+            type: $("#mc-embedded-subscribe-form").attr('method'),
+            url: $("#mc-embedded-subscribe-form").attr('action'),
+            data: $("#mc-embedded-subscribe-form").serialize(),
+            cache       : false,
+            dataType    : 'json',
+            contentType: "application/json; charset=utf-8",
+            error: function(err) { alert("Could not connect to the registration server. Please try again later.") },
+            success: function(data) {
+                if (data.result != "success") {
+                    window.location.href="/thank_you"
+                } else {
+                    window.location.href="/thank_you"
+                }
+            }
+        });
+    }   
      
-    
-    
     function check_email (){
         var email = $("#news_email").val();
         if( !validateEmail(email)) {

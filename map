@@ -44,27 +44,25 @@
 </div>
 
 
+<div id="main_container">
+    <div id="page_content"> 
+        <div class="store_select">
+            <select id="store_select_container" onchange="javascript:drop_pin(this.value)">
+                <script id="store_select_template" type="x-tmpl-mustache/text">
+                    <option value='{{svgmap_region}}/{{slug}}'>{{name}}</option>
+                </script>
+            </select>
+            
+            <div id="download_button_container">
+                <script id="download_button_template" type="x-tmpl-mustache/text">
+                    <button class="gray_pill download_map" onclick="window.open('{{photo_url_abs}}')">Printable PDF Map</button>    
+                </script>
+            </div>
+        </div>
 
-<div class="store_select">
-    <select id="store_select_container" onchange="javascript:drop_pin(this.value)">
-        <script id="store_select_template" type="x-tmpl-mustache/text">
-            <option value='{{svgmap_region}}/{{slug}}'>{{name}}</option>
-        </script>
-    </select>
-    
-    <div id="download_button_container">
-        <script id="download_button_template" type="x-tmpl-mustache/text">
-            <button class="gray_pill download_map" onclick="window.open('{{photo_url_abs}}')">Printable PDF Map</button>    
-        </script>
+        <div class="map_container" id="mapsvg"></div>
     </div>
-    
-    <!--<button class="gray_pill download_map" onclick="window.open('//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/application/pdf/1482507780000/TBC-StoreMapprintcopyUpdateJan32017web.pdf')">Printable PDF Map</button>-->
 </div>
-
-
-
-
-<div class="map_container" id="mapsvg"></div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
 <script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
@@ -79,25 +77,32 @@
 <script>
 
 function drop_pin(value){
-            map.marksHide();
-            value = value.split('/')
-            var coords = map.get_coords(value[0]);
-            var height = parseInt(coords["height"])
-            var width = parseInt(coords["width"])
-            var x_offset = (parseInt(width) / 2);
-            var y_offset = (parseInt(height) /2);
-            
-            map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
-                      attrs: {
-                                class: 'test_pin',
-                                href: '/stores/'+value[1],
-                                src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
-                              }
-                    }
-                    ])
+    map.marksHide();
+    value = value.split('/')
+    var coords = map.get_coords(value[0]);
+    var height = parseInt(coords["height"])
+    var width = parseInt(coords["width"])
+    var x_offset = (parseInt(width) / 2);
+    var y_offset = (parseInt(height) /2);
+    
+    map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
+        attrs: {
+            class: 'test_pin',
+            href: '/stores/'+value[1],
+            src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+          }
         }
+    ])
+}
     $(document).ready(function() {
         function renderAll (){
+            var page_banner = getRepoDetailsByName('Lifestyle').images;
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.photo_url_abs;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
             var stores = getStoresList();
             regions = {}
             $.each( stores , function( key, val ) {
@@ -109,15 +114,14 @@ function drop_pin(value){
                     regions[val.svgmap_region] = obj
                 }
             });
-            renderPageData("#store_select_container","#store_select_template",stores, "stores")
+            renderPageData("#store_select_container","#store_select_template",stores, "stores");
             
             var repo = getRepoDetailsByName("Printable Map PDF").images;
-            console.log(repo);
-            renderMapPDF("#download_button_container", "#download_button_template", repo)
+            renderMapPDF("#download_button_container", "#download_button_template", repo);
+            
             $(".loading_overlay").hide();
             $("#page_content").show();
             load_map(regions)
-            
         }
         
         function renderMapPDF(container, template, collection){
@@ -132,8 +136,6 @@ function drop_pin(value){
             $(container).html(item_rendered.join(''));
         }
         
-        
-        
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
@@ -145,13 +147,8 @@ function drop_pin(value){
             });
             $(container).show();
             $(container).html(item_rendered.join(''));
-            
-            
         }
-        
-        
-        
-    
+
         function load_map(reg){
             map = $('#mapsvg').mapSvg({
                 source: getSVGMapURL(),    // Path to SVG map
@@ -170,12 +167,7 @@ function drop_pin(value){
                 responsive:true,
                 zoomLimit: [0,10]
             });
-            
-            
         }
         loadMallDataCached(renderAll);  
-    })
-    
-    
-    
+    });
 </script>

@@ -1,4 +1,7 @@
 <style>
+    .banner_wrapper {
+        margin-bottom: 60px;
+    }
     .store_detail_title{
         margin-bottom:20px;
     }
@@ -122,9 +125,6 @@
         </form>
 
         <div class="newsletter_content">
-            <br>
-            <br>
-            <br>
             <p class="store_detail_title">STAY INFORMED</p>
             
             <div class="store_detail_description">

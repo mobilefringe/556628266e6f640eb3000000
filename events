@@ -228,7 +228,7 @@
 <script>
     $(document).ready(function() {
         function renderPageData(){
-            var page_banner = getRepoDetailsByName('Contact Us').images;
+            var page_banner = getRepoDetailsByName('Events & Contests').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.photo_url_abs;

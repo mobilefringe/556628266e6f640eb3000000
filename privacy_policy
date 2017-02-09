@@ -6,15 +6,15 @@
         font-size:14pt;
         line-height:26pt;
     }
-    h1 {
-     font-family: railway-regular;
-     /*font-family: proxima \9;*/
-  font-size: 28pt;
-  color: #6d6e71;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+    .main_content_div h1 {
+        font-family: railway-regular;
+        /*font-family: proxima \9;*/
+        font-size: 28pt;
+        color: #6d6e71;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
-    .stores_div{
+    .stores_div {
         padding-top:30px;
         padding-left:0;
         color:#6d6e71;

@@ -24,7 +24,7 @@
     .banner_wrapper h1 span {
         font-family: railway-medium;    
     }
-    .banner_wrapper p {
+    .banner_wrapper .subtitle {
         font-family: lora-italic;
         font-size: 21px;
         letter-spacing: 1;

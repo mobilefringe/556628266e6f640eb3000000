@@ -339,7 +339,7 @@ h2 {
             $(".loading_overlay").hide();
             $("#page_content").show();
             
-            load_slider("flexslider4");
+            // load_slider("flexslider4");
         }
         
         

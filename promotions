@@ -159,14 +159,11 @@
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
-            
             all_promos = getPromotionsList();
             all_promos = all_promos.reverse();
             promo_array = []
             feature_promo_array = []
-             $.each( all_promos , function( key, val ){
-                // today = new Date();
-                // webDate = new Date(val.show_on_web_date + "T08:00:00Z")
+            $.each( all_promos , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate && val.is_featured == false) {
@@ -175,22 +172,20 @@
                 if (val.is_featured == true){
                     feature_promo_array.push(val)
                 }
-             });
-             feature_promo_array = feature_promo_array.sort(function(a,b){
-               if(a.feature_item_index > b.feature_item_index){ return 1}
+            });
+            feature_promo_array = feature_promo_array.sort(function(a,b){
+                if(a.feature_item_index > b.feature_item_index){ return 1}
                 if(a.feature_item_index < b.feature_item_index){ return -1}
-                  return 0;
+                return 0;
             });
             all_promos = promo_array;
             if (all_promos.length > 0  || feature_promo_array.length > 0) {
                 renderDetailData("#featured_boxes_container","#featured_boxes_template", feature_promo_array, "promos"); 
                 renderDetailData("#featured_boxes_container2","#featured_boxes_template2", all_promos, "promos"); 
-                
             } else {
                 if (all_promos.length == 0){
                     $("#store_promo_container").hide();
                 }
-                
                 if (feature_promo_array.length == 0 ){
                     $("#feature_store_promo_container").hide()
                 }
@@ -201,11 +196,12 @@
             $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
-            load_slider("flexslider4");
+
             $('.chevron_accordion').click(function(){
                 $(this).toggleClass("open_accordion");
                 $(this).next('.accordion_body').slideToggle();
             });
+            
             $('.share_links').click(function(e){
                 var uri = encodeURI($(this).attr('href'));
                 if(uri.indexOf('mailto') < 0){
@@ -220,45 +216,25 @@
             })
         }
         
-        function renderBanners(container, template, collection){
-            var item_list = [];
-            var item_rendered = [];
-            var template_html = $(template).html();
-            Mustache.parse(template_html);   // optional, speeds up future uses
-            
-            $.each( collection , function( key, val ) {
-                var rendered = Mustache.render(template_html,val);
-                item_rendered.push(rendered);
-            });
-            
-            $(container).show();
-            $(container).html(item_rendered.join(''));
-            
-        }
-        
         function renderDetailData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                
-                    if (val.promotionable_type == "Store"){
-                        var store_details = getStoreDetailsByID(val.promotionable_id)
-                        val.store_slug = store_details.slug
-                        if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
-                            val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
-                        } else {
-                            val.alt_promo_image_url = getImageURL(val.promo_image_url);
-                        }   
-                        val.store_name = store_details.name
+                if (val.promotionable_type == "Store"){
+                    var store_details = getStoreDetailsByID(val.promotionable_id)
+                    val.store_slug = store_details.slug
+                    if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
+                        val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                     } else {
-                       val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
-                       val.store_name = "The Bay Centre"
-                    }
-                    
-                    
-             
+                        val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                    }   
+                        val.store_name = store_details.name
+                } else {
+                   val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
+                   val.store_name = "The Bay Centre"
+                }
                 val.encoded_name = encodeURI(val.store_name + " - " + val.name);
                 val.encoded_body = "Check this out @ The Bay Centre: //thebaycentre.com/promotions/"+encodeURI(val.slug);
                 if (val.promotionable_type == "Store"){
@@ -269,11 +245,9 @@
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         }
-        
         loadMallDataCached(renderPageData);
     });
 </script>

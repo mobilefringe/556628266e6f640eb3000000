@@ -308,7 +308,7 @@ h2 {
                 banner_url = val.photo_url_abs;
             });
             console.log(banner_url);
-            $(".page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             // banners = []
             

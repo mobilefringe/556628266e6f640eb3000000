@@ -168,29 +168,28 @@ h2 {
         <div class="tab_container">
             <ul class="tabs">
                 <li id="tab_1" style="background:white">
-                <div class="tab_item" style="color:#4d4d4f">Featured Partnerships &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i><div class="tab_overlay" style="display:none">&nbsp;</div></div>
-                     
+                    <div class="tab_item" style="color:#4d4d4f">
+                        Featured Partnerships &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
+                        <div class="tab_overlay" style="display:none">&nbsp;</div>
+                    </div>
                 </li>
                 <li id="tab_2">
-                    <div class="tab_item">sponsorships & donations &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i><div class="tab_overlay">&nbsp;</div></div>
+                    <div class="tab_item">
+                        sponsorships & donations &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
+                        <div class="tab_overlay">&nbsp;</div>
+                    </div>
                 </li>
             </ul>
             <ul class="tab_content">
                 <li id="tab_1_content">
                     <div class="store_detail_content">
-            
                         <div class="detail_left_div">
-                    
                             <div id="promo_title_container1">
                                 <script id="promo_title_template1" type="x-tmpl-mustache/text">
                                     <p class="store_detail_title">{{title}}</p>
                                     <div class="store_detail_description">{{{body}}}</div>
-                                    
                                 </script>
                             </div>
-                            
-                         
-                           
                         </div>
                         <!--<div class="detail_right_div">-->
                         <!--    <div id="store_detail_right_content_container1">-->
@@ -217,19 +216,13 @@ h2 {
                 </li>
                 <li id="tab_2_content" style="display:none">
                     <div class="store_detail_content">
-            
                         <div class="detail_left_div">
-                    
                             <div id="promo_title_container2">
                                 <script id="promo_title_template2" type="x-tmpl-mustache/text">
                                     <p class="store_detail_title">{{title}}</p>
                                     <div class="store_detail_description">{{{body}}}</div>
-                                    
                                 </script>
                             </div>
-                            
-                         
-                           
                         </div>
                         <!--<div class="detail_right_div">-->
                         <!--    <div id="store_detail_right_content_container2">-->
@@ -305,19 +298,28 @@ h2 {
     $(document).ready(function() {
         function renderAll(){
             
-            banners = []
+            var page_banner = getRepoDetailsByName('Community').images;
+            console.log(page_banner);
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.photo_url_abs;
+            });
+            console.log(banner_url);
+            $(".page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
-            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png")
-            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsRIGHT.jpg");
-            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsLEFT.jpg");
-            banner_array = []
-            $.each( banners , function( key, val ) {
-                var obj = {};
-                obj["image_url"] = val;
-                banner_array.push(obj)
-            })
+            // banners = []
             
-            renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
+            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png")
+            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsRIGHT.jpg");
+            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsLEFT.jpg");
+            // banner_array = []
+            // $.each( banners , function( key, val ) {
+            //     var obj = {};
+            //     obj["image_url"] = val;
+            //     banner_array.push(obj)
+            // })
+            
+            // renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
             
             var hours = getPropertyHours();
             prop_hours = []

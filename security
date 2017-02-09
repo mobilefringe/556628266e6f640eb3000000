@@ -136,7 +136,7 @@
 <script>
     $(document).ready(function() {
         function renderAll(){
-            var page_banner = getRepoDetailsByName('Promotions').images;
+            var page_banner = getRepoDetailsByName('Security').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.photo_url_abs;

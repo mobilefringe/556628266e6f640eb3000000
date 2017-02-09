@@ -393,8 +393,6 @@ h2 {
                 collection = []
                 collection = item_list;    
             }
-            
-            
             $.each( collection , function( key, val ) {
                 if (type == "store_hours"){
                     switch(val.day_of_week) {
@@ -419,7 +417,6 @@ h2 {
                         case 6:
                             val.day = "Saturday"
                             break;
-                        
                     }
                     if (template == "#store_detail_hours_template1"){
                         var open_time = new Date (val.open_time)
@@ -432,31 +429,23 @@ h2 {
                             val.hour_string = val.open_time + " - " + val.close_time
                         }
                     } 
-                    
-                    
                 } else {
                     if (val.title.indexOf(" - ") >= 0){
                         var title = val.title.split(" - ");
                         val.title = title[1]
                     } 
-                    
                     if(val.image_url.indexOf('missing.png') > -1 || val.image_url.length === 0){
                         val.page_image = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
                     } else {
                         val.page_image = (val.image_url);    
                     }    
                 }
-                
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-                
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
-        
         loadMallDataCached(renderAll);  
     });
 </script>

@@ -190,7 +190,6 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             all_promos = getEventsList();
-            console.log(all_promos);
             all_promos = all_promos.reverse();
             promo_array = []
             $.each( all_promos , function( key, val ){
@@ -291,63 +290,6 @@
             $(container).show();
             $(container).html(item_rendered.join(''));
         }
-        
-        // $(".tabs li").click(function(e){
-        //     var clicked = this.id
-        //     $(".tabs li").css({"background":"transparent","color":"white"});
-        //     $(".tabs li").find(".tab_overlay").css("display","block");
-        //     $(".tabs li").find("div").css("color","white");
-        //     $(this).css("background","white");
-        //     $(this).find("div").css("color","#4d4d4f");
-        //     $(this).find(".tab_overlay").css("display","none");
-        //     $(".tab_content li").hide();
-        //     $("#"+clicked + "_content").show()
-        //     $("#"+clicked + "_content li").show()
-        // });
-        
-        
-        // function get_month (id){
-        //     switch(id) {
-        //         case 0:
-        //             month = "Jan"
-        //             break;
-        //         case 1:
-        //             month = "Feb"
-        //             break;
-        //         case 2:
-        //             month = "Mar"
-        //             break;
-        //         case 3:
-        //             month = "Apr"
-        //             break;
-        //         case 4:
-        //             month = "May"
-        //             break;
-        //         case 5:
-        //             month = "Jun"
-        //             break;
-        //         case 6:
-        //             month = "Jul"
-        //             break;
-        //         case 7:
-        //             month = "Aug"
-        //             break;
-        //         case 8:
-        //             month = "Sep"
-        //             break;
-        //         case 9:
-        //             month = "Oct"
-        //             break;
-        //         case 10:
-        //             month = "Nov"
-        //             break;
-        //         case 11:
-        //             month = "Dec"
-        //             break;
-                    
-        //     }
-        //     return month;
-        // }
         loadMallData(renderPageData);
     });
 </script>

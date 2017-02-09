@@ -300,7 +300,7 @@
             $(".page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             // var page_headline = getRepoDetailsByName('Events & Contests').images;
-            renderGeneral("#headline_container","#headline_template", banner)
+            renderBanners("#headline_container","#headline_template", banner)
             
             all_promos = getEventsList();
             all_promos = all_promos.reverse();

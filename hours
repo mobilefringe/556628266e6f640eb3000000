@@ -1,0 +1,325 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<style>
+    .store_detail_description{
+        margin-top:90px;
+        margin-bottom:47px;
+    }
+    .socialize_text{
+        margin-top:0;
+    }
+    .socialize_social_icons{
+        margin-top:-10px;
+    }
+    .hidden_div{
+        display:block;
+    }
+    
+     .hidden_div a:link {
+        color:#3aa2d2 !important;
+        text-decoration: underline;
+     }    
+        .hour_line_text a {
+            color:#3aa2d2 !important;
+        }
+    @media (max-width: 767px) {
+        .cat_div{
+            padding-left:10px;
+            font-size:10px;
+            padding-right:0;
+        }    
+        .hour_line{
+            padding-left:10px;
+        }
+        .hour_line p{
+            font-size:9pt;
+            vertical-align:top;
+            margin-bottom:0;
+        }
+        .hour_line_text{
+            font-size:9pt;
+            vertical-align:top;
+            margin-bottom:0;
+        }
+        .hour_line_text a {
+            font-size:9pt;
+        }
+    }
+    
+</style>
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline"><span>Getting</span> Here</h1>
+        <p class="page_subtitle">It's easy to get here; in the center of the shopping and business district</p>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                            <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                            
+                             <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                             <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div id="main_container">
+    <div id="page_content"> 
+        <div class="inside_page_container">
+            <div class="store_detail_description"></div>
+            <p class="store_detail_title">regular hours</p>
+            <div class="hidden_div" id="cat_regular_hours_stores">
+                <script id="regular_hours_template" type="x-tmpl-mustache/text">
+                    <div class="hour_line">
+                        <p class="">{{day}}</p>
+                        <p class="">{{hour_string}}</p>
+                    </div>
+                </script>
+            </div>
+            <p class="store_detail_title">holiday hours</p>
+            <div class="hidden_div" id="cat_holiday_hours_stores">
+                <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+                    <div class="hour_line">
+                        <p class="">{{holiday_name}}</p>
+                        <p class="">{{hour_string}}</p>
+                        <p style="margin-top:0;line-height:0">({{hol}})</p>
+                    </div>
+                </script>
+            </div>
+
+            <div class="hidden_div" id="cat_extended_hours_stores">
+                <p class="hour_line_text">In addition, the following exterior retailer&rsquo;s operating hours may differ from The Bay Centre&rsquo;s regular shopping hours:</p>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-hudson-s-bay-the--2">Hudson&rsquo;s Bay&nbsp;</a></p>
+                    <p class="hour_line_text"><a href="/stores/baycentre-bento-sushi--2">Bento Sushi&nbsp;</a></p>
+                </div>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-central-barbers--2">Central Barbers</a></p>
+                    <p class="hour_line_text"><a href="/stores/baycentre-cleopatra-s-bedroom--2">Cleopatra&rsquo;s Bedroom</a></p>
+                </div>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-crabtree-evelyn--2">Crabtree &amp; Evelyn&nbsp;</a></p>
+                    <p class="hour_line_text"><a href="/stores/baycentre-orchard-on-view--2">Orchard on View&nbsp;</a></p>
+                </div>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-quiksilver--4">Quiksilver</a></p>
+                    <p class="hour_line_text"><a href="/stores/baycentre-sammich-cafe">Sammich&nbsp;</a></p>
+                </div>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-scallywags-children-s-boutique--2">Scallywags&nbsp;</a></p>
+                    <p class="hour_line_text"><a href="/stores/baycentre-lightwell-photography-passport-photos--2">Lightwell Photography&nbsp;</a></p>
+                </div>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-teavana--2">Teavana&nbsp;</a></p>
+                    <p class="hour_line_text"><a href="/stores/baycentre-the-tuscan-kitchen--2">The Tuscan Kitchen&nbsp;</a></p>
+                </div>
+                <div class="hour_line">
+                    <p class="hour_line_text"><a href="/stores/baycentre-marble-slab-creamery--2">Marble Slab</a></p>
+                </div>
+                <br>
+
+                <p class="hour_line_text">Please see individual <a href="/stores">store listing</a> for store hours.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Hours.png");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner3.jpg");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/100437cc60f41ae910b0356151c200b6/guest_banner2.jpg");
+    
+    function show_stores(id){
+        if ($("#cat_"+id+"_stores").is(":visible")){
+           $("#cat_"+id+"_stores").slideUp();
+           $("#icon_"+id).removeClass("fa-minus")
+           $("#icon_"+id).addClass("fa-plus")
+        } else {
+           $("#cat_"+id+"_stores").slideDown();
+           $("#icon_"+id).removeClass("fa-plus")
+           $("#icon_"+id).addClass("fa-minus")
+        }
+    }
+    
+    function load_slider(slider){
+        $('.'+slider).flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: true,    
+            animationLoop: true,
+            slideshow: true,
+            minItems: 3,
+            maxItems: 3,
+            prevText: "",
+            nextText: "",
+            after:function(){
+                var first = $("#banner_slider_ul").children(":first")
+                // console.log($("#banner_slider_ul").children().length)
+                if ($("#banner_slider_ul").children().length < 6){
+                    $("#banner_slider_ul").append(first.clone())
+                }
+                // $("#banner_slider_ul").append(first.clone())
+            }
+        });
+    }
+         
+    
+    $(document).ready(function() {
+        function renderPageData(){
+            banners = []
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Hours.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/HoursRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/HoursLEFT.jpg");
+            banner_array = []
+            $.each( banners , function( key, val ) {
+                var obj = {};
+                obj["image_url"] = val;
+                banner_array.push(obj)
+            })
+            
+            renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
+            
+            var hours = getPropertyHours();
+            reg_hours = []
+            holiday_hours = []
+            $.each( hours , function( key, val ) {
+                if (val.store_id == null && val.is_holiday == false){
+                    reg_hours.push(val)
+                }
+                if (val.store_id == null && val.is_holiday == true){
+                    holiday_hours.push(val)
+                }
+            })
+            renderData("#cat_regular_hours_stores","#regular_hours_template",reg_hours, "reg_hours")
+            renderData("#cat_holiday_hours_stores","#holiday_hours_template",holiday_hours, "holiday_hours")
+            // $(".hidden_div").hide();
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            load_slider("flexslider4");
+        }
+        
+        function renderBanners(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+        }
+        
+        function renderData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+               switch(val.day_of_week) {
+                    case 0:
+                        val.day = "Sunday"
+                        break;
+                    case 1:
+                        val.day = "Monday"
+                        break;
+                    case 2:
+                        val.day = "Tuesday"
+                        break;
+                    case 3:
+                        val.day = "Wednesday"
+                        break;
+                    case 4:
+                        val.day = "Thursday"
+                        break;
+                    case 5:
+                        val.day = "Friday"
+                        break;
+                    case 6:
+                        val.day = "Saturday"
+                        break;
+                    
+                }
+                // var open_time = new Date (val.open_time)
+                // var close_time = new Date (val.close_time)
+                // val.open_time = convert_hour(open_time);
+                // val.close_time = convert_hour(close_time);
+                // if (val.is_closed == true){
+                //     val.hour_string = "Closed"
+                // } else {
+                //     val.hour_string = val.open_time + " - " + val.close_time
+                // } 
+                var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                if (val.is_closed == true){
+                    val.hour_string = "Closed"
+                } else {
+                    val.hour_string = open_time.format("h:mma") + " - " + close_time.format("h:mma");
+                } 
+                if (type == "holiday_hours"){
+                    // hol = new Date (val.holiday_date + "T08:00:00Z");
+                    // val.hol = (get_month(hol.getMonth()))+" "+(hol.getDate());  
+                    
+                    hol = moment(val.holiday_date).tz(getPropertyTimeZone());
+                    val.hol = hol.format("MMM D");
+                }
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        }
+        loadMallDataCached(renderPageData);
+        
+        function get_month (id){
+            switch(id) {
+                case 0:
+                    month = "Jan"
+                    break;
+                case 1:
+                    month = "Feb"
+                    break;
+                case 2:
+                    month = "Mar"
+                    break;
+                case 3:
+                    month = "Apr"
+                    break;
+                case 4:
+                    month = "May"
+                    break;
+                case 5:
+                    month = "Jun"
+                    break;
+                case 6:
+                    month = "Jul"
+                    break;
+                case 7:
+                    month = "Aug"
+                    break;
+                case 8:
+                    month = "Sep"
+                    break;
+                case 9:
+                    month = "Oct"
+                    break;
+                case 10:
+                    month = "Nov"
+                    break;
+                case 11:
+                    month = "Dec"
+                    break;
+                    
+            }
+            return month;
+        }
+    })
+    
+</script>

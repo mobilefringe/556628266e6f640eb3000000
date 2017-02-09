@@ -134,7 +134,6 @@
     }
     
     $(document).ready(function() {
-        
         function renderAll(){
             var page_banner = getRepoDetailsByName('Parking').images;
             var banner_url = "";

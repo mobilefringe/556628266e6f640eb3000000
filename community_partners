@@ -1,0 +1,460 @@
+<style>
+
+a:-webkit-any-link{
+    color: #6d6e71;
+}
+
+    .store_detail_description li{
+        list-style:inherit !important;
+        display:list-item;
+        list-style-type: initial !important;
+    }
+    .store_detail_content a:link {
+        color:#3aa2d2 ;
+        text-decoration: underline;
+    }
+    .store_detail_description{
+        margin-top:15px;
+        color:#6d6e71 !important;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    .store_detail_content{
+        margin-bottom:0;
+        border-bottom:none;
+        padding-bottom:0;
+        margin-top:0;
+    }
+    .store_detail_title {
+  font-family: railway-regular;
+  /*font-family: proxima \9;*/
+  font-size: 28pt;
+  color: #6d6e71;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+     font-family: railway-regular;
+     /*font-family: proxima \9;*/
+  font-size: 28pt;
+  color: #6d6e71;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+    
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    .tabs{
+        width:100%;
+        background:transparent;
+    }
+    .tabs li{
+        width:50%;
+        position:relative;
+        bottom:-1px;
+    }
+    .tab_item{
+        border:none;
+    }
+    .tab_content{
+        height:auto;
+        /*margin-left:39px;*/
+        /*margin-right:34px;*/
+    }
+    
+    .detail_left_div{
+        width:100% !important;
+    }
+    
+    @media (max-width: 767px) {
+        .hours_day, .hours_time {
+            font-size:12pt;
+        }  
+        
+        .tab_item{
+            height:25px;
+            color:black !important;
+            padding-left:0 !important;
+        }
+        .cat_div{
+            height:auto;
+            font-size:12px;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .tab_content{
+            margin-left:15px;
+            margin-right:15px;
+        }
+        .stores_div{
+            padding-left:15px;
+        }
+        .stores_div table{
+            width:100%;
+        }
+        .stores_div a{
+            margin-right:0;
+            font-size:12px;
+        }
+    
+    }
+</style>
+
+<!--<div class="banner_container">-->
+    <!--<img src="" id="main_image" class="main_image" alt="">-->
+<!--    <div class="flexslider4" id="">-->
+<!--        <ul class="banner_slider_ul slides" id="banner_slider_ul">-->
+<!--            <script id="banner_slider_template" type="x-tmpl-mustache/text">-->
+<!--                <li class="item">-->
+             
+<!--                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>-->
+              
+<!--                </li>-->
+<!--            </script>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="missing_out_div">-->
+<!--        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>-->
+<!--        <div class="hidden_newsletter_form">-->
+<!--            <form style="font-size:12px" id="banner_newsletter">-->
+<!--                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>-->
+<!--                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>-->
+                        
+<!--                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />-->
+<!--                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="page_banner">
+    <div class="banner_wrapper">
+        <h1><span>Events</span> & Contests</h1>
+        <p class="subtitle">See What's Happening at The Bay Centre</p>
+        <div class="missing_out_div">
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
+</div>
+        
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div id="main_container">
+    <div id="page_content">
+        <div class="tab_container">
+            <ul class="tabs">
+                <li id="tab_1" style="background:white">
+                <div class="tab_item" style="color:#4d4d4f">Featured Partnerships &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i><div class="tab_overlay" style="display:none">&nbsp;</div></div>
+                     
+                </li>
+                <li id="tab_2">
+                    <div class="tab_item">sponsorships & donations &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i><div class="tab_overlay">&nbsp;</div></div>
+                </li>
+            </ul>
+            <ul class="tab_content">
+                <li id="tab_1_content">
+                    <div class="store_detail_content">
+            
+                        <div class="detail_left_div">
+                    
+                            <div id="promo_title_container1">
+                                <script id="promo_title_template1" type="x-tmpl-mustache/text">
+                                    <p class="store_detail_title">{{title}}</p>
+                                    <div class="store_detail_description">{{{body}}}</div>
+                                    
+                                </script>
+                            </div>
+                            
+                         
+                           
+                        </div>
+                        <!--<div class="detail_right_div">-->
+                        <!--    <div id="store_detail_right_content_container1">-->
+                        <!--        <script id="store_detail_right_content_template1" type="x-tmpl-mustache/text">-->
+                        <!--            <a href="{{page_image}}" rel="lightbox-gallery" title="{{name}}">-->
+                        <!--                <img class="store_front" alt="photo_{{name}}" src="{{page_image}}"/>-->
+                        <!--            </a>-->
+                        <!--        </script>-->
+                        <!--    </div>-->
+                        <!--    <div class="hours_div">  -->
+                        <!--        <p class="hours_title">Hours</p>-->
+                        <!--        <div id="store_detail_hours_container1">-->
+                        <!--            <script id="store_detail_hours_template1" type="x-tmpl-mustache/text">-->
+                        <!--                <div class="hours_object">-->
+                        <!--                    <p class="hours_day">{{day}}</p>-->
+                        <!--                    <p class="hours_time">{{hour_string}}</p>-->
+                        <!--                </div>-->
+                        <!--            </script>    -->
+                        <!--        </div>-->
+                        <!--        <p class="hours_day" style="font-style:italic">Hours subject to change</p>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+                <li id="tab_2_content" style="display:none">
+                    <div class="store_detail_content">
+            
+                        <div class="detail_left_div">
+                    
+                            <div id="promo_title_container2">
+                                <script id="promo_title_template2" type="x-tmpl-mustache/text">
+                                    <p class="store_detail_title">{{title}}</p>
+                                    <div class="store_detail_description">{{{body}}}</div>
+                                    
+                                </script>
+                            </div>
+                            
+                         
+                           
+                        </div>
+                        <!--<div class="detail_right_div">-->
+                        <!--    <div id="store_detail_right_content_container2">-->
+                        <!--        <script id="store_detail_right_content_template2" type="x-tmpl-mustache/text">-->
+                        <!--            <a href="{{page_image}}" rel="lightbox-gallery" title="{{name}}">-->
+                        <!--                <img class="store_front" alt="photo_{{name}}" src="{{page_image}}"/>-->
+                        <!--            </a>-->
+                        <!--        </script>-->
+                        <!--    </div>-->
+                        <!--    <div class="hours_div">  -->
+                        <!--        <p class="hours_title">Hours</p>-->
+                        <!--        <div id="store_detail_hours_container2">-->
+                        <!--            <script id="store_detail_hours_template2" type="x-tmpl-mustache/text">-->
+                        <!--                <div class="hours_object">-->
+                        <!--                    <p class="hours_day">{{day}}</p>-->
+                        <!--                    <p class="hours_time">{{hour_string}}</p>-->
+                        <!--                </div>-->
+                        <!--            </script>    -->
+                        <!--        </div>-->
+                        <!--        <p class="hours_day" style="font-style:italic">Hours subject to change</p>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png");
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsLeft.png");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsRight.png");
+    
+    function load_slider(slider){
+            
+        $('.'+slider).flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: true,    
+                animationLoop: true,
+                slideshow: true,
+                minItems: 3,
+                maxItems: 3,
+                prevText: "",
+                nextText: "",
+                after:function(){
+                    var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                    //do something
+                    var first = $("#banner_slider_ul").children(":first")
+                    // console.log($("#banner_slider_ul").children().length)
+                    if ($("#banner_slider_ul").children().length < 6){
+                        $("#banner_slider_ul").append(first.clone())
+                    }
+                    // $("#banner_slider_ul").append(first.clone())
+                }
+            });
+        }
+    
+    
+    $(".tabs li").click(function(e){
+        var clicked = this.id
+        $(".tabs li").css({"background":"transparent","color":"white"});
+        $(".tabs li").find(".tab_overlay").css("display","block");
+        $(".tabs li").find("div").css("color","white");
+        $(this).css("background","white");
+        $(this).find("div").css("color","#4d4d4f");
+        $(this).find(".tab_overlay").css("display","none");
+        $(".tab_content li").hide();
+        $("#"+clicked + "_content").show()
+        $("#"+clicked + "_content li").show()
+    });
+    
+    $(document).ready(function() {
+        function renderAll(){
+            
+            banners = []
+            
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsLEFT.jpg");
+            banner_array = []
+            $.each( banners , function( key, val ) {
+                var obj = {};
+                obj["image_url"] = val;
+                banner_array.push(obj)
+            })
+            
+            renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
+            
+            var hours = getPropertyHours();
+            prop_hours = []
+            $.each( hours , function( key, val ) {
+                if (val.store_id == null && val.is_holiday == false){
+                    prop_hours.push(val)
+                }
+            })
+            hours = prop_hours
+            renderpageHTML("baycentre-community-partners", 1);
+            renderpageHTML("baycentre-sponsorships-donations", 2);
+            
+            renderData("#store_detail_hours_container1","#store_detail_hours_template1", hours, "store_hours")
+            renderData("#store_detail_hours_container2","#store_detail_hours_template2", hours, "store_hours")
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            
+            load_slider("flexslider4");
+        }
+        
+        
+        function renderBanners(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+        }
+        
+        function renderpageHTML(slug, id){
+         
+            prefix = get_prefix();
+            var pages_json = prefix+"/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                if (id == 1){
+                    renderData("#promo_title_container1", "#promo_title_template1", data, "title")
+                    renderData("#store_detail_right_content_container1", "#store_detail_right_content_template1", data, "image") 
+                } else {
+                    renderData("#promo_title_container2", "#promo_title_template2", data, "title")
+                    renderData("#store_detail_right_content_container2", "#store_detail_right_content_template2", data, "image")
+                }
+                
+               
+                
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
+                    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
+                    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
+                }
+            }); 
+        }
+        
+        function renderData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type !="store_hours"){
+                item_list.push(collection);
+                collection = []
+                collection = item_list;    
+            }
+            
+            
+            $.each( collection , function( key, val ) {
+                if (type == "store_hours"){
+                    switch(val.day_of_week) {
+                        case 0:
+                            val.day = "Sunday"
+                            break;
+                        case 1:
+                            val.day = "Monday"
+                            break;
+                        case 2:
+                            val.day = "Tuesday"
+                            break;
+                        case 3:
+                            val.day = "Wednesday"
+                            break;
+                        case 4:
+                            val.day = "Thursday"
+                            break;
+                        case 5:
+                            val.day = "Friday"
+                            break;
+                        case 6:
+                            val.day = "Saturday"
+                            break;
+                        
+                    }
+                    if (template == "#store_detail_hours_template1"){
+                        var open_time = new Date (val.open_time)
+                        var close_time = new Date (val.close_time)
+                        val.open_time = convert_hour(open_time);
+                        val.close_time = convert_hour(close_time);
+                        if (val.is_closed == true){
+                            val.hour_string = "Closed"
+                        } else {
+                            val.hour_string = val.open_time + " - " + val.close_time
+                        }
+                    } 
+                    
+                    
+                } else {
+                    if (val.title.indexOf(" - ") >= 0){
+                        var title = val.title.split(" - ");
+                        val.title = title[1]
+                    } 
+                    
+                    if(val.image_url.indexOf('missing.png') > -1 || val.image_url.length === 0){
+                        val.page_image = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453737960000/TheBayCentre.jpg"    
+                    } else {
+                        val.page_image = (val.image_url);    
+                    }    
+                }
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+                
+    
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
+        
+        loadMallDataCached(renderAll);  
+    });
+</script>

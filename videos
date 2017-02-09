@@ -54,8 +54,8 @@
             height:auto;
         }
     }
-    
 </style>
+
 <div id="page_banner">
     <div class="banner_wrapper">
         <h1 class="page_headline"><span>Video</span> Style</h1>

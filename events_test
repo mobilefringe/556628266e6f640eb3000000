@@ -5,8 +5,8 @@
     }
     .banner_wrapper {
         margin: 0 auto;
-        width: 1193;
-        height: 545px;
+        width: 1194;
+        height: 546px;
         position: relative;
         color: #fff;
         font-family: ;

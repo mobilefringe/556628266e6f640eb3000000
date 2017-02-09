@@ -22,7 +22,7 @@
         text-transform: uppercase;
     }
     .banner_wrapper h1 span {
-        font-family: railway-medium;    
+        font-family: railway-bold;    
     }
     .banner_wrapper .subtitle {
         font-family: lora-italic;

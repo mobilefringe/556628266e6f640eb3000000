@@ -1,3 +1,9 @@
+<style>
+    .banner_wrapper {
+        margin-bottom: 60px;
+    }
+</style>
+
 <div id="page_banner">
     <div class="banner_wrapper">
         <h1 class="page_headline"><span>Newsletter</span> Sign Up</h1>

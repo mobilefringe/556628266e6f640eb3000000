@@ -146,7 +146,7 @@ h2 {
     }
 </style>
 
-<div class="page_banner">
+<div id="page_banner">
     <div class="banner_wrapper">
         <h1 class="page_headline"><span>Events</span> & Contests</h1>
         <p class="page_subtitle">See What's Happening at The Bay Centre</p>

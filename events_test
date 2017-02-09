@@ -131,7 +131,7 @@
             padding-top: 10%;
             font-size: 44px;
         }
-        .banner_wrapper p {
+        .banner_wrapper .subtitle {
             font-size: 18px;
             padding-bottom: 10%;
         }

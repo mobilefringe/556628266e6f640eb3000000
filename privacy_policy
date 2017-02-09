@@ -106,17 +106,17 @@
 
 <script>
  
-    // function show_stores(id){
-    //   if ($("#cat_"+id+"_stores").is(":visible")){
-    //       $("#cat_"+id+"_stores").slideUp();
-    //       $("#icon_"+id).removeClass("fa-minus")
-    //       $("#icon_"+id).addClass("fa-plus")
-    //   } else {
-    //       $("#cat_"+id+"_stores").slideDown();
-    //       $("#icon_"+id).removeClass("fa-plus")
-    //       $("#icon_"+id).addClass("fa-minus")
-    //   }
-    // }
+    function show_stores(id){
+      if ($("#cat_"+id+"_stores").is(":visible")){
+          $("#cat_"+id+"_stores").slideUp();
+          $("#icon_"+id).removeClass("fa-minus")
+          $("#icon_"+id).addClass("fa-plus")
+      } else {
+          $("#cat_"+id+"_stores").slideDown();
+          $("#icon_"+id).removeClass("fa-plus")
+          $("#icon_"+id).addClass("fa-minus")
+      }
+    }
     
     $(document).ready(function() {
         function renderAll(){

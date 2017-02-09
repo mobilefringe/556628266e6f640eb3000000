@@ -133,6 +133,7 @@
         }
         .banner_wrapper p {
             font-size: 12px;
+            padding-bottom: 10%;
         }
         .tab_content{
             margin-top:-40px;

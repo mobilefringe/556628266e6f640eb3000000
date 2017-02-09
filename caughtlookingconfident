@@ -100,7 +100,6 @@ line-height:26pt;
 <div id="page_banner">
     <div class="banner_wrapper">
         <h1 class="page_headline"><span>Caught</span> Looking Confident</h1>
-        <!--<h1 class="page_headline"><span>Caught</span> Looking <br>Confident</h1>-->
         <p class="page_subtitle">Life & Style at The Bay Centre</p>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>

@@ -125,6 +125,14 @@
             height: 175px;
             position: relative;
         }
+        .banner_wrapper h1 {
+            margin-bottom: 20px;
+            padding-top: 10%;
+            font-size: 44px;
+        }
+        .banner_wrapper p {
+            font-size: 12px;
+        }
         .tab_content{
             margin-top:-40px;
         }

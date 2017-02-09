@@ -301,7 +301,7 @@ h2 {
     
     $(document).ready(function() {
         function renderAll(){
-            var page_banner = getRepoDetailsByName('Events & Contests').images;
+            var page_banner = getRepoDetailsByName('Community').images;
             console.log(page_banner);
             var banner_url = "";
             $.each(page_banner, function(key, val){

@@ -165,12 +165,12 @@
 
 <div class="page_banner">
     <div class="banner_wrapper">
-        <h1><span>Events</span> & Contests</h1>
-        <p class="subtitle">See What's Happening at The Bay Centre</p>
+        <!--<h1><span>Events</span> & Contests</h1>-->
+        <!--<p class="subtitle">See What's Happening at The Bay Centre</p>-->
         <div id="headline_container">
             <script id="headline_template" type="x-tmpl-mustache/text">
-                <h1>{{}}</h1>
-                <p class="subtitle">{{}}</p>
+                <h1>{{name}}</h1>
+                <p class="subtitle">{{description}}</p>
             </script>    
         </div>
         

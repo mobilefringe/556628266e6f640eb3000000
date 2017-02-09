@@ -136,9 +136,7 @@
             all_promos = all_promos.reverse();
             promo_array = []
             feature_promo_array = []
-             $.each( all_promos , function( key, val ){
-                // today = new Date();
-                // webDate = new Date(val.show_on_web_date + "T08:00:00Z")
+            $.each( all_promos , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate) {
@@ -156,11 +154,12 @@
             $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
-            load_slider("flexslider4");
+
             $('.chevron_accordion').click(function(){
                 $(this).toggleClass("open_accordion");
                 $(this).next('.accordion_body').slideToggle();
             });
+            
             $('.share_links').click(function(e){
                 var uri = encodeURI($(this).attr('href'));
                 if(uri.indexOf('mailto') < 0){
@@ -168,6 +167,7 @@
                     var popup= window.open(uri,'popUpWindow','height=500,width=500, left=50,top=50, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
                 }
             });
+            
             $('.featured_box_header, .featured_name').click(function(e){
                 $(this).parent().find(".chevron_accordion").toggleClass("open_accordion");
                 $(this).parent().find(".accordion_body").slideToggle();

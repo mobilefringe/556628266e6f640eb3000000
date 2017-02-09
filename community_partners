@@ -13,7 +13,7 @@
         font-family: ;
         text-align: center;
     }
-    .banner_wrapper h1 {
+    .page_headline {
         margin-top: 0;
         margin-bottom: 40px;
         padding-top: 17%;
@@ -23,10 +23,10 @@
         letter-spacing: 4;
         text-transform: uppercase;
     }
-    .banner_wrapper h1 span {
+    .page_headline span {
         font-family: railway-bold;    
     }
-    .banner_wrapper .subtitle {
+    .page_subtitle {
         font-family: lora-italic;
         font-size: 21px;
         letter-spacing: 1;

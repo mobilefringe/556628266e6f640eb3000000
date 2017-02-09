@@ -167,6 +167,13 @@
     <div class="banner_wrapper">
         <h1><span>Events</span> & Contests</h1>
         <p class="subtitle">See What's Happening at The Bay Centre</p>
+        <div id="headline_container">
+            <script id="headline_template" type="x-tmpl-mustache/text">
+                <h1>{{}}</h1>
+                <p class="subtitle">{{}}</p>
+            </script>    
+        </div>
+        
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">

@@ -281,8 +281,8 @@ h2 {
                 </li>
             </ul>
         </div>
-    </div>
-</div>
+<!--    </div>-->
+<!--</div>-->
 <script>
     // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png");
     // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/CommunityPartnershipsLeft.png");

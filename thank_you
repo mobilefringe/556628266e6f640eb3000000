@@ -1,0 +1,43 @@
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline"><span>Newsletter</span> Sign Up</h1>
+        <p class="page_subtitle"></p>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span>
+                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <button type="submit" id="banner_submit">Subscribe</button>
+                    </span>
+                    <br>
+                    <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre">
+                    <label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                    <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                    <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="main_container">
+    <div id="page_content">
+        <p class="store_detail_title">Thank you!</p>
+        <div class="store_detail_description">
+            Thank you for signing up! please click <a href="/home">here</a> to return to the home page. 
+        </div>
+    </div>
+</div>
+
+<script>
+    var page_banner = getRepoDetailsByName('Thank You').images;
+    var banner_url = "";
+    $.each(page_banner, function(key, val){
+        banner_url = val.photo_url_abs;
+    });
+    $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
+    $(".loading_overlay").hide();
+    $("#page_content").show();
+</script>

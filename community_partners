@@ -195,8 +195,8 @@ h2 {
     <span class='st_sharethis'></span>   
 </div>
 
-<div id="main_container">
-    <div id="page_content">
+<!--<div id="main_container">-->
+<!--    <div id="page_content">-->
         <div class="tab_container">
             <ul class="tabs">
                 <li id="tab_1" style="background:white">

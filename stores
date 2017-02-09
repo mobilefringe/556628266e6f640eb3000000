@@ -1,0 +1,375 @@
+<style>
+    .tabs{
+        width:100%;
+        background:transparent;
+    }
+    .tabs li{
+        width:50%;
+        position:relative;
+        bottom:-1px;
+    }
+    .tab_item{
+        border:none;
+    }
+    .tab_content{
+        height:auto;
+        margin-left:39px;
+        margin-right:34px;
+    }
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    #left_image{
+        display:block;
+    }
+    #right_image{
+        display:block;
+    }
+    
+    @media (max-width: 767px) {
+        .tab_item{
+            height:25px;
+            color:black !important;
+            padding-left:0 !important;
+        }
+        .cat_div{
+            height:auto;
+            font-size:12px;
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .tab_content{
+            margin-left:15px;
+            margin-right:15px;
+        }
+        .stores_div{
+            padding-left:15px;
+        }
+        .stores_div table{
+            width:100%;
+        }
+        .stores_div a{
+            margin-right:0;
+            font-size:12px;
+        }
+    }
+</style>
+
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline"><span>Security</span> & Life Safety</h1>
+        <p class="page_subtitle">Your security and life safety is our #1 priority</p>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span>
+                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <button type="submit" id="banner_submit">Subscribe</button>
+                    </span>
+                    <br>
+                    <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre">
+                    <label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                    <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                    <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div id="main_container">
+    <div id="page_content"> 
+        <div class="tab_container">
+            <ul class="tabs">
+                <li id="tab_1" style="background:white">
+                    <div class="tab_item" style="color:#4d4d4f">
+                        category &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
+                        <div class="tab_overlay" style="display:none">&nbsp;</div>
+                    </div>
+                </li>
+                <li id="tab_2">
+                    <div class="tab_item">
+                        Alphabetical &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
+                        <div class="tab_overlay">&nbsp;</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="store_Search_div">
+                <input type="text" id="search_stores" class="store_search_input" placeholder="search for a store">
+                <i class="fa fa-search store_search_icon" ></i>
+            </div>
+            <button class="gray_pill" onclick="see_all_stores()">see all stores</button>
+            <button class="gray_pill" onclick="window.location.href='/map'">view map</button>
+            <ul class="tab_content">
+                <li id="tab_1_content">
+                    <div class="cat_stores_container" id="cat_stores_container">
+                        <script id="cat_stores_template" type="x-tmpl-mustache/text">
+                            <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
+                                {{name}} ({{count}})
+                                <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                            </div>
+                            <div class="stores_div" id="cat_{{id}}_stores">
+                                <table id="cat_{{id}}_stores_table">
+                                </table>
+                            </div>
+                        </script>
+                    </div>
+                </li>
+                <li id="tab_2_content" style="display:none">
+                    <div class="cat_stores_container" id="alpha_stores_container">
+                        <script id="alpha_stores_template" type="x-tmpl-mustache/text">
+                            <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
+                                {{name}} ({{count}})
+                                <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                            </div>
+                            <div class="stores_div" id="cat_{{id}}_stores">
+                                <table id="cat_{{id}}_stores_table">
+                                </table>
+                            </div>
+                        </script>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div style="display:none" id="backup_alpha_stores_container">
+            <script id="alpha_stores_template" type="x-tmpl-mustache/text">
+                <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
+                    {{name}} ({{count}})
+                    <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                </div>
+                <div class="stores_div" id="cat_{{id}}_stores">
+                    <table id="cat_{{id}}_stores_table">
+                    </table>
+                </div>
+            </script>
+        </div>
+
+        <div style="display:none" id="backup_cat_stores_container">
+            <script id="cat_stores_template" type="x-tmpl-mustache/text">
+                <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
+                    {{name}} ({{count}})
+                    <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                </div>
+                <div class="stores_div" id="cat_{{id}}_stores">
+                    <table id="cat_{{id}}_stores_table">
+                    </table>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    
+
+    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/StoreDirectoryLeft.png");
+    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/StoreDirectoryRight.png");
+    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/46aca5797e3b84bd6d66160428052711/findstore_banner1.jpg");
+
+    function show_stores(id){
+       if ($("#cat_"+id+"_stores").is(":visible")){
+           $("#cat_"+id+"_stores").slideUp();
+           $("#icon_"+id).removeClass("fa-minus")
+           $("#icon_"+id).addClass("fa-plus")
+       } else {
+           $("#cat_"+id+"_stores").slideDown();
+           $("#icon_"+id).removeClass("fa-plus")
+           $("#icon_"+id).addClass("fa-minus")
+       }
+    }
+
+    function see_all_stores(){
+    
+        $("#search_stores").val('')
+        $('#search_stores').trigger(
+            jQuery.Event( 'keypress', { keyCode: 13, which: 13 } )
+        );
+     
+    }
+        
+
+    $(document).ready(function() {
+        
+        
+        $("#search_stores").on("blur", function(evt) {
+            if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+                $('#search_stores').trigger(
+                    jQuery.Event( 'keypress', { keyCode: 13, which: 13 } )
+                );
+            }
+         
+        })
+        
+        
+        $("#search_stores").keypress(function(event) {
+            
+            if (event.keyCode == 13) {
+                search();
+            }
+         
+        });
+          
+          
+        function search(){
+            var store_search_results = getSearchResults($('#search_stores').val(),10,100);
+            if ($('#search_stores').val() == ""){
+                var alpha_stores = getStoresList();
+                var full_cat_array = getStoreCategories();
+            } else {
+                var alpha_stores = (store_search_results.stores)  
+                var cat_array = new Array;
+                  if (store_search_results.stores.length > 0 ){
+                    $.each( store_search_results.stores , function( key, val ) {
+                      $.each( val.categories , function( key2, val2 ) {
+                        cat_array.push(getCategoryDetails(val2))
+                      }) 
+                    })
+                    full_cat_array = jQuery.unique( cat_array );
+                    
+                    $.each( full_cat_array , function( key, val ) {
+                        newStoreIds = []
+                         $.each( store_search_results.stores , function( key2, val2 ) {
+                             
+                             if (jQuery.inArray(val.id, val2.categories)== -1){
+                                 newStoreIds.push(val2.id)
+                             }
+                         })
+                        val.store_ids = newStoreIds
+                    })
+                    
+                  }
+            }
+            
+          var alpha_array = generateAlphaStoreList(alpha_stores);
+          $("#alpha_stores_container").html($("#backup_alpha_stores_container").html())
+          renderPageData("#alpha_stores_container","#alpha_stores_template", alpha_array, "cats");
+          $("#cat_stores_container").html($("#backup_cat_stores_container").html())
+          renderPageData("#cat_stores_container","#cat_stores_template", full_cat_array, "cats");
+        }
+          
+          
+          
+    
+        
+        function renderAll(){
+            var categories = getStoreCategories();
+            var alpha_stores = getStoresList();  
+            renderPageData("#cat_stores_container","#cat_stores_template", categories, "cats");
+            var alpha_array = generateAlphaStoreList(alpha_stores);
+            renderPageData("#alpha_stores_container","#alpha_stores_template", alpha_array, "cats");
+            
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            $(".website_td a").attr("target","_blank");
+        }
+        
+        
+        function generateAlphaStoreList (collection){
+            alpha_list = new Array;
+            alpha_array = new Array;
+             $.each( collection , function( key, val ) {
+                 first_letter = (val.name).charAt(0)
+                 if (jQuery.inArray(first_letter, alpha_list)== -1){
+                     obj = {};
+                     obj.name = first_letter
+                     obj.id = first_letter
+                     alpha_array.push(obj);
+                     alpha_list.push(first_letter)
+                 } else {
+                     
+                 }
+             })
+             
+           
+            
+            $.each( alpha_array , function( key, val ) {
+                var store_ids = []
+                  $.each( collection , function( key2, val2 ) {
+                      if (val.name == (val2.name).charAt(0)){
+                          store_ids.push(val2.id)
+                      }
+                  })
+                val.store_ids = store_ids
+             })
+            
+            return(alpha_array)
+        
+        }
+        
+        function renderPageData(container, template, collection, type){
+            
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+ 
+            // item_list.push(collection);    
+            
+            
+            $.each( collection , function( key, val ) {
+                
+                if (type == "cats"){
+                    val.count = val.store_ids.length  
+                    
+                }
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+            if (type == "cats"){
+                $.each( collection , function( key, val ) {
+                    $.each( val.store_ids , function( key2, val2 ) {
+                      store = getStoreDetailsByID(val2)
+                    $("#cat_"+val.id+"_stores_table").append("<tr><td class='name_td'><a href='/stores/"+store.slug+"'>"+store.name+"</a></td><td id='website_"+store.id+"' class='website_td'><a href='https://"+store.website+"'>Visit Website</a></td><td class='phone_td'><a class=' store_phone' href='tel:"+store.phone+"'>"+store.phone+"</a></td><td class='arrow_td'><a href='/stores/"+store.slug+"'><i class='fa fa-chevron-right list_icon'></i></a></td>")
+                    if (store.website != "") {
+                        
+                    } else {
+                        $("#website_"+store.id).html("");
+                    }
+                      
+                    })    
+                })    
+            }
+        }
+        
+        loadMallDataCached(renderAll);  
+        
+    })
+
+    $(".tabs li").click(function(e){
+        var clicked = this.id
+        $(".tabs li").css({"background":"transparent","color":"white"});
+        $(".tabs li").find(".tab_overlay").css("display","block");
+        $(".tabs li").find("div").css("color","white");
+        $(this).css("background","white");
+        $(this).find("div").css("color","#4d4d4f");
+        $(this).find(".tab_overlay").css("display","none");
+        $(".tab_content li").hide();
+        $("#"+clicked + "_content").show()
+        $("#"+clicked + "_content li").show()
+    });
+    
+   
+</script>
+
+

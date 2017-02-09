@@ -310,20 +310,6 @@ h2 {
             console.log(banner_url);
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
-            // banners = []
-            
-            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/Community Partnerships.png")
-            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsRIGHT.jpg");
-            // banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/Community-PartnershipsLEFT.jpg");
-            // banner_array = []
-            // $.each( banners , function( key, val ) {
-            //     var obj = {};
-            //     obj["image_url"] = val;
-            //     banner_array.push(obj)
-            // })
-            
-            // renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
-            
             var hours = getPropertyHours();
             prop_hours = []
             $.each( hours , function( key, val ) {

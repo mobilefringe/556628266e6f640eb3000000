@@ -6,6 +6,9 @@
         height: auto;
         text-align: center;
     }
+    #banner_slider .flex-control-nav {
+        display: none;
+    }
     .missing_out_div {
         z-index: 10;
     }

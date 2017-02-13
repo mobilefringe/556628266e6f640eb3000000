@@ -62,6 +62,9 @@
     .promo_description_div{
         width:780px;
     }
+    .tabs {
+        z-index: 999;
+    }
     .tabs li {
          margin-right:-5px;
     }

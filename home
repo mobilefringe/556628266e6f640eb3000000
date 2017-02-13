@@ -167,7 +167,7 @@
 </div>
 
 <div id="home_banner">
-    <div id="banner_slider">
+    <div id="banner_slider" class="banner_container">
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">

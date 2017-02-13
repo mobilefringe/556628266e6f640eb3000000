@@ -350,7 +350,7 @@
     
     function load_slider(slider){
         $('.'+slider).flexslider({
-            animation: "fade",
+            animation: "",
             controlNav: false,
             directionNav: true,    
             animationLoop: true,

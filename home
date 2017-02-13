@@ -148,6 +148,9 @@
         #banner_hours_container{
             top:85%;
         }
+        #home_banner {
+            height: 155px;
+        }
     }
     
 </style>

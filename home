@@ -167,18 +167,19 @@
 </div>
 
 <div id="page_banner">
-    <div class="banner_wrapper">
-        <div id="banner_slider">
-            <ul class="slides" id="banner_slider_ul">
-                <script id="banner_slider_template" type="x-tmpl-mustache/text">
-                    <li class="item">
-                        <a href="{{url}}">
-                            <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
-                        </a>
-                    </li>
-                </script>
-            </ul>
-        </div>
+    
+    <div id="banner_slider">
+        <ul class="slides" id="banner_slider_ul">
+            <script id="banner_slider_template" type="x-tmpl-mustache/text">
+                <li class="item">
+                    <a href="{{url}}">
+                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+    <div class="banner_wrapper">    
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">

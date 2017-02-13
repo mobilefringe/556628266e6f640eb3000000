@@ -169,11 +169,13 @@
 <div id="page_banner">
     
     <div id="banner_slider">
+        <img src="http://assets.codecloudapp.com/sites/589c91346e6f641d45080000/image/jpeg/1486653320000/BC_banners_template.jpg" class="" alt="">
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
                     <a href="{{url}}">
                         <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
+                        
                     </a>
                 </li>
             </script>
@@ -410,8 +412,6 @@
             var events = getEventsList();
             basic_event_array = []
             news_event_array = []
-            
-            
             featured_event_array = []
             featured_event_without_coming_soon = []
             news_event_without_coming_soon = []
@@ -438,7 +438,6 @@
                     }
                 } 
             });
-             
             featured_promo_array = []
             regular_promo_array = []
             $.each( promos , function( key, val ){
@@ -486,9 +485,7 @@
             } else {
                 $.merge(first_tab_content,(featured_event_without_coming_soon));
             }
-            
-            
-      
+
             if (featured_event_array.length > 2){
                 //  $.merge(first_tab_content,(featured_event_array.slice(0,2)));
                 $.merge(second_tab_content,(featured_event_array.slice(0,2)));
@@ -548,7 +545,7 @@
                 var banners = getBanners();
             }
         
-            renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
+            // renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
             $('#banner_slider').flexslider({
                 animation: "fade",
             });

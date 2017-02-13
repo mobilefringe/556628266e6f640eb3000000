@@ -565,8 +565,8 @@
             
             $(".loading_overlay").hide();
             $("#page_content").show();
-            load_slider("flexslider");
-            load_slider("flexslider4");
+            // load_slider("flexslider");
+            // load_slider("flexslider4");
         }
         loadMallData(render_page_details);  
         

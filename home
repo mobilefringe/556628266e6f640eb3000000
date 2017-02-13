@@ -165,7 +165,7 @@
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <div class="flexslider4" id="">
+        <div class="" id="banner_slider">
             <ul class="banner_slider_ul slides" id="banner_slider_ul">
                 <script id="banner_slider_template" type="x-tmpl-mustache/text">
                     <li class="item">
@@ -411,6 +411,10 @@
     
     $(document).ready(function() {
         function render_page_details(){
+            $('#banner_slider').flexslider({
+                animation: "fade",
+            });
+            
             var promos = getPromotionsList();
             var events = getEventsList();
             basic_event_array = []

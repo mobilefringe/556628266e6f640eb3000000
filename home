@@ -6,6 +6,10 @@
         height: auto;
         text-align: center;
     }
+
+    #banner_slider .slides li img {
+        width: 100%;
+    }
     #banner_slider .flex-control-nav {
         display: none;
     }

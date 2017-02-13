@@ -3,6 +3,7 @@
     #home_banner {
         margin: 0 auto;
         position: relative;
+        height: auto;
         text-align: center;
     }
     .missing_out_div {

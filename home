@@ -160,7 +160,8 @@
     </div>
 </div>
 
-<div class="banner_container">
+<div id="page_banner">
+    <div class="banner_wrapper">
     <div class="flexslider4" id="">
         <ul class="banner_slider_ul slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">

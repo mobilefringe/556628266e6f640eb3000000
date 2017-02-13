@@ -558,6 +558,15 @@
             }
         
             renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
+            
+            var page_banner = getRepoDetailsByName('Banner Test').images;
+            console.log(page_banner);
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.photo_url_abs;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
             $('#banner_slider').flexslider({
                 animation: "fade",
             });

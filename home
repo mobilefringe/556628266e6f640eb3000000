@@ -172,19 +172,18 @@
 </div>
 
 <div id="home_banner">
-    <img src="http://assets.codecloudapp.com/sites/589c91346e6f641d45080000/image/jpeg/1486653320000/BC_banners_template.jpg" class="" alt="">
-    <!--<div id="banner_slider">-->
-    <!--    <ul class="slides" id="banner_slider_ul">-->
-    <!--        <script id="banner_slider_template" type="x-tmpl-mustache/text">-->
-    <!--            <li class="item">-->
-    <!--                <a href="{{url}}">-->
-    <!--                    <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>-->
+    <div id="banner_slider">
+        <ul class="slides" id="banner_slider_ul">
+            <script id="banner_slider_template" type="x-tmpl-mustache/text">
+                <li class="item">
+                    <a href="{{url}}">
+                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
                         
-    <!--                </a>-->
-    <!--            </li>-->
-    <!--        </script>-->
-    <!--    </ul>-->
-    <!--</div>-->
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
     <div class="banner_wrapper">    
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>

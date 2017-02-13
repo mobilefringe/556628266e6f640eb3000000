@@ -550,7 +550,7 @@
                 var banners = getBanners();
             }
         
-            // renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners")
+            renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
             
             var featureList = getFeatureList();
             renderHomePageData("#feature_container", "#feature_template", featureList, "feature_items") 

@@ -133,7 +133,9 @@
         .banner_container{
             height:auto;
         }
-        
+        .banner_slide_img {
+            max-width: 100%;
+        }
         .flexslider4 .flex-viewport{
             overflow: hidden !important;
         }

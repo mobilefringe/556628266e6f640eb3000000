@@ -165,8 +165,8 @@
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <div class="" id="banner_slider">
-            <ul class="banner_slider_ul slides" id="banner_slider_ul">
+        <div id="banner_slider">
+            <ul class="slides" id="banner_slider_ul">
                 <script id="banner_slider_template" type="x-tmpl-mustache/text">
                     <li class="item">
                         <a href="{{url}}">

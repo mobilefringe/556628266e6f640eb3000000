@@ -84,8 +84,6 @@
         <p class="page_subtitle">It's easy to get here; in the center of the shopping and business district</p>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
-            <div class="missing_out_div">
-            <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">
                 <form style="font-size:12px" id="banner_newsletter">
                     <span>

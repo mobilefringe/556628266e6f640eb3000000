@@ -1,8 +1,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <style>
-    .banner_container {
-        width: 100%;
-        text-align: center;
+    #home_banner {
+        position: relative;
     }
     .missing_out_div {
         z-index: 10;
@@ -170,8 +169,8 @@
     </div>
 </div>
 
-<div id="page_banner">
-    <div id="banner_slider" class="banner_container">
+<div id="home_banner">
+    <div id="banner_slider">
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">

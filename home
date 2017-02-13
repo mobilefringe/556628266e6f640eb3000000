@@ -404,10 +404,6 @@
     
     $(document).ready(function() {
         function render_page_details(){
-            $('#banner_slider').flexslider({
-                animation: "fade",
-            });
-            
             var promos = getPromotionsList();
             var events = getEventsList();
             basic_event_array = []
@@ -551,6 +547,9 @@
             }
         
             renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
+            $('#banner_slider').flexslider({
+                animation: "fade",
+            });
             
             var featureList = getFeatureList();
             renderHomePageData("#feature_container", "#feature_template", featureList, "feature_items") 

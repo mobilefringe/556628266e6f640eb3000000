@@ -63,7 +63,7 @@
         width:780px;
     }
     .tabs {
-        z-index: 999;
+        z-index: 3;
     }
     .tabs li {
          margin-right:-5px;

@@ -149,7 +149,7 @@
             top:85%;
         }
         #home_banner {
-            height: 155px;
+            height: 175px;
         }
     }
     

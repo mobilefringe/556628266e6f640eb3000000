@@ -144,13 +144,16 @@
         }
     }
     
+    @media (max-width: 767px) {
+        #home_banner {
+            height: 175px;
+        }
+    }
     @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
         #banner_hours_container{
             top:85%;
         }
-        #home_banner {
-            height: 175px;
-        }
+        
     }
     
 </style>

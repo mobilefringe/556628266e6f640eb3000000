@@ -76,6 +76,7 @@
     }
     .tabs {
         z-index: 3;
+        bottom: 85px;
     }
     .tabs li {
          margin-right:-5px;

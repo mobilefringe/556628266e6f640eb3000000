@@ -9,6 +9,7 @@
 
     #banner_slider .slides li img {
         width: 100%;
+        display: block;
     }
     #banner_slider .flex-control-nav {
         display: none;

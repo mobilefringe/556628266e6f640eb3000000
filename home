@@ -167,9 +167,7 @@
 </div>
 
 <div id="page_banner">
-    
     <div id="banner_slider">
-        <img src="http://assets.codecloudapp.com/sites/589c91346e6f641d45080000/image/jpeg/1486653320000/BC_banners_template.jpg" class="" alt="">
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
@@ -545,7 +543,7 @@
                 var banners = getBanners();
             }
         
-            // renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
+            renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
             $('#banner_slider').flexslider({
                 animation: "fade",
             });

@@ -24,7 +24,10 @@
         background-repeat: no-repeat;
         background-position: 50%;
     }
-    
+    .banner_image_li {
+        height: 500px;
+        display: block;
+    }
     .missing_out_div {
         z-index: 10;
     }
@@ -205,7 +208,7 @@
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
-                    <div style="background-image:url({{image_url}})" class="banner_image_div">
+                    <div style="background-image:url({{photo_url_abs}})" class="banner_image_div">
                         <a class="banner_image_li" href="{{url}}" {{css}} onclick="{{noLink}}" >
                         </a>
                     </div>

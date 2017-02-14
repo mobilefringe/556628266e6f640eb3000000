@@ -12,6 +12,7 @@
         bottom: 80px;
         text-align: center;
         z-index: 99;
+        opacity: 0.5;
     }
     .banner_image_div {
         background-size: cover;

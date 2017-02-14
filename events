@@ -23,7 +23,6 @@
     .promo_left_div{
         width:729px;
     }
-    
     .tabs{
         width:100%;
         background:transparent;
@@ -41,8 +40,6 @@
         margin-top:-80px;
        
     }
-    
- 
     .feature_promo_date_div{
         width:auto;
         margin-left:0;
@@ -107,7 +104,6 @@
             height:auto;
             word-break:break-word;
         }
-        
         .store_promo_ul li {
             padding-left:5px;
             padding-right:5px;
@@ -115,8 +111,6 @@
             width: calc(100% - 10px) !important;
         }
     }
-    
-    
 </style>
 
 <div id="page_banner">

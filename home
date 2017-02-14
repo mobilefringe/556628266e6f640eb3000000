@@ -134,11 +134,14 @@
     }
     
     @media (max-width: 767px) {
+        .banner_image_li {
+            height: 180px;
+            display: block;
+        }
         .tab_content{
             /*top:-30px;*/
             top: -15px;
         }
-    
         .on_now{
             font-size:20pt;
             line-height:20pt;
@@ -152,7 +155,6 @@
         .tabs{
             bottom:20px;
         }
-        
         .banner_container{
             height:auto;
         }
@@ -166,17 +168,10 @@
             height:100px !important;
         }
     }
-    
-    @media (max-width: 767px) {
-        #home_banner {
-            height: 175px;
-        }
-    }
     @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
         #banner_hours_container{
             top:85%;
         }
-        
     }
 </style>
 

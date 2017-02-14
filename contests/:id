@@ -98,7 +98,6 @@
             contest_details = getContestBySlug(slug);
             
             var page_banner = getRepoDetailsByName('Events & Contests').images;
-            console.log(page_banner);
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.photo_url_abs;
@@ -106,7 +105,7 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             // renderDetailData("#promo_title_container", "#promo_title_template", contest_details, "contest")
-            // renderDetailData("#store_detail_right_content_container", "#store_detail_right_content_template", contest_details, "contest")
+            renderDetailData("#store_detail_right_content_container", "#store_detail_right_content_template", contest_details, "contest")
             $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();

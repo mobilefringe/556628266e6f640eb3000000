@@ -586,7 +586,6 @@
             
             $('#banner_slider').flexslider({
                 animation: "fade",
-                itemWidth: 1920,
             });
             
             var featureList = getFeatureList();

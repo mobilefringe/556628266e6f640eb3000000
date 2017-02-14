@@ -105,7 +105,7 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             renderDetailData("#promo_title_container", "#promo_title_template", contest_details, "contest")
-            // renderDetailData("#store_detail_right_content_container", "#store_detail_right_content_template", contest_details, "contest")
+            renderDetailData("#store_detail_right_content_container", "#store_detail_right_content_template", contest_details, "contest")
             $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
@@ -121,9 +121,9 @@
             item_list.push(collection);    
             collection = item_list;    
             $.each( collection , function( key, val ) {
-                if ((val.photo_url).indexOf('missing.png') > 0){
-                    val.photo_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
-                }
+                // if ((val.photo_url).indexOf('missing.png') > 0){
+                //     val.photo_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
+                // }
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
 

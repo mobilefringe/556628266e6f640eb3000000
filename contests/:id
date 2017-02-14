@@ -122,7 +122,7 @@
             item_list.push(collection);    
             collection = item_list;    
             $.each( collection , function( key, val ) {
-                if ((val.photo_url).indexOf('missing.png') > -1){
+                if (val.photo_url.indexOf('missing.png') > -1){
                     val.photo_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
                 }
                 var rendered = Mustache.render(template_html,val);

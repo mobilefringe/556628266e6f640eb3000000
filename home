@@ -6,15 +6,7 @@
         height: auto;
         text-align: center;
     }
-    #banner_slider .slides li {
-        margin: 0 auto;
-    }
-    #banner_slider .slides li img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        display: block;
-    }
+
     #banner_slider .flex-control-nav {
         /*display: none;*/
     }

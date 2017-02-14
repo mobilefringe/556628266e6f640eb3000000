@@ -25,7 +25,7 @@
         background-position: 50%;
     }
     .banner_image_li {
-        height: 500px;
+        height: 546px;
         display: block;
     }
     .missing_out_div {

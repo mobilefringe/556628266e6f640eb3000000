@@ -134,6 +134,9 @@
     }
     
     @media (max-width: 767px) {
+        #home_banner {
+            height: 180px;
+        }
         .banner_image_li {
             height: 180px;
             display: block;

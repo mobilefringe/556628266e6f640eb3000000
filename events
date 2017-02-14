@@ -339,7 +339,6 @@
             $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
-            load_slider("flexslider4");
             $('.chevron_accordion').click(function(){
                 $(this).toggleClass("open_accordion");
                 $(this).next('.accordion_body').slideToggle();

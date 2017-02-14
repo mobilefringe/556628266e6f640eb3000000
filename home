@@ -212,11 +212,6 @@
                         <a class="banner_image_li" href="{{url}}" {{css}} onclick="{{noLink}}" >
                         </a>
                     </div>
-                
-                    <a href="{{url}}">
-                        <img class="banner_slide_img" src="{{photo_url_abs}}" alt="banner"/>
-                        
-                    </a>
                 </li>
             </script>
         </ul>

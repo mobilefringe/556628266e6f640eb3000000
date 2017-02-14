@@ -16,7 +16,7 @@
         display: block;
     }
     #banner_slider .flex-control-nav {
-        display: none;
+        /*display: none;*/
     }
     
     .banner_image_div {

@@ -8,9 +8,12 @@
     }
 
     #banner_slider .flex-control-nav {
-        /*display: none;*/
+        width: 100%;
+        position: absolute;
+        bottom: 77px;
+        text-align: center;
+        z-index: 99;
     }
-    
     .banner_image_div {
         background-size: cover;
         background-repeat: no-repeat;

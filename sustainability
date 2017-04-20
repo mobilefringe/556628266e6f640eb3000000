@@ -87,60 +87,63 @@
 </div>
 
 <div class="main_content_div">
-    <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
-        <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
-<div>
-<p style="text-align:left">At The Bay Centre we pride ourselves in adopting progressive environmental standards and practices. As a BOMA BESt Level&nbsp;2 shopping centre, The Bay Centre team is continually measuring, managing and improving our environmental performance through energy, water, consumption and waste reduction. Our 10&nbsp;years of sustainability efforts have provided dozens of businesses with access to full recycling and composting programs, energy efficient spaces and a sustainable transportation infrastructure.</p>
 
-<p style="text-align:left">Major sustainable initiatives that have been completed to date include:</p>
+    <div id="mm_page_content"></div>
 
-<ul>
-	<li style="text-align:left"><strong>2003:</strong>&nbsp;Creating a comprehensive tenant and common area recycling program for paper, glass, metal and plastic.</li>
-	<li style="text-align:left"><strong>2005:</strong>&nbsp;Partnered with BC Hydro, Trane Canada, Quantum Lighting Inc., Douglas Lighting Systems and Commercial Lighting Distributors to audit and retrofit the shopping centre&rsquo;s lighting and building management systems. To date, this upgrade has saved almost 1,200,000&nbsp;kWh in energy. This equates to an average annual energy reduction of&nbsp;2.26%.&nbsp;In 2005, as part of this project, The Bay Centre received&nbsp;<a href="https://www.bchydro.com/news/community_events/power-smart-excellence-awards.html" target="_blank"><u>BC Hydro&rsquo;s Power Smart Excellence award</u></a>. This program was the beginning of an evolution of change within our operational practices.</li>
-	<li style="text-align:left"><strong>2008:</strong>&nbsp;Became&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 1 certified</u></a>&nbsp;as a result of our achievement of environmental excellence in the management of the property.</li>
-	<li style="text-align:left"><strong>2009:</strong>&nbsp;Partnered with C.D. Sonter Ltd. to conduct a waste audit to create a benchmark for future sustainable practices and programs. With a second audit in October 2010 we found that we successfully increased our waste diversion from 43.9% in&nbsp;2009 to 52.6% in&nbsp;2010. This equates to the following:
-	<ul>
-		<li style="text-align:left">Creating 1,154 fibre-filled ski jackets or 640 XL polyester T-shirts through recycling plastic bottles.</li>
-		<li style="text-align:left">Saving enough water to fill 170,000 18.5 L Water Bottles through recycling cardboard.</li>
-		<li style="text-align:left">Saving 3,258 25-year old mature trees from being cut down through recycling paper products.</li>
-		<li style="text-align:left">Providing electricity to continuously power an LCD TV for 8 years through recycling glass bottles.</li>
-	</ul>
-	</li>
-	<li style="text-align:left"><strong>​2011:</strong>&nbsp;Recertified and awarded&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 2 certification</u></a></li>
-	<li style="text-align:left"><strong>2012:</strong>&nbsp;Completed the Climate Smart Program in which we calculated the carbon footprint of the core operations to gain an understanding of greenhouse gas emission sources and opportunities for reductions.</li>
-	<li style="text-align:left"><strong>2013:</strong>&nbsp;Installed four charging stations for electric vehicles in our underground parkade.<br />
-	<strong>2015:</strong>&nbsp;Recertified and awarded&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 2 certification</u></a></li>
-</ul>
+<!--    <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">-->
+<!--        <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">-->
+<!--<div>-->
+<!--<p style="text-align:left">At The Bay Centre we pride ourselves in adopting progressive environmental standards and practices. As a BOMA BESt Level&nbsp;2 shopping centre, The Bay Centre team is continually measuring, managing and improving our environmental performance through energy, water, consumption and waste reduction. Our 10&nbsp;years of sustainability efforts have provided dozens of businesses with access to full recycling and composting programs, energy efficient spaces and a sustainable transportation infrastructure.</p>-->
 
-<p style="margin-left:12pt; text-align:left">&nbsp;</p>
+<!--<p style="text-align:left">Major sustainable initiatives that have been completed to date include:</p>-->
 
-<h1 style="text-align:left"><strong>Additional activities include:</strong></h1>
+<!--<ul>-->
+<!--	<li style="text-align:left"><strong>2003:</strong>&nbsp;Creating a comprehensive tenant and common area recycling program for paper, glass, metal and plastic.</li>-->
+<!--	<li style="text-align:left"><strong>2005:</strong>&nbsp;Partnered with BC Hydro, Trane Canada, Quantum Lighting Inc., Douglas Lighting Systems and Commercial Lighting Distributors to audit and retrofit the shopping centre&rsquo;s lighting and building management systems. To date, this upgrade has saved almost 1,200,000&nbsp;kWh in energy. This equates to an average annual energy reduction of&nbsp;2.26%.&nbsp;In 2005, as part of this project, The Bay Centre received&nbsp;<a href="https://www.bchydro.com/news/community_events/power-smart-excellence-awards.html" target="_blank"><u>BC Hydro&rsquo;s Power Smart Excellence award</u></a>. This program was the beginning of an evolution of change within our operational practices.</li>-->
+<!--	<li style="text-align:left"><strong>2008:</strong>&nbsp;Became&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 1 certified</u></a>&nbsp;as a result of our achievement of environmental excellence in the management of the property.</li>-->
+<!--	<li style="text-align:left"><strong>2009:</strong>&nbsp;Partnered with C.D. Sonter Ltd. to conduct a waste audit to create a benchmark for future sustainable practices and programs. With a second audit in October 2010 we found that we successfully increased our waste diversion from 43.9% in&nbsp;2009 to 52.6% in&nbsp;2010. This equates to the following:-->
+<!--	<ul>-->
+<!--		<li style="text-align:left">Creating 1,154 fibre-filled ski jackets or 640 XL polyester T-shirts through recycling plastic bottles.</li>-->
+<!--		<li style="text-align:left">Saving enough water to fill 170,000 18.5 L Water Bottles through recycling cardboard.</li>-->
+<!--		<li style="text-align:left">Saving 3,258 25-year old mature trees from being cut down through recycling paper products.</li>-->
+<!--		<li style="text-align:left">Providing electricity to continuously power an LCD TV for 8 years through recycling glass bottles.</li>-->
+<!--	</ul>-->
+<!--	</li>-->
+<!--	<li style="text-align:left"><strong>​2011:</strong>&nbsp;Recertified and awarded&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 2 certification</u></a></li>-->
+<!--	<li style="text-align:left"><strong>2012:</strong>&nbsp;Completed the Climate Smart Program in which we calculated the carbon footprint of the core operations to gain an understanding of greenhouse gas emission sources and opportunities for reductions.</li>-->
+<!--	<li style="text-align:left"><strong>2013:</strong>&nbsp;Installed four charging stations for electric vehicles in our underground parkade.<br />-->
+<!--	<strong>2015:</strong>&nbsp;Recertified and awarded&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 2 certification</u></a></li>-->
+<!--</ul>-->
 
-<ul>
-	<li style="text-align:left">Reduce carbon footprint from 1,085 tonnes to below 1,000 tonnes (2013).</li>
-	<li style="text-align:left">Reduce energy consumption by an additional 5% (2013).&nbsp;</li>
-	<li style="text-align:left">Introducing a tenant pre-consumer organics (compost) program in the food court (launched in 2009).</li>
-	<li style="text-align:left">Converting to a bag-less program in food court and common areas (launched in 2009). To date, this program eliminates over 49,000 bags from the landfill on an annual basis.</li>
-	<li style="text-align:left">Selling waste vegetable oil to be used for biofuels (launched in 2009). (Globally, biofuels are most commonly used to power vehicles, heat homes, and for cooking.) In 2009 and 2010 the Centre diverted 9,797 kg and 8,346 kg of waste vegetable oil respectively.</li>
-	<li style="text-align:left">Reducing water consumption by almost 20%, or 11,720,352 L since 2008. That is enough to fill an Olympic sized pool 4.5 times!</li>
-	<li style="text-align:left">Replacing washroom paper towels and toilet tissue with 96+% recycled content paper (launched in 2009).</li>
-	<li style="text-align:left">Installing low-flow toilets in lower level women&rsquo;s washroom (2009). Installation of no-flow urinals in the men&rsquo;s washroom&nbsp;on the lower level (2009).</li>
-	<li style="text-align:left">Annually participate in&nbsp;<a href="https://www.wwf.ca/events/earthhour/" target="_blank"><u>Earth Hour</u></a>.</li>
-</ul>
-<br>
-<h1 style="text-align:left"><strong>Moving Forward</strong></h1>
+<!--<p style="margin-left:12pt; text-align:left">&nbsp;</p>-->
 
-<p style="text-align:left">At The Bay Centre, sustainability is about more than internal operations. We are committed to raising the bar by educating our tenants and the community about changes that can be made in our daily lives that will have a lasting impact on the planet. Our progressive sustainability program will help us meet our goals in improving our operations and will continually engage stakeholders in how they too can make a difference. Moving forward The Bay Centre&rsquo;s sustainability goals include:
-&nbsp;</p>
+<!--<h1 style="text-align:left"><strong>Additional activities include:</strong></h1>-->
 
-<ul>
-	<li style="text-align:left"><strong>2018:</strong>&nbsp;Working towards total diversion</li>
-	<li style="text-align:left"><strong>2018:</strong>&nbsp;Recertification of&nbsp;<a href="https://www.bomacanada.ca/">BOMA BESt Level 2&nbsp;</a></li>
-</ul>
+<!--<ul>-->
+<!--	<li style="text-align:left">Reduce carbon footprint from 1,085 tonnes to below 1,000 tonnes (2013).</li>-->
+<!--	<li style="text-align:left">Reduce energy consumption by an additional 5% (2013).&nbsp;</li>-->
+<!--	<li style="text-align:left">Introducing a tenant pre-consumer organics (compost) program in the food court (launched in 2009).</li>-->
+<!--	<li style="text-align:left">Converting to a bag-less program in food court and common areas (launched in 2009). To date, this program eliminates over 49,000 bags from the landfill on an annual basis.</li>-->
+<!--	<li style="text-align:left">Selling waste vegetable oil to be used for biofuels (launched in 2009). (Globally, biofuels are most commonly used to power vehicles, heat homes, and for cooking.) In 2009 and 2010 the Centre diverted 9,797 kg and 8,346 kg of waste vegetable oil respectively.</li>-->
+<!--	<li style="text-align:left">Reducing water consumption by almost 20%, or 11,720,352 L since 2008. That is enough to fill an Olympic sized pool 4.5 times!</li>-->
+<!--	<li style="text-align:left">Replacing washroom paper towels and toilet tissue with 96+% recycled content paper (launched in 2009).</li>-->
+<!--	<li style="text-align:left">Installing low-flow toilets in lower level women&rsquo;s washroom (2009). Installation of no-flow urinals in the men&rsquo;s washroom&nbsp;on the lower level (2009).</li>-->
+<!--	<li style="text-align:left">Annually participate in&nbsp;<a href="https://www.wwf.ca/events/earthhour/" target="_blank"><u>Earth Hour</u></a>.</li>-->
+<!--</ul>-->
+<!--<br>-->
+<!--<h1 style="text-align:left"><strong>Moving Forward</strong></h1>-->
 
-<p style="text-align:left">&nbsp;</p>
+<!--<p style="text-align:left">At The Bay Centre, sustainability is about more than internal operations. We are committed to raising the bar by educating our tenants and the community about changes that can be made in our daily lives that will have a lasting impact on the planet. Our progressive sustainability program will help us meet our goals in improving our operations and will continually engage stakeholders in how they too can make a difference. Moving forward The Bay Centre&rsquo;s sustainability goals include:-->
+<!--&nbsp;</p>-->
 
-<div style="text-align:left">&nbsp;</div>
+<!--<ul>-->
+<!--	<li style="text-align:left"><strong>2018:</strong>&nbsp;Working towards total diversion</li>-->
+<!--	<li style="text-align:left"><strong>2018:</strong>&nbsp;Recertification of&nbsp;<a href="https://www.bomacanada.ca/">BOMA BESt Level 2&nbsp;</a></li>-->
+<!--</ul>-->
+
+<!--<p style="text-align:left">&nbsp;</p>-->
+
+<!--<div style="text-align:left">&nbsp;</div>-->
 </div>
 </div>
 

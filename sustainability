@@ -1,0 +1,306 @@
+<style>
+    .stores_div p, .gs_text {
+        color:#6d6e71;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    .stores_div{
+        padding-top:30px;
+        padding-left:0;
+        color:#6d6e71;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    h1 {
+     font-family: railway-regular;
+     /*font-family: proxima \9;*/
+  font-size: 28pt;
+  color: #6d6e71;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+    }
+    .stores_div p{
+        height:auto;
+        border-top:none;
+    }
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    @media (max-width: 767px) {
+        .stores_div p, .cat_div{
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .cat_div{
+            font-size:18pt;
+            height:auto;
+        }
+        .list_icon{
+            font-size:15px !important;
+        }
+    }
+    
+    
+</style>
+
+<div class="banner_container">
+    <!--<img src="" id="main_image" class="main_image" alt="">-->
+    <div class="flexslider4" id="">
+        <ul class="banner_slider_ul slides" id="banner_slider_ul">
+            <script id="banner_slider_template" type="x-tmpl-mustache/text">
+                <li class="item">
+               
+                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
+  
+                </li>
+            </script>
+        </ul>
+    </div>
+    <div class="missing_out_div">
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div class="main_content_div">
+    <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
+        <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
+<div>
+<p style="text-align:left">At The Bay Centre we pride ourselves in adopting progressive environmental standards and practices. As a BOMA BESt Level&nbsp;2 shopping centre, The Bay Centre team is continually measuring, managing and improving our environmental performance through energy, water, consumption and waste reduction. Our 10&nbsp;years of sustainability efforts have provided dozens of businesses with access to full recycling and composting programs, energy efficient spaces and a sustainable transportation infrastructure.</p>
+
+<p style="text-align:left">Major sustainable initiatives that have been completed to date include:</p>
+
+<ul>
+	<li style="text-align:left"><strong>2003:</strong>&nbsp;Creating a comprehensive tenant and common area recycling program for paper, glass, metal and plastic.</li>
+	<li style="text-align:left"><strong>2005:</strong>&nbsp;Partnered with BC Hydro, Trane Canada, Quantum Lighting Inc., Douglas Lighting Systems and Commercial Lighting Distributors to audit and retrofit the shopping centre&rsquo;s lighting and building management systems. To date, this upgrade has saved almost 1,200,000&nbsp;kWh in energy. This equates to an average annual energy reduction of&nbsp;2.26%.&nbsp;In 2005, as part of this project, The Bay Centre received&nbsp;<a href="https://www.bchydro.com/news/community_events/power-smart-excellence-awards.html" target="_blank"><u>BC Hydro&rsquo;s Power Smart Excellence award</u></a>. This program was the beginning of an evolution of change within our operational practices.</li>
+	<li style="text-align:left"><strong>2008:</strong>&nbsp;Became&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 1 certified</u></a>&nbsp;as a result of our achievement of environmental excellence in the management of the property.</li>
+	<li style="text-align:left"><strong>2009:</strong>&nbsp;Partnered with C.D. Sonter Ltd. to conduct a waste audit to create a benchmark for future sustainable practices and programs. With a second audit in October 2010 we found that we successfully increased our waste diversion from 43.9% in&nbsp;2009 to 52.6% in&nbsp;2010. This equates to the following:
+	<ul>
+		<li style="text-align:left">Creating 1,154 fibre-filled ski jackets or 640 XL polyester T-shirts through recycling plastic bottles.</li>
+		<li style="text-align:left">Saving enough water to fill 170,000 18.5 L Water Bottles through recycling cardboard.</li>
+		<li style="text-align:left">Saving 3,258 25-year old mature trees from being cut down through recycling paper products.</li>
+		<li style="text-align:left">Providing electricity to continuously power an LCD TV for 8 years through recycling glass bottles.</li>
+	</ul>
+	</li>
+	<li style="text-align:left"><strong>​2011:</strong>&nbsp;Recertified and awarded&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 2 certification</u></a></li>
+	<li style="text-align:left"><strong>2012:</strong>&nbsp;Completed the Climate Smart Program in which we calculated the carbon footprint of the core operations to gain an understanding of greenhouse gas emission sources and opportunities for reductions.</li>
+	<li style="text-align:left"><strong>2013:</strong>&nbsp;Installed four charging stations for electric vehicles in our underground parkade.<br />
+	<strong>2015:</strong>&nbsp;Recertified and awarded&nbsp;<a href="https://www.bomacanada.ca/" target="_blank"><u>BOMA BESt Level 2 certification</u></a></li>
+</ul>
+
+<p style="margin-left:12pt; text-align:left">&nbsp;</p>
+
+<h1 style="text-align:left"><strong>Additional activities include:</strong></h1>
+
+<ul>
+	<li style="text-align:left">Reduce carbon footprint from 1,085 tonnes to below 1,000 tonnes (2013).</li>
+	<li style="text-align:left">Reduce energy consumption by an additional 5% (2013).&nbsp;</li>
+	<li style="text-align:left">Introducing a tenant pre-consumer organics (compost) program in the food court (launched in 2009).</li>
+	<li style="text-align:left">Converting to a bag-less program in food court and common areas (launched in 2009). To date, this program eliminates over 49,000 bags from the landfill on an annual basis.</li>
+	<li style="text-align:left">Selling waste vegetable oil to be used for biofuels (launched in 2009). (Globally, biofuels are most commonly used to power vehicles, heat homes, and for cooking.) In 2009 and 2010 the Centre diverted 9,797 kg and 8,346 kg of waste vegetable oil respectively.</li>
+	<li style="text-align:left">Reducing water consumption by almost 20%, or 11,720,352 L since 2008. That is enough to fill an Olympic sized pool 4.5 times!</li>
+	<li style="text-align:left">Replacing washroom paper towels and toilet tissue with 96+% recycled content paper (launched in 2009).</li>
+	<li style="text-align:left">Installing low-flow toilets in lower level women&rsquo;s washroom (2009). Installation of no-flow urinals in the men&rsquo;s washroom&nbsp;on the lower level (2009).</li>
+	<li style="text-align:left">Annually participate in&nbsp;<a href="https://www.wwf.ca/events/earthhour/" target="_blank"><u>Earth Hour</u></a>.</li>
+</ul>
+<br>
+<h1 style="text-align:left"><strong>Moving Forward</strong></h1>
+
+<p style="text-align:left">At The Bay Centre, sustainability is about more than internal operations. We are committed to raising the bar by educating our tenants and the community about changes that can be made in our daily lives that will have a lasting impact on the planet. Our progressive sustainability program will help us meet our goals in improving our operations and will continually engage stakeholders in how they too can make a difference. Moving forward The Bay Centre&rsquo;s sustainability goals include:
+&nbsp;</p>
+
+<ul>
+	<li style="text-align:left"><strong>2018:</strong>&nbsp;Working towards total diversion</li>
+	<li style="text-align:left"><strong>2018:</strong>&nbsp;Recertification of&nbsp;<a href="https://www.bomacanada.ca/">BOMA BESt Level 2&nbsp;</a></li>
+</ul>
+
+<p style="text-align:left">&nbsp;</p>
+
+<div style="text-align:left">&nbsp;</div>
+</div>
+</div>
+
+
+
+    
+    <div class="cat_stores_container" id="cat_stores_container">
+        <script id="cat_stores_template" type="x-tmpl-mustache/text">
+            <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
+                {{title}}
+                <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>
+            </div>
+            <div class="stores_div" id="cat_{{slug}}_stores">
+            {{{body}}}
+            </div>
+        </script>
+    </div>
+    
+</div>
+
+<script>
+    // $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/SustainabilityLeft.png");
+    // $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/cb352a97fa23d93dc26777dbd32efa33/GiftCardRight.png");
+    // $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Sustainability.png");
+    
+    function load_slider(slider){
+            
+        $('.'+slider).flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: true,    
+                animationLoop: true,
+                slideshow: true,
+                minItems: 3,
+                maxItems: 3,
+                prevText: "",
+                nextText: "",
+                after:function(){
+                    var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                    //do something
+                    var first = $("#banner_slider_ul").children(":first")
+                    // console.log($("#banner_slider_ul").children().length)
+                    if ($("#banner_slider_ul").children().length < 6){
+                        $("#banner_slider_ul").append(first.clone())
+                    }
+                    // $("#banner_slider_ul").append(first.clone())
+                }
+            });
+        }
+    
+    
+    
+    function show_stores(id){
+       if ($("#cat_"+id+"_stores").is(":visible")){
+           $("#cat_"+id+"_stores").slideUp();
+           $("#icon_"+id).removeClass("fa-minus")
+           $("#icon_"+id).addClass("fa-plus")
+       } else {
+           $("#cat_"+id+"_stores").slideDown();
+           $("#icon_"+id).removeClass("fa-plus")
+           $("#icon_"+id).addClass("fa-minus")
+       }
+    }
+    
+    
+    
+    
+    
+    $(document).ready(function() {
+        
+        function renderAll(){
+            
+            banners = []
+            
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/49f1c63402297b453df415fc407dc1c3/Sustainability.png")
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SustainabilityRIGHT.jpg");
+            banners.push("//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ed84014fb10de3731d4a758a6e33795e/SustainabilityLEFT.jpg");
+            banner_array = []
+            $.each( banners , function( key, val ) {
+                var obj = {};
+                obj["image_url"] = val;
+                banner_array.push(obj)
+            })
+            
+            renderBanners("#banner_slider_ul","#banner_slider_template",banner_array)
+            var prefix = get_prefix();
+            var page_array = [""]
+            page_array = page_array.reverse()
+            full_page_array = []
+            $.ajaxSetup({
+                async: false
+            });
+            $.each( page_array , function( key, val ) {
+                
+                var pages_json = prefix+"/pages/" + val + ".json"
+                console.log(pages_json);
+                $.getJSON(pages_json).then(function(data) {
+                    //var pages_data = JSON.parse(data);
+                    // console.log(data.body);
+                    // $("#page_title").html(data.title)
+                    // $('#mm_page_content').html(data.body);
+                    add_to_page_array (data)
+                })
+                
+                
+                
+            })
+            
+            $.ajaxSetup({
+                async: true
+            });
+            
+            renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
+            
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            
+            load_slider("flexslider4");
+            
+        }
+        
+        function add_to_page_array (data){
+            full_page_array.push(data)
+        }
+        function renderBanners(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+        }
+        
+        
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                
+                var title = val.title.split(" - ");
+                val.title = title[1]
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+    
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
+        
+        loadMallDataCached(renderAll); 
+    })
+</script>

@@ -92,8 +92,8 @@
 </div>
 
 <div class="main_content_div">
-
     <div id="mm_page_content" class="gs_text"></div>
+
 
 <!--    <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">-->
 <!--        <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">-->
@@ -149,23 +149,23 @@
 <!--<p style="text-align:left">&nbsp;</p>-->
 
 <!--<div style="text-align:left">&nbsp;</div>-->
-</div>
-</div>
+<!--</div>-->
+<!--</div>-->
 
 
 
     
-    <div class="cat_stores_container" id="cat_stores_container">
-        <script id="cat_stores_template" type="x-tmpl-mustache/text">
-            <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
-                {{title}}
-                <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>
-            </div>
-            <div class="stores_div" id="cat_{{slug}}_stores">
-            {{{body}}}
-            </div>
-        </script>
-    </div>
+    <!--<div class="cat_stores_container" id="cat_stores_container">-->
+    <!--    <script id="cat_stores_template" type="x-tmpl-mustache/text">-->
+    <!--        <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">-->
+    <!--            {{title}}-->
+    <!--            <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>-->
+    <!--        </div>-->
+    <!--        <div class="stores_div" id="cat_{{slug}}_stores">-->
+    <!--        {{{body}}}-->
+    <!--        </div>-->
+    <!--    </script>-->
+    <!--</div>-->
     
 </div>
 

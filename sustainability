@@ -239,32 +239,32 @@
                 }
             }); 
             
-            // var prefix = get_prefix();
-            // var page_array = [""]
-            // page_array = page_array.reverse()
-            // full_page_array = []
-            // $.ajaxSetup({
-            //     async: false
-            // });
-            // $.each( page_array , function( key, val ) {
+            var prefix = get_prefix();
+            var page_array = [""]
+            page_array = page_array.reverse()
+            full_page_array = []
+            $.ajaxSetup({
+                async: false
+            });
+            $.each( page_array , function( key, val ) {
                 
-            //     var pages_json = prefix+"/pages/" + val + ".json"
-            //     console.log(pages_json);
-            //     $.getJSON(pages_json).then(function(data) {
-            //         //var pages_data = JSON.parse(data);
-            //         // console.log(data.body);
-            //         // $("#page_title").html(data.title)
-            //         // $('#mm_page_content').html(data.body);
-            //         add_to_page_array (data)
-            //     })
+                var pages_json = prefix+"/pages/" + val + ".json"
+                console.log(pages_json);
+                $.getJSON(pages_json).then(function(data) {
+                    //var pages_data = JSON.parse(data);
+                    // console.log(data.body);
+                    // $("#page_title").html(data.title)
+                    // $('#mm_page_content').html(data.body);
+                    add_to_page_array (data)
+                })
                 
                 
                 
-            // })
+            })
             
-            // $.ajaxSetup({
-            //     async: true
-            // });
+            $.ajaxSetup({
+                async: true
+            });
             
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             

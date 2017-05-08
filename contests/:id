@@ -195,7 +195,12 @@
                     val.photo_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"
                 }
 
-                
+                if (start.format("DMY") == end.format("DMY")){
+                    	val.date_string = start.format("MMM D");
+                    }
+                    else {
+                    	val.date_string = start.format("MMM D") + " - " + end.format("MMM D");
+                    }
                 
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);

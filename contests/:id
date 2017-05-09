@@ -1,4 +1,8 @@
 <style>
+    .sharer{
+        margin-right:40px;
+        margin-top: -7px;
+    }
     .store_detail_description, #store_detail_left_content_container p{
         margin-top:15px;
         color: #6d6e71;

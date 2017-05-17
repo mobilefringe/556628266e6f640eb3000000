@@ -80,7 +80,7 @@
     <span class='st_sharethis'></span>   
 </div>
 
-<div class="main_content_div">
+<div id="main_container">
     <div id="mm_page_content" class="gs_text"></div>
 </div>
 

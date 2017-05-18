@@ -16,6 +16,9 @@
         margin-top: 0;
         margin-left:35px;
     }
+    h1 {
+        margin-left: 0;
+    }
     .gs_text a:link{
         text-decoration: underline;
     }

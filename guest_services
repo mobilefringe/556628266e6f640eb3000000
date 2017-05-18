@@ -103,7 +103,7 @@
     <div id="page_content"> 
         <div class="main_content_div">
             <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
-                <div id="guest_services"></div>
+                <div id="guest_services_content"></div>
             </div>
             <div class="cat_stores_container" id="cat_stores_container">
                 <script id="cat_stores_template" type="x-tmpl-mustache/text">
@@ -161,6 +161,11 @@
             });
             $.ajaxSetup({
                 async: true
+            });
+            
+            var guest_services = prefix + "/pages/baycentre-visitor-information.json"
+            $.getJSON(guest_services).done(function(data) {
+                $('#guest_services_content').html(data.body);
             });
             
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")

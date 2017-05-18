@@ -140,6 +140,7 @@
             console.log(gift_cards);
             $.getJSON(gift_cards).done(function(data) {
                 $('#gift_card_content').html(data.body);
+                $('#gift_card_img').attr(src, data.image_url);
             });
             
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")

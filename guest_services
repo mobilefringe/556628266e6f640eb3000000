@@ -7,7 +7,7 @@
         line-height:26pt;
         text-decoration: underline;
     }
-    .title {
+    .title, h1 {
         font-family: railway-regular;
         font-family: proxima \9;
         font-size: 28pt;

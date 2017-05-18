@@ -67,8 +67,23 @@
                     <div>
                         <button class="gray_pill back_to_list" onclick="window.location.href='/events'" id="view_all_btn">View All Contests</button>
                         <p class="store_detail_title">{{name}}</p>
+                        
                     </div>
                     <div id="store_detail_left_content_container">
+                        <p class="promo_dates">
+                            {{date_string}}
+                            <span class="pull-right sharer">
+                                <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/events/{{slug}}" class="share_links">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="" alt="share fb">
+                                </a>
+                                <a href="https://twitter.com/share?text={{name}}&url=//www.thebaycentre.ca/events/{{slug}}" class="share_links">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">
+                                </a>
+                                <a href="mailto:?subject={{encoded_name}}&body={{encoded_body}}" title="Share by Email" class="share_links" >
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1476472845000/hover_social_email.png" class="" alt="email share">
+                                </a>
+                            </span>
+                        </p>
                         <p class="store_detail_description">{{{rich_description}}}</p>
                     </div>
                 </script>
@@ -79,6 +94,7 @@
                         <a href="{{alt_store_front_url}}" rel="lightbox-gallery" title="{{name}}">
                             <img class="store_front" alt="photo_{{name}}" src="https://mallmaverick.com/{{photo_url}}"/>
                         </a>
+                        
                     </script>
                 </div>
             </div>

@@ -275,7 +275,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                         <li><a href="/map">Interactive Map</a></li>
                     </ul>
                 </div>
-                
                 <div class="dd_submenu" id="s_sub_2">
                     <ul>
                         <li><a href="/hours">hours</a></li>
@@ -285,20 +284,16 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                         <li><a href="/visitor_information">visitor information</a></li>
                     </ul>
                 </div>
-                
                 <div class="dd_submenu" id="s_sub_3">
                     <ul>
                         <li><a href="/promotions">Weekly Promotions</a></li>
                     </ul>
                 </div>
-                
                 <div class="dd_submenu" id="s_sub_4">
                     <ul>
                         <li><a href="/events">current events & contests </a></li>
-                        
                     </ul>
                 </div>
-                
                 <div class="dd_submenu" id="s_sub_5">
                     <ul>
                         <!--<li><a href="/lifestyle">Life + Style Program</a></li> -->
@@ -307,7 +302,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                         <li><a href="/newsletter">Enewsletter</a></li>
                     </ul>
                 </div>
-                
                 <div class="dd_submenu" id="s_sub_6">
                     <ul>
                         <li><a href="/pages/baycentre-gift-cards">Gift Cards</a> </li>
@@ -320,8 +314,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                         <li><a href="/contact_us">Contact Us</a> </li>
                     </ul>
                 </div>
-                
-                
             </div>
     </div>
     <div class="mobile_menu">

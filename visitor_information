@@ -277,7 +277,7 @@
             });
             
             var visitor_info = prefix + "/pages/baycentre-visitor-information.json"
-            $.getJSON(pages_json).done(function(data) {
+            $.getJSON(visitor_info).done(function(data) {
                 $('#visitor_info_content').html(data.body);
             });
             

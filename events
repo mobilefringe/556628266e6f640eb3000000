@@ -186,36 +186,17 @@
                 </li>
                 <li id="tab_2_content" style="display:none">
                     <div class="store_promo_content">
-                        <ul class="store_promo_ul" id="store_contest_container">
+                        <div class="featured_boxes" id="store_contest_container">
                             <script id="store_contest_template" type="x-tmpl-mustache/text">
-                                <li>
-                                    <div class="promo_left_div">
-                                        <div class="feature_promo_date_div">
-                                            <div class="feature_promo_date_triangle">&nbsp;</div>
-                                            <div class="date_block">
-                                                <p class="month_string">{{start_month}}</p>
-                                                <p class="day_string">{{start_day}}</p>
-                                            </div>
-                                            <div class="date_block">
-                                                <p class="month_string">{{end_month}}</p>
-                                                <p class="day_string">{{end_day}}</p>
-                                            </div>
-                                        </div>
-                                        <div class="name_block">
-                                            <a href="/contests/{{slug}}" class="store_detail_title">{{name}}</a>
-                                        </div>
-                                        <p class="store_detail_description">{{description}}</p>
-                                    </div>
-                                    <div class="promo_right_div">
-                                        <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
-                                            <img class="store_promo_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
-                                        </a>
-                                    </div>
-                                </li>
+                                <div class="featured_box" onclick='window.location="/contests/{{slug}}"'>
+                                    <p class="store_detail_title featured_name">{{name}}</p>
+                                    <p class="promo_dates" style='margin-top:5px'>{{date_string}}</p>
+                                    <i class="fa fa-angle-right chevron_accordion"></i>
+                                </div>
                             </script>
-                        </ul>
+                        </div>
                         <div id="no_contest_container" style="display:none">
-                            <p>Sorry, there are currently no contests on at the moment. Please check back soon for new contests or sign up for our <a href="/newsletter">enewsletter</a> to be notified of upcoming contests and promotions. </p>
+                            <p>Sorry, there are currently no contests on at the moment. Please check back soon for new contests or sign up for our <a href="/newsletter">enewsletter</a> to be notified of upcoming contests and promotions.</p>
                         </div>
                     </div>
                 </li>

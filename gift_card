@@ -151,6 +151,10 @@
             $.ajaxSetup({
                 async: true
             });
+            var gift_cards = prefix + "/pages/baycentre-gift-cards.json"
+            $.getJSON(gift_cards).done(function(data) {
+                $('#gift_card_content').html(data.body);
+            });
             
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             

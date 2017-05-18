@@ -3,7 +3,6 @@
         margin-right:40px;
         margin-top: -7px;
     }
-    
     .store_detail_description, #store_detail_left_content_container p{
         margin-top:15px;
         color: #6d6e71;
@@ -12,12 +11,9 @@
         font-size: 14pt;
         line-height: 26pt;
     }
-    
-    .store_detail_content{
-        margin-bottom:0;
-    }
-    .store_detail_content{
-        margin-bottom:0;
+    .store_detail_content {
+        margin-top: 40px;
+        margin-bottom: 0;
         border-bottom:none;
         padding-bottom:0;
     }

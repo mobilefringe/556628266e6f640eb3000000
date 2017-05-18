@@ -301,12 +301,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 
                 <div class="dd_submenu" id="s_sub_5">
                     <ul>
-                    <!--<li><a href="/lifestyle">Life + Style Program</a></li> -->
-                    <li><a href="/caughtlookingconfident">Caught Looking Confident</a></li>
+                        <!--<li><a href="/lifestyle">Life + Style Program</a></li> -->
+                        <!--<li><a href="/caughtlookingconfident">Caught Looking Confident</a></li>-->
                         <li><a href="/videos">Video Style </a></li>
-                          
                         <li><a href="/newsletter">Enewsletter</a></li>
-                        
                     </ul>
                 </div>
                 

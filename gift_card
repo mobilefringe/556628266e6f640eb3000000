@@ -79,6 +79,7 @@
         <div class="main_content_div">
             <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
                 <div id="gift_card_content"></div>
+                <img id="gift_card_img" src=""/>
             </div>
             <div class="cat_stores_container" id="cat_stores_container">
                 <script id="cat_stores_template" type="x-tmpl-mustache/text">

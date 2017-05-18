@@ -1,5 +1,4 @@
 <style>
-
     .stores_div a{
         color:#3aa2d2 !important;
         font-family:lora-regular;
@@ -8,18 +7,15 @@
         line-height:26pt;
         text-decoration: underline;
     }
-    
     .title {
-  font-family: railway-regular;
-  font-family: proxima \9;
-  font-size: 28pt;
-  color: #6d6e71;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-left:35px;
-}
-    
-
+        font-family: railway-regular;
+        font-family: proxima \9;
+        font-size: 28pt;
+        color: #6d6e71;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-left:35px;
+    }
     .gs_text a:link{
         text-decoration: underline;
     }
@@ -74,8 +70,6 @@
             font-size:15px !important;
         }
     }
-    
-    
 </style>
 
 <div id="page_banner">
@@ -108,17 +102,9 @@
 <div id="main_container">
     <div id="page_content"> 
         <div class="main_content_div">
-            <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">Come visit The Bay Centre, downtown Victoria's premier shopping destination. Covering one full city block in the centre of Victoria's shopping district, The Bay Centre has a mix of over 90 street front and interior shops where you'll find unique, quality brands, diverse dining options, and exceptional service in an urban shopping environment.
-            <br><br>
-            Featuring <a href="http://www.thebaycentre.com/stores/baycentre-club-monaco--4" target="_blank">Club Monaco</a>, <a href="http://www.thebaycentre.com/stores/baycentre-bcbgmaxazria--2" target="_blank">BCBGMAXAZRIA</a>,&nbsp; <a href="http://www.thebaycentre.com/stores/baycentre-aerosoles--2" target="_blank">Aerosoles</a>, <a href="http://www.thebaycentre.com/stores/baycentre-earls-kitchen-bar--2" target="_blank">Earls Restaurant</a>, <a href="http://www.thebaycentre.com/stores/baycentre-eco-chic-aveda-salon-spa--2" target="_blank">Eco Chic Aveda Salon &amp; Spa</a>, <a href="http://www.thebaycentre.com/stores/baycentre-goodlife-fitness--2" target="_blank">GoodLife Fitness</a>, <a href="http://www.thebaycentre.com/stores/baycentre-guess--3" target="_blank">Guess?</a>, <a href="http://www.thebaycentre.com/stores/baycentre-l-occitane-en-provence--2" target="_blank">L&#39;Occitane</a>, <a href="http://www.thebaycentre.com/stores/baycentre-my-foot-reflexology--2" target="_blank">My Foot Reflexology</a>, <a href="http://www.thebaycentre.com/stores/baycentre-sport-chek--2" target="_blank">Sport Chek</a>, <a href="http://www.thebaycentre.com/stores/baycentre-hudson-s-bay-the--2" target="_blank">Hudson&rsquo;s Bay</a>, <a href="http://www.thebaycentre.com/stores/baycentre-teavana--2" target="_blank">Teavana</a>, <a href="http://www.thebaycentre.com/stores/baycentre-the-tuscan-kitchen--2" target="_blank">The Tuscan Kitchen</a>, <a href="http://www.thebaycentre.com/stores/baycentre-urban-planet--3" target="_blank">Urban Planet</a>&nbsp;and so much more. 
-            <br><br>
-            We hope to see you soon at The Bay Centre.</p>
-            <br><br>
-            <h1 class="title">Guest Services</h1>
-            <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">Below are just a few of the amenities The Bay Centre provides for you year round. For further information, call us at (250) 952-5690 or <a href=mailto:tbcinfo@20vic.com>email us.</a>  
-            <br><br>
-            We welcome you to come by and visit us, near the escalators on the lower level. </p>
-
+            <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
+                <div id="guest_services"></div>
+            </div>
             <div class="cat_stores_container" id="cat_stores_container">
                 <script id="cat_stores_template" type="x-tmpl-mustache/text">
                     <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">

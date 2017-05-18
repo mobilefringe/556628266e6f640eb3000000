@@ -1,3 +1,4 @@
+<script src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=177&amp;locationId=3349451&amp;lang=en_CA&amp;display_version=2"></script>
 <style>
     .stores_div a{
         color:#3aa2d2 !important;
@@ -185,34 +186,18 @@
                     <div class="store_detail_content">
                         <div class="detail_left_div">
                             <div class="gs_text" style="margin-top:61px;margin-left:15px;margin-right:15px">
-                                <div id="TA_cdsscrollingravewide841" class="TA_cdsscrollingravewide">
-                                    <ul id="Zn85DHyyAp" class="TA_links 3Rwvx3">
-                                        <li id="x0TQtgkNx8V" class="3KjKcpBaDUU">
-                                            <a target="_blank" href="https://www.tripadvisor.ca/"><img src="https://static.tacdn.com/img2/t4b/Stacked_TA_logo.png" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a>
+                                <div id="TA_rated177" class="TA_rated">
+                                    <ul id="97Q6Ne6" class="TA_links nug6Gh3">
+                                        <li id="Ye5XKx" class="OdQ3bgf">
+                                            <a target="_blank" href="https://www.tripadvisor.ca/">
+                                                <img src="https://www.tripadvisor.ca/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
-                                <script src="https://www.jscache.com/wejs?wtype=cdsscrollingravewide&amp;uniq=841&amp;locationId=3349451&amp;lang=en_CA&amp;border=false&amp;shadow=false&amp;display_version=2"></script>
-
-                                <p>Come visit The Bay Centre, a &ldquo;must see&rdquo; in downtown Victoria&#39;s shopping and business district. Known for our architecture and urban atmosphere, The Bay Centre has a mix of over 90 street front and interior shops covering an entire full city block.</p>
-
-                                <p>Conveniently located:</p>
-            
-                                <ul class="gs_text">
-                                    <li class="tab">Across the street from the Cruise Ship shuttle stop;</li>
-                                    <li class="tab">Three blocks from the Inner Harbour including the <a href="https://www.clippervacations.com/" target="_blank">Victoria Clipper</a>, <a href="https://www.cohoferry.com/" target="_blank">MV Coho</a>, <a href="https://www.harbourair.com/" target="_blank">Harbour Air</a>, <a href="https://helijet.com/" target="_blank">Helijet</a>;</li>
-                                    <li class="tab">Three blocks from the world renowned <a href="https://www.fairmont.com/empress-victoria" target="_blank">Empress Hotel</a> and <a href="https://victoriaconference.com/" target="_blank">Victoria Convention Centre</a>;</li>
-                                    <li class="tab">Right on the Government Street tourist walk.</li>
-                                </ul>
-            
-                                <p>All of which positions the Centre to welcome 3.0 million out-of-town guests that visit Victoria each year.
-                                    <br/><br>
-                                    Featuring <a href="http://www.thebaycentre.com/stores/baycentre-club-monaco--4" target="_blank">Club Monaco</a>, <a href="http://www.thebaycentre.com/stores/baycentre-bcbgmaxazria--2" target="_blank">BCBGMAXAZRIA</a>,&nbsp; <a href="http://www.thebaycentre.com/stores/baycentre-aerosoles--2" target="_blank">Aerosoles</a>, <a href="http://www.thebaycentre.com/stores/baycentre-earls-kitchen-bar--2" target="_blank">Earls Restaurant</a>, <a href="http://www.thebaycentre.com/stores/baycentre-eco-chic-aveda-salon-spa--2" target="_blank">Eco Chic Aveda Salon &amp; Spa</a>, <a href="http://www.thebaycentre.com/stores/baycentre-goodlife-fitness--2" target="_blank">GoodLife Fitness</a>, <a href="http://www.thebaycentre.com/stores/baycentre-guess--3" target="_blank">Guess?</a>, <a href="http://www.thebaycentre.com/stores/baycentre-l-occitane-en-provence--2" target="_blank">L&#39;Occitane</a>, <a href="http://www.thebaycentre.com/stores/baycentre-my-foot-reflexology--2" target="_blank">My Foot Reflexology</a>, <a href="http://www.thebaycentre.com/stores/baycentre-sport-chek--2" target="_blank">Sport Chek</a>, <a href="http://www.thebaycentre.com/stores/baycentre-hudson-s-bay-the--2" target="_blank">Hudson&rsquo;s Bay</a>, <a href="http://www.thebaycentre.com/stores/baycentre-teavana--2" target="_blank">Teavana</a>, <a href="http://www.thebaycentre.com/stores/baycentre-the-tuscan-kitchen--2" target="_blank">The Tuscan Kitchen</a>, <a href="http://www.thebaycentre.com/stores/baycentre-urban-planet--3" target="_blank">Urban Planet</a>&nbsp;and so much more. It is no wonder why over 7 million guests visit The Bay Centre on a yearly basis.</p>
-
-                                <p>We hope to see you soon at The Bay Centre.</p>
+                                <div id="visitor_info_content"></div>
                             </div>
                         </div>
-            
                         <div class="cat_stores_container" id="cat_stores_container">
                             <script id="cat_stores_template" type="x-tmpl-mustache/text">
                                 <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
@@ -290,6 +275,12 @@
             $.ajaxSetup({
                 async: true
             });
+            
+            var visitor_info = prefix + "/pages/baycentre-visitor-information.json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#visitor_info_content').html(data.body);
+            });
+            
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             renderPageData("#cat_stores_container2","#cat_stores_template2",full_page_array2, "pages")
      

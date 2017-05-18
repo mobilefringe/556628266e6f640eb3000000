@@ -163,7 +163,7 @@
                 async: true
             });
             
-            var guest_services = prefix + "/pages/baycentre-visitor-information.json"
+            var guest_services = prefix + "/pages/baycentre-guest-services.json"
             $.getJSON(guest_services).done(function(data) {
                 $('#guest_services_content').html(data.body);
             });

@@ -96,7 +96,7 @@
          margin-right:-5px;
     }
     .socialize_div {
-        margin-top:80px;
+        margin-top: 30px;
     }
     .socialize_text{
         margin-top:5px;

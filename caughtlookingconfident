@@ -230,6 +230,18 @@
         var repoList = getRepoList();
         renderSpotted('#spotted_container', '#spotted_template', repoList);
         
+        $(".thumbnail").click(function() {
+            $("body").addClass("no_scroll");    
+        });
+        
+        $("#lightbox").click(function(){
+            $("body").removeClass('no_scroll');
+        });
+        
+        $(".close").click(function(){
+            $("body").removeClass('no_scroll');
+        });
+        
         $(".loading_overlay").hide();
         $("#page_content").show();
     }

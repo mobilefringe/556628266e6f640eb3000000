@@ -237,9 +237,7 @@
 </div>
 
 <script>
-    
-    $(document).ready(function() {
-        $(".tabs li").click(function(e){
+    $(".tabs li").click(function(e){
         var clicked = this.id
         $(".tabs li").css({"background":"transparent","color":"white"});
         $(".tabs li").find(".tab_overlay").css("display","block");
@@ -253,17 +251,18 @@
     });
     
     function show_stores(id){
-      if ($("#cat_"+id+"_stores").is(":visible")){
-          $("#cat_"+id+"_stores").slideUp();
-          $("#icon_"+id).removeClass("fa-minus")
-          $("#icon_"+id).addClass("fa-plus")
-      } else {
-          $("#cat_"+id+"_stores").slideDown();
-          $("#icon_"+id).removeClass("fa-plus")
-          $("#icon_"+id).addClass("fa-minus")
-      }
+        if ($("#cat_"+id+"_stores").is(":visible")){
+            $("#cat_"+id+"_stores").slideUp();
+            $("#icon_"+id).removeClass("fa-minus")
+            $("#icon_"+id).addClass("fa-plus")
+        } else {
+            $("#cat_"+id+"_stores").slideDown();
+            $("#icon_"+id).removeClass("fa-plus")
+            $("#icon_"+id).addClass("fa-minus")
+        }
     }
     
+    $(document).ready(function() {
         function add_to_page_array (data, array){
             array.push(data);
         }

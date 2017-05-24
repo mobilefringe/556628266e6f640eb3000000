@@ -1,22 +1,58 @@
-
 <style>
-.gs_text {
-    color:#6d6e71;
-font-family:lora-regular;
-/*font-family: neuton \9;*/
-font-size:14pt;
-line-height:26pt;
-}
-    .close{
+    .custom_modal{
+        width: 860px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 999999;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        border: 1px solid;
+    }
+    .modal_close {
         position: absolute;
-        top: -20px;
-        right: -20px;
-        font-size: 30px;
-        width: 45px;
-        padding-bottom: 8px;
-        border-radius: 35px;
-        background: white;
-        border: 2px solid #ccc;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .modal_50 {
+        width: 50%;
+        float: left;
+    }
+    .spotted {
+        /*margin: 0 auto;*/
+        display: block;
+        max-width: 90%;
+    }
+    .spotted-title { 
+        font-family: lora-regular;
+    }
+    .no_scroll{
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+    .gs_text {
+        color:#6d6e71;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    .close {
+        padding: 0;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        border-radius: 0;
+        background: none;
+        border: none;
         cursor:pointer;
     }
     .row{
@@ -67,6 +103,8 @@ line-height:26pt;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align:center;
+        max-height: 80vh;
+        overflow: scroll;
     }
     
     .modal-backdrop{
@@ -86,7 +124,6 @@ line-height:26pt;
             float: none;
             margin-bottom: 30px;
         }
-        
         .thumbnail {
             display: block;
             padding: 10px;
@@ -94,6 +131,24 @@ line-height:26pt;
             margin-left: 10px;
             margin-right: 10px;
         }
+        .custom_modal {
+            padding: 25px;
+            width: 75%;
+            height: 300px;
+            overflow: scroll;
+        }
+        .modal_50 {
+            width: 100%;
+            display: block;
+        }
+        .spotted {
+            max-width: 100%;
+        }
+        .spotted-title,
+        .spotted-description {
+            text-align: center;
+        }
+        
     }
 </style>
 
@@ -142,22 +197,23 @@ line-height:26pt;
             </div>
             <div class="clearfix"></div>
         </div>
-        <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog" id="modal-dialog">
-                <button type="button" class="close " data-dismiss="modal" aria-hidden="true">×</button>
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img class="spotted" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/017/795/original/IMG_0561.jpg?1460131067" alt="..." title=""/>
-                    </div>
-                    <div class="modal-footer">
-                        <h3 class="spotted-title" style="font-family: lora-regular;"></h3>
-                        <p class="spotted-description contact_number"></p>
-                    </div>
-                </div>
-            </div>
+    </div>
+</div>
+        
+<!-- MODAL -->
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="custom_modal">
+        <button type="button" class="close " data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <div class="modal_50">
+            <img class="spotted" src="http://placehold.it/337x337" />
+        </div>
+        <div class="modal_50">
+            <h3 class="spotted-title">Heading</h4>
+            <p class="spotted-description contact_number">desc</p>
         </div>
     </div>
 </div>
+<!-- -->
 
 <script>
     $(document).ready(function() {
@@ -203,13 +259,13 @@ line-height:26pt;
     }
     
     function spottedLightbox(obj){
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.width <= 600) {
-            var maxWidth = 330;
-            var maxHeight = 330;
-        }else{
-            var maxWidth = 565;
-            var maxHeight = 565;
-        }
+        // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.width <= 600) {
+        //     var maxWidth = 330;
+        //     var maxHeight = 330;
+        // }else{
+        //     var maxWidth = 565;
+        //     var maxHeight = 565;
+        // }
         
         var $lightbox = $('#lightbox');
         var $img = $(obj).find('img'), 
@@ -218,10 +274,11 @@ line-height:26pt;
         title = $img.attr('title'),
         
         css = {
-            'maxWidth': maxWidth,
-            'maxHeight': maxHeight
+            // 'maxWidth': maxWidth,
+            // 'maxHeight': maxHeight
         };
-
+        
+        
         $lightbox.find('.spotted').attr('src', src);
         $lightbox.find('.spotted-description').text(description);
         $lightbox.find('.spotted-title').text(title)

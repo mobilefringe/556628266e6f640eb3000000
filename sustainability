@@ -15,7 +15,7 @@
         font-size:14pt;
         line-height:26pt;
     }
-    .main_content_div h1 {
+    .main_container h1 {
         font-family: railway-regular;
         /*font-family: proxima \9;*/
         font-size: 28pt;

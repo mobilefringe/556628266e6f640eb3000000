@@ -148,7 +148,9 @@
             margin-top:25px;
         }
         .tab_item {
-            padding-top:5px;
+            padding-top: 5px;
+            padding-right: 5px;
+            text-align: left;
         }    
         .tabs{
             bottom:20px;

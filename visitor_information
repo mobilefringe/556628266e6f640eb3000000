@@ -237,6 +237,14 @@
 </div>
 
 <script>
+    //The following was added to load trip advisor separately. there is an issue with the widget with pages where there are AJAX queries. this article explains the issue. https://stackoverflow.com/questions/19661206/tripadvisor-widget-fails-to-load-on-ajax-page-loading
+
+    $.getScript('//www.tripadvisor.fr/WidgetEmbed-selfserveprop?nreviews=6&uniq=&iswide=true&locationId=841&rating=true&popIdx=true&border=false&writereviewlink=true&lang=fr', function() {
+        if (typeof(window.taValidate) != 'undefined') {
+            window.taValidate();
+        }
+    });
+    
     $(".tabs li").click(function(e){
         var clicked = this.id
         $(".tabs li").css({"background":"transparent","color":"white"});
@@ -416,16 +424,6 @@
                 }
             }); 
         }
-        
-        //The following was added to load trip advisor separately. there is an issue with the widget with pages where there are AJAX queries. this article explains the issue. https://stackoverflow.com/questions/19661206/tripadvisor-widget-fails-to-load-on-ajax-page-loading
-
-    $.getScript('//www.tripadvisor.fr/WidgetEmbed-selfserveprop?nreviews=6&uniq=&iswide=true&locationId=841&rating=true&popIdx=true&border=false&writereviewlink=true&lang=fr', function() {
-        if (typeof(window.taValidate) != 'undefined') {
-            window.taValidate();
-        }
-    });
-
-    
         loadMallDataCached(renderAll);  
     });
 </script>

@@ -237,7 +237,33 @@
 </div>
 
 <script>
+    
     $(document).ready(function() {
+        $(".tabs li").click(function(e){
+        var clicked = this.id
+        $(".tabs li").css({"background":"transparent","color":"white"});
+        $(".tabs li").find(".tab_overlay").css("display","block");
+        $(".tabs li").find("div").css("color","white");
+        $(this).css("background","white");
+        $(this).find("div").css("color","#4d4d4f");
+        $(this).find(".tab_overlay").css("display","none");
+        $(".tab_content li").hide();
+        $("#"+clicked + "_content").show()
+        $("#"+clicked + "_content li").show()
+    });
+    
+    function show_stores(id){
+      if ($("#cat_"+id+"_stores").is(":visible")){
+          $("#cat_"+id+"_stores").slideUp();
+          $("#icon_"+id).removeClass("fa-minus")
+          $("#icon_"+id).addClass("fa-plus")
+      } else {
+          $("#cat_"+id+"_stores").slideDown();
+          $("#icon_"+id).removeClass("fa-plus")
+          $("#icon_"+id).addClass("fa-minus")
+      }
+    }
+    
         function add_to_page_array (data, array){
             array.push(data);
         }
@@ -400,30 +426,7 @@
         }
     });
 
-    $(".tabs li").click(function(e){
-        var clicked = this.id
-        $(".tabs li").css({"background":"transparent","color":"white"});
-        $(".tabs li").find(".tab_overlay").css("display","block");
-        $(".tabs li").find("div").css("color","white");
-        $(this).css("background","white");
-        $(this).find("div").css("color","#4d4d4f");
-        $(this).find(".tab_overlay").css("display","none");
-        $(".tab_content li").hide();
-        $("#"+clicked + "_content").show()
-        $("#"+clicked + "_content li").show()
-    });
     
-    function show_stores(id){
-      if ($("#cat_"+id+"_stores").is(":visible")){
-          $("#cat_"+id+"_stores").slideUp();
-          $("#icon_"+id).removeClass("fa-minus")
-          $("#icon_"+id).addClass("fa-plus")
-      } else {
-          $("#cat_"+id+"_stores").slideDown();
-          $("#icon_"+id).removeClass("fa-plus")
-          $("#icon_"+id).addClass("fa-minus")
-      }
-    }
         loadMallDataCached(renderAll);  
     });
 </script>

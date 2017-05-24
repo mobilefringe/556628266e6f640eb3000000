@@ -49,8 +49,8 @@
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <h1 class="page_headline"><span>Getting</span> Here</h1>
-        <p class="page_subtitle">It's easy to get here; in the center of the shopping and business district</p>
+        <h1 class="page_headline"><span>Gift</span> Cards</h1>
+        <p class="page_subtitle">Streamline your gift giving</p>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">

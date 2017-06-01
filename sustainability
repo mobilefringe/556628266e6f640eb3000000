@@ -19,7 +19,6 @@
         font-family: railway-regular;
         /*font-family: proxima \9;*/
         font-size: 28pt;
-        color: #6d6e71;
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 20px;

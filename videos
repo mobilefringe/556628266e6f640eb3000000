@@ -58,8 +58,7 @@
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <h1 class="page_headline"><span>Video</span> Style</h1>
-        <p class="page_subtitle">Life & Style at The Bay Centre</p>
+        <h1 class="page_headline">Video Style</h1>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">

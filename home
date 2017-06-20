@@ -205,7 +205,6 @@
                 <li class="item">
                     <div style="background-image:url({{image_url}})" class="banner_image_div">
                         <a class="banner_image_li" href="{{url}}" {{css}} onclick="{{noLink}}" >
-                            // <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
                         </a>
                     </div>
                 </li>

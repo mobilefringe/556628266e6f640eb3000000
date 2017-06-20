@@ -574,6 +574,7 @@
                 })
             } else {
                 var banners = getBanners();
+                console.log(banners);
             }
         
             renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");

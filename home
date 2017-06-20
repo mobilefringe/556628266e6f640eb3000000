@@ -575,11 +575,11 @@
                 var banners = getBanners();
             }
         
-            // renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
+            renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
             
-            var page_banner = getRepoDetailsByName('Banner Test').images;
-            console.log(page_banner);
-            renderHomePageData("#banner_slider_ul","#banner_slider_template", page_banner);
+            // var page_banner = getRepoDetailsByName('Banner Test').images;
+            // console.log(page_banner);
+            // renderHomePageData("#banner_slider_ul","#banner_slider_template", page_banner);
             
             $('#banner_slider').flexslider({
                 animation: "fade",

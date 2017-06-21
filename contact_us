@@ -93,7 +93,7 @@
                <p class="contact_number">E <a href="mailto: alockstead@20vic.com">alockstead@20vic.com </a></p>
             </div>
             <div class="contact_column">
-                <p class="contact_quote"><i class="fa fa-quote-left"></i>   Every season the building’s architecture shines, from the frozen Fort Street fountain on a snowy day, to the sun streaming on the food court patio in the summer.&nbsp;<i class="fa fa-quote-right"></i></p>
+                <p class="contact_quote" style="padding-bottom: 102px"><i class="fa fa-quote-left"></i>   Every season the building’s architecture shines, from the frozen Fort Street fountain on a snowy day, to the sun streaming on the food court patio in the summer.&nbsp;<i class="fa fa-quote-right"></i></p>
                 <p class="contact_subtitle">Chris Jiggins </p>
                 <p class="contact_number">Operations Supervisor</p>
                 <p class="contact_number">P 250 952-5695</p>

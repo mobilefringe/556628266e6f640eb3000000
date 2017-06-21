@@ -128,23 +128,19 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>
 </head>
 <body>
-    
     <header>
-    
-    
-    <div class="menu_container">
-        
-        <div class="search_social_div"> 
-            <a class="header_link" href="/contact_us" onclick="send_ga_event('The Bay Centre – Header – Contact Us')">contact us</a>
-            <div class="search_div">
-                <input  type="text" id="search_input" class="search_input" placeholder="Search" onclick="send_ga_event('The Bay Centre – Header – Search')">
-                <i class="fa fa-search search_icon"></i>
-                <div class="search-results" id="search_results" style="display:none">
+        <div class="menu_container">
+            <div class="search_social_div"> 
+                <a class="header_link" href="/contact_us" onclick="send_ga_event('The Bay Centre – Header – Contact Us')">contact us</a>
+                <div class="search_div">
+                    <input  type="text" id="search_input" class="search_input" placeholder="Search" onclick="send_ga_event('The Bay Centre – Header – Search')">
+                    <i class="fa fa-search search_icon"></i>
+                    <div class="search-results" id="search_results" style="display:none">
                         <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
                         <script id="search_results_template" type="x-tmpl-mustache/text">{% raw %}
-                        <small><h4 class="list-group-item search-results-count" id="store_results_header" style="display:none;#4d4d4f:gray;margin-top:2px;font-size:14px" data-i18n="nav.stores" onclick="javascript:show_results('store')"></h4></small>
-                        <div class="results_div" id="store_results">
-                        {{#stores}}
+                            <small><h4 class="list-group-item search-results-count" id="store_results_header" style="display:none;#4d4d4f:gray;margin-top:2px;font-size:14px" data-i18n="nav.stores" onclick="javascript:show_results('store')"></h4></small>
+                            <div class="results_div" id="store_results">
+                            {{#stores}}
                             <a href="/stores/{{slug}}" class="list-group-item">
                                 <div class="result_container">
                                     <div class="name">{{name}}</div>
@@ -152,7 +148,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                                     <div class="phone">{{phone}}</div>
                                 </div>
                             </a>
-                        {{/stores}}
+                            {{/stores}}
                         </div>
                         <h4 class="list-group-item search-results-count" id="promotions_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('promo')"></h4>
                         <div class="results_div" id="promo_results">
@@ -426,7 +422,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <footer>
         <div class="footer_logo_div">
             <img class="footer_logos" src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1495032935000/BC Banner Logos-01.png" alt="footer_logos"/>
-            <img class="mobile_footer_logos" src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1495044704000/BC Banner Logos-02.png" alt="footer logos"/>
+            <img class="mobile_footer_logos" src="//codecloud.cdn.speedyrails.net/sites/589c91346e6f641d45080000/image/png/1498054539000/BC Banner Logos-02.png" alt="footer logos"/>
         </div>
         <div class="find_us_div">
             <div class="find_left_div" id="find_left_div">

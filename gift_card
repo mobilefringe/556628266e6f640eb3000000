@@ -29,7 +29,9 @@
     .socialize_social_icons{
         margin-top:0;
     }
-    
+    .gs_text img {
+        max-width: 100%;
+    }
     @media (max-width: 767px) {
         .stores_div p, .cat_div{
             padding-left:15px;

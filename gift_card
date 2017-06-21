@@ -30,6 +30,7 @@
         margin-top:0;
     }
     .gs_text img {
+        padding-left: 10px;
         max-width: 100%;
     }
     @media (max-width: 767px) {
@@ -43,6 +44,9 @@
         }
         .list_icon{
             font-size:15px !important;
+        }
+        .gs_text img {
+            padding-left: 0;
         }
     }
     

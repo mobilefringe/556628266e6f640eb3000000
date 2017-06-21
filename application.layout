@@ -223,7 +223,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             <a href="/home" onclick="send_ga_event('The Bay Centre – Header – Logo')"><img class="site_logo" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/BAY_logo.png"></a>
         </div>
         <div class="mobile_menu_btn" onclick="javascript:toggle_mobile_menu()">
-            <img src="//codecloud.cdn.speedyrails.net/sites/589c91346e6f641d45080000/image/png/1498057084000/menu.png"/>
+            <img src="//codecloud.cdn.speedyrails.net/sites/589c91346e6f641d45080000/image/png/1498057189000/menu.png"/>
         </div>
         <div class="menu_items_container">
             <ul class="main_menu">

@@ -360,12 +360,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
                 <p>Our style &nbsp;&nbsp;<i id='mobile_sub_5_arrow' class='fa fa-chevron-down'></i></p>
                 <div class="mobile_submenu" id="mobile_sub_5">
                     <ul>
-                      <!-- <li class="mobile_submenu_li"><a href="/lifestyle">Life + Style Program</a></li> -->
-                     <li class="mobile_submenu_li"><a href="/caughtlookingconfident">Caught Looking Confident</a></li>
+                        <!-- <li class="mobile_submenu_li"><a href="/lifestyle">Life + Style Program</a></li> -->
+                        <!--<li class="mobile_submenu_li"><a href="/caughtlookingconfident">Caught Looking Confident</a></li>-->
                         <li class="mobile_submenu_li"><a href="/videos">Video Style</a></li>
-                      
                         <li class="mobile_submenu_li"><a href="/newsletter">Enewsletter</a></li>
-                       
                     </ul>
                 </div>
             </li>

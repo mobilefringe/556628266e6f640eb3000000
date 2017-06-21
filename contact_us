@@ -109,7 +109,7 @@
         </div>
         <div class="contact_row">
             <div class="contact_column">
-                <p class="contact_quote"><i class="fa fa-quote-left"></i> I love that I get to meet and connect with our online community every day.&nbsp;<i class="fa fa-quote-right"></i><br><br><br></p>
+                <p class="contact_quote" style="padding-bottom: 44px"><i class="fa fa-quote-left"></i> I love that I get to meet and connect with our online community every day.&nbsp;<i class="fa fa-quote-right"></i><br><br><br></p>
                 <p class="contact_subtitle">Julia Livingston</p>
                 <p class="contact_number">Marketing Coordinator </p>
                 <p class="contact_number">P 250 952-5683 </p>

@@ -130,7 +130,7 @@
                 async: false
             });
             $.each( page_array , function( key, val ) {
-                var pages_json = prefix+"/pages/" + val + ".json"
+                var pages_json = prefix + "/pages/" + val + ".json"
                 $.getJSON(pages_json).then(function(data) {
                     //var pages_data = JSON.parse(data);
                     // $("#page_title").html(data.title)

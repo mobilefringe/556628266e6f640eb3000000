@@ -548,7 +548,7 @@
             // }
             
             if(first_tab_content.length < 1 && second_tab_content.length < 1 && third_tab_content.length < 1){
-                $(".tab_content").css({"display":"none");
+                $(".tab_content").css({"display":"none"});
             }
             
             if (first_tab_content.length > 0 ){

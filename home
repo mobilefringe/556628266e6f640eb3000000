@@ -549,6 +549,9 @@
             
             if(first_tab_content.length < 1 && second_tab_content.length < 1 && third_tab_content.length < 1){
                 $(".tab_content").css({"display":"none"});
+                $("#tab_1").css({"display":"none"});
+                $("#tab_2").css({"display":"none"});
+                $("#tab_3").css({"display":"none"});
             }
             
             if (first_tab_content.length > 0 ){

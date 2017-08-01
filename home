@@ -546,7 +546,9 @@
             // } else {
             //     $.merge(third_tab_content,(regular_promo_array));
             // }
-    
+            if(first_tab_content.length > 0 && second_tab_content.length > 0 && third_tab_content.length > 0){
+                $(".tab_content").css("display", "none");
+            }
             if (first_tab_content.length > 0 ){
                 renderHomePageData("#feature_slider_ul", "#feature_slider_template", first_tab_content, "mixed");
             } else {
@@ -564,7 +566,7 @@
             } else {
                 $("#no_promos").show()
             }
-        
+            
             if( isMobile.matches == true ) {
                 var banners = getMobileBanners().images;
                 $.each( banners , function( key, val ){

@@ -632,7 +632,7 @@
                     d = $.inArray("on_now", val.tags)
                     e = $.inArray("now_open", val.tags)
                     
-                    if (c == 0 || c == 1){
+                    if (c > -1){
                         val.on = "COMING"
                         val.now = "SOON"
                     } 
@@ -641,7 +641,7 @@
                         val.on = "ON"
                         val.now = "NOW"
                     } 
-                    if (e == 0 || e == 1){
+                    if (e > -1){
                         val.on = "NOW"
                         val.now = "OPEN"
                     } 

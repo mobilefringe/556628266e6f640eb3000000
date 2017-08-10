@@ -631,7 +631,7 @@
                     c = $.inArray("coming_soon", val.tags)
                     d = $.inArray("on_now", val.tags)
                     e = $.inArray("now_open", val.tags)
-                    console.log(d,$.inArray("on_now", val.tags));
+                    console.log(d, val.tags);
                     if (c == 0 || c == 1){
                         val.on = "COMING"
                         val.now = "SOON"

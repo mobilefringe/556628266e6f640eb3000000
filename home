@@ -680,6 +680,7 @@
                     val.open_time = moment(val.open_time).tz(getPropertyTimeZone()).format("h:mmA");
                     val.close_time = moment(val.close_time).tz(getPropertyTimeZone()).format("h:mmA");
                 }
+                console.log(val);
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });

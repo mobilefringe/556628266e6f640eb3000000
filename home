@@ -637,11 +637,11 @@
                         val.now = "SOON"
                     } 
                     if (d == 0 || d == 1){
+                        console.log(d,$.inArray("on_now", val.tags));
                         val.on = "ON"
                         val.now = "NOW"
                     } 
                     if (e == 0 || e == 1){
-                        console.log(e);
                         val.on = "NOW"
                         val.now = "OPEN"
                     } 

@@ -199,7 +199,7 @@
 </div>
 
 <div id="home_banner">
-    <div id="banner_slider" class="flexslider">
+    <div id="banner_slider">
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
@@ -589,8 +589,8 @@
             // renderHomePageData("#banner_slider_ul","#banner_slider_template", page_banner);
             
             $('#banner_slider').flexslider({
-                animation: "slide",
-                // animationLoop: true,
+                animation: "fade",
+                animationLoop: true,
                 slideshow: true
             });
             

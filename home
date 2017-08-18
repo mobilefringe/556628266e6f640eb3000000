@@ -590,9 +590,9 @@
             
             $('#banner_slider').flexslider({
                 // animation: "fade",
-                animationLoop: true,
-                slideshow: true
-            });
+            //     animationLoop: true,
+            //     slideshow: true
+            // });
             
             var featureList = getFeatureList();
             renderHomePageData("#feature_container", "#feature_template", featureList, "feature_items") 

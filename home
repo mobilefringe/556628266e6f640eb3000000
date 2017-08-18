@@ -588,12 +588,12 @@
             // console.log(page_banner);
             // renderHomePageData("#banner_slider_ul","#banner_slider_template", page_banner);
             
-            // $('#banner_slider').flexslider({
-            //     animation: "fade",
-            //     animationLoop: true,
-            //     slideshow: true
-            // });
-            load_slider("#banner_slider");
+            $('#banner_slider').flexslider({
+                animation: "fade",
+                animationLoop: true,
+                slideshow: true
+            });
+
             var featureList = getFeatureList();
             renderHomePageData("#feature_container", "#feature_template", featureList, "feature_items") 
             

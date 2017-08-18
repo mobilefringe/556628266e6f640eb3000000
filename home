@@ -584,14 +584,20 @@
         
             renderHomePageData("#banner_slider_ul", "#banner_slider_template", banners, "banners");
             
-            // var page_banner = getRepoDetailsByName('Banner Test').images;
-            // console.log(page_banner);
-            // renderHomePageData("#banner_slider_ul","#banner_slider_template", page_banner);
-            
             $('#banner_slider').flexslider({
                 animation: "fade",
                 animationLoop: true,
                 slideshow: true,
+                after:function(){
+                var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                //do something
+                var first = $("#banner_slider_ul").children(":first")
+                // console.log($("#banner_slider_ul").children().length)
+                if ($("#banner_slider_ul").children().length < 5){
+                    $("#banner_slider_ul").append(first.clone())
+                }
+                $("#banner_slider_ul").append(first.clone())
+            }
             });
 
             var featureList = getFeatureList();

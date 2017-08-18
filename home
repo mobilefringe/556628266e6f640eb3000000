@@ -407,7 +407,7 @@
     });
     
     function load_slider(slider){
-        $('.'+slider).flexslider({
+        $('.' + slider).flexslider({
             animation: "slide",
             controlNav: false,
             directionNav: true,    
@@ -420,16 +420,16 @@
             // start: function(){
             //     $('.banner_slide_img').show(); 
             // },
-            // after:function(){
-            //     var active_rel = $(this).find('.flex-active-slide').attr('rel');
-            //     //do something
-            //     var first = $("#feature_slider_ul").children(":first")
-            //     // console.log($("#banner_slider_ul").children().length)
-            //     if ($("#feature_slider_ul").children().length < 5){
-            //         $("#feature_slider_ul").append(first.clone())
-            //     }
-            //     // $("#banner_slider_ul").append(first.clone())
-            // }
+            after:function(){
+                var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                //do something
+                var first = $("#feature_slider_ul").children(":first")
+                // console.log($("#banner_slider_ul").children().length)
+                if ($("#feature_slider_ul").children().length < 5){
+                    $("#feature_slider_ul").append(first.clone())
+                }
+                // $("#banner_slider_ul").append(first.clone())
+            }
         });
     }
 
@@ -585,22 +585,9 @@
             renderHomePageData("#banner_slider_ul", "#banner_slider_template", banners, "banners");
             
             $('#banner_slider').flexslider({
-                animation: "fade",
+                animation: "slide",
                 animationLoop: true,
                 slideshow: true,
-                // start: function(){
-                //     $('.banner_slide_img').show(); 
-                // },
-                after:function(){
-                    var active_rel = $(this).find('.flex-active-slide').attr('rel');
-                    //do something
-                    var first = $("#banner_slider_ul").children(":first")
-                    // console.log($("#banner_slider_ul").children().length)
-                    if ($("#banner_slider_ul").children().length < 5){
-                        $("#banner_slider_ul").append(first.clone())
-                    }
-                    // $("#banner_slider_ul").append(first.clone())
-                }
             });
 
             var featureList = getFeatureList();

@@ -588,9 +588,9 @@
                 animation: "fade",
                 animationLoop: true,
                 slideshow: true,
-                start: function(){
-                    $('.banner_slide_img').show(); 
-                },
+                // start: function(){
+                //     $('.banner_slide_img').show(); 
+                // },
                 after:function(){
                     var active_rel = $(this).find('.flex-active-slide').attr('rel');
                     //do something

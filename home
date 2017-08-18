@@ -596,7 +596,7 @@
                 if ($("#banner_slider_ul").children().length < 5){
                     $("#banner_slider_ul").append(first.clone())
                 }
-                $("#banner_slider_ul").append(first.clone())
+                // $("#banner_slider_ul").append(first.clone())
             }
             });
 

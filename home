@@ -589,7 +589,28 @@
             // renderHomePageData("#banner_slider_ul","#banner_slider_template", page_banner);
             
             $('#banner_slider').flexslider({
-                animation: "slide"
+                animation: "slide",
+                controlNav: false,
+                directionNav: true,    
+                animationLoop: true,
+                slideshow: true,
+                minItems: 3,
+                maxItems: 3,
+                prevText: "",
+                nextText: "",
+                start: function(){
+                    $('.banner_slide_img').show(); 
+                },
+                after:function(){
+                    var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                    //do something
+                    var first = $("#banner_slider_ul").children(":first")
+                    // console.log($("#banner_slider_ul").children().length)
+                    if ($("#banner_slider_ul").children().length < 5){
+                        $("#banner_slider_ul").append(first.clone())
+                    }
+                    // $("#banner_slider_ul").append(first.clone())
+                }
             });
 
             var featureList = getFeatureList();

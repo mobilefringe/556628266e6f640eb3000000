@@ -407,7 +407,7 @@
     });
     
     function load_slider(slider){
-        $('.'+slider).flexslider({
+        $('.' + slider).flexslider({
             animation: "slide",
             controlNav: false,
             directionNav: true,    
@@ -433,8 +433,6 @@
         });
     }
 
-    
-    
     $(document).ready(function() {
         function render_page_details(){
             var promos = getPromotionsList();

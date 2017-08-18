@@ -590,6 +590,7 @@
             
             $('#banner_slider').flexslider({
                 animation: "fade",
+                slideshow: true,
             });
             
             var featureList = getFeatureList();

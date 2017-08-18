@@ -591,7 +591,6 @@
             $('#banner_slider').flexslider({
                 animation: "slide",
                 animationLoop: true,
-                controlNav: true,
                 slideshow: true
             });
             

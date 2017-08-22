@@ -462,9 +462,7 @@
                             }
                             featured_event_array.push(val)  
                         }
-                        // featured_event_array.push(val)
                     }
-                    
                 } 
             });
             featured_promo_array = []

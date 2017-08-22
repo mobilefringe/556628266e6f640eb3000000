@@ -280,7 +280,7 @@
                     if(val.store_ids != null){
                         val.count = val.store_ids.length;  
                     } else {
-                        val.count = 1;
+                        val.count = "";
                     }
                 }
                 var rendered = Mustache.render(template_html,val);
@@ -302,6 +302,8 @@
                                 $("#website_"+store.id).html("");
                             }
                         });   
+                    } else {
+                        
                     }
                 });    
             }

@@ -122,7 +122,7 @@
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
-            // var prefix = get_prefix();
+            var prefix = get_prefix();
             // var page_array = [""]
             // page_array = page_array.reverse()
             // full_page_array = []

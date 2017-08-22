@@ -277,9 +277,12 @@
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
                 console.log(collection)
-                // if (type == "cats"){
-                //     val.count = val.store_ids.length  
-                // }
+                if (type == "cats"){
+                    if(val.store_ids != null){
+                        val.count = val.store_ids.length;  
+                    }
+                    
+                }
                 
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);

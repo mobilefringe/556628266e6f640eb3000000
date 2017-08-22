@@ -1,0 +1,198 @@
+<style>
+    .store_promo_content{
+       margin:0;
+    }
+    
+    .feature_promo_ul{
+        margin-top:65px;
+    }
+    
+    .feature_promo_ul li{
+        border:none;
+    }
+    
+    .feature_promo_ul li:nth-last-child(1){
+        padding-bottom:40px;
+    }
+    .store_promo_ul li {
+        padding-left:30px;
+        padding-right:30px;
+        padding-bottom:40px;
+    }
+    .promo_left_div{
+        width:calc(100% - 410px);
+    }
+    .socialize_text{
+        margin-top:0;
+    }
+    .socialize_social_icons{
+        margin-top:-10px;
+    }
+    
+    
+    .button_container{
+        margin-top:30px;
+        margin-bottom:30px;
+        padding-top:30px;
+        padding-bottom:30px;
+        border-top:3px solid lightgray;
+    }
+     .gray_pill{
+        margin-left:0 !important;
+    }
+    
+    @media (max-width: 767px) {
+        .store_promo_buttons p{
+            width:60%;
+        }
+        .store_promo_buttons{
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        .name_block{
+            width:100%;
+            height:auto;
+        }
+        /*.store_detail_title {*/
+        /*    word-break: break-word;*/
+        /*}*/
+    }
+</style>
+
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline">Video Style</h1>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span>
+                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <button type="submit" id="banner_submit">Subscribe</button>
+                    </span>
+                    <br>
+                    <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre">
+                    <label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                    <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                    <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div id="main_container">
+    <div id="page_content">
+        <div class="store_promo_content">
+            <ul class="store_promo_ul" id="store_promo_container">
+                <script id="store_promo_template" type="x-tmpl-mustache/text">
+                    <li>
+                        <div class="promo_left_div">
+                            <p class="store_detail_title">{{title}}</p>
+                            <p class="store_detail_description">{{body}}</p>
+                            <div class="store_promo_buttons">
+                                <span>
+                                    <a href="/videos/{{slug}}">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon">
+                                        <p>read more</p>
+                                    </a> 
+                                    <span class='st_sharethis' st_url='https://thebaycentre.kodekloud.io/videos/{{slug}}' id="promo_share_this"></span> 
+                                </span>
+                            </div>
+                        </div>
+                        <div class="promo_right_div">
+                            <a href="/videos/{{slug}}">
+                                <img class="store_promo_img" alt="photo_{{name}}" src="{{image_url}}"/>
+                            </a>
+                        </div>
+                    </li>
+                </script>
+            </ul>
+            <div class='button_container' id='button_container'>
+                <button class="gray_pill" onclick="window.open('https://youtube.com/thebaycentre')">Watch More Videos like these</button>
+            </div>
+            <div id="no_event_container" style="display:none">
+                No Current Videos. please check back later. 
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        function renderPageData(){
+            var page_banner = getRepoDetailsByName('Videos').images;
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.image_url;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
+            params = getUrlParameter('tag');
+            var blogs = getBlogDataBySlug('baycentre-videos')
+            var videos = []
+            if (params != undefined){
+                $.each( blogs.posts , function( key, val ) {
+                    c = $.inArray(params, val.tag)
+                    if (c == 0){
+                        videos.push(val)
+                    } else {
+                        
+                    }
+                });    
+            } else {
+                videos = blogs.posts
+            }
+            if (videos.length == 0){
+                $("#no_event_container").show()
+            } else {
+                videos = videos.reverse();
+                renderDetailData("#store_promo_container","#store_promo_template",videos,"videos")
+            }
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+        }
+        
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+        
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+        
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+        
+        function renderDetailData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                if (val.body.length > 100) {
+                       val.body =  val.body.substring(0,150)+'...';
+                    }
+                if(!val.image_url ||  val.image_url .indexOf('missing.png') > -1 || val.image_url .length === 0){
+                    val.image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                }  
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        }
+        
+        loadMallData(renderPageData);
+    });
+</script>

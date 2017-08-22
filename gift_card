@@ -129,6 +129,7 @@
             $.ajaxSetup({
                 async: false
             });
+            console.log(page_array)
             $.each( page_array , function( key, val ) {
                 var pages_json = prefix + "/pages/" + val + ".json"
                 $.getJSON(pages_json).then(function(data) {

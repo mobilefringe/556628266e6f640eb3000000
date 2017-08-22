@@ -462,8 +462,7 @@
                             }
                             // featured_event_array.push(val)  
                         }
-                        featured_event_array.push(val)  
-                            console.log(featured_event_array)
+                        featured_event_array.push(val)
                     }
                     
                 } 

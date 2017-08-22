@@ -445,7 +445,6 @@
             $.each( events , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date);
-                console.log(webDate)
                 if (today >= webDate) {
                     c = $.inArray("news", val.tags)
                     s = $.inArray("coming_soon", val.tags)

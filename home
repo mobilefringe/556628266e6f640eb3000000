@@ -460,10 +460,12 @@
                             } else {
                                 featured_event_without_coming_soon.push(val)
                             }
-                            featured_event_array.push(val)  
-                            console.log(featured_event_array)
+                            // featured_event_array.push(val)  
                         }
+                        featured_event_array.push(val)  
+                            console.log(featured_event_array)
                     }
+                    
                 } 
             });
             featured_promo_array = []

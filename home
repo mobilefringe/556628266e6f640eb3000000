@@ -445,6 +445,7 @@
             $.each( events , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date);
+                console.log(webDate)
                 if (today >= webDate) {
                     c = $.inArray("news", val.tags)
                     s = $.inArray("coming_soon", val.tags)
@@ -452,7 +453,6 @@
                         if (val.is_featured == true){
                             news_event_array.push(val);
                         }
-                        console.log(news_event_array)
                     } else {
                         if (val.is_featured == false){
                             basic_event_array.push(val)    

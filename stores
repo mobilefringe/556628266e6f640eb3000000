@@ -280,8 +280,6 @@
                 if (type == "cats"){
                     if(val.store_ids != null){
                         val.count = val.store_ids.length;  
-                    } else {
-                        val.count = 1;
                     }
                 }
                 console.log(val.count)

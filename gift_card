@@ -129,18 +129,18 @@
             $.ajaxSetup({
                 async: false
             });
-            // $.each( page_array , function( key, val ) {
-            //     var pages_json = prefix + "/pages/" + val + ".json"
-            //     $.getJSON(pages_json).then(function(data) {
-            //         //var pages_data = JSON.parse(data);
-            //         // $("#page_title").html(data.title)
-            //         // $('#mm_page_content').html(data.body);
-            //         add_to_page_array (data)
-            //     });
-            // });
-            // $.ajaxSetup({
-            //     async: true
-            // });
+            $.each( page_array , function( key, val ) {
+                var pages_json = prefix + "/pages/" + val + ".json"
+                $.getJSON(pages_json).then(function(data) {
+                    //var pages_data = JSON.parse(data);
+                    // $("#page_title").html(data.title)
+                    // $('#mm_page_content').html(data.body);
+                    add_to_page_array (data)
+                });
+            });
+            $.ajaxSetup({
+                async: true
+            });
             var gift_cards = prefix + "/pages/baycentre-gift-cards.json";
             $.getJSON(gift_cards).done(function(data) {
                 $('#gift_card_content').html(data.body);

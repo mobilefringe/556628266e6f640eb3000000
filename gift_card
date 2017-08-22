@@ -123,12 +123,12 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             var prefix = get_prefix();
-            // var page_array = [""]
-            // page_array = page_array.reverse()
-            // full_page_array = []
-            // $.ajaxSetup({
-            //     async: false
-            // });
+            var page_array = [""]
+            page_array = page_array.reverse()
+            full_page_array = []
+            $.ajaxSetup({
+                async: false
+            });
             // $.each( page_array , function( key, val ) {
             //     var pages_json = prefix + "/pages/" + val + ".json"
             //     $.getJSON(pages_json).then(function(data) {

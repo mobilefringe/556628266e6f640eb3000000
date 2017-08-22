@@ -150,7 +150,7 @@
             var page_banner = getRepoDetailsByName('Hours').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
-                banner_url = val.photo_url_abs;
+                banner_url = val.image_url;
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             

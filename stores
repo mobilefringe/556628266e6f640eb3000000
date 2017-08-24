@@ -183,9 +183,17 @@
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
+            // var categories = getStoreCategories();
             var categories = getStoreCategories();
+            var category_list = [];
+            $.each( categories, function( key, val ){
+                if (val.store_ids != null) {
+                    category_list.push(val);
+                } 
+            });
+            
             var alpha_stores = getStoresList();  
-            renderPageData("#cat_stores_container","#cat_stores_template", categories, "cats");
+            renderPageData("#cat_stores_container","#cat_stores_template", category_list, "cats");
             var alpha_array = generateAlphaStoreList(alpha_stores);
             renderPageData("#alpha_stores_container","#alpha_stores_template", alpha_array, "cats");
             

@@ -57,9 +57,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <!--jReject is used to warn users certain browsers aren't compatible with this site-->
 <script src="//cdn.jsdelivr.net/jquery.jreject/1.0.2/js/jquery.reject.js"></script>
 <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
-<!--MallMaverick v=0.3-->
-<script src="https://mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
-<script src="https://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+
+    <!--MallMaverick v=0.3-->
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
+    <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
 <script src="https://cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
 

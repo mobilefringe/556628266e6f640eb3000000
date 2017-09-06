@@ -115,7 +115,7 @@ function drop_pin(value){
             });
             renderPageData("#store_select_container","#store_select_template",stores, "stores");
             
-            var repo = getRepoDetailsByName("Printable Map PDF").images;
+            var repo = getRepoDetailsByName("Printable Map PDF").images[0];
             console.log(repo)
             var map_url = repo.image_url;
             console.log(map_url)

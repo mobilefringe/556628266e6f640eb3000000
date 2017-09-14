@@ -513,8 +513,8 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
         var iframe = document.getElementById('kipsu-chat-frame'),
-        // openChatButton = document.getElementById('open-chat'),
-        // closeChatButton = document.getElementById('close-chat');
+        openChatButton = document.getElementById('open-chat'),
+        closeChatButton = document.getElementById('close-chat');
         // function setCloseButtonPosition() {
         //     iframeDimensions = iframe.getBoundingClientRect();
         //     closeChatButton.style.top = iframeDimensions.top + "px";

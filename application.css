@@ -1817,6 +1817,11 @@ textarea:focus, input:focus{
     margin-right: 0px;
 }
 
+.no_scroll{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
 
 
 /*mobile css*/

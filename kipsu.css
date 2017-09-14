@@ -25,7 +25,7 @@
 }
 #kipsu-content > #close-chat {
     border: none;
-    position: absolute;
+    position: fixed;
     height: 30px;
     width: 30px;
     background: #6e5660;

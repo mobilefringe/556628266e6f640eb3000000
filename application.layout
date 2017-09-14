@@ -117,7 +117,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             });  
         });
       
-        setEndPoint('https://baycentre.mallmaverick.com/api/v4/baycentre/all.json');
+        setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');
     </script>
 </head>
 <body>

@@ -1,0 +1,43 @@
+#kipsu-content > #kipsu-chat-frame {
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+    height: 480px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: fixed;
+    right: 130px;
+    bottom: 20px;
+    width: 420px;
+}
+#kipsu-content > #close-chat {
+    border: none;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background: #195cab;;
+    z-index: 800;
+    bottom: 360px;
+    right: 218px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 10px 0px 0px;
+}
+#kipsu-content > #open-chat {
+    background: #195cab;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    position: fixed;
+    height: 25px;
+    width: 80px;
+    z-index: 800;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    font-weight: bold;
+}

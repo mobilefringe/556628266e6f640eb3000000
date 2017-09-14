@@ -30,8 +30,10 @@
     width: 30px;
     background: #6e5660;
     z-index: 800;
-    bottom: 360px;
-    right: 218px;
+    // bottom: 360px;
+    bottom: 599px;
+    // right: 218px;
+    right: 136px;
     border-radius: 20px;
     color: white;
     text-align: center;

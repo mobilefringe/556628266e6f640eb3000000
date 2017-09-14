@@ -62,3 +62,13 @@
 #kipsu-content > #open-chat:hover {
     cursor: pointer;
 }
+
+@media (max-width: 425px){
+    #kipsu-content > #kipsu-chat-frame {
+        .widget.guest { 
+            max-width: 100%;
+            min-width: auto;
+        
+        }
+    }
+}

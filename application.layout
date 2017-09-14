@@ -525,7 +525,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         function toggleChat() {
             [iframe.style.display, closeChatButton.style.display] =
             (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
-            // if (iframe.style.display === 'block') setCloseButtonPosition();
+            if (iframe.style.display === 'block') setCloseButtonPosition();
         }
         document.addEventListener("DOMContentLoaded", function(){
             [iframe.style.display, closeChatButton.style.display] = ['none',

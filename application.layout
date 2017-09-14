@@ -533,10 +533,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             openChatButton.addEventListener('click', toggleChat);
             closeChatButton.addEventListener('click', toggleChat);
             $("#open-chat").click(function(){
-                $("body").addClass("no_scroll");
+                $(".main_body").addClass("no_scroll");
             });
             $("#close-chat").click(function(){
-                $("body").removeClass("no_scroll");
+                $(".main_body").removeClass("no_scroll");
             });
         });
     </script>

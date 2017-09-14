@@ -22,28 +22,28 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
-<title>{{meta_title}}</title>
-<meta property="og:title" content="{{meta_title}}" />
-<meta property="og:description" content="{{meta_description}}" />
-<meta property="og:image" content="{{meta_image}}" />
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="{{meta_description}}" />
-<meta name="keywords" content="{{meta_keywords}}" />
-<meta name="author" content="" />
-<META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
+    <title>{{meta_title}}</title>
+    <meta property="og:title" content="{{meta_title}}" />
+    <meta property="og:description" content="{{meta_description}}" />
+    <meta property="og:image" content="{{meta_image}}" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="{{meta_keywords}}" />
+    <meta name="author" content="" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" type="text/css" media="screen">
-<link href="/application.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
+    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">
+    <link href="/application.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="/kipsu.css" rel="stylesheet" type="text/css">
+    <script src="//codecloud.cdn.speedyrails.net/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
 <!-- favicon -->
 <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/75a0b30e4d74dafec26d8331f731a127/bay_fav.jpg" type="image/x-icon" />
 

@@ -528,10 +528,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         //     // if (iframe.style.display === 'block') setCloseButtonPosition();
         // }
         document.addEventListener("DOMContentLoaded", function(){
-            // [iframe.style.display, closeChatButton.style.display] = ['none',
-            // 'none'];
-            // openChatButton.addEventListener('click', toggleChat);
-            // closeChatButton.addEventListener('click', toggleChat);
+            [iframe.style.display, closeChatButton.style.display] = ['none',
+            'none'];
+            openChatButton.addEventListener('click', toggleChat);
+            closeChatButton.addEventListener('click', toggleChat);
             $("#open-chat").click(function(){
                 $(".main_body").addClass("no_scroll");
             });

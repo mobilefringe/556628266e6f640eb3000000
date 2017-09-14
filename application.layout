@@ -512,26 +512,26 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
-        var iframe = document.getElementById('kipsu-chat-frame'),
-        openChatButton = document.getElementById('open-chat'),
-        closeChatButton = document.getElementById('close-chat');
-        function setCloseButtonPosition() {
-            iframeDimensions = iframe.getBoundingClientRect();
-            closeChatButton.style.top = iframeDimensions.top + "px";
-            closeChatButton.style.left = iframeDimensions.left +
-            (iframeDimensions.width - closeChatButton.getBoundingClientRect().width - 10) +
-            "px";
-        }
-        function toggleChat() {
-            [iframe.style.display, closeChatButton.style.display] =
-            (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
-            // if (iframe.style.display === 'block') setCloseButtonPosition();
-        }
+        // var iframe = document.getElementById('kipsu-chat-frame'),
+        // openChatButton = document.getElementById('open-chat'),
+        // closeChatButton = document.getElementById('close-chat');
+        // function setCloseButtonPosition() {
+        //     iframeDimensions = iframe.getBoundingClientRect();
+        //     closeChatButton.style.top = iframeDimensions.top + "px";
+        //     closeChatButton.style.left = iframeDimensions.left +
+        //     (iframeDimensions.width - closeChatButton.getBoundingClientRect().width - 10) +
+        //     "px";
+        // }
+        // function toggleChat() {
+        //     [iframe.style.display, closeChatButton.style.display] =
+        //     (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
+        //     // if (iframe.style.display === 'block') setCloseButtonPosition();
+        // }
         document.addEventListener("DOMContentLoaded", function(){
-            [iframe.style.display, closeChatButton.style.display] = ['none',
-            'none'];
-            openChatButton.addEventListener('click', toggleChat);
-            closeChatButton.addEventListener('click', toggleChat);
+            // [iframe.style.display, closeChatButton.style.display] = ['none',
+            // 'none'];
+            // openChatButton.addEventListener('click', toggleChat);
+            // closeChatButton.addEventListener('click', toggleChat);
             $("#open-chat").click(function(){
                 $(".main_body").addClass("no_scroll");
             });

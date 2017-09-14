@@ -22,6 +22,7 @@
     right: 130px;
     bottom: 20px;
     width: 420px;
+    z-index: 109;
 }
 #kipsu-content > #close-chat {
     border: none;

@@ -574,7 +574,7 @@
             // if( isMobile.matches == true ) {
             //     var banners = getMobileBanners().images;
             //     $.each( banners , function( key, val ){
-            //         val.image_url = val.photo_url_abs
+            //         val.image_url = val.image_url
             //     })
             // } else {
                 var banners = getBanners();

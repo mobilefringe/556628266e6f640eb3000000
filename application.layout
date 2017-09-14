@@ -415,7 +415,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     
     <!-- KIPSU CHAT -->
     <div id="kipsu-content">
-        <iframe id="kipsu-chat-frame" src="[INSERT CHAT URL HERE]"></iframe>
+        <iframe id="kipsu-chat-frame" src="https://secure.kipsu.com/acct/widget/352/9dcc"></iframe>
         <button id="close-chat">X</button>
         <button id="open-chat">Live Chat</button>
     </div>

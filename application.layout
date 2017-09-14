@@ -522,11 +522,11 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         //     (iframeDimensions.width - closeChatButton.getBoundingClientRect().width - 10) +
         //     "px";
         // }
-        // function toggleChat() {
-        //     [iframe.style.display, closeChatButton.style.display] =
-        //     (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
-        //     // if (iframe.style.display === 'block') setCloseButtonPosition();
-        // }
+        function toggleChat() {
+            [iframe.style.display, closeChatButton.style.display] =
+            (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
+            // if (iframe.style.display === 'block') setCloseButtonPosition();
+        }
         document.addEventListener("DOMContentLoaded", function(){
             [iframe.style.display, closeChatButton.style.display] = ['none',
             'none'];

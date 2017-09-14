@@ -120,7 +120,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');
     </script>
 </head>
-<body>
+<body class="main_body">
     <header>
         <div class="menu_container">
             <div class="search_social_div"> 

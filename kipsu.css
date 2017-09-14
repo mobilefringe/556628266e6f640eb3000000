@@ -50,5 +50,6 @@
     bottom: 10px;
     right: 10px;
     text-align: center;
-    font-weight: bold;
+    font-family: lora-regular;
+    /*font-weight: bold;*/
 }

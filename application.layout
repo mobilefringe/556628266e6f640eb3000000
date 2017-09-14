@@ -412,6 +412,14 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         <!--<iframe class="mobile_insta_feed" src="https://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
 
     </div>
+    
+    <!-- KIPSU CHAT -->
+    <div id="kipsu-content">
+        <iframe id="kipsu-chat-frame" src="[INSERT CHAT URL HERE]"></iframe>
+        <button id="close-chat">X</button>
+        <button id="open-chat">Live Chat</button>
+    </div>
+    
     <footer>
         <div class="footer_logo_div">
             <img class="footer_logos" src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1495032935000/BC Banner Logos-01.png" alt="footer_logos"/>

@@ -7,9 +7,6 @@
 	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/385/original/Lora-Bold.ttf?1475696300');
 	font-weight:bold;
 }
-#kipsu-content {
-    position: relative;
-}
 #kipsu-content > #kipsu-chat-frame {
     border: none;
     border-radius: 5px;
@@ -33,10 +30,8 @@
     width: 30px;
     background: #6e5660;
     z-index: 800;
-    top: 0;
-    right: 0;
-    // bottom: 360px;
-    // right: 218px;
+    bottom: 360px;
+    right: 218px;
     border-radius: 20px;
     color: white;
     text-align: center;

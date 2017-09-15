@@ -82,4 +82,6 @@
         top: 0;
         right: 3px;
     }
+    #kipsu-content > #open-chat {
+        z-index: -1;
 }

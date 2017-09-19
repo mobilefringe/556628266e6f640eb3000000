@@ -571,14 +571,14 @@
                 $("#no_promos").show()
             }
             
-            if( isMobile.matches == true ) {
-                var banners = getMobileBanners().images;
-                $.each( banners , function( key, val ){
-                    val.image_url = val.image_url
-                })
-            } else {
+            // if( isMobile.matches == true ) {
+            //     var banners = getMobileBanners().images;
+            //     $.each( banners , function( key, val ){
+            //         val.image_url = val.image_url
+            //     })
+            // } else {
                 var banners = getBanners();
-            }
+            // }
         
             renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
             

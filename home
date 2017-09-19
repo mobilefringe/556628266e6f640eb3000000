@@ -136,6 +136,9 @@
             height: 180px;
             display: block;
         }
+        #banner_slider .flex-control-nav {
+            display: none;
+        }
         .tab_content{
             /*top:-30px;*/
             top: -15px;

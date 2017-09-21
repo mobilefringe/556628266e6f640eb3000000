@@ -65,11 +65,11 @@
         document,'script','//connect.facebook.net/en_US/fbevents.js');
 
         fbq('init', '1523264751323236');
-        fbq('track', "PageView");</script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1523264751323236&ev=PageView&noscript=1"
-        /></noscript>
+        fbq('track', "PageView");
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1523264751323236&ev=PageView&noscript=1"
+    /></noscript>
     <!--End Facebook Pixel Code -->
     <script type="text/javascript">
         setTimeout(function(){var a=document.createElement("script");

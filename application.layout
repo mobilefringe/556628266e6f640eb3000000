@@ -415,11 +415,11 @@
     </div>
     
     <!-- KIPSU CHAT -->
-    <div id="kipsu-content">
-        <iframe id="kipsu-chat-frame" src="https://secure.kipsu.com/acct/widget/352/9dcc"></iframe>
-        <button id="close-chat">X</button>
-        <button id="open-chat">Live Chat</button>
-    </div>
+    <!--<div id="kipsu-content">-->
+    <!--    <iframe id="kipsu-chat-frame" src="https://secure.kipsu.com/acct/widget/352/9dcc"></iframe>-->
+    <!--    <button id="close-chat">X</button>-->
+    <!--    <button id="open-chat">Live Chat</button>-->
+    <!--</div>-->
     
     <footer>
         <div class="footer_logo_div">

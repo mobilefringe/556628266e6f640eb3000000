@@ -56,27 +56,27 @@
         ga('send', 'pageview');
     </script>
     
-    <!-- Facebook Pixel Code -->
-    <!--<script>-->
-    <!--    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?-->
-    <!--    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;-->
-    <!--    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;-->
-    <!--    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,-->
-    <!--    document,'script','//connect.facebook.net/en_US/fbevents.js');-->
+     Facebook Pixel Code 
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','//connect.facebook.net/en_US/fbevents.js');
 
-    <!--    fbq('init', '1523264751323236');-->
-    <!--    fbq('track', "PageView");-->
-    <!--</script>-->
-    <!--<noscript><img height="1" width="1" style="display:none"-->
-    <!--src="https://www.facebook.com/tr?id=1523264751323236&ev=PageView&noscript=1"-->
-    <!--/></noscript>-->
-    <!--End Facebook Pixel Code -->
-    <!--<script type="text/javascript">-->
-    <!--    setTimeout(function(){var a=document.createElement("script");-->
-    <!--    var b=document.getElementsByTagName("script")[0];-->
-    <!--    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0027/0685.js?"+Math.floor(new Date().getTime()/3600000);-->
-    <!--    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);-->
-    <!--</script>-->
+        fbq('init', '1523264751323236');
+        fbq('track', "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1523264751323236&ev=PageView&noscript=1"
+    /></noscript>
+    End Facebook Pixel Code 
+    <script type="text/javascript">
+        setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0027/0685.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
 
     <script>
         $(document).ready(function() {

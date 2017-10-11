@@ -1184,13 +1184,9 @@ textarea:focus, input:focus{
     margin: 0 auto;
     width: 1194px;
     height: 546px;
-    // position: relative;
+    position: relative;
     color: #fff;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 #store_name_container {
     margin: 0 5%;

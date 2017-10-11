@@ -1855,11 +1855,11 @@ textarea:focus, input:focus{
         width: 100%;
         background-size: cover;
     }
-    .banner_wrapper {
+    #page_banner .banner_wrapper {
         margin: 0 auto;
         width: 100%;
         height: auto;
-        // position: relative;
+        position: relative;
     }
     .page_headline {
         margin-bottom: 0;

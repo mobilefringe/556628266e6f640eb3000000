@@ -2387,3 +2387,15 @@ textarea:focus, input:focus{
     //     font-size: 25pt;
     // }
 }
+
+@media (max-width: 320px) {
+    #home_banner {
+        height: 160px;
+    }
+    .banner_image_div {
+        height: 160px;
+    }
+    #banner_hours_container {
+        top: 145px;
+    }
+}

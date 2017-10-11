@@ -1855,18 +1855,19 @@ textarea:focus, input:focus{
         width: 100%;
         background-size: cover;
     }
+    #home_banner .banner_wrapper {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        // position: relative;
+    }
     #page_banner .banner_wrapper {
         margin: 0 auto;
         width: 100%;
         height: auto;
         position: relative;
     }
-    .banner_wrapper {
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        // position: relative;
-    }
+    
     .page_headline {
         margin-bottom: 0;
         padding: 22% 0;

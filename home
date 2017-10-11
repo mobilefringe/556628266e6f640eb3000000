@@ -172,6 +172,17 @@
             height:100px !important;
         }
     }
+    @media (max-width: 320px) {
+        #home_banner {
+            height: 160px;
+        }
+        .banner_image_div {
+            height: 160px;
+        }
+        #banner_hours_container {
+            top: 145px;
+        }
+    }
     /*@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){*/
     /*    #banner_hours_container{*/
     /*        top:85%;*/

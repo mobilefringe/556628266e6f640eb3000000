@@ -1859,7 +1859,7 @@ textarea:focus, input:focus{
         margin: 0 auto;
         width: 100%;
         height: auto;
-        position: relative;
+        // position: relative;
     }
     .page_headline {
         margin-bottom: 0;

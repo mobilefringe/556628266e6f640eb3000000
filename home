@@ -586,7 +586,7 @@
             renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners");
             
             $('#banner_slider').flexslider({
-                animation: "fade",
+                animation: "slide",
                 animationLoop: true,
                 slideshow: true
             });

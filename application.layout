@@ -550,7 +550,7 @@
                 $(".main_body").removeClass("no_scroll");
             });
             
-            var window_width = $( window ).width();
+
             if (window_width > 769) {
                 $("#open-chat").show();
             }

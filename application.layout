@@ -418,7 +418,7 @@
     <div id="kipsu-content">
         <iframe id="kipsu-chat-frame" src="https://secure.kipsu.com/acct/widget/352/9dcc"></iframe>
         <button id="close-chat">X</button>
-        <button id="open-chat">Live Chat</button>
+        <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>
     </div>
     
     <footer>

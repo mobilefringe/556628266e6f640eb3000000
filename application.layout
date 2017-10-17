@@ -551,11 +551,7 @@
             
             var window_width = $( window ).width();
             if (window_width > 769) {
-                if(iframe.style.display === 'block'){
-                    $("#open-chat").hide();
-                } else {
-                    $("#open-chat").show();
-                }
+                $("#open-chat").show();
             }
         });
     </script>

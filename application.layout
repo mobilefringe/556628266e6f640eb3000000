@@ -527,9 +527,15 @@
             [iframe.style.display, closeChatButton.style.display] =
             (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
             // if (iframe.style.display === 'block') setCloseButtonPosition();
-            // if(iframe.style.display === 'block'){
-            //     $("#open-chat").hide();
-            // }
+            
+            var window_width = $( window ).width();
+            if (window_width > 769) {
+                if(iframe.style.display === 'block'){
+                    $("#open-chat").hide();
+                } else {
+                    $("#open-chat").show();
+                }
+            }
         }
         document.addEventListener("DOMContentLoaded", function(){
             [iframe.style.display, closeChatButton.style.display] = ['none',

@@ -516,6 +516,8 @@
         var iframe = document.getElementById('kipsu-chat-frame'),
         openChatButton = document.getElementById('open-chat'),
         closeChatButton = document.getElementById('close-chat');
+        
+        window_width = $( window ).width();
         // function setCloseButtonPosition() {
         //     iframeDimensions = iframe.getBoundingClientRect();
         //     closeChatButton.style.top = iframeDimensions.top + "px";
@@ -528,14 +530,15 @@
             (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
             // if (iframe.style.display === 'block') setCloseButtonPosition();
             
-            // var window_width = $( window ).width();
-            // if (window_width > 769) {
-            //     if(iframe.style.display === 'block'){
-            //         $("#open-chat").hide();
-            //     } else {
-            //         $("#open-chat").show();
-            //     }
-            // }
+            
+            
+            if(iframe.style.display === 'block'){
+                if (window_width > 769) {
+                    $("#open-chat").hide();
+                } else {
+                    $("#open-chat").show();
+                }
+            }
         }
         document.addEventListener("DOMContentLoaded", function(){
             [iframe.style.display, closeChatButton.style.display] = ['none',

@@ -528,14 +528,14 @@
             (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
             // if (iframe.style.display === 'block') setCloseButtonPosition();
             
-            var window_width = $( window ).width();
-            if (window_width > 769) {
-                if(iframe.style.display === 'block'){
-                    $("#open-chat").hide();
-                } else {
-                    $("#open-chat").show();
-                }
-            }
+            // var window_width = $( window ).width();
+            // if (window_width > 769) {
+            //     if(iframe.style.display === 'block'){
+            //         $("#open-chat").hide();
+            //     } else {
+            //         $("#open-chat").show();
+            //     }
+            // }
         }
         document.addEventListener("DOMContentLoaded", function(){
             [iframe.style.display, closeChatButton.style.display] = ['none',
@@ -548,6 +548,15 @@
             $("#close-chat").click(function(){
                 $(".main_body").removeClass("no_scroll");
             });
+            
+            var window_width = $( window ).width();
+            if (window_width > 769) {
+                if(iframe.style.display === 'block'){
+                    $("#open-chat").hide();
+                } else {
+                    $("#open-chat").show();
+                }
+            }
         });
     </script>
 </body>

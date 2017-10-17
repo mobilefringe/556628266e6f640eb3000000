@@ -517,7 +517,6 @@
         openChatButton = document.getElementById('open-chat'),
         closeChatButton = document.getElementById('close-chat');
         
-        window_width = $( window ).width();
         // function setCloseButtonPosition() {
         //     iframeDimensions = iframe.getBoundingClientRect();
         //     closeChatButton.style.top = iframeDimensions.top + "px";
@@ -529,15 +528,8 @@
             [iframe.style.display, closeChatButton.style.display] =
             (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
             // if (iframe.style.display === 'block') setCloseButtonPosition();
-            
-            
-            
-            if(iframe.style.display === 'block'){
-                if (window_width > 769) {
-                    $("#open-chat").hide();
-                }
-            }
         }
+        
         document.addEventListener("DOMContentLoaded", function(){
             [iframe.style.display, closeChatButton.style.display] = ['none',
             'none'];
@@ -551,7 +543,7 @@
                 $(".main_body").removeClass("no_scroll");
             });
             
-
+            var window_width = $( window ).width();
             if (window_width > 769) {
                 $("#open-chat").click(function(){
                     $("#open-chat").hide();

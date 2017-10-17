@@ -543,15 +543,15 @@
                 $(".main_body").removeClass("no_scroll");
             });
             
-            var window_width = $( window ).width();
-            if (window_width > 769) {
-                $("#open-chat").click(function(){
-                    $("#open-chat").hide();
-                });
-                $("#close-chat").click(function(){
-                    $("#open-chat").show();
-                });
-            }
+            // var window_width = $( window ).width();
+            // if (window_width > 769) {
+            //     $("#open-chat").click(function(){
+            //         $("#open-chat").hide();
+            //     });
+            //     $("#close-chat").click(function(){
+            //         $("#open-chat").show();
+            //     });
+            // }
         });
     </script>
 </body>

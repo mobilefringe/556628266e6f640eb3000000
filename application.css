@@ -2385,4 +2385,7 @@ textarea:focus, input:focus{
     // .store_detail_title {
     //     font-size: 25pt;
     // }
+    .footer_last_container {
+        margin-bottom: 30px;
+    }
 }

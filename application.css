@@ -806,7 +806,7 @@ textarea:focus, input:focus{
     border: 1px white solid;
     font-family:lora-regular;
     background: #323232;
-    height: 30px;
+    height: 34px;
     color: white;
     width: 100px;
     vertical-align: top;
@@ -2212,7 +2212,7 @@ textarea:focus, input:focus{
     }
     #news_submit{
         width: 100px;
-        height: 34px;
+        height: 30px;
         padding: 0;
         text-align: center;
     }

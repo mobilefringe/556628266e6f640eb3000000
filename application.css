@@ -2203,7 +2203,7 @@ textarea:focus, input:focus{
         font-size:17px;
     }
     #fieldEmail{
-        max-width: 100%;
+        max-width: 290px;
         margin-right: 0;
         height: 30px;
         margin-left: 1px;

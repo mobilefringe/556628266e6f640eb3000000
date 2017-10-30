@@ -2212,7 +2212,6 @@ textarea:focus, input:focus{
     }
     #news_submit{
         width: 100px;
-        height: 30px;
         padding: 0;
         text-align: center;
     }

@@ -512,7 +512,14 @@
     </footer>
     
     <!-- KIPSU CHAT -->
+    
     <script type="text/javascript">
+        $.get('//stc.mallmaverick.com/is_chat_available', function(data){
+            if (data.status == false){
+                $('#open-chat').hide()
+                // $('.chat_banner').hide()
+            }
+        });
         var iframe = document.getElementById('kipsu-chat-frame'),
         openChatButton = document.getElementById('open-chat'),
         closeChatButton = document.getElementById('close-chat');

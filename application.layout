@@ -514,7 +514,7 @@
     <!-- KIPSU CHAT -->
     
     <script type="text/javascript">
-        $.get('//stc.mallmaverick.com/is_chat_available', function(data){
+        $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
             if (data.status == false){
                 $('#open-chat').hide()
                 // $('.chat_banner').hide()

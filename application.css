@@ -1175,7 +1175,7 @@ textarea:focus, input:focus{
 }
 #home_banner .banner_wrapper {
     margin: 0 auto;
-    width: auto;
+    width: 1194px;
     height: auto;
     /* position: relative;*/
     color: #fff;

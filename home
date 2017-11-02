@@ -218,7 +218,7 @@
         <ul class="slides" id="banner_slider_ul">
             <script id="banner_slider_template" type="x-tmpl-mustache/text">
                 <li class="item">
-                    <a class="banner_image_li" href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <a class="banner_image_li" href="{{url}}" >
                         <div style="background-image:url({{image_url}})" class="banner_image_div">
                         
                         </div>

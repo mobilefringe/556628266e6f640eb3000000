@@ -530,15 +530,22 @@
         //     (iframeDimensions.width - closeChatButton.getBoundingClientRect().width - 10) +
         //     "px";
         // }
+        // function toggleChat() {
+        //     [iframe.style.display, closeChatButton.style.display] =
+        //     (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
+        //     // if (iframe.style.display === 'block') setCloseButtonPosition();
+        // }
+        
         function toggleChat() {
-            [iframe.style.display, closeChatButton.style.display] =
-            (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
-            // if (iframe.style.display === 'block') setCloseButtonPosition();
+            $("#kipsu-chat-frame").toggle();
+            $("#close-chat").toggle();
         }
         
         document.addEventListener("DOMContentLoaded", function(){
-            [iframe.style.display, closeChatButton.style.display] = ['none',
-            'none'];
+            // [iframe.style.display, closeChatButton.style.display] = ['none',
+            // 'none'];
+            $("#kipsu-chat-frame").hide();
+            $("#close-chat").hide();
             openChatButton.addEventListener('click', toggleChat);
             closeChatButton.addEventListener('click', toggleChat);
             $("#open-chat").click(function(){

@@ -759,7 +759,6 @@
                 $('#search_results').hide();
             }else{
                 var search_results = getSearchResults($('#search_input').val(),10,100);
-                console.log(search_results)
                 $('.search-results-count').html("Total Results : "+search_results.summary.count);
                 renderSearchResultsTemplate('#search_results_template','#search_results_items',search_results);
                 if (search_results["stores"]){

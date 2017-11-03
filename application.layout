@@ -118,7 +118,7 @@
             });  
         });
       
-        setEndPoint('//twinpines.mallmaverick.com/api/v4/twinpines/all.json');
+        setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');
     </script>
 </head>
 <body class="main_body">

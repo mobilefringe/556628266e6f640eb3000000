@@ -205,6 +205,7 @@ function get_month (id){
     }
     return month;
 }
+
 function getSearchResults(search_string,max_results,trim_description_length){
     var search_results = {};
     var all_stores = getStoresList();

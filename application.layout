@@ -514,28 +514,15 @@
     <!-- KIPSU CHAT -->
     
     <script type="text/javascript">
-        // $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
-        //     if (data.status == false){
-        //         $('#open-chat').hide()
-        //     }
-        // });
+        $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
+            if (data.status == false){
+                $('#open-chat').hide()
+            }
+        });
         var iframe = document.getElementById('kipsu-chat-frame'),
         openChatButton = document.getElementById('open-chat'),
         closeChatButton = document.getElementById('close-chat');
-        
-        // function setCloseButtonPosition() {
-        //     iframeDimensions = iframe.getBoundingClientRect();
-        //     closeChatButton.style.top = iframeDimensions.top + "px";
-        //     closeChatButton.style.left = iframeDimensions.left +
-        //     (iframeDimensions.width - closeChatButton.getBoundingClientRect().width - 10) +
-        //     "px";
-        // }
-        // function toggleChat() {
-        //     [iframe.style.display, closeChatButton.style.display] =
-        //     (iframe.style.display === 'none') ? ['block', 'block'] : ['none', 'none'];
-        //     // if (iframe.style.display === 'block') setCloseButtonPosition();
-        // }
-        
+
         function toggleChat() {
             $("#kipsu-chat-frame").toggle();
             $("#close-chat").toggle();
@@ -553,12 +540,6 @@
                 $(".main_body").removeClass("no_scroll");
                 toggleChat();
             });
-            
-            // [iframe.style.display, closeChatButton.style.display] = ['none',
-            // 'none'];
-            
-            // openChatButton.addEventListener('click', toggleChat);
-            // closeChatButton.addEventListener('click', toggleChat);
         });
     </script>
 </body>

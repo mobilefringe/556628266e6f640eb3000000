@@ -542,29 +542,23 @@
         }
         
         document.addEventListener("DOMContentLoaded", function(){
-            // [iframe.style.display, closeChatButton.style.display] = ['none',
-            // 'none'];
             $("#kipsu-chat-frame").hide();
             $("#close-chat").hide();
-            openChatButton.addEventListener('click', toggleChat);
-            closeChatButton.addEventListener('click', toggleChat);
             $("#open-chat").click(function(){
                 $(".main_body").toggleClass("no_scroll");
+                toggleChat();
                 
             });
             $("#close-chat").click(function(){
                 $(".main_body").removeClass("no_scroll");
+                toggleChat();
             });
             
-            // var window_width = $( window ).width();
-            // if (window_width > 769) {
-            //     $("#open-chat").click(function(){
-            //         $("#open-chat").hide();
-            //     });
-            //     $("#close-chat").click(function(){
-            //         $("#open-chat").show();
-            //     });
-            // }
+            // [iframe.style.display, closeChatButton.style.display] = ['none',
+            // 'none'];
+            
+            // openChatButton.addEventListener('click', toggleChat);
+            // closeChatButton.addEventListener('click', toggleChat);
         });
     </script>
 </body>

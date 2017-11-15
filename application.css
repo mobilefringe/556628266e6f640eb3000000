@@ -41,10 +41,10 @@
 	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/380/original/Raleway-Light.ttf?1475696300');
 }
 
-@font-face {
-    font-family: railway-bold;
-    src: url('//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000//1486652491000/Raleway-Bold.ttf');
-}
+// @font-face {
+//     font-family: railway-bold;
+//     src: url('//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000//1486652491000/Raleway-Bold.ttf');
+// }
 @font-face {
 	font-family: proxima;
 	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/384/original/ProximaNova-Regular.ttf?1475696300');

@@ -1207,7 +1207,9 @@ textarea:focus, input:focus{
 .page_headline {
     margin: 0;
     padding: 19% 0;
-    font-family: railway-bold;
+    // font-family: railway-bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     font-size: 70px;
     letter-spacing: 4;
     text-transform: uppercase;

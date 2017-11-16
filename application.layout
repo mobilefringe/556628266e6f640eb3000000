@@ -415,13 +415,13 @@
     
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
         <!--INSTAGRAM FEED -->
-        <!--<div id="insta_container" class="socialize_div">-->
-        <!--    <script id="insta_template" type="x-tmpl-mustache/text">-->
-        <!--    {% raw %}-->
-        <!--        <a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>-->
-        <!--    {% endraw %}-->
-        <!--    </script>-->
-        <!--</div>-->
+        <div id="insta_container" class="socialize_div">
+            <script id="insta_template" type="x-tmpl-mustache/text">
+            {% raw %}
+                <a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>
+            {% endraw %}
+            </script>
+        </div>
 
         <!--<iframe class="mobile_insta_feed" src="https://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
 

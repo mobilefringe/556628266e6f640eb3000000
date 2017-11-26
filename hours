@@ -157,6 +157,7 @@
             var reg_hours = getPropertyRegularHours();
             renderData("#cat_regular_hours_stores","#regular_hours_template",reg_hours, "reg_hours");
             var holiday_hours = getPropertyHolidayHours();
+            console.log(holiday_hours)
             renderData("#cat_holiday_hours_stores","#holiday_hours_template",holiday_hours, "holiday_hours");
             
             $(".loading_overlay").hide();

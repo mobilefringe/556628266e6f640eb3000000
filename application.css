@@ -1743,6 +1743,11 @@ textarea:focus, input:focus{
      padding-bottom:98px;
      margin-bottom:94px;
 }
+.contact_row:last-child{
+    border-bottom: none;
+     padding-bottom:98px;
+     margin-bottom:94px;
+}
 .contact_column{
     display:inline-block;
     width:30%;

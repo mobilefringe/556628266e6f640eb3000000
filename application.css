@@ -1746,8 +1746,6 @@ textarea:focus, input:focus{
 .contact_row:last-child{
     padding-bottom: 0;
     border-bottom: none;
-     
-     margin-bottom:94px;
 }
 .contact_column{
     display:inline-block;

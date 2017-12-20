@@ -166,7 +166,7 @@
             $.each( all_promos , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date);
-                if (today >= webDate && val.is_featured == bul) {
+                if (today >= webDate && val.is_featured == null) {
                     promo_array.push(val)
                     console.log(promo_array)
                 } 

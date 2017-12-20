@@ -163,13 +163,18 @@
             promo_array = []
             feature_promo_array = []
             $.each( all_promos , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date);
-                if (today >= webDate && val.is_featured == false) {
-                    promo_array.push(val)
-                } 
-                if (val.is_featured == true){
-                    feature_promo_array.push(val)
+                try {
+                    today = moment();
+                    webDate = moment(val.show_on_web_date);
+                    if(today >= webDate){
+                        if (val.is_featured != true){ 
+                            promo_array.push(val)
+                        } else {
+                            feature_promo_array.push(val)
+                        }
+                    }
+                } catch (err) {
+                    console.log(err);
                 }
             });
             feature_promo_array = feature_promo_array.sort(function(a,b){

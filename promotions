@@ -159,6 +159,7 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             all_promos = getPromotionsList();
+            console.log(all_promos)
             all_promos = all_promos.reverse();
             promo_array = []
             feature_promo_array = []

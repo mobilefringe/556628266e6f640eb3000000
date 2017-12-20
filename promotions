@@ -169,8 +169,10 @@
                     if(today >= webDate){
                         if (val.is_featured != true){ 
                             promo_array.push(val)
+                            console.log(promo_array)
                         } else {
                             feature_promo_array.push(val)
+                            console.log(feature_promo_array)
                         }
                     }
                 } catch (err) {

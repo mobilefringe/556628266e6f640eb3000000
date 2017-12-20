@@ -168,6 +168,7 @@
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate && val.is_featured == false) {
                     promo_array.push(val)
+                    console.log(promo_array)
                 } 
                 if (val.is_featured == true){
                     feature_promo_array.push(val)

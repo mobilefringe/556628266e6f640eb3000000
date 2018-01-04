@@ -478,7 +478,7 @@
                             }
                             featured_event_array.push(val)  
                         }
-                        console.log("Basic" + basic_event_array)
+                        console.log("Basic", basic_event_array)
                         console.log("Coming Soon" + featured_event_without_coming_soon)
                         console.log("Featured Event" + featured_event_array)
                     }

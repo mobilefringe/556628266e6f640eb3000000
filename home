@@ -478,9 +478,6 @@
                             }
                             featured_event_array.push(val)  
                         }
-                        console.log("Basic", basic_event_array)
-                        console.log("Coming Soon" + featured_event_without_coming_soon)
-                        console.log("Featured Event" + featured_event_array)
                     }
                 } 
             });
@@ -495,6 +492,8 @@
                     } else {
                         regular_promo_array.push(val) 
                     }
+                    console.log("Featured", featured_promo_array)
+                    console.log("Regular", regular_promo_array)
                 } 
             });
 

@@ -467,6 +467,7 @@
                         if (val.is_featured == true){
                             news_event_array.push(val);
                         }
+                        console.log("News" + news_event_array)
                     } else {
                         if (val.is_featured == false){
                             basic_event_array.push(val)    
@@ -477,6 +478,9 @@
                             }
                             featured_event_array.push(val)  
                         }
+                        console.log("Basic" + basic_event_array)
+                        console.log("Coming Soon" + featured_event_without_coming_soon)
+                        console.log("Featured Event" + featured_event_array)
                     }
                 } 
             });

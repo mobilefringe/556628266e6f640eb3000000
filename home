@@ -462,6 +462,7 @@
                 webDate = moment(val.show_on_web_date);
                 if (today >= webDate) {
                     c = $.inArray("news", val.tags)
+                    console.log(c)
                     s = $.inArray("coming_soon", val.tags)
                     if (c == 0){
                         if (val.is_featured == true){

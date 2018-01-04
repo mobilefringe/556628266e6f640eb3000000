@@ -554,11 +554,11 @@
                 $.merge(third_tab_content,(featured_promo_array));
             }
             
-            if (regular_promo_array.length > 1){
-                $.merge(third_tab_content,(regular_promo_array.slice(0,1)));
-            } else {
-                $.merge(third_tab_content,(regular_promo_array));
-            }
+            // if (regular_promo_array.length > 1){
+            //     $.merge(third_tab_content,(regular_promo_array.slice(0,1)));
+            // } else {
+            //     $.merge(third_tab_content,(regular_promo_array));
+            // }
             
             //Hide the slider if there is no content
             if(first_tab_content.length < 1 && second_tab_content.length < 1 && third_tab_content.length < 1){

@@ -469,7 +469,7 @@
                             news_event_array.push(val);
                         }
                     } else {
-                        if (val.is_featured === false){
+                        if (val.is_featured == false){
                             basic_event_array.push(val)    
                         } else {
                             if (s == 0){

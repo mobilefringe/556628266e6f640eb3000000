@@ -461,7 +461,7 @@
         <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt="" style="max-width: 100%;"/>-->
         <!--    </a>-->
         <!--</div>-->
-        <!--<div class="footer_bottom_div">-->
+        <div class="footer_bottom_div">
             
     <script>
         $(document).ready(function(e){

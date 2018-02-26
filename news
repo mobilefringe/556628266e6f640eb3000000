@@ -205,7 +205,7 @@
                 } 
             });
             all_promos = promo_array.sortBy(function(o){ return o.start_date }).reverse();
-            console.log(all_promos)
+
             // all_promos = all_promos.sort(function(a,b){
             //     if(a.start_date > b.start_date){ return 1}
             //     if(a.start_date < b.start_date){ return -1}

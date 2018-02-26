@@ -193,7 +193,7 @@
             promo_array = []
             $.each( all_promos , function( key, val ){
                 if (val.description.length > 110) {
-                    val.description =  val.description.substring(0,300)+'...';
+                    val.description =  val.description.substring(0, 300) + '...';
                 } 
                 today = moment().tz(getPropertyTimeZone());
                 webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
@@ -205,7 +205,7 @@
                 } 
             });
             all_promos = promo_array;
-            
+            console.log(all_promos)
             // all_promos = all_promos.sort(function(a,b){
             //     if(a.start_date > b.start_date){ return 1}
             //     if(a.start_date < b.start_date){ return -1}

@@ -206,11 +206,11 @@
             });
             all_promos = promo_array;
             
-            all_promos = all_promos.sort(function(a,b){
-               if(a.start_date > b.start_date){ return 1}
-                if(a.start_date < b.start_date){ return -1}
-                  return 0;
-            });
+            // all_promos = all_promos.sort(function(a,b){
+            //     if(a.start_date > b.start_date){ return 1}
+            //     if(a.start_date < b.start_date){ return -1}
+            //     return 0;
+            // });
             if (all_promos.length > 0 ) {
                 renderDetailData("#store_promo_container","#store_promo_template", all_promos, "promos");    
             } else {

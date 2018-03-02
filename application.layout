@@ -447,7 +447,7 @@
                         <p class="footer_h1">Find us</p>
                         <p class="footer_h2">{{name}}</p>
                         <p class="top_footer_text">Administration Office<br>{{address1}}<br>{{city}}, {{province_state}}<br>{{postal_code}}<br>{{phone_string}}</p>
-                        <a href="/home"><img class="footer_site_logo hidden-phone" src="{{site_logo}}" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Logo')"></a>
+                        <a href="/home"><img class="footer_site_logo hidden-phone" src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/png/1520014947000/baycentrelogo.png" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Logo')"></a>
                     {% endraw %}
                 </script>  
             </div>

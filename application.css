@@ -552,10 +552,10 @@ a:hover {
     height:25px;
     vertical-align:middle;
 }
-.site_logo{
-    vertical-align:bottom;
-    height:149px;
-    width:80%;
+.site_logo {
+    vertical-align: bottom;
+    height: 80%;
+    padding-top: 15px;
 }
 #logo_container{
     display:inline-block;

@@ -555,6 +555,7 @@ a:hover {
 .site_logo{
     vertical-align:bottom;
     height:149px;
+    width:80%;
 }
 #logo_container{
     display:inline-block;

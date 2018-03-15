@@ -2346,7 +2346,7 @@ textarea:focus, input:focus{
     .footer_bottom_div{
         padding-top: 45px;
         text-align: center;
-            padding-bottom: 25px;
+        padding-bottom: 25px;
     }
     .promo_left_div, .promo_right_div{
         width:100% !important;

@@ -779,6 +779,9 @@ textarea:focus, input:focus{
     display:inline-block;
     color:white;
     vertical-align:top;
+    .footer_title {
+        margin-bottom:20px;
+    }
 }
 .footer_icon{
     width:25px;

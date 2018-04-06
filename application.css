@@ -68,7 +68,9 @@
 .hidden-phone{
     display:inline-block;   
 }
-
+.hidden_now {
+    display: none;
+}
 .featured_boxes{
     margin-top:20px;
 }

@@ -545,7 +545,6 @@
             // }
             console.log(data)
             if (data.status != false){
-                console.log(data)
                 $('#kipsu-content').show()
             }
         });

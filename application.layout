@@ -544,6 +544,7 @@
             // if (data.status == false){
             //     $('#open-chat').hide()
             // }
+            console.log(data)
             if (data.status != false){
                 $('#kipsu-content').show()
             }

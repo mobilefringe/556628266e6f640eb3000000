@@ -546,7 +546,7 @@
             console.log(data)
             if (data.status != false){
                 console.log(data)
-                // $('#kipsu-content').show()
+                $('#kipsu-content').show()
             }
         });
         var iframe = document.getElementById('kipsu-chat-frame'),

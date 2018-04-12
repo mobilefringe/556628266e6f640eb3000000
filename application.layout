@@ -544,9 +544,9 @@
                 $('#kipsu-content').show()
             }
         });
-        var iframe = document.getElementById('kipsu-chat-frame'),
-        openChatButton = document.getElementById('open-chat'),
-        closeChatButton = document.getElementById('close-chat');
+        // var iframe = document.getElementById('kipsu-chat-frame'),
+        // openChatButton = document.getElementById('open-chat'),
+        // closeChatButton = document.getElementById('close-chat');
 
         function toggleChat() {
             $("#kipsu-chat-frame").toggle();
@@ -554,8 +554,8 @@
         }
         
         document.addEventListener("DOMContentLoaded", function(){
-            $("#kipsu-chat-frame").hide();
-            $("#close-chat").hide();
+            // $("#kipsu-chat-frame").hide();
+            // $("#close-chat").hide();
             $("#open-chat").click(function(){
                 $(".main_body").toggleClass("no_scroll");
                 toggleChat();

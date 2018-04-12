@@ -555,8 +555,8 @@
         }
         
         document.addEventListener("DOMContentLoaded", function(){
-            // $("#kipsu-chat-frame").hide();
-            // $("#close-chat").hide();
+            $("#kipsu-chat-frame").hide();
+            $("#close-chat").hide();
             $("#open-chat").click(function(){
                 $(".main_body").toggleClass("no_scroll");
                 toggleChat();

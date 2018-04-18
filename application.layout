@@ -523,9 +523,9 @@
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
-            if (data.status != false){
+            // if (data.status != false){
                 $('#kipsu-content').show()
-            }
+            // }
         });
 
         function toggleChat() {

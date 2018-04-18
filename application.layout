@@ -523,17 +523,16 @@
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
-            // if (data.status != false){
+            if (data.status != false){
                 $('#kipsu-content').show()
-            // }
+            }
         });
 
         function toggleChat() {
             $("#kipsu-chat-frame").toggle();
             $("#close-chat").toggle();
         }
-        
-        // NEW CODE!!
+
         function initChat() {
             var box = document.createElement('iframe');
             box.id = "kipsu-chat-frame";

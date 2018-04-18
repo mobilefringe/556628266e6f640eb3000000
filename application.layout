@@ -429,11 +429,9 @@
     
     <!-- KIPSU CHAT -->
     <div id="kipsu-content" class="hidden_now">
-        <iframe id="kipsu-chat-frame" src="https://secure.kipsu.com/acct/widget/352/9dcc"></iframe>
         <button id="close-chat">X</button>
         <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>
     </div>
-    
     
     <footer>
         <div class="footer_logo_div">
@@ -455,54 +453,40 @@
                 <iframe id="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.634026863271!2d-123.3664981!3d48.42517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f749ab70dd595%3A0x775000abe4570019!2sThe+Bay+Centre!5e0!3m2!1sen!2sca!4v1432928127424" width="830" height="400" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
-        <!-- Rohingya Crisis BANNER -->
-        <!--<div class="trim_screen text-center" style=" margin-bottom: 25px;">-->
-        <!--    <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">-->
-        <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt="" style="max-width: 100%;"/>-->
-        <!--    </a>-->
-        <!--</div>-->
+
         <div class="footer_bottom_div">
-            
-    <script>
-        $(document).ready(function(e){
-            $('#syria_link').click(function(e){
-                var url = $(this).attr("href");
-                ga('send', 'event', 'Outbound Links', e.currentTarget.host, url);
-            });
-            
-           
-            
-            renderInstaFeed('#insta_container', '#insta_template');
-        });
-    </script>
+            <script>
+                $(document).ready(function(e){
+                    $('#syria_link').click(function(e){
+                        var url = $(this).attr("href");
+                        ga('send', 'event', 'Outbound Links', e.currentTarget.host, url);
+                    });
+                    
+                    renderInstaFeed('#insta_container', '#insta_template');
+                });
+            </script>
             <div class="footer_bottom_container">
                 <div id="today_hour_container" class="today_hour_container">
-                    
-                     <script id="today_hour_template" type="x-tmpl-mustache/text">
-                     <p class="footer_title" style="margin-bottom:14px"> today's hours </p>
+                    <script id="today_hour_template" type="x-tmpl-mustache/text">
+                        <p class="footer_title" style="margin-bottom:14px"> today's hours </p>
                         {% raw %}
                             <p class="footer_text">{{day}}</p>
                             <p class="footer_text">{{h}}</p>
                             <br>
                             <br>
                         {% endraw %}
-                      <a href="/hours"  onclick="send_ga_event('The Bay Centre – Footer – See all Hours')"><p class="footer_text">See all Hours ></p></a>  
+                        <a href="/hours"  onclick="send_ga_event('The Bay Centre – Footer – See all Hours')">
+                            <p class="footer_text">See all Hours ></p>
+                        </a>  
                     </script>
-                    
                     <br>
-                    
                 </div>
                 <div class="newsletter_container">
                     <form id="footer_newsletter">
-                      
                         <p class="footer_title">get on the list! sales. events. fashion news.</p>
                         <span><input id="fieldEmail" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
-                        <button type="submit" id="news_submit" onclick="send_ga_event('The Bay Centre – Footer – Subscribe')">Subscribe</button></span><br>
-                        <!--<input id="agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"/>-->
-                        <!--<label for="agree_terms" id="agree_terms_lbl">I agree to receive newsletters from The Bay Centre</label>-->
-                        <!-- <input type="hidden" name="cm-f-jhtykd" id ="fieldjhtykd" />-->
-                        <!-- <input type="hidden" name="cm-f-jhtykh" id="fieldjhtykh"/>-->
-                        
+                        <button type="submit" id="news_submit" onclick="send_ga_event('The Bay Centre – Footer – Subscribe')">Subscribe</button></span>
+                        <br>
                     </form> 
                 </div>
                 <div class="bottom_social_container">
@@ -530,10 +514,9 @@
                     <a href="http://www.cushmanwakefield.ca/en/" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/png/1509376362000/CW Asset Services_Logo_BW_CW_Whitelogo copy.png" class="" alt="" style="height: 45px;padding: 0;margin-top: 9px;"></a>
                 </div>
             </div>
-            
         </div>
         <div class="footer_last_container">
-                ©Copyright <span id="current_year"></span> The Bay Centre • Cushman & Wakefield Asset Services&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;  <a onclick="send_ga_event('The Bay Centre – Footer – Privacy Policy')" href="/privacy_policy">Privacy Policy</a> &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;<a onclick="send_ga_event('The Bay Centre – Footer – Terms of Use')" href="terms-of-use">Terms of Use</a>
+            ©Copyright <span id="current_year"></span> The Bay Centre • Cushman & Wakefield Asset Services&nbsp;&nbsp;&nbsp;  |&nbsp;&nbsp;&nbsp;  <a onclick="send_ga_event('The Bay Centre – Footer – Privacy Policy')" href="/privacy_policy">Privacy Policy</a> &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;<a onclick="send_ga_event('The Bay Centre – Footer – Terms of Use')" href="terms-of-use">Terms of Use</a>
             </div>
     </footer>
     
@@ -544,13 +527,18 @@
                 $('#kipsu-content').show()
             }
         });
-        // var iframe = document.getElementById('kipsu-chat-frame'),
-        // openChatButton = document.getElementById('open-chat'),
-        // closeChatButton = document.getElementById('close-chat');
 
         function toggleChat() {
             $("#kipsu-chat-frame").toggle();
             $("#close-chat").toggle();
+        }
+        
+        // NEW CODE!!
+        function initChat() {
+            var box = document.createElement('iframe');
+            box.id = "kipsu-chat-frame";
+            box.src = "https://secure.kipsu.com/acct/widget/352/9dcc";
+            $('#kipsu-content')[0].appendChild(box);
         }
         
         document.addEventListener("DOMContentLoaded", function(){
@@ -558,7 +546,12 @@
             $("#close-chat").hide();
             $("#open-chat").click(function(){
                 $(".main_body").toggleClass("no_scroll");
-                toggleChat();
+                if($('#kipsu-chat-frame').length < 1) {
+                    initChat();
+                    $('#close-chat').show();
+                } else {
+                    toggleChat();
+                }
             });
             $("#close-chat").click(function(){
                 $(".main_body").removeClass("no_scroll");

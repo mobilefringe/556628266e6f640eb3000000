@@ -95,13 +95,13 @@
             <ul class="tabs">
                 <li id="tab_1" style="background:white">
                     <div class="tab_item" style="color:#4d4d4f">
-                        category &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
+                        Alphabetical &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
                         <div class="tab_overlay" style="display:none">&nbsp;</div>
                     </div>
                 </li>
                 <li id="tab_2">
                     <div class="tab_item">
-                        Alphabetical &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
+                        Category &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
                         <div class="tab_overlay">&nbsp;</div>
                     </div>
                 </li>
@@ -114,20 +114,6 @@
             <button class="gray_pill" onclick="window.location.href='/map'">view map</button>
             <ul class="tab_content">
                 <li id="tab_1_content">
-                    <div class="cat_stores_container" id="cat_stores_container">
-                        <script id="cat_stores_template" type="x-tmpl-mustache/text">
-                            <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
-                                {{name}} ({{count}})
-                                <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
-                            </div>
-                            <div class="stores_div" id="cat_{{id}}_stores">
-                                <table id="cat_{{id}}_stores_table">
-                                </table>
-                            </div>
-                        </script>
-                    </div>
-                </li>
-                <li id="tab_2_content" style="display:none">
                     <div class="cat_stores_container" id="alpha_stores_container">
                         <script id="alpha_stores_template" type="x-tmpl-mustache/text">
                             <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
@@ -140,6 +126,46 @@
                             </div>
                         </script>
                     </div>
+                    
+                    <!--<div class="cat_stores_container" id="cat_stores_container">-->
+                    <!--    <script id="cat_stores_template" type="x-tmpl-mustache/text">-->
+                    <!--        <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">-->
+                    <!--            {{name}} ({{count}})-->
+                    <!--            <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>-->
+                    <!--        </div>-->
+                    <!--        <div class="stores_div" id="cat_{{id}}_stores">-->
+                    <!--            <table id="cat_{{id}}_stores_table">-->
+                    <!--            </table>-->
+                    <!--        </div>-->
+                    <!--    </script>-->
+                    <!--</div>-->
+                </li>
+                <li id="tab_2_content" style="display:none">
+                    <div class="cat_stores_container" id="cat_stores_container">
+                        <script id="cat_stores_template" type="x-tmpl-mustache/text">
+                            <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
+                                {{name}} ({{count}})
+                                <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                            </div>
+                            <div class="stores_div" id="cat_{{id}}_stores">
+                                <table id="cat_{{id}}_stores_table">
+                                </table>
+                            </div>
+                        </script>
+                    </div>
+                    
+                    <!--<div class="cat_stores_container" id="alpha_stores_container">-->
+                    <!--    <script id="alpha_stores_template" type="x-tmpl-mustache/text">-->
+                    <!--        <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">-->
+                    <!--            {{name}} ({{count}})-->
+                    <!--            <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>-->
+                    <!--        </div>-->
+                    <!--        <div class="stores_div" id="cat_{{id}}_stores">-->
+                    <!--            <table id="cat_{{id}}_stores_table">-->
+                    <!--            </table>-->
+                    <!--        </div>-->
+                    <!--    </script>-->
+                    <!--</div>-->
                 </li>
             </ul>
         </div>

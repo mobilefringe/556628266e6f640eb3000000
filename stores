@@ -26,7 +26,9 @@
     .socialize_social_icons{
         margin-top:0;
     }
-    
+    .stores_div {
+        display: block;
+    }
     #left_image{
         display:block;
     }
@@ -118,7 +120,7 @@
                         <script id="alpha_stores_template" type="x-tmpl-mustache/text">
                             <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
                                 {{name}} ({{count}})
-                                <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                                <i id="icon_{{id}}" class="fa fa-minus list_icon"></i>
                             </div>
                             <div class="stores_div" id="cat_{{id}}_stores">
                                 <table id="cat_{{id}}_stores_table">
@@ -145,7 +147,7 @@
                         <script id="cat_stores_template" type="x-tmpl-mustache/text">
                             <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">
                                 {{name}} ({{count}})
-                                <i id="icon_{{id}}" class="fa fa-plus list_icon"></i>
+                                <i id="icon_{{id}}" class="fa fa-minus list_icon"></i>
                             </div>
                             <div class="stores_div" id="cat_{{id}}_stores">
                                 <table id="cat_{{id}}_stores_table">

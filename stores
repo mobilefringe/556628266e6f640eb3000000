@@ -295,6 +295,8 @@
                 item_rendered.push(rendered);
             });
             
+            $("#cat_"+id+"_stores").is(":visible")
+            
             $(container).show();
             $(container).html(item_rendered.join(''));
             

@@ -1,6 +1,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <style>
     .store_detail_description{
+        margin-top:15px;
+        color:#6d6e71 !important;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    .store_detail_description{
         margin-top:90px;
         margin-bottom:47px;
     }

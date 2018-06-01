@@ -12,6 +12,9 @@
         margin-top:90px;
         margin-bottom:47px;
     }
+    .store_detail_description a {
+        text-decoration:underline;
+    }
     .socialize_text{
         margin-top:0;
     }

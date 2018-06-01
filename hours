@@ -104,7 +104,7 @@
                 </script>
             </div>
 
-            <div class="hidden_div" id="cat_extended_hours_stores">
+            <div class="hidden_div store_detail_description" id="cat_extended_hours_stores">
                 <!--<p class="hour_line_text">In addition, the following exterior retailer&rsquo;s operating hours may differ from The Bay Centre&rsquo;s regular shopping hours:</p>-->
                 <!--<div class="hour_line">-->
                 <!--    <p class="hour_line_text"><a href="/stores/baycentre-hudson-s-bay-the--2">Hudson&rsquo;s Bay&nbsp;</a></p>-->

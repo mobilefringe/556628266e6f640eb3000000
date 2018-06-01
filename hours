@@ -210,6 +210,17 @@
             $(container).show();
             $(container).html(item_rendered.join(''));
         }
+        var pages_json = prefix+"/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                renderData("#promo_title_container", "#promo_title_template", data, "title")
+                renderData("#store_detail_right_content_container", "#store_detail_right_content_template", data, "image")
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
+                    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
+                    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
+                }
+            }); 
         loadMallDataCached(renderPageData);
         
         function get_month (id){

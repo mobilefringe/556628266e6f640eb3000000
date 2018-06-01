@@ -210,7 +210,7 @@
             $(container).show();
             $(container).html(item_rendered.join(''));
         }
-        var pages_json = prefix+"/pages/baycentre-hours.json"
+        var pages_json = get_prefix()+"/pages/baycentre-hours.json"
         $.getJSON(pages_json).done(function(data) {
             $("#cat_extended_hours_stores").html(data.body);
         }).fail(function(jqXHR) {

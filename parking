@@ -144,7 +144,7 @@ Please note, the Bay Centre's underground parkade clearance is 1.9 m or 6'2".
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"}); 
             
             var prefix = get_prefix();
-            var page_array = ["baycentre-parking-other-downtown-victoria-parking-options","baycentre-parking-parkade-hours-of-operations","baycentre-parking-parking-rates","baycentre-parking-electric-parking-stations","baycentre-parking-bicycle-racks"]
+            var page_array = ["baycentre-parking-other-downtown-victoria-parking-options","baycentre-parking-parking-rates","baycentre-parking-parkade-hours-of-operations","baycentre-parking-electric-parking-stations","baycentre-parking-bicycle-racks"]
             page_array = page_array.reverse()
             full_page_array = []
             $.ajaxSetup({

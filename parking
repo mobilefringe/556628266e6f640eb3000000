@@ -101,11 +101,12 @@
 <div id="main_container">
     <div id="page_content"> 
         <div class="main_content_div">
-            <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
-                The Bay Centre's parkade is a well-lit enclosed parkade with competitive pricing that is patrolled by uniformed security.
-<br><br>
-Please note, the Bay Centre's underground parkade clearance is 1.9 m or 6'2".
-            </p>
+<!--            <p class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">-->
+<!--                The Bay Centre's parkade is a well-lit enclosed parkade with competitive pricing that is patrolled by uniformed security.-->
+<!--<br><br>-->
+<!--Please note, the Bay Centre's underground parkade clearance is 1.9 m or 6'2".-->
+<!--            </p>-->
+            <p id="mm_page_content" class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px"></p>
             <div class="cat_stores_container" id="cat_stores_container">
                 <script id="cat_stores_template" type="x-tmpl-mustache/text">
                     <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
@@ -144,6 +145,16 @@ Please note, the Bay Centre's underground parkade clearance is 1.9 m or 6'2".
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"}); 
             
             var prefix = get_prefix();
+            // PARKING MAIN CONTENT
+            var page_json = prefix + "/pages/baycentre-parking--2.json"
+            $.getJSON(page_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            // PARKING TAB CONTENT 
             var page_array = ["baycentre-parking-other-downtown-victoria-parking-options","baycentre-parking-parking-rates","baycentre-parking-parkade-hours-of-operations","baycentre-parking-electric-parking-stations","	baycentre-parking-car-sharing", "baycentre-parking-bicycle-racks"]
             page_array = page_array.reverse()
             full_page_array = []

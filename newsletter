@@ -131,7 +131,7 @@
                Fields marked with an asterisk (*) are required.
             </div>
             
-            <form id="newsletter_form">
+            <form id="newsletter_form" action="https://mobilefringe.createsend.com/t/d/s/iixuu/" method="post">
                 <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />
                 <input id="hidden_agree_text" name="cm-f-jhtykh" type="hidden" />
                 <input id="full_name" name="cm-name" type="hidden" />
@@ -205,26 +205,26 @@
     $("#news_email").val(email);
     
     $("#newsletter_form").submit(function(e){
-        e.preventDefault();
-        $("#hidden_agree_text").val($("#newsletter_agree_terms").attr("value"));
-        $("#hidden_source").val(window.location.href)
-        var full_name = $("#first_name").val() + " " + $("#last_name").val();
-        $("#full_name").val(full_name);
-        $.getJSON(
-            "https://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
-            $(this).serialize(),
-            function (data) {
-                if (data.Status === 400) {
-                    e.preventDefault();
-                    alert("Please try again later.");
-                } else {
-                    // window.location.href="/thank_you"
-                    submitToMailChimp();
-                }
-        }); 
+        // e.preventDefault();
+        // $("#hidden_agree_text").val($("#newsletter_agree_terms").attr("value"));
+        // $("#hidden_source").val(window.location.href)
+        // var full_name = $("#first_name").val() + " " + $("#last_name").val();
+        // $("#full_name").val(full_name);
+        // $.getJSON(
+        //     "https://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
+        //     $(this).serialize(),
+        //     function (data) {
+        //         if (data.Status === 400) {
+        //             e.preventDefault();
+        //             alert("Please try again later.");
+        //         } else {
+        //             // window.location.href="/thank_you"
+                    submitToMailChimp(e);
+                // }
+        // }); 
     })
 
-    function submitToMailChimp(){
+    function submitToMailChimp(e){
         $("#mce-FNAME").val($('#first_name').val())
         $("#mce-LNAME").val($('#last_name').val())
         $("#mce-EMAIL").val($('#news_email').val())
@@ -243,9 +243,9 @@
             error: function(err) { alert("Could not connect to the registration server. Please try again later.") },
             success: function(data) {
                 if (data.result != "success") {
-                    window.location.href="/thank_you"
+                    e.target.submit();
                 } else {
-                    window.location.href="/thank_you"
+                    e.target.submit();
                 }
             }
         });

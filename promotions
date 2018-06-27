@@ -221,7 +221,7 @@
         }
         
         function renderDetailData(container, template, collection, type){
-            console.log(                    <h1 class="accessibility" key="0">{{meta_title}}</h1>)
+            console.log(collection)
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();

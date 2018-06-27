@@ -13,7 +13,9 @@
     .feature_promo_ul li{
         border:none;
     }
-    
+    .featured_store_img {
+        max-width: 300px;
+    }
     .feature_promo_ul li:nth-last-child(1){
         padding-bottom:40px;
     }

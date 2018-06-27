@@ -197,7 +197,8 @@
             
             $(".loading_overlay").hide();
             $("#page_content").show();
-         }
+        }
+        
         loadMallDataCached(renderPageData);
     });
 

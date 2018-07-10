@@ -55,6 +55,10 @@
 	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/379/original/Neuton-Regular.ttf?1475696300');
 }
 
+#you_are_here{
+    display:none;
+}
+
 .share_links img{
     width:40px;
     margin: 0 5px;

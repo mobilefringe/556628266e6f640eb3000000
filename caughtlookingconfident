@@ -1,0 +1,293 @@
+<style>
+    .custom_modal{
+        width: 860px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 999999;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        border: 1px solid;
+    }
+    .modal_close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .modal_50 {
+        width: 50%;
+        float: left;
+    }
+    .spotted {
+        /*margin: 0 auto;*/
+        display: block;
+        max-width: 90%;
+    }
+    .spotted-title { 
+        font-family: lora-regular;
+    }
+    .no_scroll{
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+    .gs_text {
+        color:#6d6e71;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    .close {
+        padding: 0;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        border-radius: 0;
+        background: none;
+        border: none;
+        cursor:pointer;
+    }
+    .row{
+    }
+    .col-md-3{
+        float:left;
+        width:calc(25% - 20px);
+        margin:10px;
+    }
+    .thumbnail{
+        display: block;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .width_100{
+        width:100%;
+    }
+    .clearfix{
+        clear:both;
+    }
+    
+    .modal {
+        display:none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+    }
+    .modal-dialog {
+        position: absolute;
+        margin: auto;
+        max-width: 600px;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align:center;
+        max-height: 80vh;
+        overflow: scroll;
+    }
+    
+    .modal-backdrop{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: #000;
+        opacity:0.5;
+    }
+    @media(max-width:768px){
+        .col-md-3{
+            width:100%;
+            margin: 0;
+            float: none;
+            margin-bottom: 30px;
+        }
+        .thumbnail {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .custom_modal {
+            padding: 25px;
+            width: 75%;
+            height: 300px;
+            overflow: scroll;
+        }
+        .modal_50 {
+            width: 100%;
+            display: block;
+        }
+        .spotted {
+            max-width: 100%;
+        }
+        .spotted-title,
+        .spotted-description {
+            text-align: center;
+        }
+        
+    }
+</style>
+
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline"><span>Caught</span> Looking Confident</h1>
+        <p class="page_subtitle">Life & Style at The Bay Centre</p>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span>
+                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <button type="submit" id="banner_submit">Subscribe</button>
+                    </span>
+                    <br>
+                    <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre">
+                    <label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                    <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                    <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div id="main_container">
+    <div id="page_content">
+        <br/><br/>
+        <h3 class="contact_title"></h3>
+        <p class="gs_text" style="margin-left:35px;margin-right:15px">Getting “Caught Looking Confident” at The Bay Centre pays off. Check out our confident guests with <a href="//www.nichemagazine.ca/" target="_blank">NICHE Magazine</a> who received a $50 Bay Centre gift card just for stopping by!</p>
+        <div class="row">
+            <div id="spotted_container">
+                <script id="spotted_template" type="x-tmpl-mustache">
+                    <div class="col-md-3">
+                        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox" onclick="spottedLightbox(this)"> 
+                            <img src="{{photo_url_abs}}" alt="{{description}}" title="{{name}}" class="width_100" >
+                        </a>
+                    </div>
+                    <div style="{{clear}}"></div>
+                </script>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+        
+<!-- MODAL -->
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="custom_modal">
+        <button type="button" class="close " data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <div class="modal_50">
+            <img class="spotted" src="http://placehold.it/337x337" />
+        </div>
+        <div class="modal_50">
+            <h3 class="spotted-title">Heading</h4>
+            <p class="spotted-description contact_number">desc</p>
+        </div>
+    </div>
+</div>
+<!-- -->
+
+<script>
+    $(document).ready(function() {
+        loadMallDataCached(renderAll); 
+    })
+    function renderAll(){
+        var page_banner = getRepoDetailsByName('Caught Looking Confident').images;
+        var banner_url = "";
+        $.each(page_banner, function(key, val){
+            banner_url = val.photo_url_abs;
+        });
+        $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
+        var repoList = getRepoList();
+        renderSpotted('#spotted_container', '#spotted_template', repoList);
+        
+        $(".thumbnail").click(function() {
+            $("body").addClass("no_scroll");    
+        });
+        
+        $("#lightbox").click(function(){
+            $("body").removeClass('no_scroll');
+        });
+        
+        $(".close").click(function(){
+            $("body").removeClass('no_scroll');
+        });
+        
+        $(".loading_overlay").hide();
+        $("#page_content").show();
+    }
+    
+    function renderSpotted(container, template, repo){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html);
+        $.each( repo , function( key, val ) {
+            if( val.name == "spotted"){
+                $.each( val.images , function( key, val ) {
+                    item_list.push(val);
+                });
+            }
+        });
+        item_list.sort(sortById);
+        $.each( item_list , function( key, val ) {
+            if( (key+1) % 4 == 0 ){
+                val.clear = "clear:both"
+            }
+            var rendered = Mustache.render(template_html,val);
+            item_rendered.push(rendered);
+        });
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    }
+    
+    function spottedLightbox(obj){
+        var $lightbox = $('#lightbox');
+        var $img = $(obj).find('img'), 
+        src = $img.attr('src'),
+        description = $img.attr('alt'),
+        title = $img.attr('title'),
+        css = {};
+    
+        $lightbox.find('.spotted').attr('src', src);
+        $lightbox.find('.spotted-description').text(description);
+        $lightbox.find('.spotted-title').text(title)
+        $lightbox.find('.spotted').css(css);
+    }
+    
+    function sortById(a, b){
+        var aId = a.id;
+        var bId = b.id;
+    
+        return ((aId > bId) ? -1 : ((aId < bId) ? 1 : 0));  
+    }
+</script>

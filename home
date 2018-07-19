@@ -193,7 +193,7 @@
 <div class="popup_overlay">
     <div class="popup_div">
         <img class="popup_close_x" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/icon_close.png" alt="close popup" onclick="javascript:dismiss_popup()"/>
-        <p class="popup_title">fear of missing out?</p>
+        <p class="popup_title">Get the Latest</p>
         <p class="popup_subtitle">Sales. Events. Fashion news</p>
         <p class="popup_text">Don’t miss out on exclusive content and giveaways sent straight to your inbox.</p>
         <form action="//thebaycentre.us8.list-manage.com/subscribe/post-json?u=35241b945028701ab874f8579&amp;id=850e684995&c=?" method="post" id="mc-embedded-subscribe-form-pop" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display:none">
@@ -227,7 +227,7 @@
     </div>
     <div class="banner_wrapper">    
         <div class="missing_out_div">
-            <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">
                 <form style="font-size:12px" id="banner_newsletter">
                     <span>

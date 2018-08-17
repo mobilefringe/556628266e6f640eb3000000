@@ -141,7 +141,7 @@
             $.ajaxSetup({
                 async: true
             });
-            var gift_cards = prefix + "/pages/baycentre-gift-cards.json";
+            var gift_cards = prefix + "/pages/baycentre-insta-offer.json";
             $.getJSON(gift_cards).done(function(data) {
                 $('#gift_card_content').html(data.body);
                 $('#gift_card_img').attr('src', data.image_url);

@@ -85,32 +85,10 @@
         <div class="store_promo_content">
             <div class="featured_boxes">
                 <div class="featured_box">
-            <!--        <h4 class="featured_box_header">{{store_name}}</h4>-->
                     <p id="box_content" class="store_detail_title featured_name"></p>
-            <!--        <i class="fa fa-angle-down chevron_accordion"></i>-->
-            <!--        <div class="accordion_body store_detail_description">-->
-            <!--            <div>-->
-            <!--                {{{rich_description}}}-->
-            <!--            </div>-->
-            <!--            <div class="text-center">-->
-            <!--                <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>-->
-            <!--            </div>-->
-            <!--            <span>-->
-            <!--                <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/promotions/{{slug}}" class="share_links">-->
-            <!--                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="" alt="share fb">-->
-            <!--                </a>-->
-            <!--                <a href="https://twitter.com/share?text={{name}}&url=//www.thebaycentre.ca/promotions/{{slug}}" class="share_links">-->
-            <!--                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">-->
-            <!--                </a>-->
-            <!--                <a href="mailto:?subject={{encoded_name}}&body={{encoded_body}}" title="Share by Email" class="share_links" >-->
-            <!--                    <img src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1476472845000/hover_social_email.png" class="" alt="email share">-->
-            <!--                </a>-->
-            <!--            </span>-->
-            <!--            <a style="margin-left:5px" class="contact_object" href='/stores/{{store_slug}}'><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>-->
-            <!--        </div>-->
                 </div>
-               
             </div>
+            <p id="disclaimer" class="gs_text"></p>
         </div>
     </div>
 </div>
@@ -131,7 +109,8 @@
                 console.log(data)
                 $('#page_title').html(data.body);
                 if (data.subpages) {
-                    $('#box_content').html(data.subpages[0].body)
+                    $('#box_content').html(data.subpages[0].body);
+                    $('#disclaimer').html(data.subpages[1].body);
                 }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {

@@ -94,7 +94,7 @@
 
 <div id="main_container">
     <div id="page_content"> 
-        <h1 id="page_title"></h1>
+        <h1 id="page_title" class="store_detail_title"></h1>
         <div class="store_promo_content">
             <div class="featured_boxes">
                 <div class="featured_box">

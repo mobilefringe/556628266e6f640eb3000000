@@ -1,61 +1,65 @@
 <style>
-    .stores_div p, .gs_text {
-        color:#6d6e71;
-        font-family:lora-regular;
-        /*font-family: neuton \9;*/
-        font-size:14pt;
-        line-height:26pt;
+    .store_promo_content, .store_detail_description{
+       margin:0;
     }
-    .stores_div{
-        padding-top:30px;
-        padding-left:0;
-        color:#6d6e71;
-        font-family:lora-regular;
-        /*font-family: neuton \9;*/
-        font-size:14pt;
-        line-height:26pt;
+    .socialize_div{
+        margin-top:50px;
     }
-    .stores_div p{
-        height:auto;
-        border-top:none;
+    
+    .feature_promo_ul{
+        margin-top:65px;
     }
-    .socialize_div {
-        margin-top:80px;
+    
+    .feature_promo_ul li{
+        border:none;
+    }
+    .featured_store_img {
+        max-width: 300px;
+    }
+    .feature_promo_ul li:nth-last-child(1){
+        padding-bottom:40px;
+    }
+    .store_promo_ul li {
+        padding-left:30px;
+        padding-right:30px;
+        padding-bottom:40px;
+    }
+    .promo_left_div{
+        width:729px;
     }
     .socialize_text{
-        margin-top:5px;
-        
-    }
-    .socialize_social_icons{
         margin-top:0;
     }
-    .gs_text img {
-        padding-left: 10px;
-        max-width: 100%;
+    .socialize_social_icons{
+        margin-top:-10px;
     }
+    
+    #featured_boxes_container{
+        margin-top:40px;
+    }
+    
     @media (max-width: 767px) {
-        .stores_div p, .cat_div{
-            padding-left:15px;
-            padding-right:15px;
+        .store_detail_description{
+            margin-top:0 !important;
         }
-        .cat_div{
-            font-size:18pt;
+        .store_promo_buttons p{
+            width:60%;
+        }
+        .store_promo_buttons{
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        .name_block{
+            width:100%;
             height:auto;
-        }
-        .list_icon{
-            font-size:15px !important;
-        }
-        .gs_text img {
-            padding-left: 0;
+            word-break:break-word;
         }
     }
-    
-    
 </style>
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <h1 class="page_headline">Insta Offer</h1>
+        <h1 class="page_headline">Deals of the Week</h1>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">
@@ -75,103 +79,187 @@
     </div>
 </div>
 
-<div class="share_this_icon_div">
-    <span class='st_sharethis'></span>   
-</div>
-
 <div id="main_container">
     <div id="page_content"> 
-        <div class="main_content_div">
-            <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
-                <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/ae788a0d586c414fe1209f4b0056bc1e/Screen Shot 2015-07-17 at 12.34.57 PM.png" align="right">
-                <div id="gift_card_content"></div>
-            </div>
-            <div class="cat_stores_container" id="cat_stores_container">
-                <script id="cat_stores_template" type="x-tmpl-mustache/text">
-                    <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
-                        {{title}}
-                        <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>
-                    </div>
-                    <div class="stores_div" id="cat_{{slug}}_stores">
-                    {{{body}}}
+        <div class="store_promo_content">
+            <div class="featured_boxes" id="featured_boxes_container">
+                <script id="featured_boxes_template" type="x-tmpl-mustache/text">
+                    <div class="featured_box">
+                        <h3 class="featured_header"><i class="fa fa-star"></i> FEATURED DEAL</h3>
+                        <h4 class="featured_box_header">{{store_name}}</h4>
+                        <p class="store_detail_title featured_name">{{name}}</p>
+                        <i class="fa fa-angle-down chevron_accordion"></i>
+                        <div class="accordion_body store_detail_description">
+                            <div>
+                                {{{rich_description}}}
+                            </div>
+                            <div class="text-center">
+                                <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                            </div>
+                            <span>
+                                <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="" alt="share fb">
+                                </a>
+                                <a href="https://twitter.com/share?text={{name}}&url=//www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">
+                                </a>
+                                <a href="mailto:?subject={{encoded_name}}&body={{encoded_body}}" title="Share by Email" class="share_links" >
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1476472845000/hover_social_email.png" class="" alt="email share">
+                                </a>
+                            </span>
+                            <a style="margin-left:5px" class="contact_object" href='/stores/{{store_slug}}'><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>
+                        </div>
                     </div>
                 </script>
             </div>
-        </div>        
+    
+            <div class="featured_boxes" id="featured_boxes_container2">
+                <script id="featured_boxes_template2" type="x-tmpl-mustache/text">
+                    <div class="featured_box">
+                        <h4 class="featured_box_header">{{store_name}}</h4>
+                        <p class="store_detail_title featured_name">{{name}}</p>
+                        <i class="fa fa-angle-down chevron_accordion"></i>
+                        <div class="accordion_body store_detail_description">
+                            <div>
+                                {{{rich_description}}}
+                            </div>
+                            <div class="text-center">
+                                <img class="featured_store_img" alt="photo_{{name}}" src="{{alt_promo_image_url}}"/>
+                            </div>
+                            <span>
+                                <a href="https://facebook.com/sharer.php?u=www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="" alt="share fb">
+                                </a>
+                                <a href="https://twitter.com/share?text={{name}}&url=//www.thebaycentre.ca/promotions/{{slug}}" class="share_links">
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="" alt="tweet">
+                                </a>
+                                <a href="mailto:?subject={{encoded_name}}&body={{encoded_body}}" title="Share by Email" class="share_links" >
+                                    <img src="//codecloud.cdn.speedyrails.net/sites/581b834d6e6f64102dae0000/image/png/1476472845000/hover_social_email.png" class="" alt="email share">
+                                </a>
+                            </span>
+                            <a style="margin-left:5px" class="contact_object" href='/stores/{{store_slug}}'><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info_dark.png" class="detail_icon" alt="location"><span>Store Info</span></a>
+                        </div>
+                    </div>
+                </script>
+            </div>
+        
+            <div id="no_event_container" style="display:none">
+                No Current promotions this week. please check back later. 
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
-    function show_stores(id){
-       if ($("#cat_"+id+"_stores").is(":visible")){
-           $("#cat_"+id+"_stores").slideUp();
-           $("#icon_"+id).removeClass("fa-minus")
-           $("#icon_"+id).addClass("fa-plus")
-       } else {
-           $("#cat_"+id+"_stores").slideDown();
-           $("#icon_"+id).removeClass("fa-plus")
-           $("#icon_"+id).addClass("fa-minus")
-       }
-    }
     $(document).ready(function() {
-        function renderAll(){
-            var page_banner = getRepoDetailsByName('Gift Cards').images;
+        function renderPageData(){
+            var page_banner = getRepoDetailsByName('Promotions').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
-            var prefix = get_prefix();
-            var page_array = [""]
-            page_array = page_array.reverse()
-            full_page_array = []
-            $.ajaxSetup({
-                async: false
+            all_promos = getPromotionsList();
+            all_promos = all_promos.reverse();
+            promo_array = []
+            feature_promo_array = []
+            $.each( all_promos , function( key, val ){
+                try {
+                    today = moment();
+                    webDate = moment(val.show_on_web_date);
+                    if(today >= webDate){
+                        if (val.is_featured != true){ 
+                            promo_array.push(val)
+                        } else {
+                            feature_promo_array.push(val)
+                        }
+                    }
+                } catch (err) {
+                    console.log(err);
+                }
             });
-            $.each( page_array , function( key, val ) {
-                var pages_json = prefix + "/pages/" + val + ".json"
-                $.getJSON(pages_json).then(function(data) {
-                    //var pages_data = JSON.parse(data);
-                    // $("#page_title").html(data.title)
-                    // $('#mm_page_content').html(data.body);
-                    add_to_page_array (data)
-                });
+            feature_promo_array = feature_promo_array.sort(function(a,b){
+                if(a.feature_item_index > b.feature_item_index){ return 1}
+                if(a.feature_item_index < b.feature_item_index){ return -1}
+                return 0;
             });
-            $.ajaxSetup({
-                async: true
-            });
-            var gift_cards = prefix + "/pages/baycentre-insta-offer.json";
-            $.getJSON(gift_cards).done(function(data) {
-                $('#gift_card_content').html(data.body);
-                $('#gift_card_img').attr('src', data.image_url);
-            });
+            all_promos = promo_array;
+            if (all_promos.length > 0  || feature_promo_array.length > 0) {
+                renderDetailData("#featured_boxes_container","#featured_boxes_template", feature_promo_array, "promos"); 
+                renderDetailData("#featured_boxes_container2","#featured_boxes_template2", all_promos, "promos"); 
+            } else {
+                if (all_promos.length == 0){
+                    $("#store_promo_container").hide();
+                }
+                if (feature_promo_array.length == 0 ){
+                    $("#feature_store_promo_container").hide()
+                }
+                $("#no_event_container").show();
+            }
             
-            renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
-            
+            $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
-        }
-    
-        function add_to_page_array (data){
-            full_page_array.push(data)
-        }
 
-        function renderPageData(container, template, collection, type){
+            $('.chevron_accordion').click(function(){
+                $(this).toggleClass("open_accordion");
+                $(this).next('.accordion_body').slideToggle();
+            });
+            
+            $('.share_links').click(function(e){
+                var uri = encodeURI($(this).attr('href'));
+                if(uri.indexOf('mailto') < 0){
+                    e.preventDefault();
+                    var popup= window.open(uri,'popUpWindow','height=500,width=500, left=50,top=50, resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+                }
+            });
+            $('.featured_box_header, .featured_name').click(function(e){
+                $(this).parent().find(".chevron_accordion").toggleClass("open_accordion");
+                $(this).parent().find(".accordion_body").slideToggle();
+                e.preventDefault();
+            })
+        }
+        
+        function renderDetailData(container, template, collection, type){
+            console.log(collection)
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
-                var title = val.title.split(" - ");
-                val.title = title[1]
-                
+                if (val.promotionable_type == "Store"){
+                    var store_details = getStoreDetailsByID(val.promotionable_id)
+                    console.log(store_details)
+                    val.store_slug = store_details.slug
+                    // if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
+                    if(store_details.store_front_url.indexOf('missing.png') > -1){
+                        // val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                        val.alt_promo_image_url = val.promo_image_url_abs
+                    } else {
+                        // val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                        
+                        val.alt_promo_image_url = store_details.store_front_url_abs
+                    }   
+                        val.store_name = store_details.name
+                } else {
+                   val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg" 
+                   val.store_name = "The Bay Centre"
+                }
+                val.encoded_name = encodeURI(val.store_name + " - " + val.name);
+                val.encoded_body = "Check this out @ The Bay Centre: //thebaycentre.com/promotions/"+encodeURI(val.slug);
+                if (val.promotionable_type == "Store"){
+                    var store_details = getStoreDetailsByID(val.promotionable_id)
+                    val.store_info = '<a href="/stores/'+store_details.slug+'"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/591c7592ceb43ac4f0b12c32d6af5630/promo_icon_info.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>store info</p></a>'
+                }
+                $("#promo_header").show();   
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
             $(container).show();
             $(container).html(item_rendered.join(''));
-        };
-        loadMallDataCached(renderAll); 
-    })
+        }
+        loadMallDataCached(renderPageData);
+    });
 </script>

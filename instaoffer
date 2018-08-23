@@ -37,7 +37,12 @@
     #featured_boxes_container{
         margin-top:40px;
     }
-    
+    .gs_text {
+        color: #6d6e71;
+        font-family: lora-regular;
+        font-size: 14pt;
+        line-height: 26pt;
+    }
     @media (max-width: 767px) {
         .store_detail_description{
             margin-top:0 !important;

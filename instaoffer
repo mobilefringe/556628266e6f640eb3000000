@@ -118,7 +118,7 @@
 
 <script>
     $(document).ready(function() {
-        function renderPageData(){
+        function renderAll(){
             var page_banner = getRepoDetailsByName('Instagram Offer').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
@@ -178,6 +178,6 @@
             $(container).show();
             $(container).html(item_rendered.join(''));
         }
-        loadMallDataCached(renderPageData);
+        loadMallDataCached(renderAll);
     });
 </script>

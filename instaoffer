@@ -153,7 +153,7 @@
 <script>
     $(document).ready(function() {
         function renderPageData(){
-            var page_banner = getRepoDetailsByName('Promotions').images;
+            var page_banner = getRepoDetailsByName('Instagram Offer').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;

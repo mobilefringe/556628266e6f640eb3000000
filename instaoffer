@@ -58,6 +58,9 @@
         .featured_box {
             padding: 10px;
         }
+        .store_details_title {
+            font-size: 20pt;
+        }
         .store_detail_description{
             margin-top:0 !important;
         }

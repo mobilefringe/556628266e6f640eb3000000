@@ -55,6 +55,9 @@
         #page_title, #disclaimer {
             padding: 0 10px;
         }
+        .featured_box {
+            padding: 10px;
+        }
         .store_detail_description{
             margin-top:0 !important;
         }

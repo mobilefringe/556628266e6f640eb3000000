@@ -52,9 +52,6 @@
         line-height: 26pt;
     }
     @media (max-width: 767px) {
-        #page_content {
-            padding: 0 20px;
-        }
         .store_detail_description{
             margin-top:0 !important;
         }

@@ -59,6 +59,7 @@
             padding: 10px;
         }
         .store_details_title {
+            margin-bottom: 20px;
             font-size: 20pt;
         }
         .store_detail_description{

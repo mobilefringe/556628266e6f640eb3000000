@@ -1200,7 +1200,6 @@ textarea:focus, input:focus{
 }
 /* INSIDE PAGE BANNERS */
 #page_banner {
-    width: 1194px;
     background-position: center center;
     background-repeat: no-repeat;
     // background-size: contain;

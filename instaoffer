@@ -58,7 +58,7 @@
         .featured_box {
             padding: 10px;
         }
-        .store_detail_title {
+        #page_title {
             margin-bottom: 20px;
             font-size: 20pt;
         }

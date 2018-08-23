@@ -136,6 +136,8 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
+            $(container).show();
         }
         
         function renderDetailData(container, template, collection, type){

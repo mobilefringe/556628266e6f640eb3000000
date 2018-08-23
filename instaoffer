@@ -130,7 +130,7 @@
             var page_json = prefix + "/pages/baycentre-insta-offer.json"
             $.getJSON(page_json).done(function(data) {
                 console.log(data)
-                // $('#mm_page_content').html(data.body);
+                $('#page_title').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");

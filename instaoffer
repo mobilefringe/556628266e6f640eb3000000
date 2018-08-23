@@ -39,7 +39,7 @@
     }
     .store_detail_title {
         font-family: railway-regular;
-        font-size: 28pt;
+        font-size: 26pt;
         color: #6d6e71;
         text-transform: uppercase;
         margin-top: 0;

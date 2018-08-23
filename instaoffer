@@ -130,7 +130,7 @@
             $.getJSON(page_json).done(function(data) {
                 console.log(data)
                 $('#page_title').html(data.body);
-                if(data.subpages){
+                if (data.subpages) {
                     $('#box_content').html(data.subpages[0].body)
                 }
             }).fail(function(jqXHR) {

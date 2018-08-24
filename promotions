@@ -223,7 +223,6 @@
         }
         
         function renderDetailData(container, template, collection, type){
-            console.log(collection)
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
@@ -231,7 +230,6 @@
             $.each( collection , function( key, val ) {
                 if (val.promotionable_type == "Store"){
                     var store_details = getStoreDetailsByID(val.promotionable_id)
-                    console.log(store_details)
                     val.store_slug = store_details.slug
                     // if(!store_details.store_front_url ||  store_details.store_front_url.indexOf('missing.png') > -1 || store_details.store_front_url.length === 0){
                     if(store_details.store_front_url.indexOf('missing.png') > -1){

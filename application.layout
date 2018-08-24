@@ -45,7 +45,7 @@
     <!-- MallMaverick -->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
-
+    
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -55,6 +55,14 @@
         ga('create', 'UA-50587834-41', 'auto');
         ga('send', 'pageview');
     </script>
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PFVTQPW');</script>
+    <!-- End Google Tag Manager -->
+    
     <script>
         /**
         * Function that tracks a click on an outbound link in Analytics.
@@ -68,14 +76,6 @@
             });
         }
     </script>
-    
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PFVTQPW');</script>
-    <!-- End Google Tag Manager -->
 
     <!--Facebook Pixel Code -->
     <script>

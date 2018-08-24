@@ -45,6 +45,12 @@
         margin-top: 0;
         margin-bottom: 53px;
     }
+    .store_detail_title span {
+        color: #6d6e71;
+        font-family: lora-regular;
+        font-size: 14pt;
+        line-height: 26pt;    
+    }
     .gs_text {
         color: #6d6e71;
         font-family: lora-regular;

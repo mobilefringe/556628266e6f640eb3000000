@@ -163,7 +163,7 @@
                                 	<input type="text" value="" name="AGE" class="" id="mce-AGE">
                                 </div>
                             </p>
-                            <p class="col-md-6">
+                            <p>
                                 <div class="mc-field-group">
                                 	<label for="mce-POSTALCODE">Postal Code </label>
                                 	<input type="text" value="" name="POSTALCODE" class="" id="mce-POSTALCODE">

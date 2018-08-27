@@ -6,6 +6,16 @@
         line-height: 26pt;
         color: #6d6e71;
     }
+    #mc_embed_signup input {
+        width: 90%;
+        height: 34px;
+        font-family: montserrat-regular;
+        font-size: 16px;
+        color: #4d4d4f;
+        line-height: 34px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
     #mc_embed_signup .button {
         font-family: montserrat-regular;
         font-size: 16px;

@@ -31,9 +31,6 @@
         font-size:16px;
         color:#4d4d4f;
     }
-    .mc-field-group {
-        width: auto !important;
-    }
     .newsletter_row input {
         width:90%;
         height:34px;

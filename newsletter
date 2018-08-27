@@ -70,6 +70,9 @@
         margin-top:20px;
         margin-bottom:60px;
     }
+    #mc_embed_signup form {
+        padding: 0;
+    }
     @media (max-width: 767px) {
         .newsletter_row p{
             width:100%;

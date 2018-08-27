@@ -1,5 +1,6 @@
 <style>
     #mc-embedded-subscribe-form {
+        margin-bottom: 30px;
         font-family: lora-regular !important;
         font-size: 14pt;
         line-height: 26pt;

@@ -128,54 +128,51 @@
             <div id="mc_embed_signup">
                 <form action="https://thebaycentre.us8.list-manage.com/subscribe/post?u=35241b945028701ab874f8579&amp;id=850e684995" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
-                	
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group">
-                	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                </label>
-                	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-FNAME">First Name </label>
-                	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-LNAME">Last Name </label>
-                	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-SEX">Sex </label>
-                	<input type="text" value="" name="SEX" class="" id="mce-SEX">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-AGE">Age </label>
-                	<input type="text" value="" name="AGE" class="" id="mce-AGE">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-POSTALCODE">Postal Code </label>
-                	<input type="text" value="" name="POSTALCODE" class="" id="mce-POSTALCODE">
-                </div>
-                <div class="mc-field-group input-group">
-                    <!--<strong>Agree to Terms </strong>-->
-                    <!--<ul><li>-->
-
-                        <input type="checkbox" value="1" name="group[12657][1]" id="mce-group[12657]-12657-0">
-                        <label for="mce-group[12657]-12657-0">I agree to receive newsletters from The Bay Centre via electronic messaging and I acknowledge that I have read and understand the Privacy Terms & Conditions.</label>
-                        
-                    <!--</li>-->
-                <!--</ul>-->
-                </div>
-                	<div id="mce-responses" class="clear">
-                		<div class="response" id="mce-error-response" style="display:none"></div>
-                		<div class="response" id="mce-success-response" style="display:none"></div>
-                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35241b945028701ab874f8579_850e684995" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                        	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                        	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-FNAME">First Name </label>
+                        	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-LNAME">Last Name </label>
+                        	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-SEX">Sex </label>
+                        	<input type="text" value="" name="SEX" class="" id="mce-SEX">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-AGE">Age </label>
+                        	<input type="text" value="" name="AGE" class="" id="mce-AGE">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-POSTALCODE">Postal Code </label>
+                        	<input type="text" value="" name="POSTALCODE" class="" id="mce-POSTALCODE">
+                        </div>
+                        <div class="mc-field-group input-group">
+                            <input type="checkbox" value="1" name="group[12657][1]" id="mce-group[12657]-12657-0">
+                            <label for="mce-group[12657]-12657-0">I agree to receive newsletters from The Bay Centre via electronic messaging and I acknowledge that I have read and understand the Privacy Terms & Conditions.</label>
+                        </div>
+                    	<div id="mce-responses" class="clear">
+                    		<div class="response" id="mce-error-response" style="display:none"></div>
+                    		<div class="response" id="mce-success-response" style="display:none"></div>
+                    	</div>    
+                    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_35241b945028701ab874f8579_850e684995" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
                     </div>
                 </form>
             </div>
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='SEX';ftypes[3]='text';fnames[4]='AGE';ftypes[4]='text';fnames[5]='POSTALCODE';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
+            <!--End mc_embed_signup-->
 
             <!--<form id="newsletter_form" action="https://mobilefringe.createsend.com/t/d/s/iixuu/" method="post">-->
             <!--    <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />-->
@@ -251,69 +248,69 @@
     email = getRequestParam("email");
     $("#news_email").val(email);
     
-    $("#newsletter_form").submit(function(e){
-        // e.preventDefault();
-        // $("#hidden_agree_text").val($("#newsletter_agree_terms").attr("value"));
-        // $("#hidden_source").val(window.location.href)
-        // var full_name = $("#first_name").val() + " " + $("#last_name").val();
-        // $("#full_name").val(full_name);
-        // $.getJSON(
-        //     "https://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
-        //     $(this).serialize(),
-        //     function (data) {
-        //         if (data.Status === 400) {
-        //             e.preventDefault();
-        //             alert("Please try again later.");
-        //         } else {
-        //             // window.location.href="/thank_you"
-                    submitToMailChimp(e);
-                // }
-        // }); 
-    })
+    // $("#newsletter_form").submit(function(e){
+    //     // e.preventDefault();
+    //     // $("#hidden_agree_text").val($("#newsletter_agree_terms").attr("value"));
+    //     // $("#hidden_source").val(window.location.href)
+    //     // var full_name = $("#first_name").val() + " " + $("#last_name").val();
+    //     // $("#full_name").val(full_name);
+    //     // $.getJSON(
+    //     //     "https://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
+    //     //     $(this).serialize(),
+    //     //     function (data) {
+    //     //         if (data.Status === 400) {
+    //     //             e.preventDefault();
+    //     //             alert("Please try again later.");
+    //     //         } else {
+    //     //             // window.location.href="/thank_you"
+    //                 submitToMailChimp(e);
+    //             // }
+    //     // }); 
+    // })
 
-    function submitToMailChimp(e){
-        $("#mce-FNAME").val($('#first_name').val())
-        $("#mce-LNAME").val($('#last_name').val())
-        $("#mce-EMAIL").val($('#news_email').val())
-        $("#mce-SEX").val($('#news_gender option:selected' ).text()) 
-        $("#mce-AGE").val($('#news_age').val()) 
-        $("#mce-POSTALCODE").val($('#news_postal').val());
-        $("#mce-group[12657]-12657-0").prop( "checked", true );
+    // function submitToMailChimp(e){
+    //     $("#mce-FNAME").val($('#first_name').val())
+    //     $("#mce-LNAME").val($('#last_name').val())
+    //     $("#mce-EMAIL").val($('#news_email').val())
+    //     $("#mce-SEX").val($('#news_gender option:selected' ).text()) 
+    //     $("#mce-AGE").val($('#news_age').val()) 
+    //     $("#mce-POSTALCODE").val($('#news_postal').val());
+    //     $("#mce-group[12657]-12657-0").prop( "checked", true );
         
-        $.ajax({
-            type: $("#mc-embedded-subscribe-form").attr('method'),
-            url: $("#mc-embedded-subscribe-form").attr('action'),
-            data: $("#mc-embedded-subscribe-form").serialize(),
-            cache       : false,
-            dataType    : 'json',
-            contentType: "application/json; charset=utf-8",
-            error: function(err) { alert("Could not connect to the registration server. Please try again later.") },
-            success: function(data) {
-                if (data.result != "success") {
-                    e.target.submit();
-                } else {
-                    e.target.submit();
-                }
-            }
-        });
-    }   
+    //     $.ajax({
+    //         type: $("#mc-embedded-subscribe-form").attr('method'),
+    //         url: $("#mc-embedded-subscribe-form").attr('action'),
+    //         data: $("#mc-embedded-subscribe-form").serialize(),
+    //         cache       : false,
+    //         dataType    : 'json',
+    //         contentType: "application/json; charset=utf-8",
+    //         error: function(err) { alert("Could not connect to the registration server. Please try again later.") },
+    //         success: function(data) {
+    //             if (data.result != "success") {
+    //                 e.target.submit();
+    //             } else {
+    //                 e.target.submit();
+    //             }
+    //         }
+    //     });
+    // }   
      
-    function check_email (){
-        var email = $("#news_email").val();
-        if( !validateEmail(email)) {
-            return false
-        } else {
-            return true
-        }
-    }
+    // function check_email (){
+    //     var email = $("#news_email").val();
+    //     if( !validateEmail(email)) {
+    //         return false
+    //     } else {
+    //         return true
+    //     }
+    // }
     
-    function validateEmail($email) {
-      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-      if( !emailReg.test( $email ) ) {
-        return false;
-      } else {
-        return true;
-      }
-    }
+    // function validateEmail($email) {
+    //   var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    //   if( !emailReg.test( $email ) ) {
+    //     return false;
+    //   } else {
+    //     return true;
+    //   }
+    // }
 </script>
 

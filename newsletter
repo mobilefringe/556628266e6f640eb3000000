@@ -23,13 +23,16 @@
     .socialize_social_icons{
         margin-top:0;
     }
-    .newsletter_row p{
-        width:49%;
+    .newsletter_row div{
+        width: 49%;
         display:inline-block;
         font-family:montserrat-regular;
         font-family: proxima \9;
         font-size:16px;
         color:#4d4d4f;
+    }
+    .mc-field-group {
+        width: auto !importany;
     }
     .newsletter_row input {
         width:90%;

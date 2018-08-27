@@ -6,6 +6,19 @@
         line-height: 26pt;
         color: #6d6e71;
     }
+    #mc_embed_signup .button {
+        font-family: montserrat-regular;
+        font-size: 16px;
+        text-transform: uppercase;
+        height: 40px;
+        border: none;
+        background: #c7c8ca;
+        color: white;
+        width: 200px;
+        border-radius: 50px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
     .banner_wrapper {
         margin-bottom: 60px;
     }

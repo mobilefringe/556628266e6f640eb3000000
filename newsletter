@@ -1,38 +1,38 @@
 <style>
-    #mc-embedded-subscribe-form {
-        margin-bottom: 30px;
-        font-family: lora-regular !important;
-        font-size: 14pt;
-        line-height: 26pt;
-        color: #6d6e71;
-    }
-    #mc_embed_signup input {
-        width: 90%;
-        height: 34px;
-        font-family: montserrat-regular;
-        font-size: 16px;
-        color: #4d4d4f;
-        line-height: 34px;
-        margin-top: 10px;
-        padding-left: 10px;
-    }
-    .mc_fieldset.gdprRequired.mc-field-group {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    #mc_embed_signup .button {
-        font-family: montserrat-regular;
-        font-size: 16px;
-        text-transform: uppercase;
-        height: 40px !important;
-        border: none;
-        background: #c7c8ca;
-        color: white;
-        width: 200px !important;
-        border-radius: 50px !important;
-        margin-top: 20px;
-        margin-bottom: 60px;
-    }
+    /*#mc-embedded-subscribe-form {*/
+    /*    margin-bottom: 30px;*/
+    /*    font-family: lora-regular !important;*/
+    /*    font-size: 14pt;*/
+    /*    line-height: 26pt;*/
+    /*    color: #6d6e71;*/
+    /*}*/
+    /*#mc_embed_signup input {*/
+    /*    width: 90%;*/
+    /*    height: 34px;*/
+    /*    font-family: montserrat-regular;*/
+    /*    font-size: 16px;*/
+    /*    color: #4d4d4f;*/
+    /*    line-height: 34px;*/
+    /*    margin-top: 10px;*/
+    /*    padding-left: 10px;*/
+    /*}*/
+    /*.mc_fieldset.gdprRequired.mc-field-group {*/
+    /*    margin: 0 !important;*/
+    /*    padding: 0 !important;*/
+    /*}*/
+    /*#mc_embed_signup .button {*/
+    /*    font-family: montserrat-regular;*/
+    /*    font-size: 16px;*/
+    /*    text-transform: uppercase;*/
+    /*    height: 40px !important;*/
+    /*    border: none;*/
+    /*    background: #c7c8ca;*/
+    /*    color: white;*/
+    /*    width: 200px !important;*/
+    /*    border-radius: 50px !important;*/
+    /*    margin-top: 20px;*/
+    /*    margin-bottom: 60px;*/
+    /*}*/
     .banner_wrapper {
         margin-bottom: 60px;
     }

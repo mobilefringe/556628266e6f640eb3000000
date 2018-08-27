@@ -10,12 +10,12 @@
         font-family: montserrat-regular;
         font-size: 16px;
         text-transform: uppercase;
-        height: 40px;
+        height: 40px !important;
         border: none;
         background: #c7c8ca;
         color: white;
-        width: 200px;
-        border-radius: 50px;
+        width: 200px !important;
+        border-radius: 50px !important;
         margin-top: 20px;
         margin-bottom: 60px;
     }

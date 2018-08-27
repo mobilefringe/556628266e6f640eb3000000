@@ -143,13 +143,15 @@
                         	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
                         	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                         </div>
-                        <div class="mc-field-group">
-                        	<label for="mce-FNAME">First Name </label>
-                        	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                        </div>
-                        <div class="mc-field-group">
-                        	<label for="mce-LNAME">Last Name </label>
-                        	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        <div class="newsletter_row">
+                            <div class="mc-field-group">
+                            	<label for="mce-FNAME">First Name </label>
+                            	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                            	<label for="mce-LNAME">Last Name </label>
+                            	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                            </div>
                         </div>
                         <div class="mc-field-group input-group">
                             <strong>Gender </strong>
@@ -159,7 +161,7 @@
                                 <li><input type="radio" value="Prefer not to say" name="MMERGE6" id="mce-MMERGE6-2"><label for="mce-MMERGE6-2">Prefer not to say</label></li>
                             </ul>
                         </div>
-                        <div class="row newsletter_row">
+                        <div class="newsletter_row">
                             <div class="mc-field-group">
                             	<label for="mce-AGE">Age </label>
                             	<input type="text" value="" name="AGE" class="" id="mce-AGE" />

@@ -107,17 +107,17 @@
 
 <div id="main_container">
     <div id="page_content"> 
-        <form action="//thebaycentre.us8.list-manage.com/subscribe/post-json?u=35241b945028701ab874f8579&amp;id=850e684995&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display:none">
+        <!--<form action="//thebaycentre.us8.list-manage.com/subscribe/post-json?u=35241b945028701ab874f8579&amp;id=850e684995&c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display:none">-->
             <!--mail chimp hidden inputs-->
-            <input title="advice newsletter" class="newletter-hidden" id="mce-FNAME" name="FNAME" type="hidden" />
-            <input title="advice newsletter" class="newletter-hidden" id="mce-LNAME" name="LNAME" type="hidden" />
-            <input title="advice newsletter" class="newletter-hidden" id="mce-EMAIL" name="EMAIL" type="hidden" />
-            <input title="advice newsletter" class="newletter-hidden" id="mce-SEX" name="SEX" type="hidden" />
-            <input title="advice newsletter" class="newletter-hidden" id="mce-AGE" name="AGE" type="hidden" />
-            <input title="advice newsletter" class="newletter-hidden" id="mce-POSTALCODE" name="POSTALCODE" type="hidden" />
-            <input title="advice newsletter" class="newletter-hidden" id="mce-group[12657]-12657-0" name="group[12657]-12657-0" type="checkbox" />
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-FNAME" name="FNAME" type="hidden" />-->
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-LNAME" name="LNAME" type="hidden" />-->
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-EMAIL" name="EMAIL" type="hidden" />-->
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-SEX" name="SEX" type="hidden" />-->
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-AGE" name="AGE" type="hidden" />-->
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-POSTALCODE" name="POSTALCODE" type="hidden" />-->
+        <!--    <input title="advice newsletter" class="newletter-hidden" id="mce-group[12657]-12657-0" name="group[12657]-12657-0" type="checkbox" />-->
             <!--end mail chimp hidden inputs-->
-        </form>
+        <!--</form>-->
 
         <div class="newsletter_content">
             <p class="store_detail_title">STAY INFORMED</p>

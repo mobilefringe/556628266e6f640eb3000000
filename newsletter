@@ -245,8 +245,8 @@
         loadMallDataCached(renderPageData);
     });
 
-    email = getRequestParam("email");
-    $("#news_email").val(email);
+    // email = getRequestParam("email");
+    // $("#news_email").val(email);
     
     // $("#newsletter_form").submit(function(e){
     //     // e.preventDefault();

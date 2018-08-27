@@ -157,11 +157,11 @@
                             </ul>
                         </div>
                         <div class="row newsletter_row">
-                            <p>
-                                <div class="mc-field-group">
+                            <p class="mc-field-group">
+                                <!--<div class="mc-field-group">-->
                                 	<label for="mce-AGE">Age </label>
-                                	<input type="text" value="" name="AGE" class="" id="mce-AGE">
-                                </div>
+                                	<input type="text" value="" name="AGE" class="" id="mce-AGE" />
+                                <!--</div>-->
                             </p>
                             <p>
                                 <div class="mc-field-group">

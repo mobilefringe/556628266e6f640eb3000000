@@ -1,4 +1,7 @@
 <style>
+    #mc-embedded-subscribe-form {
+        font-family: lora-regular !important;
+    }
     .banner_wrapper {
         margin-bottom: 60px;
     }
@@ -18,7 +21,6 @@
     }
     .socialize_text{
         margin-top:5px;
-        
     }
     .socialize_social_icons{
         margin-top:0;

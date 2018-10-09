@@ -49,6 +49,9 @@
             margin-top:30px;
             margin-bottom:30px;
         }
+        .featured_store_img {
+            max-width: 80%!important;
+        }
         .name_block{
             width:100%;
             height:auto;

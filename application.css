@@ -202,7 +202,7 @@ h1 {
     text-align: center;
 }
 .ig-image {
-    margin: 0 3.5px;
+    // margin: 0 3.5px;
     // padding: 0;
     // display: inline-block;
     // width: 16%;
@@ -210,8 +210,8 @@ h1 {
 
     padding: 0;
     display: inline-block;
-    width: calc(16.35% - 10px);
-    height: 225px;
+    width: calc(16.47% - 1px);
+    height: 195px;
     overflow: hidden;
     background-position: center center;
     background-size: cover;

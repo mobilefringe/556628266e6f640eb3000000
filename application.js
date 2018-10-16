@@ -4,7 +4,7 @@ $('document').ready(function() {
             get: 'user',
             userId: '349157082',
             clientId: 'da5cf03899eb49a496424d9a76bafa0d',
-            template: '<a href="{{link}}" target="_blank" title="{{caption_short}}"><div class="ig-image" style="background-image:url({{image}})"></div></a>',
+            template: '<a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>',
             limit : 6,
             resolution:'low_resolution'
     
@@ -13,7 +13,7 @@ $('document').ready(function() {
         feed.run();
     }
 });
-// <a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>
+
 function renderInstaFeed(container, template){
     var item_list = [];
     var item_rendered = [];

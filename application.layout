@@ -434,13 +434,9 @@
                 <a href="{{link}}" target="_blank" title="{{caption_short}}">
                     <div class="ig-image" style="background-image:url({{image}})"></div>
                 </a>
-                
             {% endraw %}
             </script>
         </div>
-<!--<a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>-->
-        <!--<iframe class="mobile_insta_feed" src="https://www.intagme.com/in/?u=dGhlYmF5Y2VudHJlfGlufDEwMHwzfDF8fHllc3wxfHVuZGVmaW5lZHxubw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:333px; height: 111px" ></iframe>-->
-
     </div>
     
     <!-- KIPSU CHAT -->

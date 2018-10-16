@@ -203,9 +203,19 @@ h1 {
 }
 .ig-image {
     margin: 0 3.5px;
+    // padding: 0;
+    // display: inline-block;
+    // width: 16%;
+
+
     padding: 0;
     display: inline-block;
-    width: 16%;
+    width: calc(16.35% - 10px);
+    height: 225px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 .ig-image img{

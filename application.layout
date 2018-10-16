@@ -431,6 +431,9 @@
         <div id="insta_container" class="socialize_div">
             <script id="insta_template" type="x-tmpl-mustache/text">
             {% raw %}
+                <a href="{{link}}" target="_blank" title="{{caption_short}}">
+                    <div class="ig-image" style="background-image:url({{image}})"></div>
+                </a>
                 <a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>
             {% endraw %}
             </script>
@@ -718,45 +721,37 @@
         switch (event){
             case "enter":
                 if (id == "social_instagram"){
-                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"    
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png"
                 }
                 if (id == "social_facebook"){
                     return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png"    
                 }
                 if (id == "social_twitter"){
                     return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png"    
-                    
                 }
                 if (id == "social_youtube"){
                     return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png"
-                    
                 }
                 if (id == "social_blog"){
                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" 
-                    
                 }
                 break;
             case "exit":
-                
-                    if (id == "social_instagram"){
-                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"
-                    }
-                    if (id == "social_facebook"){
-                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"   
-                    }
-                    if (id == "social_twitter"){
-                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"
-                        
-                    }
-                    if (id == "social_youtube"){
-                        return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
-                        
-                    }
-                    if (id == "social_blog"){
-                       return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png"
-                        
-                    }
-            
+                if (id == "social_instagram"){
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png"
+                }
+                if (id == "social_facebook"){
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png"   
+                }
+                if (id == "social_twitter"){
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png"
+                }
+                if (id == "social_youtube"){
+                    return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png"
+                }
+                if (id == "social_blog"){
+                   return "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png"
+                }
                 break;    
         }
             

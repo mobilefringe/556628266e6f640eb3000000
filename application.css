@@ -1875,6 +1875,7 @@ textarea:focus, input:focus{
     }
      .ig-image{
         width: calc(49% - 10px);
+        height: 159px;
         margin: 0 5px 10px 5px;
     }
     .visible-phone{

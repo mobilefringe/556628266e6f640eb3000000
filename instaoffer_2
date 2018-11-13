@@ -1,0 +1,160 @@
+<style>
+    .store_promo_content, .store_detail_description{
+       margin:0;
+    }
+    .socialize_div{
+        margin-top:50px;
+    }
+    
+    .feature_promo_ul{
+        margin-top:65px;
+    }
+    
+    .feature_promo_ul li{
+        border:none;
+    }
+    .featured_store_img {
+        max-width: 300px;
+    }
+    .feature_promo_ul li:nth-last-child(1){
+        padding-bottom:40px;
+    }
+    .store_promo_ul li {
+        padding-left:30px;
+        padding-right:30px;
+        padding-bottom:40px;
+    }
+    .promo_left_div{
+        width:729px;
+    }
+    .socialize_text{
+        margin-top:0;
+    }
+    .socialize_social_icons{
+        margin-top:-10px;
+    }
+    
+    #featured_boxes_container{
+        margin-top:40px;
+    }
+    .store_detail_title {
+        font-family: railway-regular;
+        font-size: 26pt;
+        color: #6d6e71;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 53px;
+    }
+    .store_detail_title span {
+        color: #6d6e71;
+        font-family: lora-regular;
+        font-size: 14pt;
+        line-height: 26pt;    
+    }
+    .gs_text {
+        color: #6d6e71;
+        font-family: lora-regular;
+        font-size: 14pt;
+        line-height: 26pt;
+    }
+    @media (max-width: 767px) {
+        #page_title, #disclaimer {
+            padding: 0 10px;
+        }
+        .featured_box {
+            padding: 10px;
+        }
+        #page_title {
+            margin-bottom: 20px;
+            font-size: 20pt;
+        }
+        .featured_name {
+            font-size: 20px !important;
+        }
+        .store_detail_description{
+            margin-top:0 !important;
+        }
+        .store_promo_buttons p{
+            width:60%;
+        }
+        .store_promo_buttons{
+            margin-top:30px;
+            margin-bottom:30px;
+        }
+        .name_block{
+            width:100%;
+            height:auto;
+            word-break:break-word;
+        }
+    }
+</style>
+
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline">#InstaOffer</h1>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span>
+                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <button type="submit" id="banner_submit">Subscribe</button>
+                    </span>
+                    <br>
+                    <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre">
+                    <label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                    <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                    <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="main_container">
+    <div id="page_content"> 
+        <h1 id="page_title" class="store_detail_title"></h1>
+        <div class="store_promo_content">
+            <div class="featured_boxes">
+                <div class="featured_box">
+                    <p id="box_content" class="store_detail_title featured_name"></p>
+                </div>
+            </div>
+            <p id="disclaimer" class="gs_text"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        function renderAll(){
+            var page_banner = getRepoDetailsByName('Instagram Offer').images;
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.image_url;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
+            var prefix = get_prefix();
+            var page_json = prefix + "/pages/baycentre-insta-offer.json"
+            $.getJSON(page_json).done(function(data) {
+                console.log(data)
+                $('#page_title').html(data.body);
+                if (data.subpages) {
+                    $('#box_content').html(data.subpages[0].body);
+                    $('#disclaimer').html(data.subpages[1].body);
+                }
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+        }
+        
+        
+        loadMallDataCached(renderAll);
+    });
+</script>

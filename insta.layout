@@ -101,43 +101,43 @@
     </script>
 
     <script>
-        $(document).ready(function() {
-            $.reject({  
-                reject: { all: false, msie: 9 },  
-                header: 'Thanks for visiting The Bay Centre', // Header Text  
-                paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
-                paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
-                closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
-                closeCookie: true,
-                browserInfo: { // Settings for which browsers to display  
-                    chrome: {  
-                        // Text below the icon  
-                        text: 'Google Chrome',  
-                        // URL For icon/text link  
-                        url: 'https://www.google.com/chrome/',  
-                        // (Optional) Use "allow" to customized when to show this option  
-                        // Example: to show chrome only for IE users  
-                        // allow: { all: false, msie: true }  
-                    },  
-                    firefox: {  
-                        text: 'Mozilla Firefox',  
-                        url: 'https://www.mozilla.com/firefox/'  
-                    },  
-                    safari: {  
-                        text: 'Safari',  
-                        url: 'https://www.apple.com/safari/download/'  
-                    },  
-                    opera: {  
-                        text: 'Opera',  
-                        url: 'https://www.opera.com/download/'  
-                    },  
-                    msie: {  
-                        text: 'Internet Explorer',  
-                        url: 'https://www.microsoft.com/windows/Internet-explorer/'  
-                    }  
-                },// Message below close window link  
-                imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
-            });  
+        // $(document).ready(function() {
+        //     $.reject({  
+        //         reject: { all: false, msie: 9 },  
+        //         header: 'Thanks for visiting The Bay Centre', // Header Text  
+        //         paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
+        //         paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
+        //         closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
+        //         closeCookie: true,
+        //         browserInfo: { // Settings for which browsers to display  
+        //             chrome: {  
+        //                 // Text below the icon  
+        //                 text: 'Google Chrome',  
+        //                 // URL For icon/text link  
+        //                 url: 'https://www.google.com/chrome/',  
+        //                 // (Optional) Use "allow" to customized when to show this option  
+        //                 // Example: to show chrome only for IE users  
+        //                 // allow: { all: false, msie: true }  
+        //             },  
+        //             firefox: {  
+        //                 text: 'Mozilla Firefox',  
+        //                 url: 'https://www.mozilla.com/firefox/'  
+        //             },  
+        //             safari: {  
+        //                 text: 'Safari',  
+        //                 url: 'https://www.apple.com/safari/download/'  
+        //             },  
+        //             opera: {  
+        //                 text: 'Opera',  
+        //                 url: 'https://www.opera.com/download/'  
+        //             },  
+        //             msie: {  
+        //                 text: 'Internet Explorer',  
+        //                 url: 'https://www.microsoft.com/windows/Internet-explorer/'  
+        //             }  
+        //         },// Message below close window link  
+        //         imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
+        //     });  
         });
       
         setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');

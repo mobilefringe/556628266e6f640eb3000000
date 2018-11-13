@@ -19,32 +19,19 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/png/1520017158000/bayc_logo_K_favicon-02.png" type="image/x-icon" />
 
-    <!--<link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">-->
-    <!--<link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">-->
-    <!--<link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">-->
-    <!--<link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">-->
-    <!--<link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css" rel="stylesheet">-->
-    <!--<link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css" rel="stylesheet">-->
-    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link href="/application.css" rel="stylesheet" type="text/css">
-    <!--<link href="/kipsu.css" rel="stylesheet" type="text/css">-->
 
     <!-- jQuery Version 1.11.0 -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <!--<script src="//codecloud.cdn.speedyrails.net/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>-->
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
-    <!--<script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>-->
     <script src="//cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script>
-    <!--<script src="//s3.amazonaws.com/kodekloud/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>-->
+    
     <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-    <!--jReject is used to warn users certain browsers aren't compatible with this site-->
-    <!--<script src="//cdn.jsdelivr.net/jquery.jreject/1.0.2/js/jquery.reject.js"></script>-->
     
     <!-- MallMaverick -->
     <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
-    <!--<script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>-->
     
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -101,53 +88,10 @@
     </script>
 
     <script>
-        // $(document).ready(function() {
-        //     $.reject({  
-        //         reject: { all: false, msie: 9 },  
-        //         header: 'Thanks for visiting The Bay Centre', // Header Text  
-        //         paragraph1: 'Unfortunately your browser is not officially supported with our site', // Paragraph 1  
-        //         paragraph2: 'For the best experience please install one of the many optional browsers below to proceed',  
-        //         closeMessage: 'You may continue using the site however certain features and content may not be accessible. Thank you.',
-        //         closeCookie: true,
-        //         browserInfo: { // Settings for which browsers to display  
-        //             chrome: {  
-        //                 // Text below the icon  
-        //                 text: 'Google Chrome',  
-        //                 // URL For icon/text link  
-        //                 url: 'https://www.google.com/chrome/',  
-        //                 // (Optional) Use "allow" to customized when to show this option  
-        //                 // Example: to show chrome only for IE users  
-        //                 // allow: { all: false, msie: true }  
-        //             },  
-        //             firefox: {  
-        //                 text: 'Mozilla Firefox',  
-        //                 url: 'https://www.mozilla.com/firefox/'  
-        //             },  
-        //             safari: {  
-        //                 text: 'Safari',  
-        //                 url: 'https://www.apple.com/safari/download/'  
-        //             },  
-        //             opera: {  
-        //                 text: 'Opera',  
-        //                 url: 'https://www.opera.com/download/'  
-        //             },  
-        //             msie: {  
-        //                 text: 'Internet Explorer',  
-        //                 url: 'https://www.microsoft.com/windows/Internet-explorer/'  
-        //             }  
-        //         },// Message below close window link  
-        //         imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
-        //     });  
-        // });
-      
         setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');
     </script>
 </head>
 <body class="main_body">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFVTQPW"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="menu_container">
             <div class="search_social_div"> 

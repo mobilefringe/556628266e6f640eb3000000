@@ -138,7 +138,7 @@
         //         },// Message below close window link  
         //         imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
         //     });  
-        });
+        // });
       
         setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');
     </script>

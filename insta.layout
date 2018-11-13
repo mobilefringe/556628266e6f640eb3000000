@@ -19,12 +19,12 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/png/1520017158000/bayc_logo_K_favicon-02.png" type="image/x-icon" />
 
-    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
-    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">
-    <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
-    <link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css" rel="stylesheet">
-    <link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css" rel="stylesheet">
+    <!--<link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">-->
+    <!--<link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">-->
+    <!--<link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">-->
+    <!--<link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css" rel="stylesheet">-->
+    <!--<link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css" rel="stylesheet">-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/application.css" rel="stylesheet" type="text/css">
     <link href="/kipsu.css" rel="stylesheet" type="text/css">
@@ -339,7 +339,6 @@
                 <div class="mobile_submenu" id="mobile_sub_1">
                     <ul>
                         <li class="mobile_submenu_li"><a href="/stores">Store Directory</a></li>
-                        <!--<li class="mobile_submenu_li"><a href="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/74ba67112f2dcb42d1fe4e98b74e28f9/TBC-StoreMapprintcopyMay202015.pdf" target="_blank">Centre Directory</a></li>-->
                         <li class="mobile_submenu_li"><a href="/map">Interactive Map</a></li>
                     </ul>
                 </div>
@@ -376,8 +375,6 @@
                 <p>Our style &nbsp;&nbsp;<i id='mobile_sub_5_arrow' class='fa fa-chevron-down'></i></p>
                 <div class="mobile_submenu" id="mobile_sub_5">
                     <ul>
-                        <!-- <li class="mobile_submenu_li"><a href="/lifestyle">Life + Style Program</a></li> -->
-                        <!--<li class="mobile_submenu_li"><a href="/caughtlookingconfident">Caught Looking Confident</a></li>-->
                         <li class="mobile_submenu_li"><a href="/videos">Video Style</a></li>
                         <li class="mobile_submenu_li"><a href="/newsletter">Enewsletter</a></li>
                     </ul>
@@ -401,7 +398,7 @@
         </ul>
     </div>
     <div class="loading_overlay">
-            <img alt="loading" src="https://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
+        <img alt="loading" src="https://kodekloud.s3.amazonaws.com/sites/5447ebb66e6f641987020000/3604f5c26997bea3de504de139debcec/loading.gif"/>
     </div>
     
     <div>{{yield}}</div>

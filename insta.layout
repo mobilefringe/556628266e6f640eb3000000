@@ -25,9 +25,9 @@
     <!--<link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">-->
     <!--<link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css" rel="stylesheet">-->
     <!--<link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css" rel="stylesheet">-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link href="/application.css" rel="stylesheet" type="text/css">
-    <link href="/kipsu.css" rel="stylesheet" type="text/css">
+    <!--<link href="/kipsu.css" rel="stylesheet" type="text/css">-->
 
     <!-- jQuery Version 1.11.0 -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

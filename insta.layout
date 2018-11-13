@@ -426,24 +426,24 @@
             </div>
         </div>
     
-        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+        <!--<script src="https://snapwidget.com/js/snapwidget.js"></script>-->
         <!--INSTAGRAM FEED -->
-        <div id="insta_container" class="socialize_div">
-            <script id="insta_template" type="x-tmpl-mustache/text">
-            {% raw %}
-                <a href="{{link}}" target="_blank" title="{{caption_short}}">
-                    <div class="ig-image" style="background-image:url({{image}})"></div>
-                </a>
-            {% endraw %}
-            </script>
-        </div>
+        <!--<div id="insta_container" class="socialize_div">-->
+        <!--    <script id="insta_template" type="x-tmpl-mustache/text">-->
+        <!--    {% raw %}-->
+        <!--        <a href="{{link}}" target="_blank" title="{{caption_short}}">-->
+        <!--            <div class="ig-image" style="background-image:url({{image}})"></div>-->
+        <!--        </a>-->
+        <!--    {% endraw %}-->
+        <!--    </script>-->
+        <!--</div>-->
     </div>
     
     <!-- KIPSU CHAT -->
-    <div id="kipsu-content" class="hidden_now">
-        <button id="close-chat">X</button>
-        <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>
-    </div>
+    <!--<div id="kipsu-content" class="hidden_now">-->
+    <!--    <button id="close-chat">X</button>-->
+    <!--    <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>-->
+    <!--</div>-->
     
     <footer>
         <!--<div class="footer_logo_div">-->

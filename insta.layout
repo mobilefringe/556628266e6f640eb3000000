@@ -407,24 +407,24 @@
     <div>{{yield}}</div>
     
     <div id="main_container">
-        <div class="socialize_div">
-            <p class="socialize_text">socialize with us</p>
-            <div class="socialize_social_icons">
-                <a href="https://instagram.com/thebaycentre/" target="_blank"  onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Instagram')">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png" class="social_icon" alt="instagram" id="social_instagram">
-                </a>
-                <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Facebook')">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="social_icon" alt="facebook" id="social_facebook">
-                </a>
-                <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Twitter')">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="social_icon" alt="twitter" id="social_twitter">
-                </a>
-                <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - YouTube')">
-                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="social_icon" alt="youtube" id="social_youtube">
-                </a>
+        <!--<div class="socialize_div">-->
+        <!--    <p class="socialize_text">socialize with us</p>-->
+        <!--    <div class="socialize_social_icons">-->
+        <!--        <a href="https://instagram.com/thebaycentre/" target="_blank"  onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Instagram')">-->
+        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_instagram.png" class="social_icon" alt="instagram" id="social_instagram">-->
+        <!--        </a>-->
+        <!--        <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Facebook')">-->
+        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_fb.png" class="social_icon" alt="facebook" id="social_facebook">-->
+        <!--        </a>-->
+        <!--        <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - Twitter')">-->
+        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_twit.png" class="social_icon" alt="twitter" id="social_twitter">-->
+        <!--        </a>-->
+        <!--        <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Hyper Local 2016 - YouTube')">-->
+        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_youtube.png" class="social_icon" alt="youtube" id="social_youtube">-->
+        <!--        </a>-->
                     <!--<a href="" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/19be0dcfe6428f0d1b57c253af02c6ce/hover_social_blog.png" class="social_icon" alt="blog" id="social_blog"></a>-->
-            </div>
-        </div>
+        <!--    </div>-->
+        <!--</div>-->
     
         <!--<script src="https://snapwidget.com/js/snapwidget.js"></script>-->
         <!--INSTAGRAM FEED -->

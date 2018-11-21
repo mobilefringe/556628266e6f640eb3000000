@@ -154,9 +154,7 @@
                 videos = videos.reverse();
                 renderDetailData("#store_promo_container", "#store_promo_template", videos, "videos");
             }
-            
-            // $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            // $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+
             $(".loading_overlay").hide();
             $("#page_content").show();
         }

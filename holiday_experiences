@@ -136,10 +136,10 @@
             var blogs = getBlogDataBySlug('baycentre-holiday-experiences-2018')
             var videos = []
             if (params != undefined){
-                $.each( blogs.posts , function( key, val ) {
+                $.each( blogs.posts, function(key, val) {
                     c = $.inArray(params, val.tag)
-                    if (c == 0){
-                        videos.push(val)
+                    if (c == 0) {
+                        videos.push(val);
                     } else {
                         
                     }
@@ -147,14 +147,16 @@
             } else {
                 videos = blogs.posts
             }
+            
             if (videos.length == 0){
-                $("#no_event_container").show()
+                $("#no_event_container").show();
             } else {
                 videos = videos.reverse();
                 renderDetailData("#store_promo_container", "#store_promo_template", videos, "videos");
             }
-            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            
+            // $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            // $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
             $(".loading_overlay").hide();
             $("#page_content").show();
         }

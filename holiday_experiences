@@ -96,16 +96,16 @@
                             <p class="store_detail_description">{{body}}</p>
                             <div class="store_promo_buttons">
                                 <span>
-                                    <a href="/videos/{{slug}}">
+                                    <a href="/holiday_experiences/{{slug}}">
                                         <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_more.png" class="store_promo_button_icon" alt="store_promo_button_icon">
                                         <p>read more</p>
                                     </a> 
-                                    <span class='st_sharethis' st_url='https://thebaycentre.kodekloud.io/videos/{{slug}}' id="promo_share_this"></span> 
+                                    <span class='st_sharethis' st_url='https://thebaycentre.kodekloud.io/holiday_experiences/{{slug}}' id="promo_share_this"></span> 
                                 </span>
                             </div>
                         </div>
                         <div class="promo_right_div">
-                            <a href="/videos/{{slug}}">
+                            <a href="/holiday_experiences/{{slug}}">
                                 <img class="store_promo_img" alt="photo_{{name}}" src="{{image_url}}"/>
                             </a>
                         </div>

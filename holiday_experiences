@@ -125,7 +125,7 @@
 <script>
     $(document).ready(function() {
         function renderPageData(){
-            var page_banner = getRepoDetailsByName('Videos').images;
+            var page_banner = getRepoDetailsByName('"baycentre-holiday-experiences-2018"').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;

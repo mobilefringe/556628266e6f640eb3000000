@@ -125,7 +125,7 @@
 <script>
     $(document).ready(function() {
         function renderPageData(){
-            var page_banner = getRepoDetailsByName('baycentre-holiday-experiences-2018').images;
+            var page_banner = getRepoDetailsByName('Videos').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;
@@ -133,7 +133,7 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             params = getUrlParameter('tag');
-            var blogs = getBlogDataBySlug('baycentre-videos')
+            var blogs = getBlogDataBySlug('baycentre-holiday-experiences-2018')
             var videos = []
             if (params != undefined){
                 $.each( blogs.posts , function( key, val ) {

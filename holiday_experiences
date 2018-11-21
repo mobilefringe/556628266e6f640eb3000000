@@ -151,7 +151,7 @@
                 $("#no_event_container").show()
             } else {
                 videos = videos.reverse();
-                renderDetailData("#store_promo_container","#store_promo_template",videos,"videos")
+                renderDetailData("#store_promo_container", "#store_promo_template", videos, "videos");
             }
             $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
@@ -181,8 +181,8 @@
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
                 if (val.body.length > 100) {
-                       val.body =  val.body.substring(0,150)+'...';
-                    }
+                   val.body =  val.body.substring(0,150)+'...';
+                }
                 if(!val.image_url ||  val.image_url .indexOf('missing.png') > -1 || val.image_url .length === 0){
                     val.image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                 }  

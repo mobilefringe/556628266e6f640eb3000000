@@ -3,7 +3,7 @@
         display: none !important;
     }
     .page_title {
-        margin: 20px 0;
+        margin: 70px 0 0 0;
         text-transform: initial;
     }
     .store_promo_content{

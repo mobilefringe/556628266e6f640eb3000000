@@ -1,4 +1,7 @@
 <style>
+    #main_container {
+        display: none;
+    }
     .store_promo_content{
        margin:0;
     }

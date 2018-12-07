@@ -1,5 +1,5 @@
 <style>
-    #main_container {
+    #main_container, .footer_logo_div, .find_us_div {
         display: none;
     }
     .store_promo_content{

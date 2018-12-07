@@ -176,6 +176,7 @@
             var template_html = $(template).html();
             Mustache.parse(template_html);   // optional, speeds up future uses
             $.each( collection , function( key, val ) {
+                // Check if post has a video 
                 if (val.video_link) {
                     val.video = true;
                     val.static_img = false;
@@ -183,6 +184,7 @@
                     val.video = false;
                     val.static_img = true;
                 }
+                
                 if(!val.image_url ||  val.image_url .indexOf('missing.png') > -1 || val.image_url .length === 0){
                     val.image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
                 }  

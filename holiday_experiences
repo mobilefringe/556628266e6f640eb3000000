@@ -104,6 +104,7 @@
                                 <img class="store_promo_img" src="{{image_url}}" alt="{{name}}" />
                             </a>
                             {{/show_video}}
+                            <img class="store_promo_img" src="{{image_url}}" alt="{{name}}" />
                         </div>
                     </li>
                 </script>
@@ -176,9 +177,11 @@
             $.each( collection , function( key, val ) {
                 console.log(val)
                 if (val.video_link) {
-                    val.show_video = true;
+                    val.video = true;
+                    val.static_img = false;
                 } else {
-                    val.show_video = false;
+                    val.video = false;
+                    val.static_img = true;
                 }
                 if(!val.image_url ||  val.image_url .indexOf('missing.png') > -1 || val.image_url .length === 0){
                     val.image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    

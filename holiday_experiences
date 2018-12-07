@@ -103,9 +103,6 @@
                     </li>
                 </script>
             </ul>
-            <div class='button_container' id='button_container'>
-                <button class="gray_pill" onclick="window.open('https://youtube.com/thebaycentre')">Watch More Videos like these</button>
-            </div>
             <div id="no_event_container" style="display:none">
                 No Current Videos. please check back later. 
             </div>

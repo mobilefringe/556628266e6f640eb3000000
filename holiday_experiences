@@ -1,6 +1,6 @@
 <style>
     .socialize_div, #insta_container, .footer_logo_div, .find_us_div {
-        display: none;
+        display: none !important;
     }
     .store_promo_content{
        margin:0;

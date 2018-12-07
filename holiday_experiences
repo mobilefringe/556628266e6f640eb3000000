@@ -99,12 +99,14 @@
                             <p class="store_detail_description">{{body}}</p>
                         </div>
                         <div class="promo_right_div">
-                            {{#show_video}}
+                            {{#video}}
                             <a href="https://www.youtube.com/watch?v={{video_link}}" target="_blank">
                                 <img class="store_promo_img" src="{{image_url}}" alt="{{name}}" />
                             </a>
-                            {{/show_video}}
+                            {{/video}}
+                            {{#static_img}}
                             <img class="store_promo_img" src="{{image_url}}" alt="{{name}}" />
+                            {{/static_img}}
                         </div>
                     </li>
                 </script>

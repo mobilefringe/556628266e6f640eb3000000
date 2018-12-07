@@ -99,9 +99,11 @@
                             <p class="store_detail_description">{{body}}</p>
                         </div>
                         <div class="promo_right_div">
-                            <a href="/holiday_experiences/{{slug}}">
+                            {{#show_video}}
+                            <a href="https://www.youtube.com/watch?v={{video_link}}">
                                 <img class="store_promo_img" alt="photo_{{name}}" src="{{image_url}}"/>
                             </a>
+                            {{/show_video}}
                         </div>
                     </li>
                 </script>

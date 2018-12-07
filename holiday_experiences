@@ -2,6 +2,10 @@
     .socialize_div, #insta_container, .footer_logo_div, .find_us_div {
         display: none !important;
     }
+    .page_title {
+        margin: 20px 0;
+        text-transform: initial;
+    }
     .store_promo_content{
        margin:0;
     }
@@ -91,7 +95,7 @@
 <div id="main_container">
     <div id="page_content">
         <div class="store_promo_content">
-            <p class="store_detail_title">Remix Your Cheer at the Bay Centre November 21st to December 28th.  The Bay Centre has remixed its classic holiday display this year and it’s a must visit. Here are our Top 5 Holiday Experiences.</p>
+            <p class="store_detail_title page_title">Remix Your Cheer at the Bay Centre November 21st to December 28th.  The Bay Centre has remixed its classic holiday display this year and it’s a must visit. Here are our Top 5 Holiday Experiences.</p>
             <ul class="store_promo_ul" id="store_promo_container">
                 <script id="store_promo_template" type="x-tmpl-mustache/text">
                     <li>

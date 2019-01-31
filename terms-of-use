@@ -196,7 +196,6 @@
             prefix = get_prefix();
             var pages_json = prefix+"/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
-                
                 $('#page_title').html(data.title);
                 $('#page_content_body').html(data.body);
             }).fail(function(jqXHR) {

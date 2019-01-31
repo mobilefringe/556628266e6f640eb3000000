@@ -91,7 +91,7 @@
     <div id="page_content">
         <div class="gs_text">
             <h1 style="margin-top:20px;margin-left:35px;margin-right:15px" id="page_title">Terms of Use</h1>
-            <div class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">
+            <div class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px" id="page_content_body>
                 <h2>USE OF THIS WEBSITE</h2>
                 <p>This website is owned and operated by TBC Nominee Inc., (&quot;The Bay Centre&quot;), for your personal non-commercial use and information. Your use of this website is subject to the following terms and all applicable laws. By accessing and browsing this website, you accept, without limitation or qualification, these terms.</p>
 

@@ -194,7 +194,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = prefix+"/pages/" + slug + ".json"
+            var pages_json = prefix+"/pages/baycentre-terms-of-use.json"
             $.getJSON(pages_json).done(function(data) {
                 $('#page_title').html(data.title);
                 $('#page_content_body').html(data.body);

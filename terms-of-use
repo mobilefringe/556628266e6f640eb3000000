@@ -197,7 +197,7 @@
             var pages_json = prefix+"/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
                 
-                $('#mm_page_title').html(data.title);
+                $('#page_title').html(data.title);
                 $('#page_content_body').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {

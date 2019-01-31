@@ -164,7 +164,7 @@
                 banner_url = val.image_url;
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
-            
+            renderpageHTML();
             var prefix = get_prefix();
             var page_array = []
             page_array = page_array.reverse()

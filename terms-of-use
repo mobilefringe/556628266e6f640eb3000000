@@ -190,7 +190,7 @@
         function add_to_page_array (data){
             full_page_array.push(data)
         };
-function renderpageHTML(){
+        function renderpageHTML(){
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();

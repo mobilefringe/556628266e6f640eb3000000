@@ -667,6 +667,8 @@
     
     function dismiss_popup(){
         $(".popup_overlay").hide()
+        $(".modal-backdrop").remove();
+        $('body').removeClass('no_scroll');
     }
     
     $("#banner_newsletter").submit(function(e){

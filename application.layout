@@ -629,6 +629,7 @@
         // if (getCookie("visited") != "yes"){
             $(".popup_overlay").show();
             $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
+            $('body').addClass('no_scroll');
             var a = new Date();
             a = new Date(a.getTime() +1000*60*60*24);
             document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;

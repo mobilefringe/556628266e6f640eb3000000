@@ -386,6 +386,7 @@ a:hover {
     font-size:19pt;
     padding-left:20px;
     margin-bottom:42px;
+    border-bottom: 1px solid #6d6e71;
 }
 .popup_subscribe{
     background:#6e6d71;

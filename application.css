@@ -309,6 +309,11 @@ a:hover {
 .banner_slider_ul li img{
     width:100%;
 }
+.custom_backdrop{
+    opacity:0.5;
+    background:#fff;
+    text-align:center;
+}
 .popup_overlay{
     background:white;
     width:743px;

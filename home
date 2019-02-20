@@ -189,7 +189,7 @@
     /*    }*/
     /*}*/
 </style>
-
+<div class="custom_modal"></div>
 <div class="popup_overlay">
     <div class="popup_div">
         <img class="popup_close_x" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/icon_close.png" alt="close popup" onclick="javascript:dismiss_popup()"/>

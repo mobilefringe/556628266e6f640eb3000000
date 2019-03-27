@@ -7,8 +7,8 @@ $('document').ready(function() {
             template: '<a class="ig-image" target=_blank href="{{link}}" title="{{caption}}" ><img src="{{image}}" /></a>',
             limit : 6,
             resolution:'low_resolution'
-    
         });
+        console.log(feed)
         feed.run();
     }
 });

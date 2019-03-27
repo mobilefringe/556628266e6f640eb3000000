@@ -9,7 +9,6 @@ $('document').ready(function() {
             resolution:'low_resolution'
     
         });
-        console.log(feed)
         feed.run();
     }
 });

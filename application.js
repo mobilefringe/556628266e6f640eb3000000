@@ -34,7 +34,7 @@ function renderInstaFeed(container, template){
                 item_rendered.push(ig_rendered.trim());
             }
         })
-        console.log(feed)
+        console.log(insta_feed)
         $(container).show();
         $(container).html(item_rendered.join(''));
     });

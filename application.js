@@ -8,7 +8,6 @@ $('document').ready(function() {
             limit : 6,
             resolution:'low_resolution'
         });
-        console.log(feed)
         feed.run();
     }
 });
@@ -35,6 +34,7 @@ function renderInstaFeed(container, template){
                 item_rendered.push(ig_rendered.trim());
             }
         })
+        console.log(feed)
         $(container).show();
         $(container).html(item_rendered.join(''));
     });

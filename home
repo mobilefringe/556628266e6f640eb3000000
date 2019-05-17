@@ -189,28 +189,28 @@
     /*    }*/
     /*}*/
 </style>
-<div class="popup_overlay">
-    <div class="popup_div">
-        <img class="popup_close_x" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/icon_close.png" alt="close popup" onclick="javascript:dismiss_popup()"/>
-        <p class="popup_title">Get the Latest</p>
-        <p class="popup_subtitle">Sales. Events. Fashion news</p>
-        <p class="popup_text">Don’t miss out on exclusive content and giveaways sent straight to your inbox.</p>
-        <form action="//thebaycentre.us8.list-manage.com/subscribe/post-json?u=35241b945028701ab874f8579&amp;id=850e684995&c=?" method="post" id="mc-embedded-subscribe-form-pop" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display:none">
-            <input title="advice newsletter" class="newletter-hidden" id="mce-EMAIL" name="EMAIL" type="hidden" />
-        </form>
-        <form id="popup_form">
-            <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />
-            <input id="hidden_agree_text" name="cm-f-jhtykh" type="hidden" />
-            <div class="popup_row">
-                <input id="popup_email" type="text" name="cm-iixuu-iixuu" required />
-                <button class="popup_subscribe" type="submit">sign up</button>   
-            </div>
-            <input id="popup_agree_terms" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages; and i acknowledge i have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>"/> 
-            <label for="popup_agree_terms" class="checkbox_label"> Yes, I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>.</label>
-        </form>
-        <p class="popup_cancel" onclick="javascript:dismiss_popup()">No Thanks</p>
-    </div>
-</div>
+<!--<div class="popup_overlay">-->
+<!--    <div class="popup_div">-->
+<!--        <img class="popup_close_x" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/icon_close.png" alt="close popup" onclick="javascript:dismiss_popup()"/>-->
+<!--        <p class="popup_title">Get the Latest</p>-->
+<!--        <p class="popup_subtitle">Sales. Events. Fashion news</p>-->
+<!--        <p class="popup_text">Don’t miss out on exclusive content and giveaways sent straight to your inbox.</p>-->
+<!--        <form action="//thebaycentre.us8.list-manage.com/subscribe/post-json?u=35241b945028701ab874f8579&amp;id=850e684995&c=?" method="post" id="mc-embedded-subscribe-form-pop" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display:none">-->
+<!--            <input title="advice newsletter" class="newletter-hidden" id="mce-EMAIL" name="EMAIL" type="hidden" />-->
+<!--        </form>-->
+<!--        <form id="popup_form">-->
+<!--            <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />-->
+<!--            <input id="hidden_agree_text" name="cm-f-jhtykh" type="hidden" />-->
+<!--            <div class="popup_row">-->
+<!--                <input id="popup_email" type="text" name="cm-iixuu-iixuu" required />-->
+<!--                <button class="popup_subscribe" type="submit">sign up</button>   -->
+<!--            </div>-->
+<!--            <input id="popup_agree_terms" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages; and i acknowledge i have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>"/> -->
+<!--            <label for="popup_agree_terms" class="checkbox_label"> Yes, I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the <a href='/privacy_policy' target='_blank'>Privacy Terms & Conditions</a>.</label>-->
+<!--        </form>-->
+<!--        <p class="popup_cancel" onclick="javascript:dismiss_popup()">No Thanks</p>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div id="home_banner">
     <div id="banner_slider">

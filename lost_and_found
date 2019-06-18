@@ -115,8 +115,8 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="first_name">Full Name</label>  
-                    <input class="form-control margin_30" id="first_name" name="contest[first_name]" type="text" required data-validation="required"/>
+                    <label for="name">Full Name</label>  
+                    <input class="form-control margin_30" id="name" name="contest[name]" type="text" required data-validation="required"/>
                 </div>
                 <div class="col-md-6">
                     <label for="email">Email *</label> 
@@ -281,14 +281,11 @@
         function submit_contest(slug) {
             var contest_entry = {};
             var contest_data = {};
-            contest_data.first_name = $('#first_name').val();
-            contest_data.last_name = $('#last_name').val();
-            contest_data.mailing_address = $('#address').val();
-            contest_data.city = $('#city').val();
-            contest_data.province = $('#province').val();
-            contest_data.postal_code = $('#postal_code').val();
-            contest_data.phone = $('#phone').val();
+            contest_data.name = $('#name').val();
             contest_data.email = $('#email').val();
+            contest_data.phone = $('#phone').val();
+            contest_data.alt_phone = $('#alt_phone').val();
+            contest_data.type_of_item = $('#item-select').find(":selected").text();
             var charity = $('#charity').val();
             var essay = $('#essay').val();
             var note = charity + ": " + essay

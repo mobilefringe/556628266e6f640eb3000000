@@ -18,6 +18,7 @@
         margin-bottom: 30px;
     }
     legend {
+        border-bottom: none;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight: 700;
         font-size: 14px;

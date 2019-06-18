@@ -279,11 +279,10 @@
         };
         
         function submit_contest(slug) {
-            console.log("slug",slug)
             var lost_found = "";
-            if ($("input[name='lost']:checked").val()) {
+            if ($("input[name='lost_found']:checked").val()) {
                 lost_found = "Lost";
-            } else if ($("input[name='found']:checked").val()) {
+            } else if ($("input[name='lost_found']:checked").val()) {
                 lost_found = "Found";
             }
 
@@ -293,7 +292,7 @@
             contest_data.email = $('#email').val();
             contest_data.phone_number = $('#phone').val();
             contest_data.alt_phone_number = $('#alt_phone').val();
-            contest_data.lost_or_found = lost_found;
+            contest_data.lost_or_found = $("input[name='lost_found']:checked").val();
             contest_data.item_type = $('#item-select').find(":selected").text();
             contest_data.date = $('#date').val();
             contest_data.time = $('#time').val();
@@ -310,7 +309,7 @@
             body["Email"] = $('#email').val();
             body["Phone Number"] = $('#phone').val();
             body["Alternate Phone Number"] = $('#alt_phone').val();
-            body["Was Item Lost or Found?"] = lost_found;
+            body["Was Item Lost or Found?"] = $("input[name='lost_found']:checked").val();
             body["Type of Item"] = $('#item-select').find(":selected").text();
             body["Date"] = $('#date').val();
             body["Time"] = $('#time').val();

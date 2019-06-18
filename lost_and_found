@@ -37,6 +37,9 @@
         align-items: center;
         font-weight: normal;
     }
+    fieldset label .iradio_square {
+        margin-left: 5px;
+    }
 </style>
 
 <div id="page_banner">

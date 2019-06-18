@@ -61,6 +61,12 @@
     .gray_pill {
         margin-left: 0;
     }
+    .has-error {
+        position: relative;
+    }
+    .form-error {
+        position: absolute;
+    }
 </style>
 
 <div id="page_banner">
@@ -126,7 +132,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="phone">Phone Number</label>  
-                    <input class="form-control margin_30" id="phone" name="contest[phone]" type="text" required data-validation="required"/>    
+                    <input class="form-control margin_30" id="phone" name="contest[phone]" type="text"/>    
                 </div>
                 <div class="col-md-6">
                     <label for="alt_phone">Alternate Phone Number (Optional)</label>  

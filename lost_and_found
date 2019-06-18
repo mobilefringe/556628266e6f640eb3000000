@@ -355,7 +355,7 @@
         
         function serializeObject(obj) {
             var newObj = [];
-            _.forEach(obj, function(value, key) {
+            $.each(obj, function(key, value) {
                 var tempVal = {};
                 tempVal.name = key;
                 tempVal.value = value;

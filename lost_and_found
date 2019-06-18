@@ -89,7 +89,7 @@
                     <h1 class="title">Contact Information</h1>
                 </div>
                 <div class="col-md-6">
-                    <p>* fields marked with asterik are manditory</p>
+                    <p class="pull-right">* fields marked with asterik are manditory</p>
                 </div>
             </div>
             <div class="row">

@@ -27,6 +27,7 @@
         
     }
     fieldset label {
+        display: block;
         font-weight: normal;
     }
 </style>
@@ -110,12 +111,10 @@
                         <legend>Was this item Lost or Found</legend>
 
                         <label for="lost">
-                            Lost
-                            <input type="radio" id="lost" name="drone" value="lost">
+                            <input type="radio" id="lost" name="drone" value="lost"> Lost
                         </label>
                         <label for="found">
-                            Found
-                            <input type="radio" id="found" name="drone" value="found">
+                            <input type="radio" id="found" name="drone" value="found"> Found
                         </label>
                     </fieldset>
                 </div>

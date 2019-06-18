@@ -118,7 +118,7 @@
             <div class="row">
                 <div class="col-md-6 margin_30">
                     <fieldset>
-                        <legend>Are you reporting this item lost or found</legend>
+                        <legend>Are you reporting this item lost or found *</legend>
                         <label for="lost">
                             <input type="radio" id="lost" name="drone" value="lost"> Lost
                         </label>
@@ -128,7 +128,7 @@
                     </fieldset>
                 </div>
                 <div class="col-md-6">
-                    <label for="item-select">What type of item are you reporting</label>
+                    <label for="item-select">What type of item are you reporting *</label>
                     <select id="item-select" class="form-control margin_30">
                         <option value="">- Please select an option -</option>
                         <option value="cell phone">Cell Phone</option>

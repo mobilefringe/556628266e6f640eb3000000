@@ -143,11 +143,11 @@
                 <div class="col-md-6 margin_30">
                     <fieldset>
                         <legend>Are you reporting this item lost or found *</legend>
-                        <label for="lost">
-                            <input type="radio" id="lost" name="lost" value="lost"> Lost
+                        <label for="item_lost">
+                            <input type="radio" id="item_lost" name="lost_found" value="lost"> Lost
                         </label>
-                        <label for="found">
-                            <input type="radio" id="found" name="found" value="found"> Found
+                        <label for="item_found">
+                            <input type="radio" id="item_found" name="lost_found" value="found"> Found
                         </label>
                     </fieldset>
                 </div>

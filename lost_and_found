@@ -17,6 +17,16 @@
     .margin_30 {
         margin-bottom: 30px;
     }
+    .flex-row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
     legend {
         margin-bottom: 5px;
         border-bottom: none;
@@ -84,7 +94,7 @@
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />
             <label for="contest_id" style="display:none">Contest ID</label>
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
-            <div class="row">
+            <div class="row flex-row">
                 <div class="col-md-6">
                     <h1 class="title">Contact Information</h1>
                 </div>

@@ -68,6 +68,11 @@
         position: absolute;
         bottom: 0;
     }
+    .iradio_square .form-error {
+        min-width: 150px;
+        position: absolute;
+        bottom: -60px;
+    }
 </style>
 
 <div id="page_banner">

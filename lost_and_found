@@ -47,7 +47,7 @@
 
 <div id="main_container">
     <div class="store_detail_content">
-        <div id="mm_page_content" class="gs_text"></div>
+        <div id="mm_page_content" class="margin_30 gs_text"></div>
     </div>
     <div class="store_detail_content">
         <div class="row">

@@ -97,26 +97,6 @@
                     <input class="form-control margin_30" id="time" name="contest[time]" type="text" required data-validation="required"/>    
                 </div>
             </div>
-            <!--<div class="row">-->
-            <!--    <div class="col-md-12">    -->
-            <!--        <label for="address">Address *</label>  -->
-            <!--        <input class="form-control margin_30" id="address" name="contest[address]" type="text" required data-validation="required" tabindex="5"/>-->
-            <!--    </div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-            <!--    <div class="col-md-4">-->
-            <!--        <label for="city">City *</label>  -->
-            <!--        <input class="form-control margin_30" id="city" name="contest[city]" type="text" required data-validation="required" tabindex="6"/>    -->
-            <!--    </div>-->
-            <!--    <div class="col-md-4">-->
-            <!--        <label for="province">Province *</label>  -->
-            <!--        <input class="form-control margin_30" id="province" name="contest[province]" type="text" placeholder="ON" value="ON" required data-validation="required" tabindex="7"/>    -->
-            <!--    </div>-->
-            <!--    <div class="col-md-4">-->
-            <!--        <label for="postal_code">Postal Code *</label>  -->
-            <!--        <input class="form-control margin_30" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="8"/>-->
-            <!--    </div>-->
-            <!--</div>-->
             <div class="row ">
                 <div class="col-md-12">
                     <label for="charity">Nominated Charity Name *</label>  
@@ -146,8 +126,6 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <a href="https://www.mallmaverick.com/system/site_images/photos/000/041/411/original/Give_Back_Giveaway-Rules-Regulations.pdf?1532724334" target="_blank" tabindex="12">View the Contest Rules & Regulations</a>.
-                    <br/><br/>
                     <button class="contest_btn animated_btn newsletter_btn" tabindex="13">Submit</button>
                     <br/><br/>
                     <br/><br/>

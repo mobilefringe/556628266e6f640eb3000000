@@ -113,11 +113,6 @@
                     <textarea class="form-control margin_30" id="location" name="contest[location]" type="text" rows="4" required data-validation="required"/></textarea>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-md-12">
-                    <p>Total word count: <span id="display_count">0</span> words. Words left: <span id="word_left">500</span></p>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-12">
                     <button class="contest_btn animated_btn newsletter_btn">Submit</button>

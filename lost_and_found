@@ -235,7 +235,7 @@
             console.log(contests)
             var current_contest = [];
             $.each(contests, function(key, val){
-                if(val.slug === "thepencentre-the-give-back-give-away-contest") {
+                if(val.slug === "baycentre-lost-found") {
                     current_contest.push(val);
                 } 
             });

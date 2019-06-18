@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="phone">Alternate Phone Number </label>  
-                    <input class="form-control margin_30" id="alt_phone" name="contest[alt_phone]" type="text" required data-validation="required"/>    
+                    <input class="form-control margin_30" id="alt_phone" name="contest[alt_phone]" type="text" />    
                 </div>
             </div>
             <div class="row">

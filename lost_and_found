@@ -114,21 +114,9 @@
                     <p>Total word count: <span id="display_count">0</span> words. Words left: <span id="word_left">500</span></p>
                 </div>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12">
-                    <label class="agree">
-                        <input id="newsletter_signup" type="checkbox" name="contest[agree]" required tabindex="11"/> 
-                        Yes, I have read and agree to the contest rules.
-                    </label>
-                    <br/><br/>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-12">
                     <button class="contest_btn animated_btn newsletter_btn" tabindex="13">Submit</button>
-                    <br/><br/>
-                    <br/><br/>
                 </div>
             </div>
         </form>

@@ -281,8 +281,8 @@
         function submit_contest(slug) {
             var contest_entry = {};
             var contest_data = {};
-            contest_data.full_name = $('#name').val();
-            contest_data.email = $('#email').val();
+            contest_data["Full Name"] = $('#name').val();
+            contest_data["Email"] = $('#email').val();
             contest_data.phone = $('#phone').val();
             contest_data.alt_phone = $('#alt_phone').val();
             var lost_found = "";

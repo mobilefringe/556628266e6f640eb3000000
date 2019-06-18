@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 margin_30">
+                <div class="col-md-6 margin_30">
                     <p>Was this item Lost or Found</p>
                     
                     <label for="lost">
@@ -89,18 +89,6 @@
                         <input type="radio" id="found" name="drone" value="found">
                     </label>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="date">Date *</label>  
-                    <input class="form-control margin_30" id="date" name="contest[date]" type="text" required data-validation="required"/>    
-                </div>
-                <div class="col-md-6">
-                    <label for="time">Time *</label>  
-                    <input class="form-control margin_30" id="time" name="contest[time]" type="text" required data-validation="required"/>    
-                </div>
-            </div>
-            <div class="row ">
                 <div class="col-md-6">
                     <label for="item-select">Please choose the type of item that was lost of found</label>
                     <select id="item-select" class="form-control margin_30">
@@ -117,6 +105,19 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="date">Date *</label>  
+                    <input class="form-control margin_30" id="date" name="contest[date]" type="text" required data-validation="required"/>    
+                </div>
+                <div class="col-md-6">
+                    <label for="time">Time *</label>  
+                    <input class="form-control margin_30" id="time" name="contest[time]" type="text" required data-validation="required"/>    
+                </div>
+            </div>
+            <div class="row ">
+                
             </div>
             <div class="row ">
                 <div class="col-md-12">

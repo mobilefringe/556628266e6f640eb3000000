@@ -283,7 +283,7 @@
             var lost_found = "";
             if ($("input[name='lost']:checked").val()) {
                 lost_found = "Lost";
-            } else if ($("input[name='lost']:checked").val()) {
+            } else if ($("input[name='found']:checked").val()) {
                 lost_found = "Found";
             }
 

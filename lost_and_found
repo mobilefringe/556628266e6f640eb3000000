@@ -286,91 +286,91 @@
                 lost_found = "Found";
             }
             console.log("lost_found", lost_found)
-            // Contest Data
-            var contest_entry = {};
-            var json_data = {};
-            contest_data["Full Name"] = $('#name').val();
-            contest_data["Email"] = $('#email').val();
-            contest_data["Phone Number"] = $('#phone').val();
-            contest_data["Alternate Phone Number"] = $('#alt_phone').val();
-            contest_data["Was Item Lost or Found?"] = lost_found;
-            contest_data["Type of Item"] = $('#item-select').find(":selected").text();
-            contest_data["Date"] = $('#date').val();
-            contest_data["Time"] = $('#time').val();
-            contest_data["Item Description"] = $('#description').val();
-            contest_data["Item Location"] = $('#location').val();
+            // // Contest Data
+            // var contest_entry = {};
+            // var json_data = {};
+            // contest_data["Full Name"] = $('#name').val();
+            // contest_data["Email"] = $('#email').val();
+            // contest_data["Phone Number"] = $('#phone').val();
+            // contest_data["Alternate Phone Number"] = $('#alt_phone').val();
+            // contest_data["Was Item Lost or Found?"] = lost_found;
+            // contest_data["Type of Item"] = $('#item-select').find(":selected").text();
+            // contest_data["Date"] = $('#date').val();
+            // contest_data["Time"] = $('#time').val();
+            // contest_data["Item Description"] = $('#description').val();
+            // contest_data["Item Location"] = $('#location').val();
 
             
-            contest_entry.contest = contest_data;
-            console.log("entry", contest_entry.contest)
+            // contest_entry.contest = contest_data;
+            // console.log("entry", contest_entry.contest)
             
-            // Email Data
-            var contact_form = {};
-            contact_form.send_to = "caitlin@mobilefringe.com;
-            contact_form.subject = "Lost & Found Form Submission";
-            var body = {};
-            body["Full Name"] = $('#name').val();
-            body["Email"] = $('#email').val();
-            body["Phone Number"] = $('#phone').val();
-            body["Alternate Phone Number"] = $('#alt_phone').val();
-            body["Was Item Lost or Found?"] = lost_found;
-            body["Type of Item"] = $('#item-select').find(":selected").text();
-            body["Date"] = $('#date').val();
-            body["Time"] = $('#time').val();
-            body["Item Description"] = $('#description').val();
-            body["Item Location"] = $('#location').val();
+            // // Email Data
+            // var contact_form = {};
+            // contact_form.send_to = "caitlin@mobilefringe.com;
+            // contact_form.subject = "Lost & Found Form Submission";
+            // var body = {};
+            // body["Full Name"] = $('#name').val();
+            // body["Email"] = $('#email').val();
+            // body["Phone Number"] = $('#phone').val();
+            // body["Alternate Phone Number"] = $('#alt_phone').val();
+            // body["Was Item Lost or Found?"] = lost_found;
+            // body["Type of Item"] = $('#item-select').find(":selected").text();
+            // body["Date"] = $('#date').val();
+            // body["Time"] = $('#time').val();
+            // body["Item Description"] = $('#description').val();
+            // body["Item Location"] = $('#location').val();
 
-            // Sending Email
-            send_data = {};
-            send_data.url = "https://www.mallmaverick.com/send_contact_email";
-            send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
-            contact_form.body = body;
-            var propertyDetails = getPropertyDetails();
-            var host = propertyDetails.mm_host.replace("http:", "");
-            var action = host + "/contests/" + slug + "/create_js_entry"
+            // // Sending Email
+            // send_data = {};
+            // send_data.url = "https://www.mallmaverick.com/send_contact_email";
+            // send_data.form_data = JSON.stringify(Utility.serializeObject(contact_form));
+            // contact_form.body = body;
+            // var propertyDetails = getPropertyDetails();
+            // var host = propertyDetails.mm_host.replace("http:", "");
+            // var action = host + "/contests/" + slug + "/create_js_entry"
+            // // $.ajax({
+            // //     url : action,
+            // //     type: "POST",
+            // //     data : contest_entry,
+            // //     success: function(data){
+            // //       $('#succes_msg').show();
+            // //       $('.contest_btn').prop('disabled', false);
+            // //       $('#contest_form').trigger('reset');
+            // //     },
+            // //     error: function (data){
+            // //         alert('An error occured while processing your request. Please try again later!')
+            // //         $('#error_msg').show();
+            // //     }
+            // // });
+            
             // $.ajax({
-            //     url : action,
+            //     url : send_data.url,
             //     type: "POST",
-            //     data : contest_entry,
-            //     success: function(data){
-            //       $('#succes_msg').show();
-            //       $('.contest_btn').prop('disabled', false);
-            //       $('#contest_form').trigger('reset');
+            //     data : contact_form,
+            //     success: function(data, textStatus, jqXHR){
+            //         // vm.formSuccess = true;
+            //         var contest_entry = {};
+            //         contest_entry.json = json_data;
+            //         host_name = vm.property.mm_host.replace("http:", "");
+            //         var url = host_name + "/contests/" + vm.currentContest.slug + "/json_entry";
+            //         $.ajax({
+            //             url: url,
+            //             type: "POST",
+            //             data: contest_entry,
+            //             async: false,
+            //             success: function(data) {
+            //               console.log("mm post successful");
+            //             },
+            //             error: function(data){
+            //                 console.log("error data:" , data);
+            //             }
+            //         });
             //     },
-            //     error: function (data){
-            //         alert('An error occured while processing your request. Please try again later!')
-            //         $('#error_msg').show();
+            //     error: function (jqXHR, textStatus, errorThrown){
+            //       console.log("Data load error: " + error.message);
+            //       vm.formError = true;
             //     }
             // });
-            
-            $.ajax({
-                url : send_data.url,
-                type: "POST",
-                data : contact_form,
-                success: function(data, textStatus, jqXHR){
-                    // vm.formSuccess = true;
-                    var contest_entry = {};
-                    contest_entry.json = json_data;
-                    host_name = vm.property.mm_host.replace("http:", "");
-                    var url = host_name + "/contests/" + vm.currentContest.slug + "/json_entry";
-                    $.ajax({
-                        url: url,
-                        type: "POST",
-                        data: contest_entry,
-                        async: false,
-                        success: function(data) {
-                          console.log("mm post successful");
-                        },
-                        error: function(data){
-                            console.log("error data:" , data);
-                        }
-                    });
-                },
-                error: function (jqXHR, textStatus, errorThrown){
-                  console.log("Data load error: " + error.message);
-                  vm.formError = true;
-                }
-            });
         }
     
         loadMallDataCached(renderAll); 

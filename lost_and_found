@@ -12,6 +12,7 @@
     }
     .title {
         margin-top: 0px !important;
+        margin-bottom: 30px;
         font-family: railway-regular;
         font-size: 28pt;
         color: #6d6e71;

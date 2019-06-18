@@ -288,7 +288,7 @@
             }
 
             // Format contest data for MM
-            var json_data = {};
+            var contest_data = {};
             contest_data.full_name = $('#name').val();
             contest_data.email = $('#email').val();
             contest_data.phone_number = $('#phone').val();

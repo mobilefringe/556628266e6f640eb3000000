@@ -79,11 +79,11 @@
                     
                     <label for="lost">
                         Lost
-                        <input type="radio" id="lost" name="drone" value="lost" checked>
+                        <input type="radio" id="lost" name="drone" value="lost">
                     </label>
                     <label for="found">
                         Found
-                        <input type="radio" id="found" name="drone" value="found" checked>
+                        <input type="radio" id="found" name="drone" value="found">
                     </label>
                 </div>
             </div>

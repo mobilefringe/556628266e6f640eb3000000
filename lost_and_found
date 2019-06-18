@@ -7,6 +7,9 @@
         line-height: 26pt;
         color:#6d6e71;
     }
+    .margin_30 {
+        margin-bottom: 30px;
+    }
 </style>
 
 <div id="page_banner">
@@ -100,13 +103,13 @@
             <div class="row ">
                 <div class="col-md-12">
                     <label for="charity">Nominated Charity Name *</label>  
-                    <input class="form-control margin_30" id="charity" name="contest[charity]" type="text" required data-validation="required" tabindex="9"/>
+                    <input class="form-control margin_30" id="charity" name="contest[charity]" type="text" required data-validation="required" />
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
                     <label for="essay">Essay *</label>  
-                    <textarea class="form-control margin_30" id="essay" name="contest[essay]" type="text" rows="8" required data-validation="required" tabindex="10"/></textarea>
+                    <textarea class="form-control margin_30" id="essay" name="contest[essay]" type="text" rows="8" required data-validation="required"/></textarea>
                 </div>
             </div>
             <div class="row ">

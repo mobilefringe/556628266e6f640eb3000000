@@ -144,10 +144,10 @@
                     <fieldset>
                         <legend>Are you reporting this item lost or found *</legend>
                         <label for="lost">
-                            <input type="radio" id="lost" name="drone" value="lost"> Lost
+                            <input type="radio" id="lost" name="lost" value="lost"> Lost
                         </label>
                         <label for="found">
-                            <input type="radio" id="found" name="drone" value="found"> Found
+                            <input type="radio" id="found" name="found" value="found"> Found
                         </label>
                     </fieldset>
                 </div>
@@ -280,9 +280,9 @@
         
         function submit_contest(slug) {
             var lost_found = "";
-            if ($("input[id='lost']:checked").val()) {
+            if ($("input[name='lost']:checked").val()) {
                 lost_found = "Lost";
-            } else if ($("input[id='lost']:checked").val()) {
+            } else if ($("input[name='lost']:checked").val()) {
                 lost_found = "Found";
             }
             console.log("lost_found", lost_found)

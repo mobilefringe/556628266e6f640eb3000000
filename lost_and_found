@@ -196,6 +196,16 @@
                 </div>
             </div>
         </form>
+        <div id="send_contact_success" class="hidden_now alert alert-success text-left" role="alert">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            <span class="sr-only">Success</span>
+            Thank you for your submission. A member from our team will contact you shortly.
+        </div>
+        <div id="send_contact_error" class="hidden_now alert alert-danger text-left" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            There was an error when trying to submit your request. Please try again later.
+        </div>
     </div>
 </div>
 
@@ -339,9 +349,11 @@
                         async: false,
                         success: function(data) {
                           console.log("mm post successful");
+                          $("#send_contact_success").show();
                         },
                         error: function(data){
                             console.log("error data:" , data);
+                            $("#send_contact_error").show();
                         }
                     });
                 },

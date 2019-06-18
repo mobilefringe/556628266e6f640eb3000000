@@ -94,16 +94,18 @@
             </div>
             <div class="row">
                 <div class="col-md-6 margin_30">
-                    <p>Was this item Lost or Found</p>
-                    
-                    <label for="lost">
-                        Lost
-                        <input type="radio" id="lost" name="drone" value="lost">
-                    </label>
-                    <label for="found">
-                        Found
-                        <input type="radio" id="found" name="drone" value="found">
-                    </label>
+                    <fieldset>
+                        <legend>Was this item Lost or Found</legend>
+
+                        <label for="lost">
+                            Lost
+                            <input type="radio" id="lost" name="drone" value="lost">
+                        </label>
+                        <label for="found">
+                            Found
+                            <input type="radio" id="found" name="drone" value="found">
+                        </label>
+                    </fieldset>
                 </div>
                 <div class="col-md-6">
                     <label for="item-select">Choose the type of item that was lost of found</label>

@@ -42,8 +42,12 @@
     <div class="store_detail_content">
         <div id="mm_page_content" class="gs_text"></div>
     </div>
-    <div>
-        <p class="gs_text">Please complete as much of this form as possible for any lost and found items from within the Bay Centre only. You will be notified within 48 hours regarding the status of your lost and found claim.</p>
+    <div class="store_detail_content">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="gs_text">Please complete as much of this form as possible for any lost and found items from within the Bay Centre only. You will be notified within 48 hours regarding the status of your lost and found claim.</p>
+            </div>
+        </div>
         <form id="security_form">
             <label for="propert_id" style="display:none">Property ID</label>
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />

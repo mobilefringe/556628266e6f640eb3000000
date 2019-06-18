@@ -17,6 +17,9 @@
     .margin_30 {
         margin-bottom: 30px;
     }
+    .margin_50 {
+        margin-bottom: 50px;
+    }
     .flex-row {
         display: -webkit-box;
         display: -webkit-flex;
@@ -124,7 +127,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <hr>
+                    <hr class="margin_50">
                     <h1 class="title">Item Information</h1>
                 </div>
             </div>

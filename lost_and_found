@@ -144,16 +144,16 @@
                     <fieldset>
                         <legend>Are you reporting this item lost or found *</legend>
                         <label for="item_lost">
-                            <input type="radio" id="item_lost" name="lost_found" value="lost"> Lost
+                            <input type="radio" id="item_lost" name="lost_found" value="Lost" required data-validation="required"> Lost
                         </label>
                         <label for="item_found">
-                            <input type="radio" id="item_found" name="lost_found" value="found"> Found
+                            <input type="radio" id="item_found" name="lost_found" value="Found" required data-validation="required"> Found
                         </label>
                     </fieldset>
                 </div>
                 <div class="col-md-6">
                     <label for="item-select">What type of item are you reporting *</label>
-                    <select id="item-select" class="form-control margin_30">
+                    <select id="item-select" class="form-control margin_30" required data-validation="required">
                         <option value="">- Please select an option -</option>
                         <option value="cell phone">Cell Phone</option>
                         <option value="wallet">Wallet</option>

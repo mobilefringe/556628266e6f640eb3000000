@@ -33,7 +33,7 @@
 <script>
     $(document).ready(function() {
         function renderAll(){
-            var page_banner = getRepoDetailsByName('Sustainability').images;
+            var page_banner = getRepoDetailsByName('Lost & Found').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;

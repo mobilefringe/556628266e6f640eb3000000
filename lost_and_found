@@ -57,6 +57,9 @@
     fieldset label .iradio_square {
         margin-right: 5px;
     }
+    .gray_pill {
+        margin-left: 0;
+    }
 </style>
 
 <div id="page_banner">

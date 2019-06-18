@@ -100,7 +100,7 @@
                 <hr>
             </div>
         </div>
-        <form id="security_form">
+        <form id="security_form" class="margin_50">
             <label for="propert_id" style="display:none">Property ID</label>
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />
             <label for="contest_id" style="display:none">Contest ID</label>

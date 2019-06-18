@@ -299,7 +299,7 @@
             contest_data.time = $('#time').val();
             contest_data.item_description = $('#description').val();
             contest_data.item_location = $('#location').val();
-            console.log("entry", contest_entry.contest)
+            console.log("entry", contest_data)
             
             // Format email data
             var contact_form = {};

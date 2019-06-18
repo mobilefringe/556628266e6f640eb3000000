@@ -37,6 +37,9 @@
     <div class="store_detail_content">
         <div id="mm_page_content" class="gs_text"></div>
     </div>
+    <div>
+        
+    </div>
 </div>
 
 <script>

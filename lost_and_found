@@ -285,24 +285,24 @@
             } else if ($("input[name='lost']:checked").val()) {
                 lost_found = "Found";
             }
-            console.log("lost_found", lost_found)
-            // // Contest Data
-            // var contest_entry = {};
-            // var json_data = {};
-            // contest_data["Full Name"] = $('#name').val();
-            // contest_data["Email"] = $('#email').val();
-            // contest_data["Phone Number"] = $('#phone').val();
-            // contest_data["Alternate Phone Number"] = $('#alt_phone').val();
-            // contest_data["Was Item Lost or Found?"] = lost_found;
-            // contest_data["Type of Item"] = $('#item-select').find(":selected").text();
-            // contest_data["Date"] = $('#date').val();
-            // contest_data["Time"] = $('#time').val();
-            // contest_data["Item Description"] = $('#description').val();
-            // contest_data["Item Location"] = $('#location').val();
+
+            // Contest Data
+            var contest_entry = {};
+            var json_data = {};
+            contest_data.full_name = $('#name').val();
+            contest_data.email = $('#email').val();
+            contest_data.phone_number = $('#phone').val();
+            contest_data.alt_phone_number = $('#alt_phone').val();
+            contest_data.lost_or_found = lost_found;
+            contest_data.item_type = $('#item-select').find(":selected").text();
+            contest_data.date = $('#date').val();
+            contest_data.time = $('#time').val();
+            contest_data.item_description = $('#description').val();
+            contest_data.item_location = $('#location').val();
 
             
-            // contest_entry.contest = contest_data;
-            // console.log("entry", contest_entry.contest)
+            contest_entry.contest = contest_data;
+            console.log("entry", contest_entry.contest)
             
             // // Email Data
             // var contact_form = {};

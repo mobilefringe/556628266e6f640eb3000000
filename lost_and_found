@@ -279,6 +279,7 @@
         };
         
         function submit_contest(slug) {
+            console.log("slug",slug)
             var lost_found = "";
             if ($("input[name='lost']:checked").val()) {
                 lost_found = "Lost";

@@ -119,7 +119,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="contest_btn animated_btn newsletter_btn" tabindex="13">Submit</button>
+                    <button class="contest_btn animated_btn newsletter_btn">Submit</button>
                 </div>
             </div>
         </form>

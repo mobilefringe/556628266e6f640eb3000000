@@ -74,7 +74,7 @@
                     <input class="form-control margin_30" id="phone" name="contest[phone]" type="text" required data-validation="required"/>    
                 </div>
                 <div class="col-md-6">
-                    <label for="alt_phone">Alternate Phone Number </label>  
+                    <label for="alt_phone">Alternate Phone Number (Optional)</label>  
                     <input class="form-control margin_30" id="alt_phone" name="contest[alt_phone]" type="text" />    
                 </div>
             </div>

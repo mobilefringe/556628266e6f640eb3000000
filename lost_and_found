@@ -117,9 +117,6 @@
                 </div>
             </div>
             <div class="row ">
-                
-            </div>
-            <div class="row ">
                 <div class="col-md-12">
                     <label for="item">Describe the item in detail *</label>  
                     <textarea class="form-control margin_30" id="item" name="contest[item]" type="text" rows="4" required data-validation="required"/></textarea>

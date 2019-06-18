@@ -74,25 +74,37 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">    
-                    <label for="address">Address *</label>  
-                    <input class="form-control margin_30" id="address" name="contest[address]" type="text" required data-validation="required" tabindex="5"/>
+                <div class="col-md-12">
+                    <p>Was this item Lost or Found</p>
+                    
+                    <label for="lost">
+                        <input type="radio" id="lost" name="drone" value="lost" checked>
+                    </label>
+                    <label for="found">
+                        <input type="radio" id="found" name="drone" value="found" checked>
+                    </label>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <label for="city">City *</label>  
-                    <input class="form-control margin_30" id="city" name="contest[city]" type="text" required data-validation="required" tabindex="6"/>    
-                </div>
-                <div class="col-md-4">
-                    <label for="province">Province *</label>  
-                    <input class="form-control margin_30" id="province" name="contest[province]" type="text" placeholder="ON" value="ON" required data-validation="required" tabindex="7"/>    
-                </div>
-                <div class="col-md-4">
-                    <label for="postal_code">Postal Code *</label>  
-                    <input class="form-control margin_30" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="8"/>
-                </div>
-            </div>
+            <!--<div class="row">-->
+            <!--    <div class="col-md-12">    -->
+            <!--        <label for="address">Address *</label>  -->
+            <!--        <input class="form-control margin_30" id="address" name="contest[address]" type="text" required data-validation="required" tabindex="5"/>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+            <!--    <div class="col-md-4">-->
+            <!--        <label for="city">City *</label>  -->
+            <!--        <input class="form-control margin_30" id="city" name="contest[city]" type="text" required data-validation="required" tabindex="6"/>    -->
+            <!--    </div>-->
+            <!--    <div class="col-md-4">-->
+            <!--        <label for="province">Province *</label>  -->
+            <!--        <input class="form-control margin_30" id="province" name="contest[province]" type="text" placeholder="ON" value="ON" required data-validation="required" tabindex="7"/>    -->
+            <!--    </div>-->
+            <!--    <div class="col-md-4">-->
+            <!--        <label for="postal_code">Postal Code *</label>  -->
+            <!--        <input class="form-control margin_30" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="8"/>-->
+            <!--    </div>-->
+            <!--</div>-->
             <div class="row ">
                 <div class="col-md-12">
                     <label for="charity">Nominated Charity Name *</label>  

@@ -17,6 +17,13 @@
     .margin_30 {
         margin-bottom: 30px;
     }
+    legend {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.42857143;
+        
+    }
 </style>
 
 <div id="page_banner">

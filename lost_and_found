@@ -231,6 +231,15 @@
             
             $(".loading_overlay").hide();
             $("#page_content").show();
+            
+            $.validate();
+            
+            $('#security_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+                $('html, body').animate({scrollTop : 0},800);
+            });
         }
         
         function add_to_page_array (data){

@@ -26,6 +26,9 @@
         line-height: 1.42857143;
         
     }
+    fieldset label {
+        font-weight: normal;
+    }
 </style>
 
 <div id="page_banner">

@@ -38,7 +38,7 @@
         font-weight: normal;
     }
     fieldset label .iradio_square {
-        margin-left: 5px;
+        margin-right: 5px;
     }
 </style>
 

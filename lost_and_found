@@ -39,6 +39,89 @@
     </div>
     <div>
         <p class="gs_text">Please complete as much of this form as possible for any lost and found items from within the Bay Centre only. You will be notified within 48 hours regarding the status of your lost and found claim.</p>
+        <form id="security_form">
+            <label for="propert_id" style="display:none">Property ID</label>
+            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />
+            <label for="contest_id" style="display:none">Contest ID</label>
+            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="first_name">First Name *</label>  
+                    <input class="form-control margin_30" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                </div>
+                <div class="col-md-6">
+                    <label for="last_name">Last Name *</label>  
+                    <input class="form-control margin_30" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="phone">Phone Number* </label>  
+                    <input class="form-control margin_30" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="3"/>    
+                </div>
+                <div class="col-md-6">
+                    <label for="email">Email *</label> 
+                    <input class="form-control margin_30" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="4"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">    
+                    <label for="address">Address *</label>  
+                    <input class="form-control margin_30" id="address" name="contest[address]" type="text" required data-validation="required" tabindex="5"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="city">City *</label>  
+                    <input class="form-control margin_30" id="city" name="contest[city]" type="text" required data-validation="required" tabindex="6"/>    
+                </div>
+                <div class="col-md-4">
+                    <label for="province">Province *</label>  
+                    <input class="form-control margin_30" id="province" name="contest[province]" type="text" placeholder="ON" value="ON" required data-validation="required" tabindex="7"/>    
+                </div>
+                <div class="col-md-4">
+                    <label for="postal_code">Postal Code *</label>  
+                    <input class="form-control margin_30" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="8"/>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <label for="charity">Nominated Charity Name *</label>  
+                    <input class="form-control margin_30" id="charity" name="contest[charity]" type="text" required data-validation="required" tabindex="9"/>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <label for="essay">Essay *</label>  
+                    <textarea class="form-control margin_30" id="essay" name="contest[essay]" type="text" rows="8" required data-validation="required" tabindex="10"/></textarea>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <p>Total word count: <span id="display_count">0</span> words. Words left: <span id="word_left">500</span></p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="agree">
+                        <input id="newsletter_signup" type="checkbox" name="contest[agree]" required tabindex="11"/> 
+                        Yes, I have read and agree to the contest rules.
+                    </label>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="https://www.mallmaverick.com/system/site_images/photos/000/041/411/original/Give_Back_Giveaway-Rules-Regulations.pdf?1532724334" target="_blank" tabindex="12">View the Contest Rules & Regulations</a>.
+                    <br/><br/>
+                    <button class="contest_btn animated_btn newsletter_btn" tabindex="13">Submit</button>
+                    <br/><br/>
+                    <br/><br/>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 

@@ -188,7 +188,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="submit_btn">Submit</button>
+                    <button class="gray_pill submit_btn">Submit</button>
                 </div>
             </div>
         </form>

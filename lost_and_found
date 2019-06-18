@@ -1,3 +1,12 @@
+<style>
+    .gs_text {
+        font-family: lora-regular;
+        font-size: 14pt;
+        line-height: 26pt;
+        color:#6d6e71;
+    }
+</style>
+
 <div id="page_banner">
     <div class="banner_wrapper">
         <h1 class="page_headline">Lost & Found</h1>

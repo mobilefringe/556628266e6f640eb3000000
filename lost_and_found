@@ -262,9 +262,9 @@
                 e.preventDefault();
                 $('.submit_btn').prop('disabled', true);
                 submit_contest(slug);
-                $('html, body').animate(
-                    { scrollTop: 0 }, 800
-                );
+                // $('html, body').animate(
+                //     { scrollTop: 0 }, 800
+                // );
             });
         }
         

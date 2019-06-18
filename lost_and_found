@@ -55,7 +55,7 @@
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Contact Information</h2>
+                    <h1 class="title">Contact Information</h1>
                 </div>
             </div>
             <div class="row">
@@ -81,7 +81,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <hr>
-                    <h2>Item Information</h2>
+                    <h1 class="title">Item Information</h1>
                 </div>
             </div>
             <div class="row">

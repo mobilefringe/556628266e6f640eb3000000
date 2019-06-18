@@ -180,8 +180,8 @@
             </div>
             <div class="row ">
                 <div class="col-md-12">
-                    <label for="item">Describe the item in detail *</label>  
-                    <textarea class="form-control margin_30" id="item" name="contest[item]" type="text" rows="4" required data-validation="required"/></textarea>
+                    <label for="description">Describe the item in detail *</label>  
+                    <textarea class="form-control margin_30" id="description" name="contest[description]" type="text" rows="4" required data-validation="required"/></textarea>
                 </div>
             </div>
             <div class="row ">
@@ -281,16 +281,23 @@
         function submit_contest(slug) {
             var contest_entry = {};
             var contest_data = {};
-            contest_data.name = $('#name').val();
+            contest_data.full_name = $('#name').val();
             contest_data.email = $('#email').val();
             contest_data.phone = $('#phone').val();
             contest_data.alt_phone = $('#alt_phone').val();
+            var lost_found = "";
+            if ($("input[id='lost']:checked").val();) {
+                lost_found = "Lost";
+            } else if ($("input[id='lost']:checked").val();) {
+                lost_found = "Found";
+            }
+            contest_data.lost_found = lost_found
             contest_data.type_of_item = $('#item-select').find(":selected").text();
-            var charity = $('#charity').val();
-            var essay = $('#essay').val();
-            var note = charity + ": " + essay
-            contest_data.notes = note
-            contest_data.newsletter = $('#agree').prop("checked");
+            contest_data.date = $('#date').val();
+            contest_data.time = $('#time').val();
+            contest_data.item_description = $('#description').val();
+            contest_data.item_location = $('#location').val();
+
             
             contest_entry.contest = contest_data;
             console.log("entry", contest_entry.contest)

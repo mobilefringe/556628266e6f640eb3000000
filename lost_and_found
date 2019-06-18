@@ -49,7 +49,11 @@
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />
             <label for="contest_id" style="display:none">Contest ID</label>
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
-            
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Information</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-6">
                     <label for="first_name">Full Name</label>  
@@ -89,7 +93,7 @@
                     </label>
                 </div>
                 <div class="col-md-6">
-                    <label for="item-select">Please choose the type of item that was lost of found</label>
+                    <label for="item-select">Choose the type of item that was lost of found</label>
                     <select id="item-select" class="form-control margin_30">
                         <option value="">--Please select an option--</option>
                         <option value="cell phone">Cell Phone</option>

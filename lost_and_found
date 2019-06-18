@@ -148,13 +148,13 @@
             </div>
             <div class="row">
                 <div class="col-md-6 margin_30">
-                    <fieldset>
+                    <fieldset required data-validation="required">
                         <legend>Are you reporting this item lost or found *</legend>
                         <label for="item_lost">
-                            <input type="radio" id="item_lost" name="lost_found" value="Lost" required data-validation="required"> Lost
+                            <input type="radio" id="item_lost" name="lost_found" value="Lost" > Lost
                         </label>
                         <label for="item_found">
-                            <input type="radio" id="item_found" name="lost_found" value="Found" required data-validation="required"> Found
+                            <input type="radio" id="item_found" name="lost_found" value="Found"> Found
                         </label>
                     </fieldset>
                 </div>

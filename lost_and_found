@@ -78,9 +78,11 @@
                     <p>Was this item Lost or Found</p>
                     
                     <label for="lost">
+                        Lost
                         <input type="radio" id="lost" name="drone" value="lost" checked>
                     </label>
                     <label for="found">
+                        Found
                         <input type="radio" id="found" name="drone" value="found" checked>
                     </label>
                 </div>

@@ -279,7 +279,7 @@
                 e.preventDefault();
                 console.log("e", e)
                 $('.submit_btn').prop('disabled', true);
-                submit_contest(slug);
+                submit_contest(slug, e);
             });
         }
         
@@ -303,7 +303,7 @@
             $(container).html(item_rendered.join(''));
         };
         
-        function submit_contest(slug) {
+        function submit_contest(slug, e) {
             // Format contest data for MM
             var contest_data = {};
             contest_data.full_name = $('#name').val();

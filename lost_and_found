@@ -188,7 +188,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="date">Date *</label>  
-                    <input class="form-control margin_30" id="date" name="contest[date]" type="date" placeholder="MM/DD/YYYY" data-validation="date" data-validation-require-leading-zero="false" data-validation-format="mm/dd/yyyy" required />    
+                    <input class="form-control margin_30" id="date" name="contest[date]" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
                 </div>
                 <div class="col-md-6">
                     <label for="time">Time *</label>  

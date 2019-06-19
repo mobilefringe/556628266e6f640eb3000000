@@ -133,11 +133,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="name">Full Name</label>  
-                    <input class="form-control margin_30" id="name" name="contest[name]" type="text" required data-validation="required"/>
+                    <input class="form-control margin_30" id="name" name="cm-name" type="text" required data-validation="required"/>
                 </div>
                 <div class="col-md-6">
                     <label for="email">Email *</label> 
-                    <input class="form-control margin_30" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
+                    <input class="form-control margin_30" id="email" name="cm-ydjkjul-ydjkjul" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
                 </div>
             </div>
             <div class="row">

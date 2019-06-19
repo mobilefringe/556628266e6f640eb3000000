@@ -2,7 +2,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <style>
-    .store_detail_content {
+    .store_detail_content.no_border {
         border-bottom: none;
     }
     .gs_text {
@@ -105,7 +105,7 @@
     <div class="store_detail_content">
         <div id="mm_page_content" class="margin_30 gs_text"></div>
     </div>
-    <div class="store_detail_content">
+    <div class="store_detail_content no_border">
         <div class="row">
             <div class="col-md-12">
                 <p class="gs_text">Please complete as much of this form as possible for any lost and found items from within the Bay Centre only. You will be notified within 48 hours regarding the status of your lost and found claim.</p>

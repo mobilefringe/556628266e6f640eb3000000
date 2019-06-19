@@ -277,8 +277,9 @@
             
             $('#subForm').submit(function(e){
                 e.preventDefault();
+                console.log("e", e)
                 $('.submit_btn').prop('disabled', true);
-                submit_contest(slug, form);
+                submit_contest(slug);
             });
         }
         
@@ -302,7 +303,7 @@
             $(container).html(item_rendered.join(''));
         };
         
-        function submit_contest(slug, form) {
+        function submit_contest(slug) {
             // Format contest data for MM
             var contest_data = {};
             contest_data.full_name = $('#name').val();
@@ -356,7 +357,7 @@
                         async: false,
                         success: function(data) {
                           console.log("mm post successful");
-                          form.target.submit();
+                          e.target.submit();
                           $("#send_contact_success").show();
                         },
                         error: function(data){

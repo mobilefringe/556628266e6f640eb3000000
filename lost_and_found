@@ -183,7 +183,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="date">Date *</label>  
-                    <input class="form-control margin_30" id="date" name="contest[date]" type="text" placeholder="MM/DD/YYY" required data-validation="required"/>    
+                    <input class="form-control margin_30" id="date" name="contest[date]" type="text" placeholder="MM/DD/YYYY" data-validation="date" data-validation-require-leading-zero="false" data-validation-format="mm/dd/yyyy" required />    
                 </div>
                 <div class="col-md-6">
                     <label for="time">Time *</label>  
@@ -268,7 +268,9 @@
             $(".loading_overlay").hide();
             $("#page_content").show();
             
-            $.validate();
+            $.validate({
+                modules : 'date'
+            });
             
             $('#security_form').submit(function(e){
                 e.preventDefault();

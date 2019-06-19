@@ -11,6 +11,10 @@
         line-height: 26pt;
         color:#6d6e71;
     }
+    .store_detail_content {
+        margin-bottom: 54px;
+        padding-bottom: 54px;
+    }
     .title {
         margin-top: 0px !important;
         margin-bottom: 30px;
@@ -103,7 +107,7 @@
 
 <div id="main_container">
     <div class="store_detail_content">
-        <div id="mm_page_content" class="margin_30 gs_text"></div>
+        <div id="mm_page_content" class="gs_text"></div>
     </div>
     <div class="store_detail_content no_border">
         <div class="row">

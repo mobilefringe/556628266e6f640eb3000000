@@ -3,6 +3,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <style>
     .store_detail_content.no_border {
+        Margin-top: 54px;
         border-bottom: none;
     }
     .gs_text {

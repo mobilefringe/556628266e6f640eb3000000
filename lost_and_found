@@ -187,7 +187,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="time">Time *</label>  
-                    <input class="form-control margin_30" id="time" name="contest[time]" type="text" required data-validation="required"/>    
+                    <input class="form-control margin_30" id="time" name="contest[time]" type="text" placeholder="HH:mm" data-validation="time" required />    
                 </div>
             </div>
             <div class="row ">

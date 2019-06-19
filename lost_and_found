@@ -278,7 +278,7 @@
             $('#subForm').submit(function(e){
                 e.preventDefault();
                 $('.submit_btn').prop('disabled', true);
-                submit_contest(slug);
+                submit_contest(slug, form);
             });
         }
         
@@ -302,7 +302,7 @@
             $(container).html(item_rendered.join(''));
         };
         
-        function submit_contest(slug) {
+        function submit_contest(slug, form) {
             // Format contest data for MM
             var contest_data = {};
             contest_data.full_name = $('#name').val();

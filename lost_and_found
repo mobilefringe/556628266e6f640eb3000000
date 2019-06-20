@@ -127,7 +127,7 @@
                 <hr>
             </div>
         </div>
-        <form id="subForm" class="margin_50 js-cm-form" > <!-- action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24" -->
+        <form id="subForm" class="margin_50 js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24">
             <div class="row flex-row">
                 <div class="col-md-6">
                     <h1 class="title">Contact Information</h1>
@@ -169,16 +169,6 @@
                         <option value="Lost">Lost</option>
                         <option value="Found">Found</option>
                     </select>
-    
-                    <!--<fieldset>-->
-                    <!--    <legend>Are you reporting this item lost or found *</legend>-->
-                    <!--    <label for="item_lost">-->
-                    <!--        <input type="radio" id="item_lost" name="cm-fo-wdiah" value="Lost" required data-validation="required"> Lost-->
-                    <!--    </label>-->
-                    <!--    <label for="item_found">-->
-                    <!--        <input type="radio" id="item_found" name="cm-fo-wdiah" value="Found"> Found-->
-                    <!--    </label>-->
-                    <!--</fieldset>-->
                 </div>
                 <div class="col-md-6">
                     <label for="fieldwdifi">What type of item are you reporting *</label>
@@ -225,7 +215,7 @@
                 </div>
             </div>
         </form>
-        <!--<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         <div id="send_contact_success" class="hidden_now alert alert-success text-left" role="alert">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
             <span class="sr-only">Success</span>
@@ -304,7 +294,6 @@
             contest_data.phone_number = $('#fieldwdiat').val();
             contest_data.alt_phone_number = $('#fieldwdiad').val();
             contest_data.lost_or_found = $('#fieldwdiah').find(":selected").text();
-            // contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
             contest_data.item_type = $('#fieldwdifi').find(":selected").text();
             contest_data.date = $('#fieldwdizl').val();
             contest_data.time = $('#fieldwdifh').val();
@@ -321,7 +310,6 @@
             body["Email"] = $('#fieldEmail').val();
             body["Phone Number"] = $('#fieldwdiat').val();
             body["Alternate Phone Number"] = $('#fieldwdiad').val();
-            // body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
             body["Was Item Lost or Found?"] = $('#fieldwdiah').find(":selected").text();
             body["Type of Item"] = $('#fieldwdifi').find(":selected").text();
             body["Date"] = $('#fieldwdizl').val();
@@ -335,36 +323,36 @@
             send_data.form_data = JSON.stringify(serializeObject(contact_form));
             contact_form.body = body;
 
-            // $.ajax({
-            //     url : send_data.url,
-            //     type: "POST",
-            //     data : contact_form,
-            //     success: function(data, textStatus, jqXHR){
-            //         var contest_entry = {};
-            //         contest_entry.json = contest_data;
-            //         var propertyDetails = getPropertyDetails();
-            //         var host = propertyDetails.mm_host.replace("http:", "");
-            //         var url = host + "/contests/" + slug + "/json_entry";
-            //         $.ajax({
-            //             url: url,
-            //             type: "POST",
-            //             data: contest_entry,
-            //             async: false,
-            //             success: function(data) {
-            //               console.log("mm post successful");
-            //               e.target.submit();
-            //               $("#send_contact_success").show();
-            //             },
-            //             error: function(data){
-            //                 console.log("error data:" , data);
-            //                 $("#send_contact_error").show();
-            //             }
-            //         });
-            //     },
-            //     error: function (jqXHR, textStatus, errorThrown){
-            //       console.log("Data load error: " + error.message);
-            //     }
-            // });
+            $.ajax({
+                url : send_data.url,
+                type: "POST",
+                data : contact_form,
+                success: function(data, textStatus, jqXHR){
+                    var contest_entry = {};
+                    contest_entry.json = contest_data;
+                    var propertyDetails = getPropertyDetails();
+                    var host = propertyDetails.mm_host.replace("http:", "");
+                    var url = host + "/contests/" + slug + "/json_entry";
+                    $.ajax({
+                        url: url,
+                        type: "POST",
+                        data: contest_entry,
+                        async: false,
+                        success: function(data) {
+                          console.log("mm post successful");
+                          e.target.submit();
+                          $("#send_contact_success").show();
+                        },
+                        error: function(data){
+                            console.log("error data:" , data);
+                            $("#send_contact_error").show();
+                        }
+                    });
+                },
+                error: function (jqXHR, textStatus, errorThrown){
+                  console.log("Data load error: " + error.message);
+                }
+            });
         }
         
         function serializeObject(obj) {

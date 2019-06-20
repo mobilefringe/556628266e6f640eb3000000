@@ -256,9 +256,14 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             var prefix = get_prefix();
-            var pages_json = prefix + "/pages/baycentre-lost-found.json"
-            $.getJSON(pages_json).done(function(data) {
+            var main_page_json = prefix + "/pages/baycentre-lost-found.json"
+            $.getJSON(main_page_json).done(function(data) {
                 $('#mm_page_content').html(data.body);
+            });
+            
+            var sub_page_json = prefix + "/pages/baycentre-lost-found-faqs.json"
+            $.getJSON(sub_page_json).done(function(data) {
+                $('#mm_subpage_content').html(data.body);
             });
             
             var contests = getContestList();

@@ -43,7 +43,7 @@
     }
     #fieldEmail {
         width: 100%;
-        background-color: none;
+        background: none;
     }
     legend {
         margin-bottom: 5px;

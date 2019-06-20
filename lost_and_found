@@ -259,22 +259,19 @@
             //     async: true
             // });
             
-            // var contests = getContestList();
-            // var current_contest = [];
-            // $.each(contests, function(key, val){
-            //     if(val.slug === "baycentre-lost-found") {
-            //         current_contest.push(val);
-            //     } 
-            // });
-            // var slug = current_contest[0].slug;
+            var contests = getContestList();
+            var current_contest = [];
+            $.each(contests, function(key, val){
+                if(val.slug === "baycentre-lost-found") {
+                    current_contest.push(val);
+                } 
+            });
+            var slug = current_contest[0].slug;
             // renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             
             $(".loading_overlay").hide();
             $("#page_content").show();
-            
-            $.validate({
-                modules : 'date'
-            });
+
             
             $('#subForm').submit(function(e){
                 e.preventDefault();

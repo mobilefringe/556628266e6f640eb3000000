@@ -225,7 +225,7 @@
                 </div>
             </div>
         </form>
-        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+        <!--<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
         <div id="send_contact_success" class="hidden_now alert alert-success text-left" role="alert">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
             <span class="sr-only">Success</span>

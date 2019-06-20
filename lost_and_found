@@ -165,7 +165,7 @@
             <div class="row">
                 <div class="col-md-6 margin_30">
                     <label for="fieldwdiad">Are you reporting this item lost or found *</label>
-                    <select id="fieldwdiah" name="cm-fo-wdiah">
+                    <select id="fieldwdiah" class="form-control margin_30" name="cm-fo-wdiah" required data-validation="required">
                         <option value="Lost">Lost</option>
                         <option value="Found">Found</option>
                     </select>

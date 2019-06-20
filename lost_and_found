@@ -118,11 +118,11 @@
                 <hr>
             </div>
         </div>
-        <form id="subForm" class="margin_50" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24">
-            <label for="propert_id" style="display:none">Property ID</label>
-            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />
-            <label for="contest_id" style="display:none">Contest ID</label>
-            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />
+        <form id="subForm" class="margin_50 js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24">
+            <!--<label for="propert_id" style="display:none">Property ID</label>-->
+            <!--<input id="propert_id" name="contest[property_id]" style="display:none" value="{{property_id}}" />-->
+            <!--<label for="contest_id" style="display:none">Contest ID</label>-->
+            <!--<input id="contest_id" name="contest[contest_id]" style="display:none" value="{{id}}" />-->
             <div class="row flex-row">
                 <div class="col-md-6">
                     <h1 class="title">Contact Information</h1>
@@ -133,22 +133,22 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="name">Full Name</label>  
-                    <input class="form-control margin_30" id="name" name="cm-name" type="text" required data-validation="required"/>
+                    <label for="fieldName">Full Name</label>  
+                    <input class="form-control margin_30" id="fieldName" name="cm-name" type="text" required data-validation="required"/>
                 </div>
                 <div class="col-md-6">
-                    <label for="email">Email *</label> 
-                    <input class="form-control margin_30" id="email" name="cm-ydjkjul-ydjkjul" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
+                    <label for="fieldEmail">Email *</label> 
+                    <input class="form-control margin_30" id="fieldEmail" name="cm-ydjkjul-ydjkjul" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="phone">Phone Number</label>  
-                    <input class="form-control margin_30" id="phone" name="cm-f-wdiat" type="text"/>    
+                    <label for="fieldwdiat">Phone Number</label>  
+                    <input class="form-control margin_30" id="fieldwdiat" name="cm-f-wdiat" type="text"/>    
                 </div>
                 <div class="col-md-6">
-                    <label for="alt_phone">Alternate Phone Number (Optional)</label>  
-                    <input class="form-control margin_30" id="alt_phone" name="cm-f-wdiad" type="text" />    
+                    <label for="fieldwdiad">Alternate Phone Number (Optional)</label>  
+                    <input class="form-control margin_30" id="fieldwdiad" name="cm-f-wdiad" type="text" />    
                 </div>
             </div>
             <div class="row">
@@ -157,55 +157,55 @@
                     <h1 class="title">Item Information</h1>
                 </div>
             </div>
+            <!--<div class="row">-->
+            <!--    <div class="col-md-6 margin_30">-->
+            <!--        <fieldset>-->
+            <!--            <legend>Are you reporting this item lost or found *</legend>-->
+            <!--            <label for="item_lost">-->
+            <!--                <input type="radio" id="item_lost" name="cm-fo-wdiah" value="Lost" required data-validation="required"> Lost-->
+            <!--            </label>-->
+            <!--            <label for="item_found">-->
+            <!--                <input type="radio" id="item_found" name="cm-fo-wdiah" value="Found"> Found-->
+            <!--            </label>-->
+            <!--        </fieldset>-->
+            <!--    </div>-->
+            <!--    <div class="col-md-6">-->
+            <!--        <label for="item-select">What type of item are you reporting *</label>-->
+            <!--        <select id="item-select" class="form-control margin_30" name="cm-fo-wdifi" required data-validation="required">-->
+            <!--            <option value="">- Please select an option -</option>-->
+            <!--            <option value="cell phone">Cell Phone</option>-->
+            <!--            <option value="wallet">Wallet</option>-->
+            <!--            <option value="credit card">Credit Card</option>-->
+            <!--            <option value="passport">Passport or Personal ID</option>-->
+            <!--            <option value="clothing">Clothing</option>-->
+            <!--            <option value="jewelry">Jewelry</option>-->
+            <!--            <option value="Bottles, Cups, or Mugs">Bottles, Cups, or Mugs</option>-->
+            <!--            <option value="Eyewear">Eyewear</option>-->
+            <!--            <option value="Money or Gift Cards">Money or Gift Cards</option>-->
+            <!--            <option value="other">Other</option>-->
+            <!--        </select>-->
+            <!--    </div>-->
+            <!--</div>-->
             <div class="row">
-                <div class="col-md-6 margin_30">
-                    <fieldset>
-                        <legend>Are you reporting this item lost or found *</legend>
-                        <label for="item_lost">
-                            <input type="radio" id="item_lost" name="cm-fo-wdiah" value="Lost" required data-validation="required"> Lost
-                        </label>
-                        <label for="item_found">
-                            <input type="radio" id="item_found" name="cm-fo-wdiah" value="Found"> Found
-                        </label>
-                    </fieldset>
+                <div class="col-md-6">
+                    <label for="fieldwdizl">Date *</label>  
+                    <input class="form-control margin_30" id="fieldwdizl" name="cm-f-wdizl" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
                 </div>
                 <div class="col-md-6">
-                    <label for="item-select">What type of item are you reporting *</label>
-                    <select id="item-select" class="form-control margin_30" name="cm-fo-wdifi" required data-validation="required">
-                        <option value="">- Please select an option -</option>
-                        <option value="cell phone">Cell Phone</option>
-                        <option value="wallet">Wallet</option>
-                        <option value="credit card">Credit Card</option>
-                        <option value="passport">Passport or Personal ID</option>
-                        <option value="clothing">Clothing</option>
-                        <option value="jewelry">Jewelry</option>
-                        <option value="Bottles, Cups, or Mugs">Bottles, Cups, or Mugs</option>
-                        <option value="Eyewear">Eyewear</option>
-                        <option value="Money or Gift Cards">Money or Gift Cards</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="date">Date *</label>  
-                    <input class="form-control margin_30" id="date" name="cm-f-wdizl" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
-                </div>
-                <div class="col-md-6">
-                    <label for="time">Time</label>  
-                    <input class="form-control margin_30" id="time" name="cm-f-wdifh" type="text" placeholder="HH:mm" data-validation="time" />    
+                    <label for="fieldwdifh">Time</label>  
+                    <input class="form-control margin_30" id="fieldwdifh" name="cm-f-wdifh" type="text" placeholder="HH:mm" data-validation="time" />    
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
-                    <label for="description">Describe the item in detail *</label>  
-                    <textarea class="form-control margin_30" id="description" name="cm-f-wdifk" type="text" rows="4" data-validation="required" required></textarea>
+                    <label for="fieldwdifk">Describe the item in detail *</label>  
+                    <textarea class="form-control margin_30" id="fieldwdifk" name="cm-f-wdifk" type="text" rows="4" data-validation="required" required></textarea>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
-                    <label for="location">Describe where the item was lost or found</label>  
-                    <textarea class="form-control margin_30" id="location" name="cm-f-wdifu" type="text" rows="4"></textarea>
+                    <label for="fieldwdifu">Describe where the item was lost or found</label>  
+                    <textarea class="form-control margin_30" id="fieldwdifu" name="cm-f-wdifu" type="text" rows="4"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -288,16 +288,16 @@
         function submit_contest(slug, e) {
             // Format contest data for MM
             var contest_data = {};
-            contest_data.full_name = $('#name').val();
-            contest_data.email = $('#email').val();
-            contest_data.phone_number = $('#phone').val();
-            contest_data.alt_phone_number = $('#alt_phone').val();
-            contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
-            contest_data.item_type = $('#item-select').find(":selected").text();
-            contest_data.date = $('#date').val();
-            contest_data.time = $('#time').val();
-            contest_data.item_description = $('#description').val();
-            contest_data.item_location = $('#location').val();
+            contest_data.full_name = $('#fieldName').val();
+            contest_data.email = $('#fieldEmail').val();
+            contest_data.phone_number = $('#fieldwdiat').val();
+            contest_data.alt_phone_number = $('#fieldwdiad').val();
+            // contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
+            // contest_data.item_type = $('#item-select').find(":selected").text();
+            contest_data.date = $('#fieldwdizl').val();
+            contest_data.time = $('#fieldwdifh').val();
+            contest_data.item_description = $('#fieldwdifk').val();
+            contest_data.item_location = $('#fieldwdifu').val();
             console.log("entry", contest_data)
             
             // Format email data
@@ -305,16 +305,16 @@
             contact_form.send_to = "caitlin@mobilefringe.com";
             contact_form.subject = "Lost & Found Form Submission";
             var body = {};
-            body["Full Name"] = $('#name').val();
-            body["Email"] = $('#email').val();
-            body["Phone Number"] = $('#phone').val();
-            body["Alternate Phone Number"] = $('#alt_phone').val();
-            body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
-            body["Type of Item"] = $('#item-select').find(":selected").text();
-            body["Date"] = $('#date').val();
-            body["Time"] = $('#time').val();
-            body["Item Description"] = $('#description').val();
-            body["Item Location"] = $('#location').val();
+            body["Full Name"] = $('#fieldName').val();
+            body["Email"] = $('#fieldEmail').val();
+            body["Phone Number"] = $('#fieldwdiat').val();
+            body["Alternate Phone Number"] = $('#fieldwdiad').val();
+            // body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
+            // body["Type of Item"] = $('#item-select').find(":selected").text();
+            body["Date"] = $('#fieldwdizl').val();
+            body["Time"] = $('#fieldwdifh').val();
+            body["Item Description"] = $('#fieldwdifk').val();
+            body["Item Location"] = $('#fieldwdifu').val();
 
             // Sending email
             send_data = {};

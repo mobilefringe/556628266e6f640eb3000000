@@ -164,15 +164,21 @@
             </div>
             <div class="row">
                 <div class="col-md-6 margin_30">
-                    <fieldset>
-                        <legend>Are you reporting this item lost or found *</legend>
-                        <label for="item_lost">
-                            <input type="radio" id="item_lost" name="cm-fo-wdiah" value="Lost" required data-validation="required"> Lost
-                        </label>
-                        <label for="item_found">
-                            <input type="radio" id="item_found" name="cm-fo-wdiah" value="Found"> Found
-                        </label>
-                    </fieldset>
+                    <label for="fieldwdiad">Are you reporting this item lost or found *</label>
+                    <select id="fieldwdiah" name="cm-fo-wdiah">
+                        <option value="Lost">Lost</option>
+                        <option value="Found">Found</option>
+                    </select>
+    
+                    <!--<fieldset>-->
+                    <!--    <legend>Are you reporting this item lost or found *</legend>-->
+                    <!--    <label for="item_lost">-->
+                    <!--        <input type="radio" id="item_lost" name="cm-fo-wdiah" value="Lost" required data-validation="required"> Lost-->
+                    <!--    </label>-->
+                    <!--    <label for="item_found">-->
+                    <!--        <input type="radio" id="item_found" name="cm-fo-wdiah" value="Found"> Found-->
+                    <!--    </label>-->
+                    <!--</fieldset>-->
                 </div>
                 <div class="col-md-6">
                     <label for="item-select">What type of item are you reporting *</label>

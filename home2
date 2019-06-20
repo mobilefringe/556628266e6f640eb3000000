@@ -1,0 +1,735 @@
+<style>
+    .feature_promo_date_div{
+        width:auto;
+        margin-left:0;
+        margin-right:10px;
+        padding-left:15px;
+        padding-right:15px;
+        vertical-align:top;
+        min-width:144px;
+        text-align:center;
+    }
+    .banner_slide_img{
+        display:none;
+    }
+    .date_block{
+        display:inline-block;
+    }
+    
+    .flexslider4 ul.flex-direction-nav{
+        position: relative;
+        top: 243px;
+    }
+    
+    .flex-direction-nav a {
+        display: block;
+        color:gray;
+        /*opacity: 1 !important;*/
+    }
+    
+    .flexslider4:hover .flex-direction-nav .flex-prev {
+      opacity: 0.7;
+      left: 10px;
+    }
+    .flexslider4:hover .flex-direction-nav .flex-prev:hover {
+      opacity: 1;
+    }
+    .flexslider4:hover .flex-direction-nav .flex-next {
+      opacity: 0.7;
+      right: 10px;
+    }
+    .flexslider4:hover .flex-direction-nav .flex-next:hover {
+      opacity: 1;
+    }
+    
+    
+    .flexslider2:hover .flex-direction-nav .flex-prev, .flexslider3:hover .flex-direction-nav .flex-prev {
+      opacity: 0.7;
+      left: -40px;
+    }
+    .flexslider2:hover .flex-direction-nav .flex-prev, .flexslider3:hover .flex-direction-nav .flex-prev {
+      opacity: 1;
+    }
+    .flexslider2:hover .flex-direction-nav .flex-next, .flexslider3:hover .flex-direction-nav .flex-next {
+      opacity: 0.7;
+      right: -40px;
+    }
+    .flexslider2:hover .flex-direction-nav .flex-next:hover, .flexslider3:hover .flex-direction-nav .flex-next:hover {
+      opacity: 1;
+    }
+    
+    .promo_description_div{
+        width:780px;
+    }
+    .flex-direction-nav{
+        top:-80px !impoprtant;
+    }
+    .tabs li {
+         margin-right:-5px;
+    }
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    #left_image, #right_image{
+        display:none;    
+    }
+    
+    .banner_container{
+        height:550px;
+    }
+    
+    .flexslider4 .flex-viewport{
+        overflow: visible !important;
+        /*width:3579px;*/
+        /*margin-left:-1193px;*/
+    }
+    .bx-controls{
+        display:none;
+    }
+    
+    .on_now{
+        font-size: 35pt;
+        line-height: 35pt;
+    }
+    
+    @media (max-width: 767px) {
+        .tab_content{
+        top:-30px;
+    }
+    
+        .on_now{
+            font-size:20pt;
+            line-height:20pt;
+        }
+        .on_now_date_block{
+            margin-top:25px;
+        }
+        .tab_item {
+            padding-top:5px;
+        }    
+        .tabs{
+            bottom:20px;
+        }
+        
+        .banner_container{
+            height:auto;
+        }
+        
+        .flexslider4 .flex-viewport{
+            overflow: hidden !important;
+        }
+        .feature_promo_date_div{
+            height:100px !important;
+        }
+    }
+    
+    @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+        #banner_hours_container{
+            top:85%;
+        }
+    }
+    
+</style>
+
+<div class="banner_container">
+    <div class="flexslider4" id="">
+        <ul class="banner_slider_ul slides" id="banner_slider_ul">
+            <script id="banner_slider_template" type="x-tmpl-mustache/text">
+                <li class="item">
+                    <a href="{{url}}">
+                        <img class="banner_slide_img" src="{{image_url}}" alt="banner"/>
+                    </a>
+                </li>
+            </script>
+        </ul>
+    </div>
+    <!--<img id="main_image" src="https://kodekloud.s3.amazonaws.com/sites/556628266e6f640eb3000000/754b0df7f7a73f8e7b7e98501e85a474/home_slide1.jpg" class="main_image" alt="banner">-->
+    <div class="missing_out_div">
+        <div class="transparent_div">&nbsp;</div>
+        <p onclick="javascript:toggle_news_form()">Fear of missing out?<i id="fear_caret" class="fa fa-caret-down"></i></p>
+        <div class="hidden_newsletter_form">
+            <form style="font-size:12px" id="banner_newsletter">
+                <span><input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/><button type="submit" id="banner_submit">Subscribe</button></span><br>
+                        <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre"><label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                        
+                         <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                         <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+            </form>
+        </div>
+    </div>
+    <a href="/hours">
+    <div id="banner_hours_container">
+        <script id="banner_hours_template" type="x-tmpl-mustache/text">
+            <p class="today_p">{{status}} Today </p>
+            <p>{{open_time}}-{{close_time}}</p>
+            <a href="/hours">see all<br>hours ></a>
+        </script>
+    </div>
+    </a>
+</div>
+<div class="tab_container">
+    <ul class="tabs">
+        <li id="tab_1" style="background:white">
+        <div class="tab_item" style="color:#4d4d4f">what's happening today &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></div>
+             
+        </li>
+        <li id="tab_2">
+            <div class="tab_item">coming soon &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></div>
+        </li>
+        <li id="tab_3">
+            <div class="tab_item last_tab_item">deals of the week &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></div>
+        </li>
+    </ul>
+    
+    <ul class="tab_content">
+        <li id="tab_1_content">
+            <div id="no_features" class="no_data_div">
+                <p>None available at the moment. Please check again later</p>
+            </div>
+            <div class="feature_slider_container flexslider" id="feature_slider_container">
+                <ul class="feature_slider_ul slides" id="feature_slider_ul">
+                    <script id="feature_slider_template" type="x-tmpl-mustache/text">
+                        <li class="feature_promo item">
+                            <div class="feature_promo_left_div">
+                            <div class="feature_promo_date_div">
+                                <div class="feature_promo_date_triangle">&nbsp;</div>
+                     
+                                    <div class="date_block on_now_date_block" style="text-align:left">
+                                        <p class="day_string on_now">ON</p>
+                                        <p class="day_string on_now">NOW</p>
+                                    </div>
+                                   
+                            </div>
+                            <div class="promo_description_div">
+                                <p class="promo_title"><a class="promo_title" href="{{store_slug}}">{{store_name}}</a> | <a class="promo_title" href="{{link}}">{{name}} </a></p>
+                                <p class="promo_description">
+                                    {{description}}
+                                </p>
+
+                            </div>
+                            </div>
+                            <div class="feature_promo_right_div">
+                                <button  class="read_more_btn" onclick="location.href='{{link}}'">read more <i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                    </script>
+                </ul>
+            </div>
+        </li>
+        <li id="tab_2_content" style="display:none">
+            <div id="no_stores" class="no_data_div">
+                <p>None available at the moment. Please check again later</p>
+            </div>
+            <div class="feature_slider_container flexslider2" id="store_slider_container">
+                <ul class="feature_slider_ul slides" id="store_slider_ul">
+                    <script id="store_slider_template" type="x-tmpl-mustache/text">
+                        <li class="feature_promo item">
+                            <div class="feature_promo_left_div">
+                            <div class="feature_promo_date_div">
+                                <div class="feature_promo_date_triangle">&nbsp;</div>
+                     
+                                    <div class="date_block">
+                                        {{{date_block_html}}}
+                                    </div>
+                            </div>
+                            <div class="promo_description_div">
+                                <p class="promo_title"><a class="promo_title" href="/events/{{slug}}">{{name}}</a></p>
+                                <p class="promo_description">
+                                    {{description}}
+                                </p>
+
+                            </div>
+                            </div>
+                            <div class="feature_promo_right_div">
+                                <button  class="read_more_btn" onclick="location.href='/events/{{slug}}'">read more <i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                    </script>
+                </ul>
+            </div>
+        </li>
+        <li id="tab_3_content" style="display:none">
+            <div id="no_promos" class="no_data_div">
+                <p>None available at the moment. Please check again later</p>
+            </div>
+            <div class="feature_slider_container flexslider3" id="current_promo_slider_container">
+                <ul class="feature_slider_ul slides" id="promo_slider_ul">
+                    <script id="current_promo_slider_template" type="x-tmpl-mustache/text">
+                        <li class="feature_promo item">
+                            <div class="feature_promo_left_div">
+                                <div class="feature_promo_date_div">
+                                    <div class="feature_promo_date_triangle">&nbsp;</div>
+                         
+                                    <div class="date_block on_now_date_block" style="text-align:left">
+                                        <p class="day_string on_now">ON</p>
+                                        <p class="day_string on_now">NOW</p>
+                                    </div>
+                                       
+                                </div>
+                            <div class="promo_description_div">
+                                <p class="promo_title"><a class="promo_title" href="{{store_slug}}">{{store_name}}</a> | <a class="promo_title" href="/promotions/{{slug}}">{{name}}</a> </p>
+                                <p class="promo_description">
+                                    {{description}}
+                                </p>
+
+                            </div>
+                            </div>
+                            <div class="feature_promo_right_div">
+                                <button  class="read_more_btn" onclick="location.href='/promotions/{{slug}}'">read more <i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                    </script>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="feature_container" id="feature_container">
+     <script id="feature_template" type="x-tmpl-mustache/text">
+        <a class="feature_image" href="{{url}}"><img class="" src="{{image_url}}"/></a>
+     </script>
+</div>
+
+<script src="//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+
+
+
+<script type="text/javascript" >
+
+     $(".tabs li").click(function(e){
+            var clicked = this.id
+            $(".tabs li").css({"background":"transparent","color":"white"});
+            $(".tabs li").find("div").css("color","white");
+            $(this).css("background","white");
+            $(this).find("div").css("color","#4d4d4f");
+            $(".tab_content li").hide();
+            $("#"+clicked + "_content").show()
+            $("#"+clicked + "_content li").show()
+            switch(clicked) {
+                        case "tab_1":
+                            load_slider("flexslider")
+                            break;
+                        case "tab_2":
+                            load_slider("flexslider2")
+                            break;
+                        case "tab_3":
+                            load_slider("flexslider3")
+                            break;
+                        
+                    }
+            
+            
+        
+        });
+        
+    
+    function load_slider(slider){
+            
+        $('.'+slider).flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: true,    
+            animationLoop: true,
+            slideshow: true,
+            minItems: 3,
+            maxItems: 3,
+            prevText: "",
+            nextText: "",
+            start: function(){
+                 $('.banner_slide_img').show(); 
+            },
+            after:function(){
+                var active_rel = $(this).find('.flex-active-slide').attr('rel');
+                //do something
+                var first = $("#banner_slider_ul").children(":first")
+                // console.log($("#banner_slider_ul").children().length)
+                if ($("#banner_slider_ul").children().length < 5){
+                    $("#banner_slider_ul").append(first.clone())
+                }
+                // $("#banner_slider_ul").append(first.clone())
+            }
+        });
+    }
+        
+        
+  
+    function load_fading_slider(slider){
+        
+        
+       
+    }
+    
+    
+    $(document).ready(function() {
+        function render_page_details(){
+            var promos = getPromotionsList();
+            var events = getEventsList();
+            basic_event_array = []
+            news_event_array = []
+            
+            
+            featured_event_array = []
+            featured_event_without_coming_soon = []
+            news_event_without_coming_soon = []
+             $.each( events , function( key, val ){
+                 today = new Date();
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
+                 if (today >= webDate) {
+                     c = $.inArray("news", val.tags)
+                     s = $.inArray("coming_soon", val.tags)
+                     if (c == 0){
+                         if (val.is_featured == true){
+                            news_event_array.push(val);
+                         }
+                         
+                     } else {
+                         if (val.is_featured == false){
+                            basic_event_array.push(val)    
+                         } else {
+                            if (s == 0){
+                                
+                            } else {
+                                featured_event_without_coming_soon.push(val)
+                            }
+                            featured_event_array.push(val)   
+                            
+                         }
+                         
+                     }
+                 } 
+            });
+             
+            featured_promo_array = []
+            regular_promo_array = []
+             $.each( promos , function( key, val ){
+                 today = new Date();
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z");
+                 if (today >= webDate) {
+                     if(val.is_featured == true){
+                        featured_promo_array.push(val)   
+                        
+                     } else {
+                        
+                        regular_promo_array.push(val) 
+                        
+                     }
+                     
+                 } 
+             });
+             
+             
+
+             
+            featured_promo_array = featured_promo_array.sort(function(a,b){
+               if(a.feature_item_index > b.feature_item_index){ return 1}
+                if(a.feature_item_index < b.feature_item_index){ return -1}
+                  return 0;
+            });
+             
+           
+            featured_event_array = featured_event_array.sort(function(a,b){
+               if(a.feature_item_index > b.feature_item_index){ return 1}
+                if(a.feature_item_index < b.feature_item_index){ return -1}
+                  return 0;
+            });
+            
+            
+            news_event_array = news_event_array.sort(function(a,b){
+               if(a.feature_item_index > b.feature_item_index){ return 1}
+                if(a.feature_item_index < b.feature_item_index){ return -1}
+                  return 0;
+            });
+            
+       
+            
+            featured_event_without_coming_soon = featured_event_without_coming_soon.sort(function(a,b){
+               if(a.feature_item_index > b.feature_item_index){ return 1}
+                if(a.feature_item_index < b.feature_item_index){ return -1}
+                  return 0;
+            });
+            
+            
+            
+            var first_tab_content = []
+            var second_tab_content = []
+            var third_tab_content = []
+            
+            if (featured_event_without_coming_soon.length > 2){
+                $.merge(first_tab_content,(featured_event_without_coming_soon.slice(0,2)));
+            } else {
+                $.merge(first_tab_content,(featured_event_without_coming_soon));
+            }
+            
+            
+      
+            if (featured_event_array.length > 2){
+                
+                //  $.merge(first_tab_content,(featured_event_array.slice(0,2)));
+                 $.merge(second_tab_content,(featured_event_array.slice(0,2)));
+            } else {
+                //  $.merge(first_tab_content,(featured_event_array));
+                 $.merge(second_tab_content,(featured_event_array));
+            }
+            
+            if (featured_promo_array.length > 1){
+                
+                 $.merge(first_tab_content,(featured_promo_array.slice(0,1)));
+            } else {
+                 $.merge(first_tab_content,(featured_promo_array));
+            }
+            
+            if (news_event_array.length > 1){
+                
+                 $.merge(second_tab_content,(news_event_array.slice(0,1)));
+            } else {
+                 $.merge(second_tab_content,(news_event_array));
+            }
+            
+            if (featured_promo_array.length > 2){
+                
+                 $.merge(third_tab_content,(featured_promo_array.slice(0,2)));
+            } else {
+                 $.merge(third_tab_content,(featured_promo_array));
+            }
+            
+            if (regular_promo_array.length > 1){
+                
+                 $.merge(third_tab_content,(regular_promo_array.slice(0,1)));
+            } else {
+                 $.merge(third_tab_content,(regular_promo_array));
+            }
+           
+            
+
+           
+            
+            if (first_tab_content.length > 0 ){
+                renderHomePageData("#feature_slider_ul", "#feature_slider_template", first_tab_content, "mixed");
+            } else {
+                $("#no_features").show()
+            }
+            
+            if (second_tab_content.length > 0 ){
+                renderHomePageData("#store_slider_ul", "#store_slider_template", second_tab_content, "mixed")
+            } else {
+                $("#no_stores").show()
+            }
+            
+            if (third_tab_content.length > 0 ){
+                renderHomePageData("#promo_slider_ul", "#current_promo_slider_template", third_tab_content, "mixed")
+            } else {
+                $("#no_promos").show()
+            }
+            
+            
+
+            if( isMobile.matches == true ) {
+                var banners = getMobileBanners().images;
+                $.each( banners , function( key, val ){
+            
+                    val.image_url = val.photo_url_abs
+                
+                })
+            } else {
+                var banners = getBanners();
+            }
+            
+         
+            
+            
+
+            
+            
+            renderHomePageData("#banner_slider_ul","#banner_slider_template",banners,"banners")
+            
+            var featureList = getFeatureList();
+            renderHomePageData("#feature_container", "#feature_template", featureList, "feature_items") 
+            
+            var banner_hours = getTodaysHours();
+            renderHomePageData("#banner_hours_container", "#banner_hours_template", banner_hours, "banner_hours") 
+            
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            load_slider("flexslider");
+            load_slider("flexslider4");
+            
+        }
+        loadMallData(render_page_details);  
+        
+        
+        function renderHomePageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "banner_hours"){
+                item_list.push(collection)
+                collection = item_list
+            }
+            
+            $.each( collection , function( key, val ) {
+               
+                
+                if (type == "feature_promos" || type == "mixed"){
+                    if (val.description.length > 100) {
+                       val.description =  val.description.substring(0,100)+'...';
+                    } 
+                    
+                     
+                
+                    
+                    start = new Date (val.start_date + "T08:00:00Z");
+                    end = new Date (val.end_date + "T08:00:00Z");
+            
+                    if (start.toDateString() == end.toDateString()) {
+                        val.start_month = get_month(start.getMonth())
+                        val.start_day = start.getDate()
+                        
+                        val.date_string = val.start_month + " " + val.start_day
+                        
+                        
+                    } else {
+                        val.start_month =get_month(start.getMonth())
+                        val.start_day = start.getDate() 
+                        val.end_month = get_month(end.getMonth())
+                        val.end_day = end.getDate()
+                        val.end_day = "  - " + val.end_day
+                    }
+                    
+                    
+                    c = $.inArray("coming_soon", val.tags)
+                    d = $.inArray("on_now", val.tags)
+                    
+                    if (c == 0 || c == 1){
+                        val.on = "COMING"
+                        val.now = "SOON"
+                    } 
+                    if (d == 0 || d == 1){
+                        val.on = "ON"
+                        val.now = "NOW"
+                    } 
+      
+                   
+                    if (val.on == undefined || val.now == undefined){
+                        val.date_block_html = '<p class="month_string">'+val.start_month+'</p><p class="day_string">'+val.start_day+'</p>'
+                    } else {
+                        val.date_block_html = '<p class="day_string on_now">'+val.on+'</p><p class="day_string on_now">'+val.now+'</p>'
+                    }
+                    
+                    
+                    if (type == "mixed"){
+                        if (val.promotionable_id){
+                            val.eventable_id = val.promotionable_id
+                            val.eventable_type = val.promotionable_type
+                            val.link = "/promotions/"+val.slug
+                        } else {
+                            val.link = "/events/"+val.slug
+                        }
+                    }
+                    
+                    
+                    if (val.eventable_type == "Store"){
+                        var store_details = getStoreDetailsByID(val.eventable_id);
+                        val.store_name = store_details.name
+                        val.store_slug = "/stores/"+store_details.slug
+                    }else {
+                        val.store_name = "The Bay Centre"
+                        val.store_slug = "/home"
+                    }
+                }
+                
+                if (type == "banner_hours"){
+                    if (val.is_closed == false){
+                        val.status = "Open"
+                    } else {
+                        val.status = "Closed"
+                    }
+                    val.open_time = get_simple_hour(val.open_time)
+                    val.close_time = get_simple_hour(val.close_time)
+                   
+                }
+                
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+        };
+        
+        function get_simple_hour (d){
+            d = new Date(d)
+            h = d.getUTCHours();
+            if (h >= 12) {
+                if ( h != 12) {
+                    h = h - 12;    
+                }
+                
+                i = "PM"
+            } else {
+                if (h == 0) {
+                    h = 12
+                }
+                i = "AM"
+            }
+            
+            return h+""+i;
+        }
+        function get_month (id){
+            switch(id) {
+                case 0:
+                    month = "Jan"
+                    break;
+                case 1:
+                    month = "Feb"
+                    break;
+                case 2:
+                    month = "Mar"
+                    break;
+                case 3:
+                    month = "Apr"
+                    break;
+                case 4:
+                    month = "May"
+                    break;
+                case 5:
+                    month = "Jun"
+                    break;
+                case 6:
+                    month = "Jul"
+                    break;
+                case 7:
+                    month = "Aug"
+                    break;
+                case 8:
+                    month = "Sep"
+                    break;
+                case 9:
+                    month = "Oct"
+                    break;
+                case 10:
+                    month = "Nov"
+                    break;
+                case 11:
+                    month = "Dec"
+                    break;
+                    
+            }
+            return month;
+        }
+        
+        
+        // $("#left_image").attr("src", "https://kodekloud.s3.amazonaws.com/sites/556628266e6f640eb3000000/754b0df7f7a73f8e7b7e98501e85a474/home_slide2.jpg")
+        // $("#right_image").attr("src", "https://kodekloud.s3.amazonaws.com/sites/556628266e6f640eb3000000/754b0df7f7a73f8e7b7e98501e85a474/home_slide3.jpg")
+    });
+</script>

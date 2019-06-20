@@ -339,7 +339,7 @@
                         async: false,
                         success: function(data) {
                           console.log("mm post successful");
-                          e.target.submit();
+                        //   e.target.submit();
                           $("#send_contact_success").show();
                         },
                         error: function(data){

@@ -42,6 +42,7 @@
         align-items: center;
     }
     #fieldEmail {
+        margin: 0;
         padding-left: 12px;
         width: 100%;
         height: 34px;

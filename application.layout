@@ -19,9 +19,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/png/1520017158000/bayc_logo_K_favicon-02.png" type="image/x-icon" />
 
-    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/animate.css" rel="stylesheet" type="text/css">
+    <link href="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/text/css/1561045677321/animate.css" rel="stylesheet" type="text/css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
-    <link href="//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/60cb7d89e157debbb7914a941327ad2c/prettyPhoto.css" rel="stylesheet">
+    <link href="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/text/css/1561045741165/prettyPhoto.css" rel="stylesheet">
     <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
     <link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/all.min.css" rel="stylesheet">
     <link href="//cdn.jsdelivr.net/icheck/1.0.2/skins/square/square.min.css" rel="stylesheet">
@@ -31,12 +31,12 @@
 
     <!-- jQuery Version 1.11.0 -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/modernizr.custom.48287.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
     <script src="//cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script>
-    <script src="//s3.amazonaws.com/kodekloud/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/text/javascript/1561045889900/instafeed.min.js"></script>
     <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <!--jReject is used to warn users certain browsers aren't compatible with this site-->
@@ -56,7 +56,7 @@
         ga('send', 'pageview');
     </script>
     
-     <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=

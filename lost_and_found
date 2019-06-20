@@ -42,8 +42,11 @@
         align-items: center;
     }
     #fieldEmail {
+        padding-left: 12px;
         width: 100%;
-        background: none;
+        height: 34px;
+        border: 1px solid #ccc;
+        background-color: #FFF;
     }
     legend {
         margin-bottom: 5px;

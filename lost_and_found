@@ -181,8 +181,8 @@
                     <!--</fieldset>-->
                 </div>
                 <div class="col-md-6">
-                    <label for="item-select">What type of item are you reporting *</label>
-                    <select id="item-select" class="form-control margin_30" name="cm-fo-wdifi" required data-validation="required">
+                    <label for="fieldwdifi">What type of item are you reporting *</label>
+                    <select id="fieldwdifi" class="form-control margin_30" name="cm-fo-wdifi" required data-validation="required">
                         <option value="">- Please select an option -</option>
                         <option value="cell phone">Cell Phone</option>
                         <option value="wallet">Wallet</option>
@@ -303,8 +303,8 @@
             contest_data.email = $('#fieldEmail').val();
             contest_data.phone_number = $('#fieldwdiat').val();
             contest_data.alt_phone_number = $('#fieldwdiad').val();
-            // contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
-            // contest_data.item_type = $('#item-select').find(":selected").text();
+            contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
+            contest_data.item_type = $('#fieldwdifi').find(":selected").text();
             contest_data.date = $('#fieldwdizl').val();
             contest_data.time = $('#fieldwdifh').val();
             contest_data.item_description = $('#fieldwdifk').val();
@@ -320,8 +320,8 @@
             body["Email"] = $('#fieldEmail').val();
             body["Phone Number"] = $('#fieldwdiat').val();
             body["Alternate Phone Number"] = $('#fieldwdiad').val();
-            // body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
-            // body["Type of Item"] = $('#item-select').find(":selected").text();
+            body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
+            body["Type of Item"] = $('#fieldwdifi').find(":selected").text();
             body["Date"] = $('#fieldwdizl').val();
             body["Time"] = $('#fieldwdifh').val();
             body["Item Description"] = $('#fieldwdifk').val();

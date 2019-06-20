@@ -6,7 +6,7 @@
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <h1 class="page_headline">Newsletter Sign Up</h1>
+        <h1 class="page_headline">Lost & Found</h1>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">
@@ -38,7 +38,7 @@
 <script>
     $(document).ready(function() {
          function renderPageData(){
-            var page_banner = getRepoDetailsByName('Thank You').images;
+            var page_banner = getRepoDetailsByName('Lost & Found').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;

@@ -1,7 +1,7 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+
 <style>
     .store_detail_content.no_border {
         Margin-top: 54px;
@@ -198,7 +198,7 @@
             </div>
             <div class="row ">
                 <div class="col-md-12">
-                    <label for="description">Describe the item in detail</label>  
+                    <label for="description">Describe the item in detail *</label>  
                     <textarea class="form-control margin_30" id="description" name="cm-f-wdifk" type="text" rows="4" data-validation="required" required></textarea>
                 </div>
             </div>
@@ -214,6 +214,7 @@
                 </div>
             </div>
         </form>
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         <div id="send_contact_success" class="hidden_now alert alert-success text-left" role="alert">
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
             <span class="sr-only">Success</span>

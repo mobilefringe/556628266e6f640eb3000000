@@ -192,20 +192,20 @@
                     <input class="form-control margin_30" id="date" name="cm-f-wdizl" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
                 </div>
                 <div class="col-md-6">
-                    <label for="time">Time *</label>  
-                    <input class="form-control margin_30" id="time" name="cm-f-wdifh" type="text" placeholder="HH:mm" data-validation="time" required />    
+                    <label for="time">Time</label>  
+                    <input class="form-control margin_30" id="time" name="cm-f-wdifh" type="text" placeholder="HH:mm" data-validation="time" />    
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
-                    <label for="description">Describe the item in detail *</label>  
-                    <textarea class="form-control margin_30" id="description" name="cm-f-wdifk" type="text" rows="4" required data-validation="required"/></textarea>
+                    <label for="description">Describe the item in detail</label>  
+                    <textarea class="form-control margin_30" id="description" name="cm-f-wdifk" type="text" rows="4" data-validation="required" required></textarea>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
-                    <label for="location">Describe where the item was lost or found *</label>  
-                    <textarea class="form-control margin_30" id="location" name="cm-f-wdifu" type="text" rows="4" required data-validation="required"/></textarea>
+                    <label for="location">Describe where the item was lost or found</label>  
+                    <textarea class="form-control margin_30" id="location" name="cm-f-wdifu" type="text" rows="4"></textarea>
                 </div>
             </div>
             <div class="row">
@@ -243,22 +243,6 @@
                 $('#mm_page_content').html(data.body);
             });
             
-            // var page_array = [""]
-            // page_array = page_array.reverse()
-            // full_page_array = []
-            // $.ajaxSetup({
-            //     async: false
-            // });
-            // $.each( page_array , function( key, val ) {
-            //     var pages_json = prefix + "/pages/" + val + ".json"
-            //     $.getJSON(pages_json).then(function(data) {
-            //         add_to_page_array (data)
-            //     });
-            // });
-            // $.ajaxSetup({
-            //     async: true
-            // });
-            
             var contests = getContestList();
             var current_contest = [];
             $.each(contests, function(key, val){
@@ -267,8 +251,7 @@
                 } 
             });
             var slug = current_contest[0].slug;
-            // renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
-            
+
             $(".loading_overlay").hide();
             $("#page_content").show();
 

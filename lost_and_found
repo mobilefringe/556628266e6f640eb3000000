@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="fieldEmail">Email *</label> 
-                    <input class="form-control margin_30" id="fieldEmail" name="cm-ydjkjul-ydjkjul" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
+                    <input class="form-control margin_30 js-cm-email-input" id="fieldEmail" name="cm-ydjkjul-ydjkjul" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
                 </div>
             </div>
             <div class="row">
@@ -335,7 +335,7 @@
                         async: false,
                         success: function(data) {
                           console.log("mm post successful");
-                        //   e.target.submit();
+                          e.target.submit();
                           $("#send_contact_success").show();
                         },
                         error: function(data){

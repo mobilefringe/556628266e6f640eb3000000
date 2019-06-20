@@ -243,8 +243,13 @@
         </form>
         <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
     </div>
-    <div class="store_detail_content">
-        <div id="mm_subpage_content" class="gs_text"></div>
+    <div class="store_detail_content no_border">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title">Lost & Found FAQs</h1>
+                <div id="mm_subpage_content" class="gs_text"></div>
+            </div>
+        </div>
     </div>
 </div>
 

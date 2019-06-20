@@ -90,6 +90,7 @@
     }
     @media (max-width: 425px) {
         .flex-row {
+            margin-bottom: 20px;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
             -webkit-flex-direction: column;

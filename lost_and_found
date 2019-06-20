@@ -91,6 +91,7 @@
     @media (max-width: 767px) {
         #fieldEmail {
             max-width: 100%;
+            border-radius: 4px;
         }
     }
     @media (max-width: 425px) {

@@ -143,11 +143,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="phone">Phone Number</label>  
-                    <input class="form-control margin_30" id="phone" name="contest[phone]" type="text"/>    
+                    <input class="form-control margin_30" id="phone" name="cm-f-wdiat" type="text"/>    
                 </div>
                 <div class="col-md-6">
                     <label for="alt_phone">Alternate Phone Number (Optional)</label>  
-                    <input class="form-control margin_30" id="alt_phone" name="contest[alt_phone]" type="text" />    
+                    <input class="form-control margin_30" id="alt_phone" name="cm-f-wdiad" type="text" />    
                 </div>
             </div>
             <div class="row">
@@ -161,16 +161,16 @@
                     <fieldset>
                         <legend>Are you reporting this item lost or found *</legend>
                         <label for="item_lost">
-                            <input type="radio" id="item_lost" name="lost_found" value="Lost" required data-validation="required"> Lost
+                            <input type="radio" id="item_lost" name="cm-fo-wdiah" value="Lost" required data-validation="required"> Lost
                         </label>
                         <label for="item_found">
-                            <input type="radio" id="item_found" name="lost_found" value="Found"> Found
+                            <input type="radio" id="item_found" name="cm-fo-wdiah" value="Found"> Found
                         </label>
                     </fieldset>
                 </div>
                 <div class="col-md-6">
                     <label for="item-select">What type of item are you reporting *</label>
-                    <select id="item-select" class="form-control margin_30" required data-validation="required">
+                    <select id="item-select" class="form-control margin_30" name="cm-fo-wdifi" required data-validation="required">
                         <option value="">- Please select an option -</option>
                         <option value="cell phone">Cell Phone</option>
                         <option value="wallet">Wallet</option>
@@ -188,28 +188,28 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="date">Date *</label>  
-                    <input class="form-control margin_30" id="date" name="contest[date]" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
+                    <input class="form-control margin_30" id="date" name="cm-f-wdizl" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
                 </div>
                 <div class="col-md-6">
                     <label for="time">Time *</label>  
-                    <input class="form-control margin_30" id="time" name="contest[time]" type="text" placeholder="HH:mm" data-validation="time" required />    
+                    <input class="form-control margin_30" id="time" name="cm-f-wdifh" type="text" placeholder="HH:mm" data-validation="time" required />    
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
                     <label for="description">Describe the item in detail *</label>  
-                    <textarea class="form-control margin_30" id="description" name="contest[description]" type="text" rows="4" required data-validation="required"/></textarea>
+                    <textarea class="form-control margin_30" id="description" name="cm-f-wdifk" type="text" rows="4" required data-validation="required"/></textarea>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-md-12">
                     <label for="location">Describe where the item was lost or found *</label>  
-                    <textarea class="form-control margin_30" id="location" name="contest[location]" type="text" rows="4" required data-validation="required"/></textarea>
+                    <textarea class="form-control margin_30" id="location" name="cm-f-wdifu" type="text" rows="4" required data-validation="required"/></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="gray_pill submit_btn">Submit</button>
+                    <button class="gray_pill submit_btn js-cm-submit-button" type="submit>Submit</button>
                 </div>
             </div>
         </form>
@@ -310,7 +310,7 @@
             contest_data.email = $('#email').val();
             contest_data.phone_number = $('#phone').val();
             contest_data.alt_phone_number = $('#alt_phone').val();
-            contest_data.lost_or_found = $("input[name='lost_found']:checked").val();
+            contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
             contest_data.item_type = $('#item-select').find(":selected").text();
             contest_data.date = $('#date').val();
             contest_data.time = $('#time').val();
@@ -327,7 +327,7 @@
             body["Email"] = $('#email').val();
             body["Phone Number"] = $('#phone').val();
             body["Alternate Phone Number"] = $('#alt_phone').val();
-            body["Was Item Lost or Found?"] = $("input[name='lost_found']:checked").val();
+            body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
             body["Type of Item"] = $('#item-select').find(":selected").text();
             body["Date"] = $('#date').val();
             body["Time"] = $('#time').val();

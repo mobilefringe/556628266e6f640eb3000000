@@ -250,7 +250,7 @@
                 async: false
             });
             $.each( page_array , function( key, val ) {
-                var pages_json = prefix+"/pages/" + val + ".json"
+                var pages_json = prefix + "/pages/" + val + ".json"
                 $.getJSON(pages_json).then(function(data) {
                     add_to_page_array (data)
                 });

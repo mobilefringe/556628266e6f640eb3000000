@@ -123,8 +123,8 @@
     <div class="store_detail_content no_border">
         <div class="row">
             <div class="col-md-12">
-                <p class="gs_text">Please complete as much of this form as possible for any lost and found items from within the Bay Centre only. You will be notified within 48 hours regarding the status of your lost and found claim.</p>
-                <hr class="margin_50>
+                <p class="gs_text margin_50">Please complete as much of this form as possible for any lost and found items from within the Bay Centre only. You will be notified within 48 hours regarding the status of your lost and found claim.</p>
+                <hr class="margin_50">
             </div>
         </div>
         <form id="subForm" class="margin_50 js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24">

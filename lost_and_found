@@ -243,21 +243,21 @@
                 $('#mm_page_content').html(data.body);
             });
             
-            var page_array = [""]
-            page_array = page_array.reverse()
-            full_page_array = []
-            $.ajaxSetup({
-                async: false
-            });
-            $.each( page_array , function( key, val ) {
-                var pages_json = prefix + "/pages/" + val + ".json"
-                $.getJSON(pages_json).then(function(data) {
-                    add_to_page_array (data)
-                });
-            });
-            $.ajaxSetup({
-                async: true
-            });
+            // var page_array = [""]
+            // page_array = page_array.reverse()
+            // full_page_array = []
+            // $.ajaxSetup({
+            //     async: false
+            // });
+            // $.each( page_array , function( key, val ) {
+            //     var pages_json = prefix + "/pages/" + val + ".json"
+            //     $.getJSON(pages_json).then(function(data) {
+            //         add_to_page_array (data)
+            //     });
+            // });
+            // $.ajaxSetup({
+            //     async: true
+            // });
             
             var contests = getContestList();
             var current_contest = [];

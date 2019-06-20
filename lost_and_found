@@ -41,6 +41,10 @@
         -ms-flex-align: center;
         align-items: center;
     }
+    #fieldEmail {
+        width: 100%;
+        background-color: none;
+    }
     legend {
         margin-bottom: 5px;
         border-bottom: none;

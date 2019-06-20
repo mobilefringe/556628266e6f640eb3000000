@@ -101,6 +101,9 @@
             -ms-flex-align: start;
             align-items: flex-start;    
         }
+        .title {
+            margin-bottom: 20px;
+        }
     }
 </style>
 

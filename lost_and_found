@@ -88,6 +88,19 @@
         position: absolute;
         bottom: -60px;
     }
+    @media (max-width: 425px) {
+        .flex-row {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;    
+        }
+    }
 </style>
 
 <div id="page_banner">

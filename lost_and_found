@@ -173,8 +173,8 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="fieldwdiat">Phone Number</label>  
-                    <input class="form-control margin_30" id="fieldwdiat" name="cm-f-wdiat" type="text"/>    
+                    <label for="fieldwdiat">Phone Number *</label>  
+                    <input class="form-control margin_30" id="fieldwdiat" name="cm-f-wdiat" type="text" required data-validation="required"/>    
                 </div>
                 <div class="col-md-6">
                     <label for="fieldwdiad">Alternate Phone Number (Optional)</label>  
@@ -232,7 +232,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <label for="fieldwdifu">Describe where the item was lost or found</label>  
-                    <textarea class="form-control margin_30" id="fieldwdifu" name="cm-f-wdifu" type="text" rows="4"></textarea>
+                    <textarea class="form-control margin_30" id="fieldwdifu" name="cm-f-wdifu" type="text" rows="4" required data-validation="required"></textarea>
                 </div>
             </div>
             <div class="row">

@@ -303,7 +303,8 @@
             contest_data.email = $('#fieldEmail').val();
             contest_data.phone_number = $('#fieldwdiat').val();
             contest_data.alt_phone_number = $('#fieldwdiad').val();
-            contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
+            contest_data.lost_or_found = $('#fieldwdiah').find(":selected").text();
+            // contest_data.lost_or_found = $("input[name='cm-fo-wdiah']:checked").val();
             contest_data.item_type = $('#fieldwdifi').find(":selected").text();
             contest_data.date = $('#fieldwdizl').val();
             contest_data.time = $('#fieldwdifh').val();
@@ -320,7 +321,8 @@
             body["Email"] = $('#fieldEmail').val();
             body["Phone Number"] = $('#fieldwdiat').val();
             body["Alternate Phone Number"] = $('#fieldwdiad').val();
-            body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
+            // body["Was Item Lost or Found?"] = $("input[name='cm-fo-wdiah']:checked").val();
+            body["Was Item Lost or Found?"] = $('#fieldwdiah').find(":selected").text();
             body["Type of Item"] = $('#fieldwdifi').find(":selected").text();
             body["Date"] = $('#fieldwdizl').val();
             body["Time"] = $('#fieldwdifh').val();

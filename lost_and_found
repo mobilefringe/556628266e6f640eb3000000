@@ -88,6 +88,11 @@
         position: absolute;
         bottom: -60px;
     }
+    @media (max-width: 767px) {
+        #fieldEmail {
+            max-width: 100%;
+        }
+    }
     @media (max-width: 425px) {
         .flex-row {
             margin-bottom: 20px;
@@ -104,6 +109,7 @@
         .title {
             margin-bottom: 20px;
         }
+        
     }
 </style>
 

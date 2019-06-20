@@ -47,6 +47,7 @@
         height: 34px;
         border: 1px solid #ccc;
         background-color: #FFF;
+        color: #555 !important;
     }
     legend {
         margin-bottom: 5px;

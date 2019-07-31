@@ -215,7 +215,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <label for="fieldwdizl">Date *</label>  
+                    <label for="fieldwdizl">Date you lost/found item *</label>  
                     <input class="form-control margin_30" id="fieldwdizl" name="cm-f-wdizl" type="date" placeholder="MM/DD/YYYY" data-validation="required" required />    
                 </div>
                 <div class="col-md-6">

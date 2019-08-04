@@ -226,7 +226,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="fieldwdifh">Time</label>  
-                    <input class="form-control margin_30" id="fieldwdifh" name="cm-f-wdifh" type="text" placeholder="HH:mm" data-validation="time" />    
+                    <input class="form-control margin_30" id="fieldwdifh" name="cm-f-wdifh" type="time" placeholder="HH:mm" data-validation="time" />    
                 </div>
             </div>
             <div class="row">

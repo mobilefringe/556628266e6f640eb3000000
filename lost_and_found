@@ -163,13 +163,13 @@
             </div>
             <div class="row">
             <div class="col-md-6">
-                     <input class="form-control margin_30" id="fieldName" name="cm-name" type="text" required data-validation="required"/>
+                     <input class="form-control margin_30" id="fieldName" name="cm-name" type="hidden"/>
                     <label for="fieldFirstName">First Name *</label>  
                     <input class="form-control margin_30" id="fieldName" name="firstName" type="text" required data-validation="required"/>
                 </div>
                 <div class="col-md-6">
                     <label for="fieldLastName">Last Name *</label>  
-                    <input class="form-control margin_30" id="fieldName" name="lastNamee" type="text" required data-validation="required"/>
+                    <input class="form-control margin_30" id="fieldName" name="lastName" type="text" required data-validation="required"/>
                 </div>
                 <div class="col-md-6">
                     <label for="fieldEmail">Email *</label> 
@@ -321,9 +321,11 @@
         };
         
         function submit_contest(slug, e) {
+            // Set up campaign monitor name field
+            $('#fieldName').val($('#fieldFirstName').val() + " " + $('#fieldLastName').val());
             // Format contest data for MM
             var contest_data = {};
-            contest_data.full_name = $('#fieldName').val();
+            contest_data.full_name = $('#fieldFirstName').val() + " " + $('#fieldLastName').val();
             contest_data.email = $('#fieldEmail').val();
             contest_data.phone_number = $('#fieldwdiat').val();
             contest_data.alt_phone_number = $('#fieldwdiad').val();

@@ -228,7 +228,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="fieldwdifh">Time</label>  
-                    <input class="form-control margin_30" id="fieldwdifh" name="cm-f-wdifh" type="time" placeholder="HH:mm" data-validation="time" />    
+                    <input class="form-control margin_30 timepicker" id="fieldwdifh" name="cm-f-wdifh" type="time" placeholder="HH:mm" data-validation="time" />    
                 </div>
             </div>
             <div class="row">
@@ -264,6 +264,19 @@
 <script>
     $(document).ready(function() {
         function renderAll(){
+            // add timepicker
+            $('.timepicker').timepicker({
+                timeFormat: 'h:mm p',
+                interval: 60,
+                minTime: '10',
+                maxTime: '6:00pm',
+                defaultTime: '11',
+                startTime: '10:00',
+                dynamic: false,
+                dropdown: true,
+                scrollbar: true
+            });
+            
             var page_banner = getRepoDetailsByName('Lost & Found').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){

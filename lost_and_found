@@ -162,7 +162,7 @@
                 </div>
             </div>
             <div class="row">
-            <div class="col-md-6">
+                <div class="col-md-6">
                      <input class="form-control margin_30" id="fieldName" name="cm-name" type="hidden"/>
                     <label for="fieldFirstName">First Name *</label>  
                     <input class="form-control margin_30" id="fieldName" name="firstName" type="text" required data-validation="required"/>
@@ -171,12 +171,13 @@
                     <label for="fieldLastName">Last Name *</label>  
                     <input class="form-control margin_30" id="fieldName" name="lastName" type="text" required data-validation="required"/>
                 </div>
+                
+            </div>
+            <div class="row">
                 <div class="col-md-6">
                     <label for="fieldEmail">Email *</label> 
                     <input class="form-control margin_30 js-cm-email-input" id="fieldEmail" name="cm-ydjkjul-ydjkjul" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6">
                     <label for="fieldwdiat">Phone Number *</label>  
                     <input class="form-control margin_30" id="fieldwdiat" name="cm-f-wdiat" type="text" required data-validation="required"/>    

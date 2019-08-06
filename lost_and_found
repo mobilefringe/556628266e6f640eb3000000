@@ -91,6 +91,10 @@
         position: absolute;
         bottom: -60px;
     }
+    .accordion .btn.btn-link {
+        white-space: normal;
+        text-align: left;
+    }
     @media (max-width: 767px) {
         #fieldEmail {
             max-width: 100%;

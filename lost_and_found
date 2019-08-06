@@ -269,7 +269,7 @@
                 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                       <div class="card-body">
-                        {{{body}}
+                        {{{body}}}
                       </div>
                     </div>
                   </div>

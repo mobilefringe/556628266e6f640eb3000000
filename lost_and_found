@@ -97,7 +97,6 @@
     }
     .accordion .card-header .btn{
         background: #f1f0ed;
-        height: 59px;
         margin-bottom: 5px;
         text-transform: uppercase;
         line-height: 59px;

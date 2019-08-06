@@ -313,7 +313,6 @@
             $.getJSON(sub_page_json).done(function(data) {
                 $('#mm_subpage_content').html(data.body);
                 if(data.subpages && data.subpages.length > 0) {
-                    console.log(' data.subpages',  data.subpages)
                     renderGeneral('#mm_subpage_container','#mm_subpage_template', data.subpages)
                 }
             });

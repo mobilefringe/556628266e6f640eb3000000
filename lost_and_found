@@ -97,16 +97,16 @@
     }
     .accordion {
         background: #f1f0ed;
-    height: 59px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    line-height: 59px;
-    padding-left: 39px;
-    padding-right: 34px;
-    font-family: montserrat-regular;
-    font-size: 16px;
-    color: #4d4d4f;
-    position: relative;
+        height: 59px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        line-height: 59px;
+        padding-left: 39px;
+        padding-right: 34px;
+        font-family: montserrat-regular;
+        font-size: 16px;
+        color: #4d4d4f;
+        position: relative;
     }
     @media (max-width: 767px) {
         #fieldEmail {

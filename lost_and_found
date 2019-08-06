@@ -95,7 +95,7 @@
         white-space: normal;
         text-align: left;
     }
-    .accordion .card-header{
+    .accordion .card-header .btns]{
         background: #f1f0ed;
         height: 59px;
         margin-bottom: 5px;

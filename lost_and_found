@@ -399,7 +399,7 @@
             contest_data.item_location = $('#fieldwdifu').val();
             // Format email data
             var contact_form = {};
-            contact_form.send_to = "ardalan@mobilefringe.com";
+            contact_form.send_to = "tbcinfo@cushwake.com";
             contact_form.subject = "Lost & Found Form Submission";
             var body = {};
             body["Full Name"] = $('#fieldName').val();

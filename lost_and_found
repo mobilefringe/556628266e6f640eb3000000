@@ -256,7 +256,7 @@
             <div class="col-md-12">
                 <h1 class="title">Lost & Found FAQs</h1>
                 <!--<div id="mm_subpage_content" class="gs_text"></div>-->
-                <div class="accordion" id="mm_subpage_container">
+                <div class="accordion" id="accordion">
                     <script id="mm_subpage_template" type="x-tmpl-mustache/text">
                       <div class="card accordion-group">
                         <div class="card-header" id="heading{{id}}">

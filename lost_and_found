@@ -108,6 +108,13 @@
         position: relative;
         width: 100%;
     }
+    .accordion .card-body {
+        color: #6d6e71;
+        font-family: lora-regular;
+        /* font-family: neuton \9; */
+        font-size: 14pt;
+        line-height: 26pt;
+    }
     @media (max-width: 767px) {
         #fieldEmail {
             max-width: 100%;

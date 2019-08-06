@@ -267,7 +267,7 @@
                           </h2>
                         </div>
                     
-                        <div id="collapse{{id}}" class="collapse" aria-labelledby="heading{{id}}" data-parent="#mm_subpage_container">
+                        <div id="collapse{{id}}" class="collapse {{className}}" aria-labelledby="heading{{id}}" data-parent="#mm_subpage_container">
                           <div class="card-body">
                             {{{body}}}
                           </div>

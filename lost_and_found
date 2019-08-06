@@ -256,18 +256,18 @@
             <div class="col-md-12">
                 <h1 class="title">Lost & Found FAQs</h1>
                 <!--<div id="mm_subpage_content" class="gs_text"></div>-->
-                <div class="accordion" id="accordion">
+                <div class="accordion" id="mm_subpage_container">
                     <script id="mm_subpage_template" type="x-tmpl-mustache/text">
                       <div class="card accordion-group">
                         <div class="card-header" id="heading{{id}}">
                           <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{id}}"  data-parent="#accordion" aria-expanded="true" aria-controls="collapse{{id}}">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{id}}" aria-expanded="true" aria-controls="collapse{{id}}">
                              {{title}}
                             </button>
                           </h2>
                         </div>
                     
-                        <div id="collapse{{id}}" class="collapse" aria-labelledby="heading{{id}}">
+                        <div id="collapse{{id}}" class="collapse" aria-labelledby="heading{{id}}" data-parent="#mm_subpage_container">
                           <div class="card-body">
                             {{{body}}}
                           </div>
@@ -311,9 +311,9 @@
             
             var sub_page_json = prefix + "/pages/baycentre-lost-found-faqs.json"
             $.getJSON(sub_page_json).done(function(data) {
-                // $('#mm_subpage_content').html(data.body);
+                $('#mm_subpage_content').html(data.body);
                 if(data.subpages && data.subpages.length > 0) {
-                    renderGeneral('#accordion','#mm_subpage_template', data.subpages)
+                    renderGeneral('#mm_subpage_container','#mm_subpage_template', data.subpages)
                 }
             });
             

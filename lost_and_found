@@ -337,13 +337,13 @@
                 submit_contest(slug, e);
             });
             $('.closeall').click(function(){
-  $('.panel-collapse.in')
-    .collapse('hide');
-});
-$('.openall').click(function(){
-  $('.panel-collapse:not(".in")')
-    .collapse('show');
-});
+              $('.panel-collapse.in')
+                .collapse('hide');
+            });
+            $('.openall').click(function(){
+              $('.panel-collapse:not(".in")')
+                .collapse('show');
+            });
         }
         
         function add_to_page_array (data){

@@ -420,36 +420,36 @@
             send_data.form_data = JSON.stringify(serializeObject(contact_form));
             contact_form.body = body;
 
-            $.ajax({
-                url : send_data.url,
-                type: "POST",
-                data : contact_form,
-                success: function(data, textStatus, jqXHR){
-                    var contest_entry = {};
-                    contest_entry.json = contest_data;
-                    var propertyDetails = getPropertyDetails();
-                    var host = propertyDetails.mm_host.replace("http:", "");
-                    var url = host + "/contests/" + slug + "/json_entry";
-                    $.ajax({
-                        url: url,
-                        type: "POST",
-                        data: contest_entry,
-                        async: false,
-                        success: function(data) {
-                          console.log("mm post successful");
-                          e.target.submit();
-                          $("#send_contact_success").show();
-                        },
-                        error: function(data){
-                            console.log("error data:" , data);
-                            $("#send_contact_error").show();
-                        }
-                    });
-                },
-                error: function (jqXHR, textStatus, errorThrown){
-                  console.log("Data load error: " + error.message);
-                }
-            });
+            // $.ajax({
+            //     url : send_data.url,
+            //     type: "POST",
+            //     data : contact_form,
+            //     success: function(data, textStatus, jqXHR){
+            //         var contest_entry = {};
+            //         contest_entry.json = contest_data;
+            //         var propertyDetails = getPropertyDetails();
+            //         var host = propertyDetails.mm_host.replace("http:", "");
+            //         var url = host + "/contests/" + slug + "/json_entry";
+            //         $.ajax({
+            //             url: url,
+            //             type: "POST",
+            //             data: contest_entry,
+            //             async: false,
+            //             success: function(data) {
+            //               console.log("mm post successful");
+            //               e.target.submit();
+            //               $("#send_contact_success").show();
+            //             },
+            //             error: function(data){
+            //                 console.log("error data:" , data);
+            //                 $("#send_contact_error").show();
+            //             }
+            //         });
+            //     },
+            //     error: function (jqXHR, textStatus, errorThrown){
+            //       console.log("Data load error: " + error.message);
+            //     }
+            // });
         }
         
         function serializeObject(obj) {

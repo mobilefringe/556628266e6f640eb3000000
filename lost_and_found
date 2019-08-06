@@ -338,6 +338,9 @@
             var sub_page_json = prefix + "/pages/baycentre-lost-found-faqs.json"
             $.getJSON(sub_page_json).done(function(data) {
                 $('#mm_subpage_content').html(data.body);
+                if((data.subpages && data.subpages.length > 0) {
+                    renderGeneral('','',data.subpages)
+                }
             });
             
             var contests = getContestList();

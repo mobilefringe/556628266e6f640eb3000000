@@ -266,7 +266,7 @@
         function renderAll(){
             // add timepicker
             $('.timepicker').timepicker({
-                timeFormat: 'hh:mm p',
+                timeFormat: 'h:mm p',
                 interval: 30,
                 // minTime: '10',
                 // maxTime: '6:00pm',

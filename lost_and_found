@@ -257,7 +257,7 @@
                 <h1 class="title">Lost & Found FAQs</h1>
                 <!--<div id="mm_subpage_content" class="gs_text"></div>-->
                 <div class="accordion" id="mm_subpage_content">
-                <script id="mm_subpage_content_template" type="x-tmpl-mustache/text">
+                    <script id="mm_subpage_content_template" type="x-tmpl-mustache/text">
                   <div class="card">
                     <div class="card-header" id="headingOne">
                       <h2 class="mb-0">
@@ -273,7 +273,8 @@
                       </div>
                     </div>
                   </div>
-                </script>
+                 </script>
+                 </div>
             </div>
         </div>
     </div>

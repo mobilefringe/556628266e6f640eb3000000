@@ -261,13 +261,13 @@
                   <div class="card">
                     <div class="card-header" id="headingOne">
                       <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{id}}" aria-expanded="true" aria-controls="{{id}}">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapse{{id}}">
                          {{title}}
                         </button>
                       </h2>
                     </div>
                 
-                    <div id="{{id}}" class="collapse show" aria-labelledby="headingOne" data-parent="#mm_subpage_content">
+                    <div id="collapse{{id}}" class="collapse show" aria-labelledby="headingOne" data-parent="#mm_subpage_content">
                       <div class="card-body">
                         {{{body}}}
                       </div>

@@ -258,22 +258,22 @@
                 <!--<div id="mm_subpage_content" class="gs_text"></div>-->
                 <div class="accordion" id="mm_subpage_container">
                     <script id="mm_subpage_template" type="x-tmpl-mustache/text">
-                  <div class="card">
-                    <div class="card-header" id="heading{{id}}">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{id}}" aria-expanded="true" aria-controls="collapse{{id}}">
-                         {{title}}
-                        </button>
-                      </h2>
-                    </div>
-                
-                    <div id="collapse{{id}}" class="collapse show" aria-labelledby="heading{{id}}" data-parent="#mm_subpage_content">
-                      <div class="card-body">
-                        {{{body}}}
+                      <div class="card">
+                        <div class="card-header" id="heading{{id}}">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{id}}" aria-expanded="true" aria-controls="collapse{{id}}">
+                             {{title}}
+                            </button>
+                          </h2>
+                        </div>
+                    
+                        <div id="collapse{{id}}" class="collapse show" aria-labelledby="heading{{id}}" data-parent="#mm_subpage_content">
+                          <div class="card-body">
+                            {{{body}}}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                 </script>
+                    </script>
                  </div>
             </div>
         </div>

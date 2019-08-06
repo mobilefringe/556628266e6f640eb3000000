@@ -107,6 +107,7 @@
         font-size: 16px;
         color: #4d4d4f;
         position: relative;
+        width: 100%;
     }
     @media (max-width: 767px) {
         #fieldEmail {

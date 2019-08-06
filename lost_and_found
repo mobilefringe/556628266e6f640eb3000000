@@ -337,7 +337,6 @@
             
             $('#subForm').submit(function(e){
                 e.preventDefault();
-                console.log("e", e)
                 $('.submit_btn').prop('disabled', true);
                 submit_contest(slug, e);
             });

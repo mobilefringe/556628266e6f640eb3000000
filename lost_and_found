@@ -397,7 +397,7 @@
             contest_data.time = $('#fieldwdifh').val();
             contest_data.item_description = $('#fieldwdifk').val();
             contest_data.item_location = $('#fieldwdifu').val();
-            
+            console.log($('#fieldName').val())
             // Format email data
             var contact_form = {};
             contact_form.send_to = "ardalan@mobilefringe.com";

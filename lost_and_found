@@ -339,7 +339,7 @@
             $.getJSON(sub_page_json).done(function(data) {
                 $('#mm_subpage_content').html(data.body);
                 if((data.subpages && data.subpages.length > 0) {
-                    renderGeneral('','',data.subpages)
+                    renderGeneral('','', data.subpages)
                 }
             });
             

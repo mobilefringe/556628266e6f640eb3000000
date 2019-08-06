@@ -317,11 +317,6 @@
                 }
             });
             
-            // var $myGroup = $('#mm_subpage_content');
-            // $myGroup.on('show.bs.collapse','.collapse', function() {
-            //     $myGroup.find('.collapse.in').collapse('hide');
-            // });
-            
             var contests = getContestList();
             var current_contest = [];
             $.each(contests, function(key, val){

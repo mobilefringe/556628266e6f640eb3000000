@@ -453,6 +453,7 @@
             // });
             // console.log(item_rendered)
             // $(container).html(item_rendered.join(''));
+            console.log(container, template, collection)
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();

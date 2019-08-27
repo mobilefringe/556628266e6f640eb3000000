@@ -268,6 +268,10 @@
                     <textarea class="form-control margin_30" id="fieldwdifu" name="cm-f-wdifu" type="text" rows="4" required data-validation="required"></textarea>
                 </div>
             </div>
+            <div class="">
+                <label for="fieldydiyily">Confirmation Code</label>
+                <input id="fieldydiyily" name="cm-f-ydiyily" type="text" />
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <button class="gray_pill submit_btn js-cm-submit-button" type="submit">Submit</button>

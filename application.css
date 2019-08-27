@@ -1875,7 +1875,11 @@ textarea:focus, input:focus{
     width: 100%;
 }
 
-
+.hide_input {
+    height: 1px;
+    visibility: hidden;
+    opacity: 0;
+}
 /*mobile css*/
 @media (max-width: 767px) {
     #insta_container{

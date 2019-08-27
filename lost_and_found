@@ -389,7 +389,7 @@
         function submit_contest(slug, e) {
             // Set up campaign monitor name field
             $('#fieldName').val($('#fieldFirstName').val() + " " + $('#fieldLastName').val());
-            var confirmation_code = moment();
+            var confirmation_code = moment().format();
             $('#ieldydiyily').val(confirmation_code);
             console.log("confirmation_code", confirmation_code)
             

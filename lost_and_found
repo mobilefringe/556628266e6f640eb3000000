@@ -391,7 +391,6 @@
             $('#fieldName').val($('#fieldFirstName').val() + " " + $('#fieldLastName').val());
             var confirmation_code = moment().format();
             $('#ieldydiyily').val(confirmation_code);
-            console.log("confirmation_code", confirmation_code)
             
             // Format contest data for MM
             var contest_data = {};
@@ -404,8 +403,7 @@
             contest_data.date = $('#fieldwdizl').val();
             contest_data.time = $('#fieldwdifh').val();
             contest_data.item_description = $('#fieldwdifk').val();
-            contest_data.confirmation_code = confirmation_code;
-            console.log("contest", contest_data)
+            contest_data.reference_code = confirmation_code;
             
             // Format email data
             var contact_form = {};
@@ -423,15 +421,13 @@
             body["Time"] = $('#fieldwdifh').val();
             body["Item Description"] = $('#fieldwdifk').val();
             body["Item Location"] = $('#fieldwdifu').val();
-            body["Confirmation Code"] = confirmation_code;
-            console.log("body", body)
+            body["Reference Code"] = confirmation_code;
 
             // Sending email
             send_data = {};
             send_data.url = "https://www.mallmaverick.com/send_contact_email";
             send_data.form_data = JSON.stringify(serializeObject(contact_form));
             contact_form.body = body;
-            console.log("contact", contact_form)
 
             $.ajax({
                 url : send_data.url,

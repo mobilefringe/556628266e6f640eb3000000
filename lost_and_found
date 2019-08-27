@@ -390,8 +390,8 @@
             // Set up campaign monitor name field
             $('#fieldName').val($('#fieldFirstName').val() + " " + $('#fieldLastName').val());
             var confirmation_code = moment().format();
-            $('#ieldydiyily').val(confirmation_code);
-            console.log("code", $('#ieldydiyily').val())
+            $('#fieldydiyily').val(confirmation_code);
+            console.log("code", $('#fieldydiyily').val())
             
             // Format contest data for MM
             var contest_data = {};

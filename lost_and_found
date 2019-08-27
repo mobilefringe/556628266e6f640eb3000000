@@ -405,10 +405,12 @@
             contest_data.time = $('#fieldwdifh').val();
             contest_data.item_description = $('#fieldwdifk').val();
             contest_data.confirmation_code = confirmation_code;
+            console.log("contest", contest_data)
             
             // Format email data
             var contact_form = {};
-            contact_form.send_to = "tbcinfo@cushwake.com";
+            // contact_form.send_to = "tbcinfo@cushwake.com";
+            contact_form.send_to = "caitlin@mobilefringe.com";
             contact_form.subject = "Lost & Found Form Submission";
             var body = {};
             body["Full Name"] = $('#fieldName').val();
@@ -422,12 +424,14 @@
             body["Item Description"] = $('#fieldwdifk').val();
             body["Item Location"] = $('#fieldwdifu').val();
             body["Confirmation Code"] = confirmation_code;
+            console.log("body", body)
 
             // Sending email
             send_data = {};
             send_data.url = "https://www.mallmaverick.com/send_contact_email";
             send_data.form_data = JSON.stringify(serializeObject(contact_form));
             contact_form.body = body;
+            console.log("contact", contact_form)
 
             // $.ajax({
             //     url : send_data.url,

@@ -32,11 +32,11 @@
     <!-- jQuery Version 1.11.0 -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/text/javascript/1565977735005/moment.min.js"></script>
     <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.zoomooz/1.1.6/jquery.zoomooz.min.js"></script>
     <script src="//cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script>
-    <script src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/text/javascript/1561045889900/instafeed.min.js"></script>
+    <script src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/text/javascript/1566312927621/instafeed.min.js"></script>
     <!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <!--jReject is used to warn users certain browsers aren't compatible with this site-->

@@ -41,7 +41,7 @@
         font-family: railway-regular;
         font-size: 26pt;
         color: #6d6e71;
-        text-transform: uppercase;
+        text-transform: lowercase;
         margin-top: 0;
         margin-bottom: 53px;
     }

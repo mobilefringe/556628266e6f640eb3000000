@@ -389,7 +389,7 @@
         function submit_contest(slug, e) {
             // Set up campaign monitor name field
             $('#fieldName').val($('#fieldFirstName').val() + " " + $('#fieldLastName').val());
-            var confirmation_code = moment().format();
+            var confirmation_code = moment().format("X");
             $('#fieldydiyily').val(confirmation_code);
             
             // Format contest data for MM
@@ -404,7 +404,7 @@
             contest_data.time = $('#fieldwdifh').val();
             contest_data.item_description = $('#fieldwdifk').val();
             contest_data.reference_code = confirmation_code;
-            
+            console.log("contest_data", contest_data)
             // Format email data
             var contact_form = {};
             // contact_form.send_to = "tbcinfo@cushwake.com";

@@ -179,7 +179,7 @@
                 <hr class="margin_50">
             </div>
         </div>
-        <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24">
+        <form id="subForm" class="js-cm-form" > <!-- action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A8842F5D4F604C2DA717DB8EC28A8C682DF3DFD8448DB7258DE4A25F522C85FA76CD38A3DA1209E8E33BF7B30B790DF24" -->
             <div class="row flex-row">
                 <div class="col-md-6">
                     <h1 class="title">Contact Information</h1>

@@ -459,7 +459,7 @@
         //           console.log("Data load error: " + error.message);
         //         }
         //     });
-        // }
+        }
         
         function serializeObject(obj) {
             var newObj = [];

@@ -9,7 +9,9 @@
     .feature_promo_ul{
         margin-top:65px;
     }
-    
+    .featured_name strong {
+        font-size: 20px !important;
+    }
     .feature_promo_ul li{
         border:none;
     }

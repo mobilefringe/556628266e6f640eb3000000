@@ -71,6 +71,9 @@
         .featured_name {
             font-size: 20px !important;
         }
+        .featured_name strong {
+            font-size: 16px !important;
+        }
         .store_detail_description{
             margin-top:0 !important;
         }

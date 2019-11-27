@@ -2321,8 +2321,8 @@ textarea:focus, input:focus{
     .store_Search_div{
         margin-left:auto;
         margin-right:auto;
-        width:87%;
-        margin-bottom:20px;
+        width: 90%;
+        margin-bottom: 15px;
         // display:block;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2335,6 +2335,8 @@ textarea:focus, input:focus{
     .store_search_input{
         padding-left:0;
         text-align:center;
+        padding: 0;
+        border: none;
     }
     .store_search_icon{
         right: 10px;

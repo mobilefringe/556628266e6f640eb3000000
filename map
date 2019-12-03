@@ -192,7 +192,7 @@
         margin-top: 10px;
     }
 
-.map-container {
+    .map-container {
         margin-bottom: 30px;
     }
     #mapsvg_store_detail {

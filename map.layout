@@ -140,7 +140,7 @@
             });  
         });
       
-        setEndPoint('//baycentre.mallmaverick.com/api/v4/baycentre/all.json');
+        setEndPoint('//baycentre.mallmaverickstaging.com/api/v4/baycentre/all.json');
     </script>
 </head>
 <body class="main_body">

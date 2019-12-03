@@ -93,72 +93,72 @@
     }
     $(document).ready(function() {
 
-        // function renderPageData(){
-        //     console.log('IE ' + detectIE());
-        //     if(detectIE()){
-        //         var svg_url = '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
-        //         $('#iFrame1').remove();
-        //         $("#IE_map").attr("src", svg_url)
-        //         $('#IE_map_text').show();
-        //     } 
-        //     else {
-        //         $('#IE_map').remove();
-        //         $('#IE_map_text').remove();
-        //     }
-        //     var stores = getStoresList();
-        //     regions = {}
-        //     $.each( stores , function( key, val ) {
-        //         if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-        //             if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-        //                 val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-        //             } 
-        //             obj = {};
-        //             obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
-        //             obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
-        //             obj["attr"] = {}
-        //             // obj["attr"]["href"] = "/stores/"+val.slug
-        //             regions[val.svgmap_region] = obj
-        //         }
-        //     });
-        //     renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
-        //     show_content();
-        //     var map = $('#mapsvg_store_detail').mapSvg({
-        //         source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
-        //         colors: {stroke: '#fff', selected: "#000", hover: "#a6a6a6"},
-        //         disableAll: true,
-        //         regions: regions,
-        //         height:1700,
-        //         width:2300,
-        //         tooltipsMode:'custom',
-        //         zoom:true,
-        //         zoomButtons: {'show': true, 'location': 'left'},
-        //         pan:true,
-        //         cursor:'pointer',
-        //         responsive:true,
-        //         zoomLimit: [0,5],
-        //         onClick: function(e,mapsvg){
-        //           var region = this;
-        //           mapsvg.marksHide();
-        //         //   console.log(region);
-        //         //   drop_pin(region.id,mapsvg)
-        //         }
-        //     });
+        function renderPageData(){
+            console.log('IE ' + detectIE());
+            if(detectIE()){
+                var svg_url = '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
+                $('#iFrame1').remove();
+                $("#IE_map").attr("src", svg_url)
+                $('#IE_map_text').show();
+            } 
+            else {
+                $('#IE_map').remove();
+                $('#IE_map_text').remove();
+            }
+            var stores = getStoresList();
+            regions = {}
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
+                        val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
+                    } 
+                    obj = {};
+                    obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
+                    obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
+                    obj["attr"] = {}
+                    // obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
+            show_content();
+            var map = $('#mapsvg_store_detail').mapSvg({
+                source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
+                colors: {stroke: '#fff', selected: "#000", hover: "#a6a6a6"},
+                disableAll: true,
+                regions: regions,
+                height:1700,
+                width:2300,
+                tooltipsMode:'custom',
+                zoom:true,
+                zoomButtons: {'show': true, 'location': 'left'},
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,5],
+                onClick: function(e,mapsvg){
+                  var region = this;
+                  mapsvg.marksHide();
+                //   console.log(region);
+                //   drop_pin(region.id,mapsvg)
+                }
+            });
             
-        //     $('.map_pin_a').click(function(e){
-        //         e.preventDefault();
-        //         var id = $(this).attr('data-svg')
-        //         map_pin(id)
-        //     })
+            $('.map_pin_a').click(function(e){
+                e.preventDefault();
+                var id = $(this).attr('data-svg')
+                map_pin(id)
+            })
             
-        //     function map_pin(value){
-        //         map.marksHide();
-        //         console.log('value', value)
-        //         if (value){
-        //             drop_pin(value, map);    
-        //         }
-        //     }
-        // }
-        // loadMallDataCached(renderPageData);
+            function map_pin(value){
+                map.marksHide();
+                console.log('value', value)
+                if (value){
+                    drop_pin(value, map);    
+                }
+            }
+        }
+        loadMallDataCached(renderPageData);
         
     
     

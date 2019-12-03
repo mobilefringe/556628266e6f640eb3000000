@@ -75,7 +75,7 @@
 <script>
     
     $(document).ready(function() {
-        init(e);
+
         // function renderPageData(){
         //     console.log('IE ' + detectIE());
         //     if(detectIE()){

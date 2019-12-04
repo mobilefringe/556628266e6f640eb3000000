@@ -1,19 +1,31 @@
 <style>
-    .socialize_div {
-        margin-top:80px;
+    .map-container {
+        margin-bottom: 30px;
     }
-    .socialize_text{
-        margin-top:5px;
-        
+    #mapsvg_store_detail {
+        margin: 0;
     }
-    .socialize_social_icons{
-        margin-top:0;
+    #IE_map{
+        margin:auto;
     }
-    
-    .download_map{
-        float: right;
-        margin-top: 10px;
+    #mobileMap{
+        display:none!important;
     }
+    #desktopMap{
+        display:block!important;
+    }
+    @media (max-width: 768px) {
+        html, iframe, #IE_map{
+            height: calc(100vh - 104.97px) !important;
+        }
+        #mobileMap{
+            display:block!important;
+        }
+        #desktopMap{
+            display:none!important;
+        }
+    }
+
 </style>
 
 

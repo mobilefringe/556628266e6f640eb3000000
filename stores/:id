@@ -277,37 +277,9 @@
             renderDetailData("#store_promo_container","#store_promo_template", store_promos, "store_promos")
             renderDetailData("#store_job_container","#store_job_template", jobs, "store_jobs")
             
-            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
-            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
-            $(".loading_overlay").hide();
-            $("#page_content").show();
             
-            var stores = getStoresList();
-
-        }
-        
-        
-        function drop_pin(id, map){
-
-            var coords = map.get_coords(id);
-            var height = parseInt(coords["height"])
-            var width = parseInt(coords["width"])
-            var x_offset = (parseInt(width) / 2);
-            var y_offset = (parseInt(height) /2);
             
-            map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
-                      attrs: {
-                                src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
-                              }
-                }
-                ])
-                // map.setViewBox(id);
-                map.selectRegion(id);
-        }
-        
-        
-        
-         $('#iFrame1').css('display','block')
+             $('#iFrame1').css('display','block')
         console.log('IE ' + detectIE());
         if(detectIE()){
             var svg_url = '//mallmaverick.com'+getPropertyDetails().svgmap_url;
@@ -369,6 +341,39 @@
             }
         }
         drop_pin(store_details.svgmap_region, map)
+            
+            
+            $.getScript("https://cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
+            $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            
+            var stores = getStoresList();
+
+        }
+        
+        
+        function drop_pin(id, map){
+
+            var coords = map.get_coords(id);
+            var height = parseInt(coords["height"])
+            var width = parseInt(coords["width"])
+            var x_offset = (parseInt(width) / 2);
+            var y_offset = (parseInt(height) /2);
+            
+            map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+                      attrs: {
+                                src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
+                              }
+                }
+                ])
+                // map.setViewBox(id);
+                map.selectRegion(id);
+        }
+        
+        
+        
+        
 
 
         function renderDetailData(container, template, collection, type){
@@ -462,6 +467,11 @@
                 }
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
+                
+                
+                
+                
+                
             });
             $(container).show();
             $(container).html(item_rendered.join(''));

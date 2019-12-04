@@ -37,6 +37,30 @@
             font-size:12pt;
         }    
     }
+    
+    /*map styles*/
+    #IE_map{
+        margin:auto;
+        height:400px;
+    }
+    #mobileMap{
+        display:none!important;
+    }
+    #desktopMap{
+        display:block!important;
+    }
+    @media (max-width: 768px) {
+        #iFrame1 {
+            display: none;
+            min-height: 400px;
+        }
+         #mobileMap{
+            display:block!important;
+        }
+        #desktopMap{
+            display:none!important;
+        }
+    }
 </style>
 
 <div id="page_banner">

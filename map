@@ -155,6 +155,7 @@
             });
             renderStoreList('#store_select_container','#store_select_template', stores, "A", "Z");
 
+            // need to remove loading and show page_content before creating the map otherwise page will initialize without the map
             $(".loading_overlay").hide();
             $("#page_content").show();
             

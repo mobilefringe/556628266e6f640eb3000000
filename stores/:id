@@ -225,6 +225,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             store_details = getStoreDetailsBySlug(slug);  
+            console.log(store_details)
             if (store_details.store_hours != ""){
                 var hours = getHoursForStoreSlug(store_details.slug);
                 hours = hours.sortBy(function(o){ return o.day_of_week });

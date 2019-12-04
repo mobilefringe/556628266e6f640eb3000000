@@ -163,21 +163,21 @@
                 }
             });
             
-            $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var id = $(this).attr('data-svg')
-                map_pin(id)
-            })
+            // $('.map_pin_a').click(function(e){
+            //     e.preventDefault();
+            //     var id = $(this).attr('data-svg')
+            //     map_pin(id)
+            // })
             
             
             
-            function map_pin(value){
-                map.marksHide();
-                console.log('value', value)
-                if (value){
-                    drop_pin(value, map);    
-                }
-            }
+            // function map_pin(value){
+            //     map.marksHide();
+            //     console.log('value', value)
+            //     if (value){
+            //         drop_pin(value, map);    
+            //     }
+            // }
             
             
             function drop_pin(value, map){

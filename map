@@ -181,6 +181,8 @@
             // }
             
             $('#store_select_container').change(function(e){
+                console.log(  $(this).val() )
+                
                 drop_pin($(this).val())
             })
             

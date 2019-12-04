@@ -159,26 +159,8 @@
                 onClick: function(e,mapsvg){
                   var region = this;
                   mapsvg.marksHide();
-                //   console.log(region);
-                //   drop_pin(region.id,mapsvg)
                 }
             });
-            
-            // $('.map_pin_a').click(function(e){
-            //     e.preventDefault();
-            //     var id = $(this).attr('data-svg')
-            //     map_pin(id)
-            // })
-            
-            
-            
-            // function map_pin(value){
-            //     map.marksHide();
-            //     console.log('value', value)
-            //     if (value){
-            //         drop_pin(value, map);    
-            //     }
-            // }
             
             $('#store_select_container').change(function(e){
                 console.log(  $(this).val() )
@@ -204,8 +186,6 @@
                     // map.setViewBox(id);
                     map.selectRegion(value);
             }
-            
-            
             $(".loading_overlay").hide();
             $("#page_content").show();
         }

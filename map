@@ -1,3 +1,22 @@
+<style>
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    .download_map{
+        float: right;
+        margin-top: 10px;
+    }
+</style>
+
+
 <div id="desktopMap">
     <div id="page_banner">
         <div class="banner_wrapper">
@@ -54,6 +73,9 @@
     <img id="IE_map" src="">
 </div>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/mallmaverick_svgmap.js"></script>
 
 <!--libraries for enhanced map-->
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
@@ -62,9 +84,6 @@
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/mallmaverick_svgmap.js"></script>
 <script>
     $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapLeft.png");
     $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapRight.png");
@@ -73,80 +92,26 @@
 
 
 <script>
-    
-    $(document).ready(function() {
 
-        // function renderPageData(){
-        //     console.log('IE ' + detectIE());
-        //     if(detectIE()){
-        //         var svg_url = '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url;
-        //         $('#iFrame1').remove();
-        //         $("#IE_map").attr("src", svg_url)
-        //         $('#IE_map_text').show();
-        //     } 
-        //     else {
-        //         $('#IE_map').remove();
-        //         $('#IE_map_text').remove();
-        //     }
-        //     var stores = getStoresList();
-        //     regions = {}
-        //     $.each( stores , function( key, val ) {
-        //         if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-        //             if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-        //                 val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg'
-        //             } 
-        //             obj = {};
-        //             obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>"
-        //             obj["popover"] = "<p class='tooltip_name'>"+val.name+"</p> <a href='/stores/"+val.slug+"'  >View Details</a>"
-        //             obj["attr"] = {}
-        //             // obj["attr"]["href"] = "/stores/"+val.slug
-        //             regions[val.svgmap_region] = obj
-        //         }
-        //     });
-        //     renderStoreList('#stores_container','#stores_template', stores, "A", "Z");
-        //     show_content();
-        //     var map = $('#mapsvg_store_detail').mapSvg({
-        //         source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
-        //         colors: {stroke: '#fff', selected: "#000", hover: "#a6a6a6"},
-        //         disableAll: true,
-        //         regions: regions,
-        //         height:1700,
-        //         width:2300,
-        //         tooltipsMode:'custom',
-        //         zoom:true,
-        //         zoomButtons: {'show': true, 'location': 'left'},
-        //         pan:true,
-        //         cursor:'pointer',
-        //         responsive:true,
-        //         zoomLimit: [0,5],
-        //         onClick: function(e,mapsvg){
-        //           var region = this;
-        //           mapsvg.marksHide();
-        //         //   console.log(region);
-        //         //   drop_pin(region.id,mapsvg)
-        //         }
-        //     });
-            
-        //     $('.map_pin_a').click(function(e){
-        //         e.preventDefault();
-        //         var id = $(this).attr('data-svg')
-        //         map_pin(id)
-        //     })
-            
-        //     function map_pin(value){
-        //         map.marksHide();
-        //         console.log('value', value)
-        //         if (value){
-        //             drop_pin(value, map);    
-        //         }
-        //     }
-        // }
-        // loadMallDataCached(renderPageData);
-        
+function drop_pin(value){
+    map.marksHide();
+    value = value.split('/')
+    var coords = map.get_coords(value[0]);
+    var height = parseInt(coords["height"])
+    var width = parseInt(coords["width"])
+    var x_offset = (parseInt(width) / 2);
+    var y_offset = (parseInt(height) /2);
     
-    
-        
-        
+    map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
+        attrs: {
+            class: 'test_pin',
+            href: '/stores/'+value[1],
+            src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+          }
+        }
+    ])
+}
+    $(document).ready(function() {
         function renderAll (){
             var page_banner = getRepoDetailsByName('Map').images;
             var banner_url = "";
@@ -224,82 +189,4 @@
         }
         loadMallDataCached(renderAll);  
     });
-    
-    function drop_pin(value){
-        map.marksHide();
-        value = value.split('/')
-        var coords = map.get_coords(value[0]);
-        var height = parseInt(coords["height"])
-        var width = parseInt(coords["width"])
-        var x_offset = (parseInt(width) / 2);
-        var y_offset = (parseInt(height) /2);
-        
-        map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
-            attrs: {
-                class: 'test_pin',
-                href: '/stores/'+value[1],
-                src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
-              }
-            }
-        ])
-    }
-    
-    window.addEventListener('message', function(event) {
-        // IMPORTANT: check the origin of the data! 
-        if (event.origin.startsWith('https://mf-map.netlify.com')) { 
-            // The data was sent from your site.
-            // Data sent with postMessage is stored in event.data:
-            if(event.data && event.data.selectedStore) {
-                var store = event.data.selectedStore
-                window.location.href= "/stores/"+store.slug
-            }
-        }
-    }); 
 </script>
-
-
-<style>
-.map-container {
-        margin-bottom: 30px;
-    }
-    #mapsvg_store_detail {
-        margin: 0;
-    }
-    #IE_map{
-        margin:auto;
-    }
-    #mobileMap{
-        display:none!important;
-    }
-    #desktopMap{
-        display:block!important;
-    }
-    @media (max-width: 768px) {
-        html, iframe, #IE_map{
-            height: calc(100vh - 104.97px) !important;
-        }
-        #mobileMap{
-            display:block!important;
-        }
-        #desktopMap{
-            display:none!important;
-        }
-    }
-    
-    
-    .socialize_div {
-        margin-top:80px;
-    }
-    .socialize_text{
-        margin-top:5px;
-        
-    }
-    .socialize_social_icons{
-        margin-top:0;
-    }
-    
-    .download_map{
-        float: right;
-        margin-top: 10px;
-    }
-</style>

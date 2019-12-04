@@ -489,4 +489,24 @@
         
         loadMallDataCached(renderPageData);
     });
+     // Enhanced map code
+    window.addEventListener('message', function(event) {
+        // IMPORTANT: check the origin of the data! 
+        if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "store-details-clicked") { 
+            // The data was sent from your site.
+            // Data sent with postMessage is stored in event.data:
+            if(event.data && event.data.selectedStore) {
+                var store = event.data.selectedStore
+                window.location.href= "/stores/"+store.slug
+            }
+        } else if (event.origin.startsWith('https://mf-map.netlify.com') && event.data.event === "map-loaded") {
+            if(event.data) {
+                var loading = event.data.loading;
+                if (!loading){
+                    let frame = document.getElementById('iFrame1');
+                    frame.contentWindow.postMessage({ event: "select-store", selectedStore: store_details }, '*');
+                }
+            }
+        }
+    });
 </script>

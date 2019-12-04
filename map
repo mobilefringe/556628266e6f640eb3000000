@@ -102,11 +102,7 @@
     <img id="IE_map" src="">
 </div>
 
-<script>
-    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapLeft.png");
-    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/c889df3dc9b4f92087879630ca28fc33/InteractiveMapRight.png");
-    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/74141f4e7fc21d1457d2be79b85990c1/store_banner1.jpg");
-</script>
+
 
 <!--libraries for enhanced map-->
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>

@@ -101,7 +101,6 @@
 
 
     $(document).ready(function(e){
-        init(e);
         function renderPageData(){
             console.log('IE ' + detectIE());
             if(detectIE()){

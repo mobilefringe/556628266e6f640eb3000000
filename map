@@ -101,6 +101,38 @@
 
 
     $(document).ready(function(e){
+        function renderAll (){
+            var page_banner = getRepoDetailsByName('Map').images;
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.image_url;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
+            var stores = getStoresList();
+            regions = {}
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            renderPageData("#store_select_container","#store_select_template",stores, "stores");
+            
+            var repo = getRepoDetailsByName("Printable Map PDF").images;
+            var map_url = repo[0].image_url;
+            // renderMapPDF("#download_button_container", "#download_button_template", map_url);
+            $("#download_button_container").prepend("<button class='gray_pill download_map' onclick=window.open('" + map_url + "')>Printable PDF Map</button>");
+            
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            load_map(regions)
+        }
+        
+        
         function renderPageData(){
             console.log('IE ' + detectIE());
             if(detectIE()){

@@ -62,7 +62,7 @@
                 <select id="store_select_container">
                  <!--onchange="javascript:drop_pin(this.value)"-->
                     <script id="store_select_template" type="x-tmpl-mustache/text">
-                        <option value='{{svgmap_region}}/{{slug}}'>{{name}}</option>
+                        <option value='{{svgmap_region}}'>{{name}}</option>
                     </script>
                 </select>
                 

@@ -340,9 +340,6 @@
                 <p>Our style &nbsp;&nbsp;<i id='mobile_sub_5_arrow' class='fa fa-chevron-down'></i></p>
                 <div class="mobile_submenu" id="mobile_sub_5">
                     <ul>
-                        <!-- <li class="mobile_submenu_li"><a href="/lifestyle">Life + Style Program</a></li> -->
-                        <!--<li class="mobile_submenu_li"><a href="/caughtlookingconfident">Caught Looking Confident</a></li>-->
-                        <!--<li class="mobile_submenu_li"><a href="/videos">Video Style</a></li>-->
                         <li class="mobile_submenu_li"><a href="/newsletter">Enewsletter</a></li>
                     </ul>
                 </div>
@@ -402,32 +399,12 @@
             $("#"+id+"_arrow").addClass("fa-chevron-up")
         }
     }
-
-
     var p = window.location.pathname;
-    // if (window.matchMedia('(max-width: 768px)').matches)
-    // {
-         
-    // }else {
-    //     if (getCookie("visited") != "yes"){
-    //         // $(".popup_overlay").show();
-    //         $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
-    //         $('body').addClass('no_scroll');
-    //         var a = new Date();
-    //         a = new Date(a.getTime() +1000*60*60*24);
-    //         document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;
-    //     } 
-    // }
-                
-        
-    
-    
     function getCookie(name) {
       var value = "; " + document.cookie;
       var parts = value.split("; " + name + "=");
       if (parts.length == 2) return parts.pop().split(";").shift();
     }
-    
     $("#popup_form").submit(function(e){
         e.preventDefault();
         $("#hidden_agree_text").val($("#popup_agree_terms").attr("value"));
@@ -741,27 +718,7 @@
 
 
 
-    $("#footer_newsletter").submit(function(e){
-        e.preventDefault();
-        email = $("#fieldEmail").val();
-        window.location.href="/newsletter?email="+email
-        // $("#fieldjhtykh").val($("#agree_terms").attr("value"));
-        // $("#fieldjhtykd").val(window.location.href)
-        
-        //  $.getJSON(
-        //     "https://mobilefringe.createsend.com/t/d/s/iixuu/?callback=?",
-        //   $(this).serialize(),
-        //     function (data) {
-        //         if (data.Status === 400) {
-        //             e.preventDefault();
-        //             alert("Please try again later.");
-        //         } else {
-        //             alert("Thank you for signing up.")
-        //             $("#fieldEmail").val("")
-        //             $("#agree_terms").prop('checked', false);
-        //         }
-        // });  
-    })
+
 
     function show_dd(id, name){
         // console.log(this)

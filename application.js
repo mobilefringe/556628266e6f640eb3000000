@@ -122,6 +122,46 @@ function renderStoreList(container, template, collection, type){
     $(container).html(item_rendered.join(''));
 }
 
+
+function show_content() {
+    $("#content").css('visibility','visible').hide().fadeIn('slow');
+    $(".loader_backdrop").remove();
+    
+    var today_hours = getTodaysHours();
+    renderHomeHours('#home_hours_container', '#home_hours_template', today_hours);
+    renderHomeHours('#home_hours_container_footer', '#home_hours_template_footer', today_hours)
+    
+    var hours = getPropertyRegularHours();
+    var hours_mf = [];
+    var hours_sat = [];
+    var hours_sun = [];
+    $.each(hours, function(key, val){
+        if (val.day_of_week == 1 && val.is_holiday == false){
+            hours_mf.push(val);
+        }
+        if (val.day_of_week == 6 && val.is_holiday == false){
+            hours_sat.push(val);
+        }
+        if (val.day_of_week == 0 && val.is_holiday == false){
+            hours_sun.push(val);
+        }
+    });
+    renderHours('#hours_mf_container','#hours_mf_template', hours_mf, 'reg_hours');
+    renderHours('#hours_sat_container','#hours_sat_template', hours_sat, 'reg_hours');
+    renderHours('#hours_sun_container','#hours_sun_template', hours_sun, 'reg_hours');
+    renderHours('#home_reg_hours_container','#home_reg_hours_template', hours, 'reg_hours');
+    
+    //get downlad directory link dynamically
+    var repo = getRepoDetailsByID(48375);
+    if (repo) {
+        console.log("repo", repo)
+        var asset_url = getImageURL(repo.photo_url);
+        $("#dd_brochure_desktop").attr('href', asset_url);
+        $("#dd_brochure_mobile").attr('href', asset_url);
+    }
+}
+
+
 function renderInstaFeed(container, template){
     var item_list = [];
     var item_rendered = [];

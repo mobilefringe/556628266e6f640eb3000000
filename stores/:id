@@ -77,11 +77,17 @@
                 <button class="gray_pill back_to_list" onclick="window.location.href='/stores'">View All Stores</button>
                 <div id="pop-over"></div>
                 <p class="store_detail_title">store location</p>
+                    <!--map-->
                     <div class="map-container"  id="desktopMap">
-
-                        <div class="map_div" id="mapsvg"></div>
-                        
+                       <div id="mapsvg_store_detail"></div>  
                     </div>
+                    
+                    <div id="mobileMap" style="display:none;">
+                       <iframe src="https://mf-map.netlify.com/map?iframe=true&staging=true&subdomain=thepencentre&hideStoreList=true" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
+                       <img id="IE_map" src="">
+                    </div>
+
+                    
                 <div id="store_detail_left_content_container">
                     <script id="store_detail_left_content_template" type="x-tmpl-mustache/text">
                         <p class="store_detail_description">{{description}}</p>

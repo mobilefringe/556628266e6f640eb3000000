@@ -39,6 +39,10 @@ function detectIE() {
     return false;
 }
 
+function isInt(value) {
+    return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
+}
+
 function renderStoreList(container, template, collection, type){
     var item_list = [];
     var item_rendered = [];

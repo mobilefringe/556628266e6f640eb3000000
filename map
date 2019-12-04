@@ -187,7 +187,7 @@
             
             function drop_pin(value, map){
                 console.log(value, 'hi')
-                var coords = map.get_coords(value;
+                var coords = map.get_coords(value);
                 var height = parseInt(coords["height"])
                 var width = parseInt(coords["width"])
                 var x_offset = (parseInt(width) / 2);

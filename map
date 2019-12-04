@@ -126,7 +126,6 @@
 
             var repo = getRepoDetailsByName("Printable Map PDF").images;
             var map_url = repo[0].image_url;
-            console.log(map_url)
             $("#download_button_container").prepend("<button class='gray_pill download_map' onclick=window.open('" + map_url + "')>Printable PDF Map</button>");
             
             console.log('IE ' + detectIE());

@@ -1,4 +1,14 @@
 <style>
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
     .download_map{
         float: right;
         margin-top: 10px;

@@ -172,7 +172,7 @@
                 zoomLimit: [0,5],
                 onClick: function(e,mapsvg){
                   var region = this;
-                //   mapsvg.marksHide();
+                  mapsvg.marksHide();
                 }
             });
             

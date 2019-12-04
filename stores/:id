@@ -507,6 +507,8 @@
         //     ])
         // }
         
+        console.log('please')
+        
         loadMallDataCached(renderPageData);
     });
      // Enhanced map code

@@ -98,24 +98,6 @@
 
 <script>
 
-function drop_pin(value){
-    map.marksHide();
-    value = value.split('/')
-    var coords = map.get_coords(value[0]);
-    var height = parseInt(coords["height"])
-    var width = parseInt(coords["width"])
-    var x_offset = (parseInt(width) / 2);
-    var y_offset = (parseInt(height) /2);
-    
-    map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
-        attrs: {
-            class: 'test_pin',
-            href: '/stores/'+value[1],
-            src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
-          }
-        }
-    ])
-}
 
     $(document).ready(function(e){
         function renderAll (){
@@ -187,12 +169,33 @@ function drop_pin(value){
                 map_pin(id)
             })
             
+            
+            
             function map_pin(value){
                 map.marksHide();
                 console.log('value', value)
                 if (value){
                     drop_pin(value, map);    
                 }
+            }
+            
+            
+            function drop_pin(value, map){
+                console.log(value)
+                var coords = map.get_coords(id);
+                var height = parseInt(coords["height"])
+                var width = parseInt(coords["width"])
+                var x_offset = (parseInt(width) / 2);
+                var y_offset = (parseInt(height) /2);
+                
+                map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+                          attrs: {
+                                    src:  '//codecloud.cdn.speedyrails.net/sites/57f7f01f6e6f647835890000/image/png/1463000912000/pin2.png'     // image for marker
+                                  }
+                    }
+                    ])
+                    // map.setViewBox(id);
+                    map.selectRegion(id);
             }
             
             

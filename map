@@ -86,9 +86,6 @@
     <img id="IE_map" src="">
 </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/138b043444ee6b5e381a27b2103d101a/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/d8a09f82f02542971340c19ca00a3564/mallmaverick_svgmap.js"></script>
 
 <!--libraries for enhanced map-->
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>

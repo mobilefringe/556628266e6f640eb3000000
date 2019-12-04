@@ -155,6 +155,9 @@
             });
             renderStoreList('#store_select_container','#store_select_template', stores, "A", "Z");
             // show_content();
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+            
             var map = $('#mapsvg_store_detail').mapSvg({
                 source: '//assets.mallmaverickstaging.com'+getPropertyDetails().svgmap_url,
                 colors: {stroke: '#fff', selected: "#000", hover: "#a6a6a6"},
@@ -196,8 +199,7 @@
                     // map.setViewBox(id);
                     map.selectRegion(value);
             }
-            $(".loading_overlay").hide();
-            $("#page_content").show();
+            
         }
         
         loadMallDataCached(renderAll);

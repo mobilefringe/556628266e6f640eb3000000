@@ -154,7 +154,7 @@
                 }
             });
             renderStoreList('#store_select_container','#store_select_template', stores, "A", "Z");
-            // show_content();
+
             $(".loading_overlay").hide();
             $("#page_content").show();
             

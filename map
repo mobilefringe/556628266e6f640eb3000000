@@ -163,14 +163,11 @@
             });
             
             $('#store_select_container').change(function(e){
-                console.log(  $(this).val() )
-                
                 drop_pin($(this).val(), map)
             })
             
             
             function drop_pin(value, map){
-                console.log(value, 'hi')
                 var coords = map.get_coords(value);
                 var height = parseInt(coords["height"])
                 var width = parseInt(coords["width"])

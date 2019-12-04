@@ -465,7 +465,8 @@ function detectIE() {
 // }
 
 
-function drop_pin(id, map){
+function drop_pin(value){
+    console.log(value)
     var coords = map.get_coords(id);
     var height = parseInt(coords["height"])
     var width = parseInt(coords["width"])

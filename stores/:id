@@ -464,46 +464,46 @@
             }
         }
         
-        function load_map(reg, store_details){
-            // stores_x5F_3_x5F_6_2_
-            this_region = {}
-            this_region = store_details.svgmap_region
-            map = $('#mapsvg').mapSvg({
-                source: getSVGMapURL(),    // Path to SVG map
-                colors: {stroke: '#aaaaaa', selected: '#38949d', hover: "#38949d"},
-                disableAll: true,
-                height:479,
-                width:738,
-                regions: reg,
-                tooltipsMode:'custom',
-                loadingText: "loading...",
-                zoom: true,
-                zoomButtons: {'show': true,'location': 'left' },
-                pan:true,
-                cursor:'pointer',
-                responsive:true,
-                zoomLimit: [0,10]
-            });
+        // function load_map(reg, store_details){
+        //     // stores_x5F_3_x5F_6_2_
+        //     this_region = {}
+        //     this_region = store_details.svgmap_region
+        //     map = $('#mapsvg').mapSvg({
+        //         source: getSVGMapURL(),    // Path to SVG map
+        //         colors: {stroke: '#aaaaaa', selected: '#38949d', hover: "#38949d"},
+        //         disableAll: true,
+        //         height:479,
+        //         width:738,
+        //         regions: reg,
+        //         tooltipsMode:'custom',
+        //         loadingText: "loading...",
+        //         zoom: true,
+        //         zoomButtons: {'show': true,'location': 'left' },
+        //         pan:true,
+        //         cursor:'pointer',
+        //         responsive:true,
+        //         zoomLimit: [0,10]
+        //     });
             
-            map.setViewBox(store_details.svgmap_region)
-            map.selectRegion(store_details.svgmap_region)
-            drop_pin(store_details.svgmap_region)
-        }
+        //     map.setViewBox(store_details.svgmap_region)
+        //     map.selectRegion(store_details.svgmap_region)
+        //     drop_pin(store_details.svgmap_region)
+        // }
         
-        function drop_pin(id){
-            var coords = map.get_coords(id);
-            var height = parseInt(coords["height"])
-            var width = parseInt(coords["width"])
-            var x_offset = (parseInt(width) / 2);
-            var y_offset = (parseInt(height) /2);
+        // function drop_pin(id){
+        //     var coords = map.get_coords(id);
+        //     var height = parseInt(coords["height"])
+        //     var width = parseInt(coords["width"])
+        //     var x_offset = (parseInt(width) / 2);
+        //     var y_offset = (parseInt(height) /2);
             
-            map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
-                attrs: {
-                    src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
-                    }
-                }
-            ])
-        }
+        //     map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
+        //         attrs: {
+        //             src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+        //             }
+        //         }
+        //     ])
+        // }
         
         loadMallDataCached(renderPageData);
     });

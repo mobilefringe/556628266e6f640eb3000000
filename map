@@ -198,7 +198,7 @@
                 }
             }
         }
-        loadMallDataCached(renderPageData);
+        loadMallDataCached(renderAll);
         
     });
     window.addEventListener('message', function(event) {

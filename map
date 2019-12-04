@@ -68,7 +68,7 @@
                 
                 <div id="download_button_container">
                     <script id="download_button_template" type="x-tmpl-mustache/text">
-                        // <button class="gray_pill download_map" onclick="window.open('{{photo_url_abs}}')">Printable PDF Map</button>    
+                        
                     </script>
                 </div>
             </div>

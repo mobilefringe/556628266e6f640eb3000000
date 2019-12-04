@@ -224,6 +224,7 @@
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
+            
             store_details = getStoreDetailsBySlug(slug);  
             
             console.log(slug, store_details)

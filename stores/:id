@@ -224,10 +224,9 @@
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            
             store_details = getStoreDetailsBySlug(slug);  
             
-            console.log(slug, store_details)
+            console.log(slug,store_details)
             
             if (store_details.store_hours != ""){
                 var hours = getHoursForStoreSlug(store_details.slug);
@@ -360,8 +359,161 @@
                 }
                 drop_pin(store_details.svgmap_region, map)
 
+
+        function renderDetailData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "store_desc"){
+                item_list.push(collection);    
+                collection = item_list;    
+            }
+            $.each( collection , function( key, val ) {
+                if(type == "store_jobs"){
+                    if (val.contact_website != ""){
+                        val.website_div = '<a href="'+val.contact_website+'" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/dc4d28f03d666b522490b234c8f18b2a/promo_icon_web.png" class="store_promo_button_icon" alt="store_promo_button_icon"><p>visit website</p></a>'
+                    }
+                }
+                if (type == "store_promos"){
+                    // if ((val.promo_image_url).indexOf('missing.png') > -1){
+                    //     var pathArray = window.location.pathname.split( '/' );
+                    //     var slug = pathArray[pathArray.length-1];
+                    //     var store_details = getStoreDetailsBySlug(slug);
+                    //     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg";
+                    // } else {
+                    //     val.alt_promo_image_url = getImageURL(val.promo_image_url);
+                    // }
+                    var pathArray = window.location.pathname.split( '/' );
+                    var slug = pathArray[pathArray.length-1];
+                    var store_details = getStoreDetailsBySlug(slug);
+                    if(val.promo_image_url_abs.indexOf('missing.png') == -1){
+                       val.alt_promo_image_url = val.promo_image_url_abs
+                    } 
+                    else if (store_details.store_front_url.indexOf('missing.png') == -1) {
+                        val.alt_promo_image_url = store_details.store_front_url_abs
+                    }   
+                    else {
+                       val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg";
+                    }
+                    $("#promo_header").show();   
+                }
+                if (type == "store_desc"){
+                    if(!val.store_front_url || val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+                        val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/image/jpeg/1453749449000/TheBayCentre (1).jpg"    
+                    } else {
+                        val.alt_store_front_url = getImageURL(val.store_front_url);    
+                    }
+                    
+                    if (val.phone){
+                        $("#contact_phone").show();
+                    } else {
+                        $("#contact_phone").hide();
+                    }
+                    
+                    if (val.website){
+                        $("#contact_website").show();
+                    } else {
+                        $("#contact_website").hide();
+                    }    
+                }
+                if (type == "store_hours"){
+                    switch(val.day_of_week) {
+                        case 0:
+                            val.day = "Sunday"
+                            break;
+                        case 1:
+                            val.day = "Monday"
+                            break;
+                        case 2:
+                            val.day = "Tuesday"
+                            break;
+                        case 3:
+                            val.day = "Wednesday"
+                            break;
+                        case 4:
+                            val.day = "Thursday"
+                            break;
+                        case 5:
+                            val.day = "Friday"
+                            break;
+                        case 6:
+                            val.day = "Saturday"
+                            break;
+                    }
+                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                    if (val.is_closed == true){
+                        val.hour_string = "Closed"
+                    } else {
+                        val.hour_string = open_time.format("h:mma") + " - " + close_time.format("h:mma");
+                    } 
+                }
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+            
+            if (type == "store_desc"){
+                if (collection.website != ""){
+                } else {
+                    $("#contact_website").hide();
+                }
+            }
+            
+            if (promo_array.length == 0 ){
+                $("#store_promo_container").hide();
+                $("#promo_header").hide();
+            }
+            
+            if (jobs_array.length == 0 ){
+                $("#store_job_container").hide();
+                $("#job_header").hide();
+                
+            }
+        }
         
+        function load_map(reg, store_details){
+            // stores_x5F_3_x5F_6_2_
+            this_region = {}
+            this_region = store_details.svgmap_region
+            map = $('#mapsvg').mapSvg({
+                source: getSVGMapURL(),    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: '#38949d', hover: "#38949d"},
+                disableAll: true,
+                height:479,
+                width:738,
+                regions: reg,
+                tooltipsMode:'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'left' },
+                pan:true,
+                cursor:'pointer',
+                responsive:true,
+                zoomLimit: [0,10]
+            });
+            
+            map.setViewBox(store_details.svgmap_region)
+            map.selectRegion(store_details.svgmap_region)
+            drop_pin(store_details.svgmap_region)
+        }
         
+        function drop_pin(id){
+            var coords = map.get_coords(id);
+            var height = parseInt(coords["height"])
+            var width = parseInt(coords["width"])
+            var x_offset = (parseInt(width) / 2);
+            var y_offset = (parseInt(height) /2);
+            
+            map.setMarks([{ xy: [coords["x"] - 25 + x_offset, coords["y"] - 65 + y_offset],
+                attrs: {
+                    src:  '//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/103b482360f9f2e6f9c50b2426af6d61/pin_baycentre.png'     // image for marker
+                    }
+                }
+            ])
+        }
         
         loadMallDataCached(renderPageData);
     });

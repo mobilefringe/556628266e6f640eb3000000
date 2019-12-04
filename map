@@ -1,4 +1,9 @@
 <style>
+    .download_map{
+        float: right;
+        margin-top: 10px;
+    }
+
     .map-container {
         margin-bottom: 30px;
     }

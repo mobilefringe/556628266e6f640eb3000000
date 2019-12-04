@@ -61,7 +61,9 @@
                 </div>
             </div>
     
-            <div class="map_container" id="mapsvg"></div>
+            <div class="map_container" >
+                <div id="mapsvg_store_detail"></div>
+            </div>
         </div>
     </div>
 </div>

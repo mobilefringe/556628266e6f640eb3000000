@@ -102,7 +102,7 @@
     <img id="IE_map" src="">
 </div>
 
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
 
 <!--libraries for enhanced map-->
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>

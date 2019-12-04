@@ -215,6 +215,8 @@
     let store_details = null;
     $(document).ready(function() {
         function renderPageData(){
+            console.log('hi')
+            
             var page_banner = getRepoDetailsByName('Store Page').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){

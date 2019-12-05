@@ -97,7 +97,7 @@
 
 
 <div id="mobileMap" style="text-align:center;display:none;">
-    <iframe src="https://mf-map.netlify.com/map?iframe=true&staging=true&subdomain=baycentre&default_zoom=1.2" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
+    <iframe src="https://mf-map.netlify.com/map?iframe=true&staging=true&subdomain=baycentre&default_zoom=1.25" frameborder="0" width="100%" height="100%" id="iFrame1" sandbox="allow-top-navigation allow-scripts allow-same-origin"></iframe>
     <h3 id="IE_map_text">Functionality works best while viewing with Google Chrome or Firefox</h3>
     <img id="IE_map" src="">
 </div>

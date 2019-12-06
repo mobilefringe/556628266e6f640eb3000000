@@ -31,7 +31,7 @@
     }
     @media (max-width: 768px) {
         html, iframe, #IE_map{
-            height: calc(100vh - 212.64px) !important;
+            height: calc(100vh - 136.92px) !important;
         }
         #mobileMap{
             display:block!important;

@@ -375,9 +375,9 @@
         header {
             position: relative;
         }
-        /*.menu_container {*/
-        /*    display: none;*/
-        /*}*/
+        .desktop-view {
+            display: none;
+        }
     }
     
 </style>

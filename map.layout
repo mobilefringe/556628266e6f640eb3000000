@@ -373,9 +373,9 @@
         header {
             position: relative;
         }
-        .menu_container {
-            display: none;
-        }
+        /*.menu_container {*/
+        /*    display: none;*/
+        /*}*/
     }
     
 </style>

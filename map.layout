@@ -110,96 +110,96 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
-        <!--<div class="menu_container">-->
-        <!--    <div class="search_social_div"> -->
-        <!--        <a class="header_link" href="/contact_us" onclick="send_ga_event('The Bay Centre – Header – Contact Us')">contact us</a>-->
-        <!--        <div class="search_div">-->
-        <!--            <input  type="text" id="search_input" class="search_input" placeholder="Search" onclick="send_ga_event('The Bay Centre – Header – Search')">-->
-        <!--            <i class="fa fa-search search_icon"></i>-->
-        <!--            <div class="search-results" id="search_results" style="display:none">-->
-                        <!-- START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE-->
-        <!--                <script id="search_results_template" type="x-tmpl-mustache/text">{% raw %}-->
-        <!--                    <small><h4 class="list-group-item search-results-count" id="store_results_header" style="display:none;#4d4d4f:gray;margin-top:2px;font-size:14px" data-i18n="nav.stores" onclick="javascript:show_results('store')"></h4></small>-->
-        <!--                    <div class="results_div" id="store_results">-->
-        <!--                    {{#stores}}-->
-        <!--                    <a href="/stores/{{slug}}" class="list-group-item">-->
-        <!--                        <div class="result_container">-->
-        <!--                            <div class="name">{{name}}</div>-->
-        <!--                            <div class="description">{{description_trim}}</div>-->
-        <!--                            <div class="phone">{{phone}}</div>-->
-        <!--                        </div>-->
-        <!--                    </a>-->
-        <!--                    {{/stores}}-->
-        <!--                </div>-->
-        <!--                <h4 class="list-group-item search-results-count" id="promotions_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('promo')"></h4>-->
-        <!--                <div class="results_div" id="promo_results">-->
-        <!--                {{#promotions}}-->
-        <!--                    <a href="/promotions/{{slug}}" class="list-group-item">-->
-        <!--                        <div class="result_container">-->
-        <!--                            <div class="name">{{name}}</div>-->
-        <!--                            <div class="description">{{description_trim}}</div>-->
-        <!--                        </div>-->
-        <!--                    </a>-->
-        <!--                {{/promotions}}-->
-        <!--                </div>-->
-        <!--                <h4 class="list-group-item search-results-count" id="events_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.events" onclick="javascript:show_results('event')"></h4>-->
-        <!--                <div class="results_div" id="event_results">-->
-        <!--                {{#events}}-->
-        <!--                    <a href="/events/{{slug}}" class="list-group-item">-->
-        <!--                        <div class="result_container">-->
-        <!--                            <div class="name">{{name}}</div>-->
-        <!--                            <div class="description">{{description_trim}}</div>-->
-        <!--                        </div>-->
-        <!--                    </a>-->
-        <!--                {{/events}}-->
-        <!--                </div>-->
-        <!--                <h4 class="list-group-item search-results-count" id="jobs_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('job')"></h4>-->
-        <!--                <div class="results_div" id="job_results">-->
-        <!--                {{#jobs}}-->
-        <!--                    <a href="/jobs/{{slug}}" class="list-group-item">-->
-        <!--                        <div class="result_container">-->
-        <!--                            <div class="name">{{name}}</div>-->
-        <!--                            <div class="description">{{description_trim}}</div>-->
-        <!--                        </div>-->
-        <!--                    </a>-->
-        <!--                {{/jobs}}-->
-        <!--                </div>-->
-        <!--                </script>{% endraw %}-->
+        <div class="menu_container">
+            <div class="search_social_div"> 
+                <a class="header_link" href="/contact_us" onclick="send_ga_event('The Bay Centre – Header – Contact Us')">contact us</a>
+                <div class="search_div">
+                    <input  type="text" id="search_input" class="search_input" placeholder="Search" onclick="send_ga_event('The Bay Centre – Header – Search')">
+                    <i class="fa fa-search search_icon"></i>
+                    <div class="search-results" id="search_results" style="display:none">
+                         START MUSTACHE TEMPLATE FOR EVENT ITEM WITH AN IMAGE
+                        <script id="search_results_template" type="x-tmpl-mustache/text">{% raw %}
+                            <small><h4 class="list-group-item search-results-count" id="store_results_header" style="display:none;#4d4d4f:gray;margin-top:2px;font-size:14px" data-i18n="nav.stores" onclick="javascript:show_results('store')"></h4></small>
+                            <div class="results_div" id="store_results">
+                            {{#stores}}
+                            <a href="/stores/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                    <div class="phone">{{phone}}</div>
+                                </div>
+                            </a>
+                            {{/stores}}
+                        </div>
+                        <h4 class="list-group-item search-results-count" id="promotions_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('promo')"></h4>
+                        <div class="results_div" id="promo_results">
+                        {{#promotions}}
+                            <a href="/promotions/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                </div>
+                            </a>
+                        {{/promotions}}
+                        </div>
+                        <h4 class="list-group-item search-results-count" id="events_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.events" onclick="javascript:show_results('event')"></h4>
+                        <div class="results_div" id="event_results">
+                        {{#events}}
+                            <a href="/events/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                </div>
+                            </a>
+                        {{/events}}
+                        </div>
+                        <h4 class="list-group-item search-results-count" id="jobs_results_header" style="display:none;color:#4d4d4f;margin-top:2px;font-size:14px" data-i18n="nav.promotions" onclick="javascript:show_results('job')"></h4>
+                        <div class="results_div" id="job_results">
+                        {{#jobs}}
+                            <a href="/jobs/{{slug}}" class="list-group-item">
+                                <div class="result_container">
+                                    <div class="name">{{name}}</div>
+                                    <div class="description">{{description_trim}}</div>
+                                </div>
+                            </a>
+                        {{/jobs}}
+                        </div>
+                        </script>{% endraw %}
                     
-        <!--                <ul class="list-group" >-->
+                        <ul class="list-group" >
                             
-        <!--                    <li>-->
-        <!--                    <a  class="close-search list-group-item" style="color:#4d4d4f;font-weight:bold">-->
-        <!--                        <small>-->
-        <!--                            <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> -->
-        <!--                        </small>-->
-        <!--                    </a>-->
-        <!--                    </li>-->
-        <!--                    <li>-->
-        <!--                    <div id="search_results_items" class="search-results-items" style="">-->
-                            <!--RENDERED BY renderSearchResultsTemplate(..) -->
-        <!--                    </div>-->
-        <!--                    </li>-->
-        <!--                </ul>-->
-        <!--            </div>-->
+                            <li>
+                            <a  class="close-search list-group-item" style="color:#4d4d4f;font-weight:bold">
+                                <small>
+                                    <span class="search-results-count">{{count}} results found.</span>&nbsp;<span data-i18n="general.results"></span> 
+                                </small>
+                            </a>
+                            </li>
+                            <li>
+                            <div id="search_results_items" class="search-results-items" style="">
+                            RENDERED BY renderSearchResultsTemplate(..) 
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
                 
-        <!--    </div>-->
-        <!--    <div class="header_social_icons">-->
-        <!--        <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Instagram')">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram">-->
-        <!--        </a>-->
-        <!--        <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Facebook')">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png" class="header_icon" alt="facebook" id="header_facebook">-->
-        <!--        </a>-->
-        <!--        <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Twitter')">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png" class="header_icon" alt="twitter" id="header_twitter">-->
-        <!--        </a>-->
-        <!--        <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – YouTube')">-->
-        <!--            <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube">-->
-        <!--        </a>-->
-                        <!--<a href="" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>-->
-        <!--    </div>-->
-        <!--</div>-->
+            </div>
+            <div class="header_social_icons">
+                <a href="https://instagram.com/thebaycentre/" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Instagram')">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_instagram.png" class="header_icon" alt="instagram" id="header_instagram">
+                </a>
+                <a href="https://www.facebook.com/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Facebook')">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_fb.png" class="header_icon" alt="facebook" id="header_facebook">
+                </a>
+                <a href="https://twitter.com/baycentrevic" target="_blank" onclick="send_ga_event('The Bay Centre – Header – Twitter')">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_twit.png" class="header_icon" alt="twitter" id="header_twitter">
+                </a>
+                <a href="https://www.youtube.com/user/thebaycentre" target="_blank" onclick="send_ga_event('The Bay Centre – Header – YouTube')">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_youtube.png" class="header_icon" alt="youtube" id="header_youtube">
+                </a>
+                        <a href="" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/a578c8b64c614c3eac576155beb18963/header_social_blog.png" class="header_icon" alt="blog" id="header_blog"></a>
+            </div>
+        </div>
         <div id="logo_container">
             <a href="/home" onclick="send_ga_event('The Bay Centre – Header – Logo')"><img class="site_logo" src="//codecloud.cdn.speedyrails.net/sites/5de68e156e6f641605420000/image/png/1520014824000/baycentrelogo.png"></a>
         </div>
@@ -372,6 +372,9 @@
     @media (max-width: 768px) {
         header {
             position: relative;
+        }
+        .menu_container {
+            display: none;
         }
     }
     

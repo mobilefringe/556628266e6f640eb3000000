@@ -110,7 +110,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
-        <!--<div class="menu_container">-->
+        <!--<div class="desktop-view menu_container">-->
         <!--    <div class="search_social_div"> -->
         <!--        <a class="header_link" href="/contact_us" onclick="send_ga_event('The Bay Centre – Header – Contact Us')">contact us</a>-->
         <!--        <div class="search_div">-->

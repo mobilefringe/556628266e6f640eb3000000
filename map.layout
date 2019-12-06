@@ -376,7 +376,7 @@
             position: relative;
         }
         .desktop-view {
-            display: none;
+            /*display: none;*/
         }
     }
     

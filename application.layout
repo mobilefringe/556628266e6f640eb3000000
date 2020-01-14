@@ -469,7 +469,7 @@
                 <iframe id="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.634026863271!2d-123.3664981!3d48.42517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f749ab70dd595%3A0x775000abe4570019!2sThe+Bay+Centre!5e0!3m2!1sen!2sca!4v1432928127424" width="830" height="400" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
-        <div class="trim_screen" style="margin:auto;">
+        <div class="trim_screen" style="margin:auto;text-align: center;">
             <a id="track_link" href="https://www.wires.org.au/" target="_blank">
                 <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/jpeg/1578946064000/1194x500.jpg" alt=""/>
             </a>

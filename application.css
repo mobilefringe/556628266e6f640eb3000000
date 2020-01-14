@@ -82,6 +82,9 @@
 .open_accordion:before{
     content: "\f106" !important;
 }
+.max-width {
+    max-width: 100%;
+}
 
 .featured_box{
     padding: 30px;

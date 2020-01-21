@@ -64,7 +64,9 @@
     margin: 0 5px;
 }
 
-
+.uploaded-img-responsive {
+    max-width: 100%;
+}
 .visible-phone{
     display:none;   
 }

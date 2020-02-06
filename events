@@ -242,7 +242,7 @@
                 } 
                 // today = new Date();
                 // webDate = new Date(val.show_on_web_date + "T08:00:00Z")
-                today = moment();
+                today = moment().tz(getPropertyTimeZone());
                 webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
                 if (today >= webDate && val.is_featured == false) {
                     c = $.inArray("news", val.tags)

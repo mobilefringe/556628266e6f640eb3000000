@@ -251,7 +251,7 @@
                         promo_array.push(val) 
                     }
                 } 
-                if (val.is_featured == true){
+                if (today >= webDate && val.is_featured == true){
                     c = $.inArray("news", val.tags)
                     if (c == 0){
                     } else {

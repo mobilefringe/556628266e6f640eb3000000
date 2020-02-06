@@ -244,7 +244,6 @@
                 // today = new Date();
                 // webDate = new Date(val.show_on_web_date + "T08:00:00Z")
                 webDate = moment(val.show_on_web_date).tz(getPropertyTimeZone());
-                console.log('today', today, 'webDate', webDate, today >= webDate)
                 if (today >= webDate && val.is_featured == false) {
                     c = $.inArray("news", val.tags)
                     if (c == 0){

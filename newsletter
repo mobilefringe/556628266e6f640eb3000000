@@ -56,7 +56,7 @@
     .socialize_social_icons{
         margin-top:0;
     }
-    .newsletter_row div{
+    .newsletter_row p {
         width: 49%;
         display:inline-block;
         font-family:montserrat-regular;

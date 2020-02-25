@@ -254,21 +254,21 @@
                         <input id="news_postal" name="cm-f-jkyulu" type="text" />
                     </p>
                 </div>
-                <div class="newsletter_row">
-                    <p>
-                        <label for="news_age">Age</label><br />
-                        <input id="news_age" name="cm-f-jkyulh" type="text" />
-                    </p>
-                    <p>
-                        <label for="news_gender">Gender</label><br />
-                        <select id="news_gender" name="cm-f-jkyulk">
-                            <option selected disabled>Please Select</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                        <input id="news_gender" name="cm-f-jkyulk" type="text" />
-                    </p>
-                </div>
+                <!--<div class="newsletter_row">-->
+                <!--    <p>-->
+                <!--        <label for="news_age">Age</label><br />-->
+                <!--        <input id="news_age" name="cm-f-jkyulh" type="text" />-->
+                <!--    </p>-->
+                <!--    <p>-->
+                <!--        <label for="news_gender">Gender</label><br />-->
+                <!--        <select id="news_gender" name="cm-f-jkyulk">-->
+                <!--            <option selected disabled>Please Select</option>-->
+                <!--            <option value="Male">Male</option>-->
+                <!--            <option value="Female">Female</option>-->
+                <!--        </select>-->
+                <!--        <input id="news_gender" name="cm-f-jkyulk" type="text" />-->
+                <!--    </p>-->
+                <!--</div>-->
                 
                 <input id="newsletter_agree_terms" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages.These emails may include special retail offers, promotions, news from our merchants, upcoming events, information on the latest trends and much more.">
                 <label for="newsletter_agree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the Privacy Terms & Conditions.</label>

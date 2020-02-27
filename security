@@ -160,7 +160,7 @@
             $.getJSON(pages_json).done(function(data) {
                 securityInfo = data.subpages[0]
                 
-                console.log(securityInfo)
+                console.log(data.subpages[0])
                 
                 $('.security').html(securityInfo.body)
             }).fail(function(jqXHR) {

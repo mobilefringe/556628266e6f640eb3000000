@@ -156,11 +156,12 @@
             
             
             var pathArray = window.location.pathname.split('/');
-            console.log(pathArray)
+            console.log('pathArray', pathArray)
             var slug = pathArray[pathArray.length-1];
+            console.log('slug', slug)
             var securityInfo = {}
             
-            console.log(prefix)
+            console.log('prefix', prefix)
             var pages_json = prefix+ "/pages/baycentre-security.json"
             console.log(pages_json)
             

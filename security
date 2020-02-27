@@ -166,12 +166,9 @@
             console.log('pages_json', pages_json)
             
             $.getJSON(pages_json).done(function(data) {
-                securityInfo = data.subpages[0]
-
+                securityInfo = data.body
                 
-                console.log(data)
-                
-                $('#security').html(securityInfo.body)
+                $('#security').html(securityInfo)
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");

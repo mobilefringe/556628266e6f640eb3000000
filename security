@@ -154,14 +154,7 @@
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             
             
-            var securityInfo = {}
             
-            prefix = get_prefix();
-            var pages_json = prefix+ "/pages/baycentre-security.json"
-            
-            $.getJSON(pages_json).done(function(data) {
-                securityInfo = data.subpages[0]
-            }
             
             $(".loading_overlay").hide();
             $("#page_content").show();

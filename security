@@ -162,7 +162,7 @@
             $.getJSON(pages_json).done(function(data) {
                 securityInfo = data.subpages[0]
                 
-                $('.security').html(giftCardIntro.body)
+                $('.security').html(securityInfo.body)
             }
             
             $(".loading_overlay").hide();

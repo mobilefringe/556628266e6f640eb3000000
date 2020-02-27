@@ -89,9 +89,9 @@
 <div id="main_container">
     <div id="page_content"> 
         <div class="main_content_div">
-            <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">
-            <br>
-            <br>
+            <!--<p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">-->
+            <!--<br>-->
+            <!--<br>-->
                 
             <div class="security"></div>
                 

@@ -166,6 +166,7 @@
                 
                 
                 securityInfo = data.subpages[0]
+                console.log(securityInfo)
                 
                 
                 $('.security').html(securityInfo.body)

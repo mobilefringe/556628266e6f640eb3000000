@@ -90,7 +90,7 @@
     <div id="page_content"> 
         <div class="main_content_div">
             
-            <br><br>
+
             <div style="margin-top:20px;margin-left:35px;margin-right:15px" class="gs_text" id="security"></div>
 
             <div class="cat_stores_container" id="cat_stores_container">

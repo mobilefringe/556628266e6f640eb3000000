@@ -156,11 +156,25 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             
-            var giftCardIntro = {}
-            var checkMyBalance = {}
+            var securityInfo = {}
             
             prefix = get_prefix();
             var pages_json = prefix+ "/pages/baycentre-security.json"
+            
+            
+            $.getJSON(pages_json).done(function(data) {
+                
+                
+                securityInfo = data.subpages[0]
+                
+                
+                $('.security').html(securityInfo.body)
+
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
             
             $(".loading_overlay").hide();
             $("#page_content").show();

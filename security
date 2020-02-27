@@ -153,8 +153,14 @@
             
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
             
+            var giftCardIntro = {}
+            var checkMyBalance = {}
             
+            prefix = get_prefix();
+            var pages_json = prefix+ "/pages/baycentre-security.json"
             
             $(".loading_overlay").hide();
             $("#page_content").show();

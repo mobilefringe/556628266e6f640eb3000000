@@ -155,7 +155,7 @@
             renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
             
             
-            console.log('window', window.location.pathname)
+            console.log('window', window.location.pathname('/'))
             var pathArray = window.location.pathname.split('/');
             var slug = pathArray[pathArray.length-1];
             var securityInfo = {}

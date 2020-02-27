@@ -163,7 +163,7 @@
             
             console.log('prefix', prefix)
             var pages_json = prefix+ "/pages/baycentre-security.json"
-            console.log(pages_json)
+            console.log('pages_json', pages_json)
             
             $.getJSON(pages_json).done(function(data) {
                 securityInfo = data.subpages[0]

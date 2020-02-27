@@ -155,22 +155,14 @@
             
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            
             var securityInfo = {}
-            
-            prefix = get_prefix();
             var pages_json = prefix+ "/pages/baycentre-security.json"
-            
-            
             $.getJSON(pages_json).done(function(data) {
-                
-                
                 securityInfo = data.subpages[0]
+                
                 console.log(securityInfo)
                 
-                
                 $('.security').html(securityInfo.body)
-
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");

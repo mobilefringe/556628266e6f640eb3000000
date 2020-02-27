@@ -91,7 +91,7 @@
         <div class="main_content_div">
         
         
-            <div id="security"></div>
+            <div style="margin-top:20px;margin-left:35px;margin-right:15px" id="security"></div>
             
             
             <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">

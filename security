@@ -90,9 +90,10 @@
     <div id="page_content"> 
         <div class="main_content_div">
             <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">
-                <br><br>
+            <br>
+            <br>
                 
-                <div class="security"></div>
+            <div class="security"></div>
                 
                 
             <!--    <p class="gs_text" style="margin-top:20px;margin-left:35px;margin-right:15px">At The Bay Centre, your security and life safety is our #1 priority. The Bay Centre provides a comprehensive and innovative security program staffed by experienced, well-trained and professional staff providing exceptional service while providing you with a safe, secure and enjoyable visit.-->

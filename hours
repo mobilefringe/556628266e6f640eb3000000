@@ -85,9 +85,8 @@
 <div id="main_container">
     <div id="page_content"> 
         <div class="inside_page_container">
-            <!--<div class="store_detail_description">-->
-                <div class="store_detail_description" id="cat_extended_hours_stores"></div>
-            <!--</div>-->
+            <div class="store_detail_description" id="cat_extended_hours_stores"></div>
+            <!--<div class="store_detail_description"></div>-->
             <p class="store_detail_title">regular hours</p>
             <div class="hidden_div" id="cat_regular_hours_stores">
                 <script id="regular_hours_template" type="x-tmpl-mustache/text">
@@ -108,7 +107,7 @@
                 </script>
             </div>
 
-            
+            <!--<div class="store_detail_description" id="cat_extended_hours_stores"></div>-->
         </div>
     </div>
 </div>
@@ -137,6 +136,7 @@
             var reg_hours = getPropertyRegularHours();
             renderData("#cat_regular_hours_stores","#regular_hours_template",reg_hours, "reg_hours");
             var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
+            console.log("holiday_hours", holiday_hours)
             renderData("#cat_holiday_hours_stores","#holiday_hours_template",holiday_hours, "holiday_hours");
             
             $(".loading_overlay").hide();

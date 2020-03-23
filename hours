@@ -87,25 +87,25 @@
         <div class="inside_page_container">
             <div class="store_detail_description" id="cat_extended_hours_stores"></div>
             <!--<div class="store_detail_description"></div>-->
-            <p class="store_detail_title">regular hours</p>
-            <div class="hidden_div" id="cat_regular_hours_stores">
-                <script id="regular_hours_template" type="x-tmpl-mustache/text">
-                    <div class="hour_line">
-                        <p class="">{{day}}</p>
-                        <p class="">{{hour_string}}</p>
-                    </div>
-                </script>
-            </div>
-            <p id="holiday_title" class="hidden_now store_detail_title">holiday hours</p>
-            <div class="hidden_div" id="cat_holiday_hours_stores">
-                <script id="holiday_hours_template" type="x-tmpl-mustache/text">
-                    <div class="hour_line">
-                        <p class="">{{holiday_name}}</p>
-                        <p class="">{{hour_string}}</p>
-                        <p style="margin-top:0;line-height:0">({{hol}})</p>
-                    </div>
-                </script>
-            </div>
+            <!--<p class="store_detail_title">regular hours</p>-->
+            <!--<div class="hidden_div" id="cat_regular_hours_stores">-->
+            <!--    <script id="regular_hours_template" type="x-tmpl-mustache/text">-->
+            <!--        <div class="hour_line">-->
+            <!--            <p class="">{{day}}</p>-->
+            <!--            <p class="">{{hour_string}}</p>-->
+            <!--        </div>-->
+            <!--    </script>-->
+            <!--</div>-->
+            <!--<p id="holiday_title" class="hidden_now store_detail_title">holiday hours</p>-->
+            <!--<div class="hidden_div" id="cat_holiday_hours_stores">-->
+            <!--    <script id="holiday_hours_template" type="x-tmpl-mustache/text">-->
+            <!--        <div class="hour_line">-->
+            <!--            <p class="">{{holiday_name}}</p>-->
+            <!--            <p class="">{{hour_string}}</p>-->
+            <!--            <p style="margin-top:0;line-height:0">({{hol}})</p>-->
+            <!--        </div>-->
+            <!--    </script>-->
+            <!--</div>-->
 
             <!--<div class="store_detail_description" id="cat_extended_hours_stores"></div>-->
         </div>

@@ -1,4 +1,7 @@
 <style>
+    .store_detail_description {
+        margin-bottom: 54px;
+    }
     .socialize_text{
         margin-top:0;
     }
@@ -6,8 +9,8 @@
         margin-top:-10px;
     }
    .contact_us_container a:link {
-    text-decoration: underline;
-}
+        text-decoration: underline;
+    }
 </style>
 <div id="page_banner">
     <div class="banner_wrapper">

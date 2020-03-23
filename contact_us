@@ -38,7 +38,9 @@
     
 <div id="main_container">
     <div id="page_content">
-        <p class="contact_number">COVID-19: Precautionary measures we're taking & changes in operating hours. <a href="/news/baycentre-coronavirus-update-march-13-2020">Learn more</a>.</p>
+        <div class="store_detail_description" id="cat_extended_hours_stores">
+            <p class="contact_number">COVID-19: Precautionary measures we're taking & changes in operating hours. <a href="/news/baycentre-coronavirus-update-march-13-2020">Learn more</a>.</p>
+        </div>
         <hr>
         <div class="contact_first_row">
             <div class="contact_column">
@@ -148,16 +150,6 @@
             });
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
-            var pages_json = get_prefix() + "/pages/baycentre-hours.json"
-            $.getJSON(pages_json).done(function(data) {
-                $("#cat_extended_hours_stores").html(data.body);
-            }).fail(function(jqXHR) {
-                if (jqXHR.status == 404) {
-                    $("#left_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner3.jpg");
-                    $("#right_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner2.jpg");
-                    $("#main_image").attr("src", "//codecloud.cdn.speedyrails.net/sites/556628266e6f640eb3000000/389e126f6eee4f2c99cc11b9512c8940/404_banner1.jpg");
-                }
-            }); 
             $(".loading_overlay").hide();
             $("#page_content").show();
         }

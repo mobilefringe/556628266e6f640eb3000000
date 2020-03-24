@@ -4,7 +4,7 @@
         padding: 0 10px;
         background-color: #FF0000;
     }
-    .store_detail_description p {
+    .store_detail_description p, .store_detail_description a {
         color: #FFF;
     }
     .socialize_text{

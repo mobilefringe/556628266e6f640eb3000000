@@ -1,4 +1,13 @@
 <style>
+    .covid_link {
+        margin-bottom: 54px;
+        padding: 0 10px;
+        background-color: #FF0000;
+    }
+    .covid_link p, .covid_link a {
+        font-weight: bold;
+        color: #FFF;
+    }
     .store_detail_description{
         margin-top:15px;
         color:#6d6e71 !important;
@@ -85,7 +94,7 @@
 <div id="main_container">
     <div id="page_content"> 
         <div class="inside_page_container">
-            <div class="store_detail_description">
+            <div class="covid_link">
                 <p class="contact_number">COVID-19: Precautionary measures we're taking & changes in operating hours. <a href="/news/baycentre-coronavirus-update-march-13-2020">Learn more</a>.</p>
             </div>
             <hr>

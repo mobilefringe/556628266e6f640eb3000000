@@ -1,6 +1,6 @@
 <style>
     .covid_link {
-        margin-bottom: 54px;
+        margin: 54px 0;
         padding: 0 10px;
         background-color: #FF0000;
     }

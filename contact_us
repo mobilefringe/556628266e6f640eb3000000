@@ -5,6 +5,7 @@
         background-color: #FF0000;
     }
     .store_detail_description p, .store_detail_description a {
+        font-weight: bold;
         color: #FFF;
     }
     .socialize_text{

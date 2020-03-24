@@ -1,6 +1,11 @@
 <style>
     .store_detail_description {
         margin-bottom: 54px;
+        padding: 0 10px;
+        background-color: #FF0000;
+    }
+    .store_detail_description p {
+        color: #FFF;
     }
     .socialize_text{
         margin-top:0;

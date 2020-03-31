@@ -491,7 +491,7 @@
                     }
                 } 
             });
-
+    
             featured_promo_array = featured_promo_array.sort(function(a,b){
                 if(a.feature_item_index > b.feature_item_index){ return 1}
                 if(a.feature_item_index < b.feature_item_index){ return -1}
@@ -515,7 +515,10 @@
                 if(a.feature_item_index < b.feature_item_index){ return -1}
                 return 0;
             });
-            
+            console.log('featured_promo_array',featured_promo_array);
+            console.log('featured_event_array',featured_event_array);
+            console.log('news_event_array', news_event_array);
+            console.log('featured_event_without_coming_soon', featured_event_without_coming_soon);
             var first_tab_content = []
             var second_tab_content = []
             var third_tab_content = []

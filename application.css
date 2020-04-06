@@ -4,41 +4,41 @@
 
 @font-face {
 	font-family: montserrat-regular;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/014/839/original/Montserrat-Regular.ttf?1448390422');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/014/839/original/Montserrat-Regular.ttf?1448390422');
 }
 
 
 @font-face {
 	font-family: montserrat-light;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/386/original/MuseoSans_light.ttf?1475696301');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/386/original/MuseoSans_light.ttf?1475696301');
 }
 
 
 @font-face {
 	font-family: lora-regular;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/387/original/Lora-Regular.ttf?1475696301');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/387/original/Lora-Regular.ttf?1475696301');
 }
 
 @font-face {
 	font-family: lora-regular;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/385/original/Lora-Bold.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/385/original/Lora-Bold.ttf?1475696300');
 	font-weight:bold;
 }
 @font-face {
 	font-family: railway-regular;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/381/original/Raleway-Regular.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/381/original/Raleway-Regular.ttf?1475696300');
 }
 @font-face {
 	font-family: lora-italic;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/383/original/Lora-Italic.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/383/original/Lora-Italic.ttf?1475696300');
 }
 @font-face {
 	font-family: railway-medium;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/382/original/Raleway-Medium.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/382/original/Raleway-Medium.ttf?1475696300');
 }
 @font-face {
 	font-family: railway-light;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/380/original/Raleway-Light.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/380/original/Raleway-Light.ttf?1475696300');
 }
 
 // @font-face {
@@ -47,12 +47,12 @@
 // }
 @font-face {
 	font-family: proxima;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/384/original/ProximaNova-Regular.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/384/original/ProximaNova-Regular.ttf?1475696300');
 }
 
 @font-face {
 	font-family: neuton;
-	src: url('//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/022/379/original/Neuton-Regular.ttf?1475696300');
+	src: url('//assets.mallmaverick.com/system/site_images/photos/000/022/379/original/Neuton-Regular.ttf?1475696300');
 }
 
 #you_are_here{

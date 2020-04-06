@@ -424,7 +424,7 @@
 
             // Sending email
             send_data = {};
-            send_data.url = "https://www.mallmaverick.com/send_contact_email";
+            send_data.url = "https://www.assets.mallmaverick.com/send_contact_email";
             send_data.form_data = JSON.stringify(serializeObject(contact_form));
             contact_form.body = body;
 

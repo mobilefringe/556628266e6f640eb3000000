@@ -92,7 +92,7 @@
                 <div id="store_detail_right_content_container">
                     <script id="store_detail_right_content_template" type="x-tmpl-mustache/text">
                         <a href="{{alt_store_front_url}}" rel="lightbox-gallery" title="{{name}}">
-                            <img class="store_front" alt="photo_{{name}}" src="https://mallmaverick.com/{{photo_url}}"/>
+                            <img class="store_front" alt="photo_{{name}}" src="https://assets.mallmaverick.com/{{photo_url}}"/>
                         </a>
                         
                     </script>

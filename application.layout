@@ -541,20 +541,11 @@
     
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
-        // $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
-            // if (data.status != false){
-                // $('#kipsu-content').show()
-                
-                var s = document.createElement("script");
-                s.id = "kipsu-chat-script"
-                s.src = "https://cdn.kipsu.com/chats/js/kipsuChat.bundle.js";
-                $(s).attr('data-config', "{'widget': '352/9dcc'}");
-                // s['data-config'] = "{''widget': '352/9dcc'}"
-                $("body").append(s);
-                console.log('s', s)
-                
-            // }
-        // });
+        $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
+            if (data.status != false){
+                $('#kipsu-content').show()
+            }
+        });
 
         function toggleChat() {
             $("#kipsu-chat-frame").toggle();
@@ -591,6 +582,7 @@
             trackOutboundLink('https://www.wires.org.au/');
         });
     </script>
+    <script id="kipsu-chat-script" src="https://cdn.kipsu.com/chats/js/kipsuChat.bundle.js" data-config='{"widget": "352/9dcc"}'></script>
 </body>
 <script src="https://kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/360754705c291ba7cd4a4a18102adbaf/bootstrap.min.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.min.js"></script>

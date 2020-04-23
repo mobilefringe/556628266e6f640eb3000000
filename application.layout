@@ -544,6 +544,7 @@
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
             if (data.status != false){
                 $('#kipsu-chat-button').show()
+                $("#kipsu-chat-button").css("background-color", "#fff");
             } else {
                 $('#kipsu-chat-button').hide()
             }

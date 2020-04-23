@@ -548,7 +548,8 @@
                 var s = document.createElement("script");
                 s.id = "kipsu-chat-script"
                 s.src = "https://cdn.kipsu.com/chats/js/kipsuChat.bundle.js";
-                s['data-config'] = "{''widget': '352/9dcc'}"
+                s.attr('data-config', '{''widget': '352/9dcc'}');
+                // s['data-config'] = "{''widget': '352/9dcc'}"
                 $("body").append(s);
                 console.log('s', s)
                 

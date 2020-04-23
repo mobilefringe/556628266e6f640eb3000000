@@ -540,45 +540,45 @@
     </footer>
     
     <!-- KIPSU CHAT -->
-    <script type="text/javascript">
-        $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
-            if (data.status != false){
-                $('#kipsu-chat-button').show()
-            } else {
-                $('#kipsu-chat-button').hide()
-            }
-        });
+    <!--<script type="text/javascript">-->
+    <!--    $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){-->
+    <!--        if (data.status != false){-->
+    <!--            $('#kipsu-chat-button').show()-->
+    <!--        } else {-->
+    <!--            $('#kipsu-chat-button').hide()-->
+    <!--        }-->
+    <!--    });-->
 
-        function toggleChat() {
-            $("#kipsu-chat-frame").toggle();
-            $("#close-chat").toggle();
-        }
+    <!--    function toggleChat() {-->
+    <!--        $("#kipsu-chat-frame").toggle();-->
+    <!--        $("#close-chat").toggle();-->
+    <!--    }-->
 
-        function initChat() {
-            var box = document.createElement('iframe');
-            box.id = "kipsu-chat-frame";
-            box.src = "https://secure.kipsu.com/acct/widget/352/9dcc";
-            $('#kipsu-content')[0].appendChild(box);
-        }
+    <!--    function initChat() {-->
+    <!--        var box = document.createElement('iframe');-->
+    <!--        box.id = "kipsu-chat-frame";-->
+    <!--        box.src = "https://secure.kipsu.com/acct/widget/352/9dcc";-->
+    <!--        $('#kipsu-content')[0].appendChild(box);-->
+    <!--    }-->
         
-        document.addEventListener("DOMContentLoaded", function(){
-            $("#kipsu-chat-frame").hide();
-            $("#close-chat").hide();
-            $("#open-chat").click(function(){
-                $(".main_body").toggleClass("no_scroll");
-                if($('#kipsu-chat-frame').length < 1) {
-                    initChat();
-                    $('#close-chat').show();
-                } else {
-                    toggleChat();
-                }
-            });
-            $("#close-chat").click(function(){
-                $(".main_body").removeClass("no_scroll");
-                toggleChat();
-            });
-        });
-    </script>
+    <!--    document.addEventListener("DOMContentLoaded", function(){-->
+    <!--        $("#kipsu-chat-frame").hide();-->
+    <!--        $("#close-chat").hide();-->
+    <!--        $("#open-chat").click(function(){-->
+    <!--            $(".main_body").toggleClass("no_scroll");-->
+    <!--            if($('#kipsu-chat-frame').length < 1) {-->
+    <!--                initChat();-->
+    <!--                $('#close-chat').show();-->
+    <!--            } else {-->
+    <!--                toggleChat();-->
+    <!--            }-->
+    <!--        });-->
+    <!--        $("#close-chat").click(function(){-->
+    <!--            $(".main_body").removeClass("no_scroll");-->
+    <!--            toggleChat();-->
+    <!--        });-->
+    <!--    });-->
+    <!--</script>-->
     <script>
         $("#track_link").click( function() {
             trackOutboundLink('https://www.wires.org.au/');

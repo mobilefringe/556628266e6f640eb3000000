@@ -448,7 +448,7 @@
         <button id="close-chat">X</button>
         <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>
     </div>
-    <div id="-chat-frame"></div>
+    <div id="kipsu-chat-script"></div>
     <footer>
         <div class="footer_logo_div">
             <img class="footer_logos" src="//codecloud.cdn.speedyrails.net/sites/599c748a6e6f6458cb7a0000/image/png/1573229778000/[Bay Centre] Banner Logos-Desktop copy copy.png" alt="footer_logos"/>

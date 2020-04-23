@@ -548,8 +548,6 @@
                 $('#kipsu-chat-button').hide()
             }
         });
-
-        
     </script>
     <script>
         $("#track_link").click( function() {

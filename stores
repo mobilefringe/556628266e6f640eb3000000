@@ -35,7 +35,10 @@
     #right_image{
         display:block;
     }
-    
+    .locally_owned_logo {
+        width:30px;
+        height: 30px;
+    }
     @media (max-width: 767px) {
         .tab_item{
             height:25px;

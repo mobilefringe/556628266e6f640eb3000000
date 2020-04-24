@@ -36,7 +36,7 @@
         display:block;
     }
     .locally_owned_logo {
-        width:30px;
+        width: 30px;
         height: 30px;
     }
     @media (max-width: 767px) {

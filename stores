@@ -229,7 +229,6 @@
                     category_list.push(val);
                 } 
             });
-            console.log('category_list', category_list)
             var alpha_stores = getStoresList();  
             renderPageData("#cat_stores_container","#cat_stores_template", category_list, "cats");
             var alpha_array = generateAlphaStoreList(alpha_stores);

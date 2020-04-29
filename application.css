@@ -2349,6 +2349,7 @@ textarea:focus, input:focus{
     }
     .gray_pill{
         width:90%;
+        margin: auto;
         margin-bottom: 10px;
         display: flex;
         justify-content: center;

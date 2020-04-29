@@ -38,6 +38,9 @@
     .locally_owned_logo {
         width: 30px;
         height: 30px;
+        margin: 0 10px;
+        margin-top: -5px;
+        vertical-align: middle;
     }
     @media (max-width: 767px) {
         .tab_item{

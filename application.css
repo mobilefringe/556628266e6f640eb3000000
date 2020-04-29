@@ -2349,7 +2349,9 @@ textarea:focus, input:focus{
     }
     .gray_pill{
         width:90%;
-        margin-bottom:10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
     }
     
     .back_to_list{

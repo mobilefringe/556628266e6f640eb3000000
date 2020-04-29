@@ -67,6 +67,7 @@
         .stores_div a{
             margin-right:0;
             font-size:12px;
+            height: auto;
         }
     }
 </style>

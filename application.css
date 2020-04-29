@@ -2342,6 +2342,7 @@ textarea:focus, input:focus{
         text-align:center;
         padding: 0;
         border: none;
+        height: 40px;
     }
     .store_search_icon{
         right: 30px;

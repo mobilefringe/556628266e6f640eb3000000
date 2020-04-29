@@ -267,7 +267,13 @@
                 if (store_search_results.stores.length > 0 ){
                     $.each( store_search_results.stores , function( key, val ) {
                         $.each( val.categories , function( key2, val2 ) {
-                            cat_array.push(getCategoryDetails(val2))
+                            var category = getCategoryDetails(val2)
+                            if (category.name == "Now Open") {
+                                
+                            } else {
+                                
+                            }
+                             cat_array.push()
                         }); 
                     });
                     console.log('cat_array', cat_array)

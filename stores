@@ -269,9 +269,9 @@
                         $.each( val.categories , function( key2, val2 ) {
                             var category = getCategoryDetails(val2)
                             if (category.name == "Now Open") {
-                                
+                                category.sort_order = 0
                             } else {
-                                
+                                category.sort_order = key2+1
                             }
                              cat_array.push()
                         }); 

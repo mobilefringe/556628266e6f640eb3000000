@@ -2345,8 +2345,9 @@ textarea:focus, input:focus{
         height: 40px;
     }
     .store_search_icon{
-        right: 30px;
-        top: 5px;
+            right: 25px;
+    top: 10px;
+}
     }
     .gray_pill{
         width:90%;

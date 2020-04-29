@@ -270,6 +270,7 @@
                             cat_array.push(getCategoryDetails(val2))
                         }); 
                     });
+                    console.log('cat_array', cat_array)
                     full_cat_array = jQuery.unique( cat_array );
                     $.each( full_cat_array , function( key, val ) {
                         newStoreIds = []

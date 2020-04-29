@@ -273,7 +273,7 @@
                             } else {
                                 category.sort_order = key2+1
                             }
-                             cat_array.push()
+                             cat_array.push(category)
                         }); 
                     });
                     console.log('cat_array', cat_array)

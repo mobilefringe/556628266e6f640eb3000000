@@ -1369,7 +1369,7 @@ textarea:focus, input:focus{
     background:#c7c8ca;
     border:solid #c7c8ca;
     border-radius:50px;
-    height: 40px;
+    height: 30px;
     color:white;
     width:100%;
     font-family:montserrat-regular;
@@ -1388,7 +1388,7 @@ textarea:focus, input:focus{
 }
 .store_Search_div{
     position:relative;
-    height:30px;
+    height:40px;
     margin-left:37px;
     width:445px;
     margin-right:50px;

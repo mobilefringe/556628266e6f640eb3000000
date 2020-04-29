@@ -276,6 +276,7 @@
                              cat_array.push(category)
                         }); 
                     });
+                    cat_array = cat_array.sortBy(function(o){ return o.sort_order })
                     console.log('cat_array', cat_array)
                     full_cat_array = jQuery.unique( cat_array );
                     $.each( full_cat_array , function( key, val ) {

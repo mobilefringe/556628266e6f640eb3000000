@@ -546,7 +546,7 @@
                 $('#kipsu-chat-button').show()
                 
                 $("#open-chat").click(function(){
-                    $(".main_body").toggleClass("no_scroll");
+                    // $(".main_body").toggleClass("no_scroll");
                     kipsuChat.toggleChat()
                 });
             } else {

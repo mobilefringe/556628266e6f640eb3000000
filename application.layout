@@ -448,10 +448,10 @@
     <!--    <button id="close-chat">X</button>-->
         <!--<button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>-->
         <div id="open-chat" class="chat-button-sticky">
-        	<a class="active-trigger" id="accessible-megamenu-chat" href="javascript:void(0)" data-target="#section__chat" aria-label="Chat with Mall of America" aria-controls="section__chat" aria-expanded="false">
+        	<button class="active-trigger" id="accessible-megamenu-chat" href="javascript:void(0)" data-target="#section__chat" aria-label="Chat with Mall of America" aria-controls="section__chat" aria-expanded="false">
         		<svg id="chat-icon" data-name="Chat Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28"><defs><style>.chat-button{fill:#fff;fill-rule:evenodd;}</style></defs><title>Chat-Icon</title><path class="chat-button" d="M26.85,19.55a14.09,14.09,0,1,0-4.55,5.7L29,26ZM7,16a2,2,0,1,1,2-2A2,2,0,0,1,7,16Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,14,16Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,21,16Z"></path></svg>
         		<span>Chat</span>
-        	</a>
+        	</button>
         	
         </div>
     <!--</div>-->

@@ -446,7 +446,7 @@
     <!-- KIPSU CHAT -->
     <!--<div id="kipsu-content" class="hidden_now">-->
     <!--    <button id="close-chat">X</button>-->
-    <!--    <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>-->
+        <button id="open-chat">Hi, this is The Bay Centre’s Guest Services. How can we help you?</button>
     <!--</div>-->
     <footer>
         <div class="footer_logo_div">
@@ -544,6 +544,11 @@
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
             if (data.status != false){
                 $('#kipsu-chat-button').show()
+                
+                $("#open-chat").click(function(){
+                    $(".main_body").toggleClass("no_scroll");
+                    kipsuChat.toggleChat()
+                });
             } else {
                 $('#kipsu-chat-button').hide()
             }

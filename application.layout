@@ -550,14 +550,14 @@
     <script type="text/javascript">
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
             if (data.status != false){
-                $('#kipsu-chat-button').show()
+                $('#open-chat').show()
                 
                 $("#open-chat").click(function(){
                     // $(".main_body").toggleClass("no_scroll");
                     kipsuChat.toggleChat()
                 });
             } else {
-                $('#kipsu-chat-button').hide()
+                $('#open-chat').hide()
             }
         });
     </script>

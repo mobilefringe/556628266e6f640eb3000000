@@ -105,16 +105,16 @@
     <div id="page_content"> 
         <div class="tab_container">
             <ul class="tabs">
-                <li id="tab_1" style="background:white">
-                    <div class="tab_item" style="color:#4d4d4f">
+                <li id="tab_1">
+                    <div class="tab_item">
                         Alphabetical &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
-                        <div class="tab_overlay" style="display:none">&nbsp;</div>
+                        <div class="tab_overlay">&nbsp;</div>
                     </div>
                 </li>
-                <li id="tab_2">
-                    <div class="tab_item">
+                <li id="tab_2" style="background:white">
+                    <div class="tab_item" style="color:#4d4d4f">
                         Category &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i>
-                        <div class="tab_overlay">&nbsp;</div>
+                        <div class="tab_overlay" style="display:none">&nbsp;</div>
                     </div>
                 </li>
             </ul>

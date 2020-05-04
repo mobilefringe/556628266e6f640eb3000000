@@ -125,7 +125,7 @@
             <button class="gray_pill" onclick="see_all_stores()">see all stores</button>
             <button class="gray_pill" onclick="window.location.href='/map'">view map</button>
             <ul class="tab_content">
-                <li id="tab_1_content"  style="display:none">
+                <li id="tab_1_content" style="display:none">
                     <div class="cat_stores_container" id="alpha_stores_container">
                         <script id="alpha_stores_template" type="x-tmpl-mustache/text">
                             <div class="cat_div" id="cat_{{id}}" onclick="javascript:show_stores('{{id}}')">

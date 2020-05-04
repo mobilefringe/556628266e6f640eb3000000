@@ -391,7 +391,6 @@
 
     $(".tabs li").click(function(e){
         var clicked = this.id
-        console.log('clicked', clicked)
         $(".tabs li").css({"background":"transparent","color":"white"});
         $(".tabs li").find(".tab_overlay").css("display","block");
         $(".tabs li").find("div").css("color","white");

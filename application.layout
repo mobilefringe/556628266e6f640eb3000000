@@ -551,6 +551,16 @@
         var today = moment().tz(getPropertyTimeZone()).format('kkmm');
         console.log('today', today);
         console.log((today > 1000) && (today < 1730))
+        if((today > 1000) && (today < 1730)) {
+            $('#open-chat').show()
+                
+            $("#open-chat").click(function(){
+                // $(".main_body").toggleClass("no_scroll");
+                kipsuChat.toggleChat()
+            });
+        } else {
+            $('#open-chat').hide()
+        }
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
             if (data.status != false){
                 $('#open-chat').show()

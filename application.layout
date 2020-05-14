@@ -549,8 +549,8 @@
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
         var today = moment().tz(getPropertyTimeZone()).format('kkmm');
-        console.log('today', today);
-        console.log((today > 1000) && (today < 1730))
+        // console.log('today', today);
+        // console.log((today > 1000) && (today < 1730))
         if((today > 1000) && (today < 1730)) {
             $('#open-chat').show()
                 

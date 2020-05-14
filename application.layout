@@ -548,6 +548,9 @@
     
     <!-- KIPSU CHAT -->
     <script type="text/javascript">
+        var today = moment().tz(getPropertyTimeZone()).format('kkmm');
+        console.log('today', today);
+        console.log((today > 1000) && (today <1730))
         $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
             if (data.status != false){
                 $('#open-chat').show()

@@ -561,18 +561,18 @@
         } else {
             $('#open-chat').hide()
         }
-        $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
-            if (data.status != false){
-                $('#open-chat').show()
+        // $.get('//baycentre.mallmaverick.com/is_chat_available', function(data){
+        //     if (data.status != false){
+        //         $('#open-chat').show()
                 
-                $("#open-chat").click(function(){
-                    // $(".main_body").toggleClass("no_scroll");
-                    kipsuChat.toggleChat()
-                });
-            } else {
-                $('#open-chat').hide()
-            }
-        });
+        //         $("#open-chat").click(function(){
+        //             // $(".main_body").toggleClass("no_scroll");
+        //             kipsuChat.toggleChat()
+        //         });
+        //     } else {
+        //         $('#open-chat').hide()
+        //     }
+        // });
     </script>
     <script>
         $("#track_link").click( function() {

@@ -240,15 +240,15 @@
                 </form>
             </div>
         </div>
-        <!--<a href="/hours">-->
+        <a href="/hours">
             <div id="banner_hours_container">
-                <!--<script id="banner_hours_template" type="x-tmpl-mustache/text">-->
-                <!--    <p class="today_p">{{status}} Today </p>-->
-                <!--    <p>{{h}}</p>-->
-                <!--    <a href="/hours">see all<br>hours ></a>-->
-                <!--</script>-->
+                <script id="banner_hours_template" type="x-tmpl-mustache/text">
+                    <p class="today_p">{{status}} Today </p>
+                    <p>{{h}}</p>
+                    <a href="/hours">see all<br>hours ></a>
+                </script>
             </div>
-        <!--</a>-->
+        </a>
     </div>
 </div>
 

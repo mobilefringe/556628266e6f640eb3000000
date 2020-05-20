@@ -343,6 +343,7 @@
             $(container).html(item_rendered.join(''));
             
             if (type == "cats"){
+                var collected_stores = []
                 $.each( collection , function( key, val ) {
                     if(val.store_ids != null){
                         $.each( val.store_ids , function( key2, val2 ) {

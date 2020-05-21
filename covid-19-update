@@ -1,0 +1,198 @@
+<style>
+    .stores_div a{
+        color:#3aa2d2 !important;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+        text-decoration: underline;
+    }
+    .title, h1 {
+        font-family: railway-regular;
+        font-family: proxima \9;
+        font-size: 28pt;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-left:35px;
+    }
+    h1 {
+        margin-left: 0;
+    }
+    .gs_text a:link{
+        text-decoration: underline;
+    }
+    .stores_div p, .gs_text {
+        color:#6d6e71;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+    }
+    .stores_div{
+        padding-top:30px;
+        padding-left:0;
+        color:#6d6e71;
+        font-family:lora-regular;
+        /*font-family: neuton \9;*/
+        font-size:14pt;
+        line-height:26pt;
+        padding-bottom:30px;
+    }
+    .stores_div p{
+        height:auto;
+        border-top:none;
+    }
+    .socialize_div {
+        margin-top:80px;
+    }
+    .socialize_text{
+        margin-top:5px;
+        
+    }
+    .socialize_social_icons{
+        margin-top:0;
+    }
+    
+    @media (max-width: 767px) {
+        .stores_div p, .cat_div{
+            padding-left:15px;
+            padding-right:15px;
+        }
+        
+        .stores_div a {
+        margin-right: 0px;
+        height:auto;
+        }
+        
+        .cat_div{
+            font-size:18pt;
+            height:auto;
+        }
+        .list_icon{
+            font-size:15px !important;
+        }
+    }
+</style>
+
+<div id="page_banner">
+    <div class="banner_wrapper">
+        <h1 class="page_headline">Guest Services</h1>
+        <div class="missing_out_div">
+            <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
+            <div class="hidden_newsletter_form">
+                <form style="font-size:12px" id="banner_newsletter">
+                    <span>
+                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <button type="submit" id="banner_submit">Subscribe</button>
+                    </span>
+                    <br>
+                    <input id="banner_agree_terms" type="checkbox" required value="I agree to receive newsletters from The Bay Centre">
+                    <label for="banner_aggree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre</label>
+                    <input type="hidden" name="cm-f-jhtykd" id ="banner_source" />
+                    <input type="hidden" name="cm-f-jhtykh" id="banner_terms"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="share_this_icon_div">
+    <span class='st_sharethis'></span>   
+</div>
+
+<div id="main_container">
+    <div id="page_content"> 
+        <div class="main_content_div">
+            <div class="gs_text" style="margin-top:61px;margin-left:35px;margin-right:15px">
+                <div id="guest_services_content"></div>
+            </div>
+            <div class="cat_stores_container" id="cat_stores_container">
+                <script id="cat_stores_template" type="x-tmpl-mustache/text">
+                    <div class="cat_div" id="cat_{{slug}}" onclick="javascript:show_stores('{{slug}}')">
+                        {{title}}
+                        <i id="icon_{{slug}}" class="fa fa-plus list_icon"></i>
+                    </div>
+                    <div class="stores_div" id="cat_{{slug}}_stores">
+                        {{{body}}}
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function show_stores(id){
+       if ($("#cat_"+id+"_stores").is(":visible")){
+           $("#cat_"+id+"_stores").slideUp();
+           $("#icon_"+id).removeClass("fa-minus")
+           $("#icon_"+id).addClass("fa-plus")
+       } else {
+           $("#cat_"+id+"_stores").slideDown();
+           $("#icon_"+id).removeClass("fa-plus")
+           $("#icon_"+id).addClass("fa-minus")
+       }
+    }
+    
+    $(document).ready(function() {
+        function renderAll(){
+            var page_banner = getRepoDetailsByName('Guest Services').images;
+            var banner_url = "";
+            $.each(page_banner, function(key, val){
+                banner_url = val.image_url;
+            });
+            $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
+            
+            var prefix = get_prefix();
+            var page_array = ["baycentre-guest-services-free-wifi","baycentre-guest-services-lost-found","baycentre-guest-services-faxing-photocopying","baycentre-guest-services-bus-passes-tickets","baycentre-guest-services-wheelchair-baby","baycentre-guest-services-family-care","baycentre-guest-services-gift-cards","baycentre-guest-services-visitor-information"]
+            page_array = page_array.reverse()
+            full_page_array = []
+            $.ajaxSetup({
+                async: false
+            });
+            $.each( page_array , function( key, val ) {
+                var pages_json = prefix+"/pages/" + val + ".json"
+                $.getJSON(pages_json).then(function(data) {
+                    //var pages_data = JSON.parse(data);
+                    // $("#page_title").html(data.title)
+                    // $('#mm_page_content').html(data.body);
+                    add_to_page_array (data)
+                });
+            });
+            $.ajaxSetup({
+                async: true
+            });
+            
+            var guest_services = prefix + "/pages/baycentre-guest-services.json"
+            $.getJSON(guest_services).done(function(data) {
+                $('#guest_services_content').html(data.body);
+            });
+            
+            renderPageData("#cat_stores_container","#cat_stores_template",full_page_array, "pages")
+            
+            $(".loading_overlay").hide();
+            $("#page_content").show();
+        }
+        
+        function add_to_page_array (data){
+            full_page_array.push(data)
+        }
+        
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            $.each( collection , function( key, val ) {
+                var title = val.title.split(" - ");
+                val.title = title[1]
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
+        loadMallDataCached(renderAll); 
+    })
+</script>

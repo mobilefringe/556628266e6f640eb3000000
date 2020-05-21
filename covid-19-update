@@ -144,7 +144,7 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             var prefix = get_prefix();
-            var page_array = ["baycentre-covid19-updates-frequently-asked-questions","baycentre-covid19-updates-do-your-part-customer-health-guidelines","baycentre-covid19-updates-how-we-re-keeping-you-safe-physical-distancing-sanitation-and-more","baycentre-guest-services-wheelchair-baby","baycentre-guest-services-family-care","baycentre-guest-services-gift-cards","baycentre-covid19-updates-bay-centre-hours"]
+            var page_array = ["baycentre-covid19-updates-frequently-asked-questions","baycentre-covid19-updates-do-your-part-customer-health-guidelines","baycentre-covid19-updates-how-we-re-keeping-you-safe-physical-distancing-sanitation-and-more","baycentre-covid19-updates-amenities-and-programs-that-will-remain-closed-at-this-time","baycentre-covid19-updates-curbside-pick-up-services","baycentre-covid19-updates-now-open-at-the-bay-centre","baycentre-covid19-updates-bay-centre-hours"]
             page_array = page_array.reverse()
             full_page_array = []
             $.ajaxSetup({

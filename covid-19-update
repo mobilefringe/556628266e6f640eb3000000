@@ -144,7 +144,7 @@
             $("#page_banner").css({backgroundImage: "url(" + banner_url + ")"});
             
             var prefix = get_prefix();
-            var page_array = ["baycentre-guest-services-free-wifi","baycentre-guest-services-lost-found","baycentre-guest-services-faxing-photocopying","baycentre-guest-services-bus-passes-tickets","baycentre-guest-services-wheelchair-baby","baycentre-guest-services-family-care","baycentre-guest-services-gift-cards","baycentre-guest-services-visitor-information"]
+            var page_array = ["baycentre-covid19-updates-bay-centre-hours","baycentre-guest-services-lost-found","baycentre-guest-services-faxing-photocopying","baycentre-guest-services-bus-passes-tickets","baycentre-guest-services-wheelchair-baby","baycentre-guest-services-family-care","baycentre-guest-services-gift-cards","baycentre-guest-services-visitor-information"]
             page_array = page_array.reverse()
             full_page_array = []
             $.ajaxSetup({

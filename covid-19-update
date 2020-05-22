@@ -38,6 +38,10 @@
         line-height:26pt;
         padding-bottom:30px;
     }
+    .stores_div ul{
+        padding-left: 60px;
+        
+    }
     .stores_div p{
         height:auto;
         border-top:none;
@@ -57,6 +61,11 @@
         .stores_div p, .cat_div{
             padding-left:15px;
             padding-right:15px;
+        }
+        
+        .stores_div ul{
+            padding-left: 35px;
+            
         }
         
         .stores_div a {

@@ -76,7 +76,7 @@
 
 <div id="page_banner">
     <div class="banner_wrapper">
-        <h1 class="page_headline">COVID-19 Updates</h1>
+        <h1 class="page_headline">COVID-19 Update</h1>
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">

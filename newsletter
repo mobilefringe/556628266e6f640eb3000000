@@ -115,32 +115,33 @@
                Don’t miss out on exclusive content and giveaways sent straight to your inbox.<br><br>
                Fields marked with an asterisk (*) are required.
             </div>
-            <form id="newsletter_form" action="https://mobilefringe.createsend.com/t/d/s/iixuu/" method="post">
+            <!--<form id="newsletter_form" action="https://mobilefringe.createsend.com/t/d/s/iixuu/" method="post">-->
+            <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A4987C1BE76BF46D4DF63F69DE1B958D16B9EEB511D6636A377E7F5AC7DFA35333298F75FE0C04008A12199C8CA6950AC">
                 <input id="hidden_source" name="cm-f-jhtykd" type="hidden" />
                 <input id="hidden_agree_text" name="cm-f-jhtykh" type="hidden" />
                 <input id="full_name" name="cm-name" type="hidden" />
                 <div class="newsletter_row">
                     <p>
-                        <label for="first_name">First Name*</label><br />
-                        <input id="first_name" type="text" required/>
+                        <label for="fieldjlktkuu">First Name*</label><br />
+                        <input aria-label="First Name" id="fieldjlktkuu" type="text" required/>
                     </p>
                     <p>
-                        <label for="last_name">Last Name*</label><br />
-                        <input id="last_name" type="text" required/>
+                        <label for="fieldjlktull">Last Name*</label><br />
+                        <input aria-label="Last Name" id="fieldjlktull" type="text" required/>
                     </p>
                 </div>
                 <div class="newsletter_row">
                     <p>
-                        <label for="news_email">Email*</label><br />
-                        <input id="news_email" name="cm-iixuu-iixuu" type="email" required/>
+                        <label for="fieldEmail">Email*</label><br />
+                        <input id="fieldEmail" name="cm-iixuu-iixuu" type="email" required/>
                     </p>
                     <p>
-                        <label for="news_postal">Postal Code</label><br />
-                        <input id="news_postal" name="cm-f-jkyulu" type="text" />
+                        <label for="fieldjkyulu">Postal Code</label><br />
+                        <input id="fieldjkyulu" name="cm-f-jkyulu" type="text" />
                     </p>
                 </div>
-                <input id="newsletter_agree_terms" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages.These emails may include special retail offers, promotions, news from our merchants, upcoming events, information on the latest trends and much more.">
-                <label for="newsletter_agree_terms" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the Privacy Terms & Conditions.</label>
+                <input id="cm-privacy-consent" type="checkbox" required value="Yes, I consent to receive your Commercial Electronic Messages.These emails may include special retail offers, promotions, news from our merchants, upcoming events, information on the latest trends and much more.">
+                <label for="cm-privacy-consent" class="checkbox_lbl">I agree to receive newsletters from The Bay Centre via electronic messaging; and I acknowledge that I have read and understand the Privacy Terms & Conditions.</label>
                 <br>
                 <button class="news_subscribe" type="submit">Subscribe</button>
             </form>
@@ -151,7 +152,7 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 <script>
     $(document).ready(function() {
          function renderPageData(){

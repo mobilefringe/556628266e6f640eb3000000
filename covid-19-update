@@ -145,7 +145,7 @@
     
     $(document).ready(function() {
         function renderAll(){
-            var page_banner = getRepoDetailsByName('Guest Services').images;
+            var page_banner = getRepoDetailsByName('COVID 19').images;
             var banner_url = "";
             $.each(page_banner, function(key, val){
                 banner_url = val.image_url;

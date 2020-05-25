@@ -48,7 +48,7 @@
 <div id="main_container">
     <div id="page_content">
         <div class="store_detail_description" id="cat_extended_hours_stores">
-            <p class="contact_number">COVID-19: Precautionary measures we're taking & changes in operating hours. <a href="/news/baycentre-covid-19-update">Learn more</a>.</p>
+            <p class="contact_number">COVID-19: Precautionary measures we're taking & changes in operating hours. <a href="/covid-19-update">Learn more</a>.</p>
         </div>
         <hr>
         <div class="contact_first_row">

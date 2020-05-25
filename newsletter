@@ -91,9 +91,10 @@
         <div class="missing_out_div">
             <p onclick="javascript:toggle_news_form()">Get the Latest<i id="fear_caret" class="fa fa-caret-down"></i></p>
             <div class="hidden_newsletter_form">
-                <form style="font-size:12px" id="banner_newsletter">
+                <!--<form style="font-size:12px" id="banner_newsletter">-->
+                <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A4987C1BE76BF46D4DF63F69DE1B958D16B9EEB511D6636A377E7F5AC7DFA35333298F75FE0C04008A12199C8CA6950AC">
                     <span>
-                        <input id="banner_email" name="cm-iixuu-iixuu" type="email" required  placeholder="Email address"/>
+                        <input id="fieldEmail" name="cm-iixuu-iixuu" aria-label="Email" type="email" required  placeholder="Email address"/>
                         <button type="submit" id="banner_submit">Subscribe</button>
                     </span>
                     <br>
@@ -151,6 +152,7 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 
 <script>
     $(document).ready(function() {

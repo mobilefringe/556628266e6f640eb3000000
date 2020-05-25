@@ -294,6 +294,7 @@
                 <div class="dd_submenu" id="s_sub_2">
                     <ul>
                         <li><a href="/hours">hours</a></li>
+                        <li><a href="/covid-19-update">COVID-19 Update</a></li>
                         <li><a href="/pages/baycentre-getting-here">getting here</a></li>
                         <li><a href="/pages/baycentre-parking">parking</a></li>
                         <li><a href="/guest_services">guest services</a></li>

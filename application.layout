@@ -352,6 +352,7 @@
                 <div class="mobile_submenu" id="mobile_sub_2">
                     <ul>
                         <li class="mobile_submenu_li"><a href="/hours">hours</a></li>
+                        <li class="mobile_submenu_li"><a href="/covid-19-update">COVID-19 Update</a></li>
                         <li class="mobile_submenu_li"><a href="/pages/baycentre-getting-here">getting here</a></li>
                         <li class="mobile_submenu_li"><a href="/pages/baycentre-parking">parking</a></li>
                         <li class="mobile_submenu_li"><a href="/guest_services">guest services</a></li>
